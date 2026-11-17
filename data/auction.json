@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T15:07:41.198Z",
+ "updatedAt": "2026-11-17T16:12:07.065Z",
  "categories": [
   {
    "id": "material",
@@ -12,64 +12,64 @@
      "itemType": "재료",
      "avgPrice": 34,
      "minPrice": 32,
-     "volume": 9764921,
+     "volume": 8735190,
      "prevAvg": 34,
-     "changePct": 1.2341375708367635
+     "changePct": -0.8196242473731944
     },
     {
-     "itemId": "c4816db14d145416921f0210063cb014",
-     "itemName": "레어 소울 결정",
-     "itemRarity": "레어",
+     "itemId": "c6947ff630cc59aebdcbabfb449258d1",
+     "itemName": "레전더리 소울 결정",
+     "itemRarity": "레전더리",
      "itemType": "부스터",
-     "avgPrice": 1339,
-     "minPrice": 1111,
-     "volume": 9418,
-     "prevAvg": 1136,
-     "changePct": 17.872008276031206
-    },
-    {
-     "itemId": "fbdf88559ec0414339d1b4d089b6bd62",
-     "itemName": "황금 큐브 조각",
-     "itemRarity": "레어",
-     "itemType": "재료",
-     "avgPrice": 795,
-     "minPrice": 790,
-     "volume": 12076,
-     "prevAvg": 800,
-     "changePct": -0.6730705531632992
-    },
-    {
-     "itemId": "f1afc13118b2b07ec1e3b8c2f1958b03",
-     "itemName": "모순의 결정체",
-     "itemRarity": "레어",
-     "itemType": "재료",
-     "avgPrice": 34709,
-     "minPrice": 34000,
-     "volume": 1266,
-     "prevAvg": 33864,
-     "changePct": 2.494848364744171
+     "avgPrice": 48959,
+     "minPrice": 44899,
+     "volume": 433,
+     "prevAvg": 48027,
+     "changePct": 1.9407337798970012
     },
     {
      "itemId": "c7d845c65ab9dbcff6e55dc910fbea87",
      "itemName": "에픽 소울 결정",
      "itemRarity": "에픽",
      "itemType": "부스터",
-     "avgPrice": 1211960,
-     "minPrice": 990000,
-     "volume": 88,
+     "avgPrice": 1197339,
+     "minPrice": 1100000,
+     "volume": 77,
      "prevAvg": 1168541,
-     "changePct": 3.7156766040262674
+     "changePct": 2.4644095811474713
     },
     {
-     "itemId": "d288ebf406a65f4ec23d1f9c33227888",
-     "itemName": "태초 소울 결정",
-     "itemRarity": "태초",
+     "itemId": "27a5877768a40a3a0eccc493d0a53b9b",
+     "itemName": "광휘의 소울 결정",
+     "itemRarity": "레전더리",
      "itemType": "부스터",
-     "avgPrice": 2053660,
-     "minPrice": 1780650,
-     "volume": 36,
-     "prevAvg": 1813951,
-     "changePct": 13.214729737585099
+     "avgPrice": 15251,
+     "minPrice": 13999,
+     "volume": 820,
+     "prevAvg": 17246,
+     "changePct": -11.57067174289973
+    },
+    {
+     "itemId": "0620c107b1aae1f3a6cf9eee3aaf43d7",
+     "itemName": "유니크 소울 결정",
+     "itemRarity": "유니크",
+     "itemType": "부스터",
+     "avgPrice": 2117,
+     "minPrice": 1999,
+     "volume": 2694,
+     "prevAvg": null,
+     "changePct": null
+    },
+    {
+     "itemId": "f1afc13118b2b07ec1e3b8c2f1958b03",
+     "itemName": "모순의 결정체",
+     "itemRarity": "레어",
+     "itemType": "재료",
+     "avgPrice": 35025,
+     "minPrice": 34999,
+     "volume": 658,
+     "prevAvg": 33864,
+     "changePct": 3.428801025665328
     }
    ]
   },
@@ -82,11 +82,11 @@
      "itemName": "순수한 증폭서",
      "itemRarity": "레어",
      "itemType": "기타",
-     "avgPrice": 11266092,
+     "avgPrice": 11270928,
      "minPrice": 11200000,
-     "volume": 63,
+     "volume": 58,
      "prevAvg": 11262481,
-     "changePct": 0.032066153491793065
+     "changePct": 0.07500200184041358
     },
     {
      "itemId": "d90d47d8f06131f538f577426225ee7a",
@@ -132,64 +132,64 @@
      "itemName": "적아 울라드 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 755612,
+     "avgPrice": 733192,
      "minPrice": 690000,
-     "volume": 45,
+     "volume": 81,
      "prevAvg": 741875,
-     "changePct": 1.851611719554433
+     "changePct": -1.1703728665480988
     },
     {
      "itemId": "b91b4a562579211afc372fc93ad2097f",
      "itemName": "땅지기 카메린 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 754848,
-     "minPrice": 740000,
-     "volume": 64,
+     "avgPrice": 754032,
+     "minPrice": 690000,
+     "volume": 65,
      "prevAvg": 731330,
-     "changePct": 3.215784939767273
+     "changePct": 3.1042663051195523
     },
     {
-     "itemId": "c6eff9fae931a04e0cee7027f2d6a046",
-     "itemName": "영혼의 안내자 사리엘 카드",
-     "itemRarity": "레전더리",
-     "itemType": "전문직업 재료",
-     "avgPrice": 759098,
-     "minPrice": 757800,
-     "volume": 6,
-     "prevAvg": null,
-     "changePct": null
+     "itemId": "b62cd7a12de35f28cc1332b1ef609eb8",
+     "itemName": "실반 멜로디 카드",
+     "itemRarity": "레어",
+     "itemType": "재료",
+     "avgPrice": 4629908,
+     "minPrice": 4629900,
+     "volume": 49,
+     "prevAvg": 4637935,
+     "changePct": -0.1730691942576491
     },
     {
-     "itemId": "4004b372880c2e04bae60eb7bc57264a",
-     "itemName": "파괴하는 광룡 히스마 카드",
+     "itemId": "d764ad320566b4ecff5931574a148bb7",
+     "itemName": "거짓의 베리디쿠스 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 764583,
-     "minPrice": 760000,
-     "volume": 4,
-     "prevAvg": null,
-     "changePct": null
-    },
-    {
-     "itemId": "58d3de07a8df8095861a53339a9eb03f",
-     "itemName": "오만한 위신, 셀게이퍼 카드",
-     "itemRarity": "레전더리",
-     "itemType": "전문직업 재료",
-     "avgPrice": 763333,
-     "minPrice": 760000,
-     "volume": 4,
-     "prevAvg": 958335,
-     "changePct": -20.34799939478366
-    },
-    {
-     "itemId": "0239b1478c2a8214e70eac57581cddd2",
-     "itemName": "안개신의 무의식 카드",
-     "itemRarity": "레전더리",
-     "itemType": "전문직업 재료",
-     "avgPrice": 728000,
-     "minPrice": 600000,
+     "avgPrice": 8194712,
+     "minPrice": 7440000,
      "volume": 5,
+     "prevAvg": 7678477,
+     "changePct": 6.72314835350813
+    },
+    {
+     "itemId": "933c9d25ae56e94cca60586a76da64dc",
+     "itemName": "눈물짓는 블리스 카드",
+     "itemRarity": "레전더리",
+     "itemType": "전문직업 재료",
+     "avgPrice": 3922500,
+     "minPrice": 1140000,
+     "volume": 4,
+     "prevAvg": null,
+     "changePct": null
+    },
+    {
+     "itemId": "8a4cb5d8c2aadcaa84bc433f5aa7933b",
+     "itemName": "정직한 픽툼 카드",
+     "itemRarity": "레전더리",
+     "itemType": "전문직업 재료",
+     "avgPrice": 3288889,
+     "minPrice": 3200000,
+     "volume": 3,
      "prevAvg": null,
      "changePct": null
     }
