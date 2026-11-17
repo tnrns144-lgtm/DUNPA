@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T11:29:15.008Z",
+ "updatedAt": "2026-11-17T12:02:36.878Z",
  "all": [
   {
    "serverId": "cain",
@@ -459,6 +459,15 @@
    "jobName": "격투가(남)",
    "jobGrowName": "眞 스트라이커",
    "fame": 136286
+  },
+  {
+   "serverId": "prey",
+   "characterId": "f01086512a3d94d16e6329e989aac739",
+   "characterName": "SilentStorm_",
+   "level": 115,
+   "jobName": "마법사(남)",
+   "jobGrowName": "眞 스위프트 마스터",
+   "fame": 136285
   },
   {
    "serverId": "prey",
@@ -1098,15 +1107,6 @@
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 베가본드",
    "fame": 135420
-  },
-  {
-   "serverId": "prey",
-   "characterId": "f01086512a3d94d16e6329e989aac739",
-   "characterName": "SilentStorm_",
-   "level": 115,
-   "jobName": "마법사(남)",
-   "jobGrowName": "眞 스위프트 마스터",
-   "fame": 135326
   },
   {
    "serverId": "cain",
@@ -1956,6 +1956,15 @@
    },
    {
     "serverId": "prey",
+    "characterId": "f01086512a3d94d16e6329e989aac739",
+    "characterName": "SilentStorm_",
+    "level": 115,
+    "jobName": "마법사(남)",
+    "jobGrowName": "眞 스위프트 마스터",
+    "fame": 136285
+   },
+   {
+    "serverId": "prey",
     "characterId": "a82db52721b8f088b226a8f4e27a5ec1",
     "characterName": "3각",
     "level": 115,
@@ -2034,15 +2043,6 @@
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 다크템플러",
     "fame": 135864
-   },
-   {
-    "serverId": "prey",
-    "characterId": "f01086512a3d94d16e6329e989aac739",
-    "characterName": "SilentStorm_",
-    "level": 115,
-    "jobName": "마법사(남)",
-    "jobGrowName": "眞 스위프트 마스터",
-    "fame": 135326
    },
    {
     "serverId": "prey",
@@ -2382,15 +2382,6 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 런처",
     "fame": 135027
-   },
-   {
-    "serverId": "anton",
-    "characterId": "32483f87d78984c740bb710cfc30ca36",
-    "characterName": "황야",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 스핏파이어",
-    "fame": 134748
    },
    {
     "serverId": "anton",
