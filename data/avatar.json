@@ -1,1 +1,293 @@
-{"updatedAt": null, "rows": []}
+{
+ "updatedAt": "2026-11-17T11:18:43.784Z",
+ "rows": [
+  {
+   "goodsNo": 4800006,
+   "title": "나이트 상급2부위",
+   "price": 999999,
+   "jobName": "나이트",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "78436b4162220b6d199b82d3667ca107",
+    "bda424281c50cb85ce3f8ee4a8529f6a"
+   ]
+  },
+  {
+   "goodsNo": 4800011,
+   "title": "아처 상급2부위",
+   "price": 999999,
+   "jobName": "아처",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "0bf1f4c2a6f29610040f42f9f7f70730",
+    "5a18f1ef47c77c2ec64a99b6feb59ce9"
+   ]
+  },
+  {
+   "goodsNo": 4800012,
+   "title": "마창사 상급2부위",
+   "price": 999999,
+   "jobName": "마창사",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "1556ae0a8181a3c55894b777808e6f27",
+    "7bcc7037261ba2535f0caf51c2fcff2c"
+   ]
+  },
+  {
+   "goodsNo": 4800003,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "dcff9383209a8759b93be9ff469d977b",
+    "bf21aa1d3aac22cc5d69eb4187f5c6ca"
+   ]
+  },
+  {
+   "goodsNo": 4800010,
+   "title": "아처 상급2부위",
+   "price": 999999,
+   "jobName": "아처",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "ed994372abcfe65a0329cb41687fbc45",
+    "9de1d3fa5fb1ba614e5763cc9908859c"
+   ]
+  },
+  {
+   "goodsNo": 4799994,
+   "title": "아처 상급2부위",
+   "price": 999999,
+   "jobName": "아처",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "5b306e6232b1377a16698b3f88a8f42b",
+    "d4c870e10e58e17583e106a825c15433"
+   ]
+  },
+  {
+   "goodsNo": 4799991,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "d11ea3b7d9d941342eb8da8c0027cbce",
+    "8d9f95de9660c2ddddce31ac6d29bf32"
+   ]
+  },
+  {
+   "goodsNo": 4800013,
+   "title": "제국기사 상급2부위",
+   "price": 999999,
+   "jobName": "제국기사",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "c791880ddfc4ad0444042b50b7656f61",
+    "d959e7db2e994562dd60c866758e0c27"
+   ]
+  },
+  {
+   "goodsNo": 4800014,
+   "title": "여격투가 상급2부위",
+   "price": 999999,
+   "jobName": "격투가(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "c666ca6c258f2b1fd67eb3eaa390fd54",
+    "4398e6b7e8d1e47e10c71d2018fd41a2"
+   ]
+  },
+  {
+   "goodsNo": 4800001,
+   "title": "여마법사 상급2부위",
+   "price": 999999,
+   "jobName": "마법사(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "d029e201fb1c733e7abb9dd7e33fae43",
+    "81de26f6fd99b949100212cffd9f251f"
+   ]
+  },
+  {
+   "goodsNo": 4799999,
+   "title": "도적 상급2부위",
+   "price": 999999,
+   "jobName": "도적",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "cb19e534dc8e385adb634e445d948a24",
+    "5804777738f05e18d167d7d9151014f7"
+   ]
+  },
+  {
+   "goodsNo": 4800002,
+   "title": "나이트 상급2부위",
+   "price": 999999,
+   "jobName": "나이트",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "da35161d0545224e65c86328dd453ba4",
+    "9ed89cd630af9284317a657b3344712c"
+   ]
+  },
+  {
+   "goodsNo": 4800000,
+   "title": "여마법사 상급2부위",
+   "price": 999999,
+   "jobName": "마법사(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "fd996420fe696eed0e3da8039090939b",
+    "517d9e1504578850d2c3a77af4c5b13a"
+   ]
+  },
+  {
+   "goodsNo": 4799998,
+   "title": "도적 상급2부위",
+   "price": 999999,
+   "jobName": "도적",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "d1c0fdf701e1c526dc5edac8152d87d4",
+    "3ff789be0610fbc6b01f815478f16888"
+   ]
+  },
+  {
+   "goodsNo": 4799993,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "176def49c174c6186c27c43299568479",
+    "2f6702ea2053cedb3203ba6f2ea06cbd"
+   ]
+  },
+  {
+   "goodsNo": 4799995,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "f7878e3d515651576864c4fbfcbb8bf9",
+    "2b97c89999989ae0686edc64d8261858"
+   ]
+  },
+  {
+   "goodsNo": 4800008,
+   "title": "여거너 상급2부위",
+   "price": 999999,
+   "jobName": "거너(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "ecef10bb3189f024fde75dd18ab0e306",
+    "998a711af12d653af8821bc4687cfef8"
+   ]
+  },
+  {
+   "goodsNo": 4799996,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "b2dbf64303af18deb7a5ee04792c8205",
+    "a34dde5df66964a64bcc296f5215fde8"
+   ]
+  },
+  {
+   "goodsNo": 4800007,
+   "title": "여격투가 상급2부위",
+   "price": 999999,
+   "jobName": "격투가(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "c0a26a8232c14cfd0b47880cf60d5564",
+    "65580790f16c615d453f27636eb6b28d"
+   ]
+  },
+  {
+   "goodsNo": 4799997,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "4c19647e9bd1213257481cdab09800ae",
+    "5366be03d0a52f1621fd1491205bc991"
+   ]
+  },
+  {
+   "goodsNo": 4800009,
+   "title": "여거너 상급2부위",
+   "price": 999999,
+   "jobName": "거너(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "e7bed4e5291f99d27f07dff5ff8c5707",
+    "988b1b5f85032fb4b4234e6d00ac1d40"
+   ]
+  },
+  {
+   "goodsNo": 4800005,
+   "title": "여마법사 상급2부위",
+   "price": 999999,
+   "jobName": "마법사(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "85573c559a6689b56c55b668df9412c9",
+    "50d507c5640b14316075b365e2974e30"
+   ]
+  },
+  {
+   "goodsNo": 4799992,
+   "title": "아처 상급2부위",
+   "price": 999999,
+   "jobName": "아처",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "35be443a612ef75de930235e9909e40e",
+    "1559cf2818e8251a0e0fbeaaee91d1e2"
+   ]
+  },
+  {
+   "goodsNo": 4800004,
+   "title": "여프리스트 상급2부위",
+   "price": 999999,
+   "jobName": "프리스트(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-10-31",
+   "itemIds": [
+    "38943663830feb029d8be625f697e61d",
+    "2b97c89999989ae0686edc64d8261858"
+   ]
+  }
+ ]
+}

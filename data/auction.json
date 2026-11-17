@@ -1,1 +1,38 @@
-{"updatedAt": null, "categories": [], "missing": []}
+{
+ "updatedAt": "2026-11-17T11:18:43.784Z",
+ "categories": [
+  {
+   "id": "material",
+   "name": "강화 재료",
+   "items": [
+    {
+     "itemId": "785e56a0ed4e3efd573da1f56a45217d",
+     "itemName": "무색 큐브 조각",
+     "itemRarity": "언커먼",
+     "itemType": "재료",
+     "avgPrice": 34,
+     "minPrice": 32,
+     "volume": 6202775,
+     "prevAvg": null,
+     "changePct": null
+    }
+   ]
+  },
+  {
+   "id": "consumable",
+   "name": "소모품",
+   "items": []
+  },
+  {
+   "id": "card",
+   "name": "카드",
+   "items": []
+  }
+ ],
+ "missing": [
+  "코스모 소울",
+  "고대의 기억",
+  "순수한 황금 증폭서",
+  "골드 메달"
+ ]
+}
