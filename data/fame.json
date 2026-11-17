@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T12:32:55.537Z",
+ "updatedAt": "2026-11-17T13:28:06.394Z",
  "all": [
   {
    "serverId": "cain",
@@ -170,15 +170,6 @@
    "level": 115,
    "jobName": "격투가(여)",
    "jobGrowName": "眞 스트리트파이터",
-   "fame": 136501
-  },
-  {
-   "serverId": "cain",
-   "characterId": "82a61ac21fa1a12caf639644bf50c524",
-   "characterName": "별빛하울링",
-   "level": 115,
-   "jobName": "아처",
-   "jobGrowName": "眞 트래블러",
    "fame": 136501
   },
   {
@@ -1100,6 +1091,15 @@
    "fame": 135810
   },
   {
+   "serverId": "casillas",
+   "characterId": "609decd70233908cf4d2948297798555",
+   "characterName": "The_연우",
+   "level": 115,
+   "jobName": "귀검사(여)",
+   "jobGrowName": "眞 베가본드",
+   "fame": 135420
+  },
+  {
    "serverId": "cain",
    "characterId": "7979bcc2a3455f213036808a876da546",
    "characterName": "간판",
@@ -1196,6 +1196,15 @@
    "level": 115,
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 크루세이더",
+   "fame": 134940
+  },
+  {
+   "serverId": "cain",
+   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
+   "characterName": "영양어썰",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
    "fame": 134940
   },
   {
@@ -1298,15 +1307,6 @@
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 스트리트파이터",
-    "fame": 136501
-   },
-   {
-    "serverId": "cain",
-    "characterId": "82a61ac21fa1a12caf639644bf50c524",
-    "characterName": "별빛하울링",
-    "level": 115,
-    "jobName": "아처",
-    "jobGrowName": "眞 트래블러",
     "fame": 136501
    },
    {
@@ -1658,6 +1658,15 @@
     "level": 115,
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 소드마스터",
+    "fame": 135864
+   },
+   {
+    "serverId": "cain",
+    "characterId": "e5bdaabfdca2d9874627fea4d99f8ba7",
+    "characterName": "하얀무녀",
+    "level": 115,
+    "jobName": "프리스트(여)",
+    "jobGrowName": "眞 무녀",
     "fame": 135864
    }
   ],
@@ -2025,15 +2034,6 @@
     "jobName": "도적",
     "jobGrowName": "眞 사령술사",
     "fame": 135066
-   },
-   {
-    "serverId": "prey",
-    "characterId": "13a405de2db5720d58d00343a7a5891c",
-    "characterName": "유키노",
-    "level": 115,
-    "jobName": "귀검사(여)",
-    "jobGrowName": "眞 소드마스터",
-    "fame": 134797
    }
   ],
   "casillas": [
@@ -2108,6 +2108,15 @@
     "jobName": "마법사(여)",
     "jobGrowName": "眞 배틀메이지",
     "fame": 135942
+   },
+   {
+    "serverId": "casillas",
+    "characterId": "609decd70233908cf4d2948297798555",
+    "characterName": "The_연우",
+    "level": 115,
+    "jobName": "귀검사(여)",
+    "jobGrowName": "眞 베가본드",
+    "fame": 135420
    }
   ],
   "hilder": [
