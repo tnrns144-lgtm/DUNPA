@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T12:02:36.878Z",
+ "updatedAt": "2026-11-17T12:32:55.537Z",
  "all": [
   {
    "serverId": "cain",
@@ -399,6 +399,15 @@
   },
   {
    "serverId": "prey",
+   "characterId": "f01086512a3d94d16e6329e989aac739",
+   "characterName": "SilentStorm_",
+   "level": 115,
+   "jobName": "마법사(남)",
+   "jobGrowName": "眞 스위프트 마스터",
+   "fame": 136307
+  },
+  {
+   "serverId": "prey",
    "characterId": "568a5fee9595c36706ebe81159a631f8",
    "characterName": "디어사이드",
    "level": 115,
@@ -459,15 +468,6 @@
    "jobName": "격투가(남)",
    "jobGrowName": "眞 스트라이커",
    "fame": 136286
-  },
-  {
-   "serverId": "prey",
-   "characterId": "f01086512a3d94d16e6329e989aac739",
-   "characterName": "SilentStorm_",
-   "level": 115,
-   "jobName": "마법사(남)",
-   "jobGrowName": "眞 스위프트 마스터",
-   "fame": 136285
   },
   {
    "serverId": "prey",
@@ -1100,15 +1100,6 @@
    "fame": 135810
   },
   {
-   "serverId": "casillas",
-   "characterId": "609decd70233908cf4d2948297798555",
-   "characterName": "The_연우",
-   "level": 115,
-   "jobName": "귀검사(여)",
-   "jobGrowName": "眞 베가본드",
-   "fame": 135420
-  },
-  {
    "serverId": "cain",
    "characterId": "7979bcc2a3455f213036808a876da546",
    "characterName": "간판",
@@ -1179,15 +1170,6 @@
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 이단심판관",
    "fame": 134987
-  },
-  {
-   "serverId": "diregie",
-   "characterId": "6466540e20a66d4e955fec8d86add88d",
-   "characterName": "봄",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 인챈트리스",
-   "fame": 134978
   },
   {
    "serverId": "siroco",
@@ -1772,15 +1754,6 @@
    },
    {
     "serverId": "diregie",
-    "characterId": "6466540e20a66d4e955fec8d86add88d",
-    "characterName": "봄",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 인챈트리스",
-    "fame": 134978
-   },
-   {
-    "serverId": "diregie",
     "characterId": "05a7513fd175594785fa29a76e49d7b2",
     "characterName": "LA벤데타",
     "level": 115,
@@ -1929,6 +1902,15 @@
    },
    {
     "serverId": "prey",
+    "characterId": "f01086512a3d94d16e6329e989aac739",
+    "characterName": "SilentStorm_",
+    "level": 115,
+    "jobName": "마법사(남)",
+    "jobGrowName": "眞 스위프트 마스터",
+    "fame": 136307
+   },
+   {
+    "serverId": "prey",
     "characterId": "568a5fee9595c36706ebe81159a631f8",
     "characterName": "디어사이드",
     "level": 115,
@@ -1953,15 +1935,6 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
     "fame": 136301
-   },
-   {
-    "serverId": "prey",
-    "characterId": "f01086512a3d94d16e6329e989aac739",
-    "characterName": "SilentStorm_",
-    "level": 115,
-    "jobName": "마법사(남)",
-    "jobGrowName": "眞 스위프트 마스터",
-    "fame": 136285
    },
    {
     "serverId": "prey",
@@ -2135,15 +2108,6 @@
     "jobName": "마법사(여)",
     "jobGrowName": "眞 배틀메이지",
     "fame": 135942
-   },
-   {
-    "serverId": "casillas",
-    "characterId": "609decd70233908cf4d2948297798555",
-    "characterName": "The_연우",
-    "level": 115,
-    "jobName": "귀검사(여)",
-    "jobGrowName": "眞 베가본드",
-    "fame": 135420
    }
   ],
   "hilder": [
@@ -2382,6 +2346,15 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 런처",
     "fame": 135027
+   },
+   {
+    "serverId": "anton",
+    "characterId": "32483f87d78984c740bb710cfc30ca36",
+    "characterName": "황야",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 스핏파이어",
+    "fame": 134748
    },
    {
     "serverId": "anton",
