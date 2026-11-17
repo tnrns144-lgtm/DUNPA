@@ -1,4 +1,4 @@
-/* 메인 페이지: 경매장 시세, 명성 랭킹, 아바타 마켓 (GitHub Actions가 모은 data/*.json 사용) */
+/* 메인 페이지: 경매장 시세, 명성 랭킹, 랭커 트렌드, 아바타 거래 (GitHub Actions가 모은 data/*.json 사용) */
 (function () {
   const D = window.DNF;
   const $ = (id) => document.getElementById(id);
@@ -9,6 +9,7 @@
     renderRecentList();
     loadAuction();
     loadFame();
+    loadTrends();
     loadAvatar();
   });
 
@@ -102,6 +103,7 @@
     } catch (e) {
       fameData = null;
     }
+    renderJobDist();
     if (!fameData || !(fameData.all || []).length) {
       $('fame-body').innerHTML = `<div class="panel">${D.emptyState('랭킹 수집 전이에요', 'API 키를 등록하면 자동으로 채워져요.')}</div>`;
       return;
@@ -156,26 +158,95 @@
       </ol>` : ''}`;
   }
 
-  /* ---------- 아바타 마켓 ---------- */
+  /* ---------- 랭커 트렌드: 직업 분포 (명성 데이터로 계산) ---------- */
+  function renderJobDist() {
+    const el = $('job-dist');
+    const rows = fameData?.all || [];
+    if (!rows.length) {
+      el.innerHTML = D.emptyState('랭킹 수집 전이에요', '명성 랭킹이 모이면 자동으로 계산돼요.');
+      return;
+    }
+    const counts = new Map();
+    rows.forEach((r) => {
+      const job = r.jobGrowName || r.jobName;
+      if (job) counts.set(job, (counts.get(job) || 0) + 1);
+    });
+    const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+    const max = top.length ? top[0][1] : 1;
+    el.innerHTML = `<ol class="bar-list">
+      ${top.map(([job, n]) => `
+        <li>
+          <span class="bar-name" title="${D.esc(job)}">${D.esc(job)}</span>
+          <span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:${(n / max * 100).toFixed(1)}%"></span></span>
+          <span class="bar-count">${D.num(n)}명</span>
+        </li>`).join('')}
+    </ol>
+    <p class="help">상위 ${D.num(rows.length)}명 중 직업별 인원</p>`;
+  }
+
+  /* ---------- 랭커 트렌드: 장착품 순위 (data/trends.json) ---------- */
+  const TREND_TABS = [
+    { id: 'title', name: '칭호' },
+    { id: 'creature', name: '크리쳐' },
+    { id: 'aura', name: '오라' },
+    { id: 'weapon', name: '무기 아바타' }
+  ];
+  let trendData = null;
+
+  async function loadTrends() {
+    try { trendData = await D.getJSON('data/trends.json'); } catch (e) { trendData = null; }
+    const tabs = TREND_TABS.filter((t) => (trendData?.[t.id] || []).length);
+    if (!tabs.length) {
+      $('trend-tabs').innerHTML = '';
+      $('trend-list').innerHTML = D.emptyState('트렌드 수집 전이에요', '하루 한 번 자동으로 채워져요.');
+      return;
+    }
+    $('trend-updated').textContent = trendData.updatedAt ? `${D.timeLabel(trendData.updatedAt)} 기준` : '';
+    const tabsEl = $('trend-tabs');
+    tabsEl.innerHTML = tabs.map((t, i) =>
+      `<button type="button" class="chip" data-trend="${t.id}" aria-pressed="${i === 0}">${D.esc(t.name)}</button>`).join('');
+    tabsEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-trend]');
+      if (!btn) return;
+      tabsEl.querySelectorAll('[data-trend]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      renderTrend(btn.dataset.trend);
+    });
+    renderTrend(tabs[0].id);
+  }
+
+  function renderTrend(id) {
+    const list = trendData?.[id] || [];
+    const sample = trendData?.sample || 0;
+    $('trend-list').innerHTML = `<ol class="use-list">
+      ${list.map((it, i) => `
+        <li>
+          <span class="rank-no">${i + 1}</span>
+          <div class="item-cell" style="${D.rarityStyle(it.itemRarity)}">
+            <span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
+            <span style="min-width:0"><span class="item-name">${D.esc(it.itemName)}</span><span class="item-sub">${D.esc(it.itemRarity || '')}</span></span>
+          </div>
+          <span class="use-count"><strong>${D.num(it.count)}명</strong>${sample ? `<br>${(it.count / sample * 100).toFixed(0)}%` : ''}</span>
+        </li>`).join('')}
+    </ol>
+    ${sample ? `<p class="help">조사한 랭커 ${D.num(sample)}명 기준</p>` : ''}`;
+  }
+
+  /* ---------- 아바타 마켓 최근 거래 (한 줄 목록) ---------- */
   async function loadAvatar() {
     let data = null;
     try { data = await D.getJSON('data/avatar.json'); } catch (e) { data = null; }
     const rows = data?.rows || [];
+    const el = $('avatar-recent');
     if (!rows.length) {
-      $('avatar-body').innerHTML = `<div class="panel">${D.emptyState('거래 내역 수집 전이에요', 'API 키를 등록하면 자동으로 채워져요.')}</div>`;
+      el.innerHTML = '<li><span class="help">최근 거래 내역이 없어요.</span></li>';
       return;
     }
-    $('avatar-updated').textContent = data.updatedAt ? `${D.timeLabel(data.updatedAt)} 기준` : '';
-    $('avatar-body').innerHTML = `<div class="avatar-grid">
-      ${rows.slice(0, 8).map((r) => `
-        <article class="avatar-card">
-          <div class="avatar-thumb">${(r.itemIds || []).slice(0, 10).map((id) => `<img src="${D.IMG.item(id)}" alt="" loading="lazy" width="28" height="28">`).join('')}</div>
-          <div class="avatar-body">
-            <small>${D.esc(r.jobName || '공용')}${r.avatarRarity ? ' · ' + D.esc(r.avatarRarity) : ''}</small>
-            <span class="avatar-title">${D.esc(r.title)}</span>
-            <span class="avatar-price">${D.gold(r.price)} 골드</span>
-          </div>
-        </article>`).join('')}
-    </div>`;
+    el.innerHTML = rows.slice(0, 5).map((r) => `
+      <li>
+        <small>${D.esc((r.soldDate || '').slice(5).replace('-', '.'))}</small>
+        <small>${D.esc(r.jobName || '공용')}</small>
+        <span class="mini-title">${D.esc(r.title)}</span>
+        <span class="mini-price">${D.gold(r.price)} 골드</span>
+      </li>`).join('');
   }
 })();

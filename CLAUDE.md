@@ -32,10 +32,12 @@
 ## 데이터 수집 (GitHub Actions)
 - `.github/workflows/collect.yml`이 매시 17분에 `scripts/collect.mjs`를 실행하고, 바뀐 `data/`를 커밋한다.
 - 로컬 실행: `NEOPLE_API_KEY=키 node scripts/collect.mjs` (`NEOPLE_API_BASE`로 API 주소를 바꿔 모의 서버 테스트 가능)
-- 결과 파일: `data/auction.json`, `data/fame.json`, `data/avatar.json`, `data/servers.json`, `data/meta.json`, `data/history/auction-daily.json`(전일 대비 계산용, 30일 보관)
+- 결과 파일: `data/auction.json`, `data/fame.json`, `data/avatar.json`, `data/servers.json`, `data/meta.json`, `data/history/auction-daily.json`(전일 대비 계산용, 30일 보관), `data/trends.json`(랭커 트렌드)
 - 경매장 시세: `config/tracked-items.json`의 `items`(정확한 이름, 항상 표시) + `keywords`(이름에 들어간 단어로 `wordType=full` 검색 후 거래 많은 순으로 `top`개 자동 선택). 정확한 이름만 쓰던 첫 방식은 이름이 틀려서 실패했기 때문에 키워드 방식으로 바꿨다.
 - 명성 랭킹: `/df/servers/all/characters-fame?limit=200` + 서버별 50. API가 최고 명성 기준 2,000 범위만 돌려줘서 실제 개수는 더 적다.
 - 아바타 마켓: `/df/avatar-market/sold`에 `sort=goodsNo:desc`(거부되면 기본 순서로 다시 받고 거래일순 정렬).
+- 랭커 트렌드: fame.json의 전체 상위 캐릭터마다 `equip/equipment`(칭호 slotId TITLE)·`equip/avatar`(오라 AURORA, 무기 WEAPON, 클론 우선)·`equip/creature`를 조회해 많이 쓰는 순 TOP 10 집계. 약 600회 호출이라 **하루 1번만** 실행(trends.json이 20시간 이내면 건너뜀). Actions 수동 실행 때 `force_trends`를 체크하면 바로 다시 모은다. 직업 분포는 화면에서 fame.json으로 바로 계산한다.
+- 로컬 테스트: 이 PC에 Node.js v26 설치됨(`C:/Program Files/nodejs`). 실제 data를 덮어쓰지 않도록 임시 폴더에 복사해서 모의 서버(`NEOPLE_API_BASE`)로 돌린다.
 
 ## 네오플 오픈 API 메모
 - 기본 주소 `https://api.neople.co.kr`, 키는 `apikey` 쿼리 변수.
@@ -46,10 +48,10 @@
 - 푸터에 "Powered by Neople Open API" 출처와 비공식 팬사이트 안내를 유지한다.
 
 ## 현재 상태 (2026-11-17)
-- 완료: 사이트 개통, 데이터 자동 수집, 캐릭터 검색·상세, 아이템 사전, 개인정보처리방침, 서치 콘솔 등록·색인 요청
+- 완료: 사이트 개통, 데이터 자동 수집, 캐릭터 검색·상세, 아이템 사전, 개인정보처리방침, 서치 콘솔 등록·색인 요청, 아바타 마켓 섹션을 "랭커 트렌드"(직업 분포·칭호/크리쳐/오라/무기 아바타 TOP 10)로 개편하고 아바타 거래는 한 줄 목록 5건으로 축소
 - 남은 일
   1. 서치 콘솔 색인 상태 확인 (등록 후 며칠~2주)
   2. 며칠 운영 후 애드센스 신청. `계정.github.io/저장소` 형태 주소는 루트에 `ads.txt`를 둘 수 없어서 승인이 막히면 도메인 구매(연 1~2만 원)를 검토한다.
-  3. 아바타 마켓 섹션 개선: 실제 거래가 매우 적어서(3주에 7건 정도, 대부분 100만 골드 상급 2부위) 단조롭다. 더 쓸모 있는 콘텐츠로 바꾸는 것을 검토한다.
+  3. 랭커 트렌드 첫 실제 수집 결과 확인: slotId가 예상(TITLE/AURORA/WEAPON)과 다르면 집계가 비어 있을 수 있다. 비면 실제 응답의 slotId·slotName을 확인해 고친다.
   4. "많이 검색된 캐릭터"는 서버 쪽 기록이 필요해서 현재는 "내 최근 검색"(브라우저 저장)으로 대체해 두었다.
   5. 다음 게임 사이트 준비 (국내 RPG 관심도와 공식 API 유무를 기준으로 고른다. 메이플스토리·로스트아크도 공식 API가 있다).

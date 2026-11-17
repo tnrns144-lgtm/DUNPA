@@ -164,6 +164,65 @@ async function collectFame(serverIds) {
   report.ok.push(`명성 랭킹 전체 ${(all.rows || []).length}명`);
 }
 
+/* ---------- 랭커 트렌드 (하루 1번) ---------- */
+// 명성 상위 캐릭터들이 장착한 칭호·크리쳐·오라·무기 아바타를 세어서 많이 쓰는 순서로 저장해요.
+async function collectTrends() {
+  const prev = await readJSON('data/trends.json', null);
+  const age = prev?.updatedAt ? now - new Date(prev.updatedAt) : Infinity;
+  if (process.env.FORCE_TRENDS !== '1' && age < 20 * 3600 * 1000) {
+    report.ok.push('랭커 트렌드 건너뜀 (하루 1번)');
+    return;
+  }
+
+  const fame = await readJSON('data/fame.json', null);
+  const chars = (fame?.all || []).filter((c) => c.serverId && c.characterId);
+  if (!chars.length) throw new Error('명성 데이터가 없어요');
+
+  const counters = { title: new Map(), creature: new Map(), aura: new Map(), weapon: new Map() };
+  const add = (key, item) => {
+    if (!item || !item.itemName) return;
+    const map = counters[key];
+    const cur = map.get(item.itemName) || { itemId: item.itemId || '', itemName: item.itemName, itemRarity: item.itemRarity || '', count: 0 };
+    cur.count++;
+    map.set(item.itemName, cur);
+  };
+  const isSlot = (s, id, name) => s.slotId === id || s.slotName === name;
+  // 클론 아바타가 있으면 겉으로 보이는 클론 쪽을 셉니다
+  const look = (a) => (a.clone && a.clone.itemName ? a.clone : a);
+
+  let sample = 0;
+  let failed = 0;
+  for (const c of chars) {
+    const base = `/df/servers/${c.serverId}/characters/${c.characterId}`;
+    try {
+      const [eq, av, cr] = await Promise.all([
+        call(`${base}/equip/equipment`),
+        call(`${base}/equip/avatar`),
+        call(`${base}/equip/creature`)
+      ]);
+      sample++;
+      add('title', (eq.equipment || []).find((e) => isSlot(e, 'TITLE', '칭호')));
+      const avatars = av.avatar || [];
+      const aura = avatars.find((a) => isSlot(a, 'AURORA', '오라'));
+      const weapon = avatars.find((a) => isSlot(a, 'WEAPON', '무기'));
+      if (aura) add('aura', look(aura));
+      if (weapon) add('weapon', look(weapon));
+      add('creature', cr.creature);
+    } catch (e) {
+      failed++;
+    }
+  }
+
+  const top = (map) => [...map.values()].sort((a, b) => b.count - a.count).slice(0, 10);
+  await writeJSON('data/trends.json', {
+    updatedAt, sample,
+    title: top(counters.title), creature: top(counters.creature),
+    aura: top(counters.aura), weapon: top(counters.weapon)
+  });
+  report.ok.push(`랭커 트렌드 ${sample}명`);
+  if (failed) report.failed.push(`랭커 트렌드 조회 실패 ${failed}명`);
+}
+
 /* ---------- 아바타 마켓 최근 거래 ---------- */
 async function collectAvatar() {
   // 최근 거래부터 받기 (정렬 조건이 거부되면 기본 순서로 다시 받기)
@@ -192,7 +251,7 @@ async function collectAvatar() {
 /* ---------- 실행 ---------- */
 let serverIds = ['cain', 'diregie', 'siroco', 'prey', 'casillas', 'hilder', 'anton', 'bakal'];
 try { serverIds = await collectServers(); } catch (e) { report.failed.push(`서버 목록: ${e.message}`); }
-for (const [label, job] of [['경매장', collectAuction], ['명성', () => collectFame(serverIds)], ['아바타', collectAvatar]]) {
+for (const [label, job] of [['경매장', collectAuction], ['명성', () => collectFame(serverIds)], ['트렌드', collectTrends], ['아바타', collectAvatar]]) {
   try { await job(); } catch (e) { report.failed.push(`${label}: ${e.message}`); }
 }
 await writeJSON('data/meta.json', { updatedAt });
