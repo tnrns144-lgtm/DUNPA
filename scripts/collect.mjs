@@ -58,6 +58,28 @@ async function collectServers() {
 }
 
 /* ---------- 경매장 시세 ---------- */
+// 거래 기록 묶음(rows)을 아이템별 시세 한 줄로 정리
+function summarize(rows, history, today, yesterday, dayAgo) {
+  const recent = rows.filter((r) => new Date(String(r.soldDate).replace(' ', 'T') + '+09:00').getTime() >= dayAgo);
+  const base = recent.length ? recent : rows;
+  const qty = base.reduce((s, r) => s + (r.count || 1), 0);
+  const avg = base.reduce((s, r) => s + r.unitPrice * (r.count || 1), 0) / qty;
+  const name = rows[0].itemName;
+  const prev = history[yesterday]?.[name];
+  history[today][name] = Math.round(avg);
+  return {
+    itemId: rows[0].itemId,
+    itemName: name,
+    itemRarity: rows[0].itemRarity,
+    itemType: rows[0].itemTypeDetail || rows[0].itemType,
+    avgPrice: Math.round(avg),
+    minPrice: Math.min(...base.map((r) => r.unitPrice)),
+    volume: qty,
+    prevAvg: prev ?? null,
+    changePct: prev ? ((avg - prev) / prev) * 100 : null
+  };
+}
+
 async function collectAuction() {
   const config = await readJSON('config/tracked-items.json', { categories: [] });
   const history = await readJSON('data/history/auction-daily.json', {});
@@ -69,36 +91,46 @@ async function collectAuction() {
 
   const categories = [];
   for (const cat of config.categories || []) {
-    const items = [];
+    const picked = new Map();   // itemName → 시세 한 줄
+    const limit = cat.top || 6;
+
+    // 1) 이름을 정확히 적은 아이템 (항상 먼저 보여줌)
     for (const name of cat.items || []) {
       try {
         const data = await call('/df/auction-sold', { itemName: name, wordType: 'match', limit: 100 });
         const rows = (data.rows || []).filter((r) => r.unitPrice > 0);
         if (!rows.length) { missing.push(name); continue; }
-        // 최근 24시간 거래 우선, 없으면 받은 거래 전체로 계산
-        const recent = rows.filter((r) => new Date(String(r.soldDate).replace(' ', 'T') + '+09:00').getTime() >= dayAgo);
-        const base = recent.length ? recent : rows;
-        const qty = base.reduce((s, r) => s + (r.count || 1), 0);
-        const avg = base.reduce((s, r) => s + r.unitPrice * (r.count || 1), 0) / qty;
-        const prev = history[yesterday]?.[name];
-        history[today][name] = Math.round(avg);
-        items.push({
-          itemId: rows[0].itemId,
-          itemName: rows[0].itemName || name,
-          itemRarity: rows[0].itemRarity,
-          itemType: rows[0].itemTypeDetail || rows[0].itemType,
-          avgPrice: Math.round(avg),
-          minPrice: Math.min(...base.map((r) => r.unitPrice)),
-          volume: qty,
-          prevAvg: prev ?? null,
-          changePct: prev ? ((avg - prev) / prev) * 100 : null
-        });
+        picked.set(rows[0].itemName, summarize(rows, history, today, yesterday, dayAgo));
       } catch (e) {
         missing.push(name);
         report.failed.push(`경매장 ${name}: ${e.message}`);
       }
     }
-    categories.push({ id: cat.id, name: cat.name, items });
+
+    // 2) 키워드가 들어간 아이템 중 거래량이 많은 것을 자동으로 채움
+    const pool = new Map();     // itemName → rows
+    for (const word of cat.keywords || []) {
+      if (picked.size >= limit) break;
+      try {
+        const data = await call('/df/auction-sold', { itemName: word, wordType: 'full', limit: 100 });
+        for (const r of data.rows || []) {
+          if (!(r.unitPrice > 0) || picked.has(r.itemName)) continue;
+          if (!pool.has(r.itemName)) pool.set(r.itemName, []);
+          pool.get(r.itemName).push(r);
+        }
+      } catch (e) {
+        report.failed.push(`경매장 키워드 ${word}: ${e.message}`);
+      }
+    }
+    const ranked = [...pool.values()]
+      .map((rows) => ({ rows, qty: rows.reduce((s, r) => s + (r.count || 1), 0) }))
+      .sort((a, b) => b.rows.length - a.rows.length || b.qty - a.qty);
+    for (const { rows } of ranked) {
+      if (picked.size >= limit) break;
+      picked.set(rows[0].itemName, summarize(rows, history, today, yesterday, dayAgo));
+    }
+
+    categories.push({ id: cat.id, name: cat.name, items: [...picked.values()] });
   }
 
   // 30일치만 보관
@@ -106,7 +138,7 @@ async function collectAuction() {
   const trimmed = Object.fromEntries(keep.map((k) => [k, history[k]]));
   await writeJSON('data/history/auction-daily.json', trimmed);
   await writeJSON('data/auction.json', { updatedAt, categories, missing });
-  report.ok.push(`경매장 시세 ${categories.reduce((s, c) => s + c.items.length, 0)}개 (거래 없음: ${missing.length}개)`);
+  report.ok.push(`경매장 시세 ${categories.reduce((s, c) => s + c.items.length, 0)}개 (이름 못 찾음: ${missing.length}개)`);
 }
 
 /* ---------- 명성 랭킹 ---------- */
@@ -134,7 +166,16 @@ async function collectFame(serverIds) {
 
 /* ---------- 아바타 마켓 최근 거래 ---------- */
 async function collectAvatar() {
-  const data = await call('/df/avatar-market/sold', { limit: 24 });
+  // 최근 거래부터 받기 (정렬 조건이 거부되면 기본 순서로 다시 받기)
+  let data;
+  try {
+    data = await call('/df/avatar-market/sold', { limit: 50, sort: 'goodsNo:desc' });
+  } catch (e) {
+    report.failed.push(`아바타 정렬: ${e.message}`);
+    data = await call('/df/avatar-market/sold', { limit: 50 });
+  }
+  // 받은 결과도 거래일 최신순으로 한 번 더 정렬
+  data.rows = (data.rows || []).sort((a, b) => String(b.soldDate).localeCompare(String(a.soldDate)) || (b.goodsNo - a.goodsNo)).slice(0, 24);
   const rows = (data.rows || []).map((r) => ({
     goodsNo: r.goodsNo,
     title: r.title,
