@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T13:28:06.394Z",
+ "updatedAt": "2026-11-17T15:07:41.198Z",
  "all": [
   {
    "serverId": "cain",
@@ -975,6 +975,15 @@
   },
   {
    "serverId": "cain",
+   "characterId": "349dfff8bcc87b3e5e9b4be77b09c55e",
+   "characterName": "킹갓제",
+   "level": 115,
+   "jobName": "마법사(남)",
+   "jobGrowName": "眞 빙결사",
+   "fame": 135924
+  },
+  {
+   "serverId": "cain",
    "characterId": "b5ebc37fc6249335ff634d921caca716",
    "characterName": "네골",
    "level": 115,
@@ -1082,15 +1091,6 @@
    "fame": 135823
   },
   {
-   "serverId": "cain",
-   "characterId": "349dfff8bcc87b3e5e9b4be77b09c55e",
-   "characterName": "킹갓제",
-   "level": 115,
-   "jobName": "마법사(남)",
-   "jobGrowName": "眞 빙결사",
-   "fame": 135810
-  },
-  {
    "serverId": "casillas",
    "characterId": "609decd70233908cf4d2948297798555",
    "characterName": "The_연우",
@@ -1145,15 +1145,6 @@
    "fame": 135027
   },
   {
-   "serverId": "anton",
-   "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
-   "characterName": "스팅거타이거",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 런처",
-   "fame": 135027
-  },
-  {
    "serverId": "hilder",
    "characterId": "2ef4826e17784daa46a89f9e8a0cc724",
    "characterName": "운도리아빠",
@@ -1181,6 +1172,15 @@
    "fame": 134978
   },
   {
+   "serverId": "cain",
+   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
+   "characterName": "영양어썰",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
+   "fame": 134951
+  },
+  {
    "serverId": "hilder",
    "characterId": "9f33782351514503704109e6b258e2ec",
    "characterName": "로망캔슬",
@@ -1196,15 +1196,6 @@
    "level": 115,
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 크루세이더",
-   "fame": 134940
-  },
-  {
-   "serverId": "cain",
-   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
-   "characterName": "영양어썰",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 어썰트",
    "fame": 134940
   },
   {
@@ -1635,6 +1626,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "349dfff8bcc87b3e5e9b4be77b09c55e",
+    "characterName": "킹갓제",
+    "level": 115,
+    "jobName": "마법사(남)",
+    "jobGrowName": "眞 빙결사",
+    "fame": 135924
+   },
+   {
+    "serverId": "cain",
     "characterId": "b5ebc37fc6249335ff634d921caca716",
     "characterName": "네골",
     "level": 115,
@@ -1658,15 +1658,6 @@
     "level": 115,
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 소드마스터",
-    "fame": 135864
-   },
-   {
-    "serverId": "cain",
-    "characterId": "e5bdaabfdca2d9874627fea4d99f8ba7",
-    "characterName": "하얀무녀",
-    "level": 115,
-    "jobName": "프리스트(여)",
-    "jobGrowName": "眞 무녀",
     "fame": 135864
    }
   ],
@@ -2293,15 +2284,6 @@
    },
    {
     "serverId": "hilder",
-    "characterId": "f15eaa019d68cb7108bf06082dcff237",
-    "characterName": "희망의꽃",
-    "level": 115,
-    "jobName": "거너(여)",
-    "jobGrowName": "眞 패러메딕",
-    "fame": 134638
-   },
-   {
-    "serverId": "hilder",
     "characterId": "40c0ec33989329e585aa49eea1a039e3",
     "characterName": "Pablo",
     "level": 115,
@@ -2346,15 +2328,6 @@
     "jobName": "격투가(여)",
     "jobGrowName": "眞 스트라이커",
     "fame": 135902
-   },
-   {
-    "serverId": "anton",
-    "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
-    "characterName": "스팅거타이거",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 런처",
-    "fame": 135027
    },
    {
     "serverId": "anton",

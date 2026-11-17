@@ -1,6 +1,23 @@
 {
- "updatedAt": "2026-11-17T13:28:06.394Z",
+ "updatedAt": "2026-11-17T15:07:41.198Z",
  "rows": [
+  {
+   "goodsNo": 4806063,
+   "title": "여귀검사 상급7부위",
+   "price": 1200,
+   "jobName": "귀검사(여)",
+   "avatarRarity": "상급",
+   "soldDate": "2026-11-17",
+   "itemIds": [
+    "84413d667ae10fd9363ba919fe20ee87",
+    "7208791625987b176e13b908a726c382",
+    "adebb03436f81646849bbe91753a146c",
+    "a781d1e858c8470f9ae6e5dc108ab8f6",
+    "1f3206cf24355446805e9f3f70c4cba9",
+    "2fe1b5b76eb8ec5d5e7d93b8db51f493",
+    "7c62a3f318fe673ebf5e239b0d378562"
+   ]
+  },
   {
    "goodsNo": 4805544,
    "title": "여마법사 상급2부위",
@@ -282,18 +299,6 @@
    "itemIds": [
     "ed994372abcfe65a0329cb41687fbc45",
     "9de1d3fa5fb1ba614e5763cc9908859c"
-   ]
-  },
-  {
-   "goodsNo": 4800009,
-   "title": "여거너 상급2부위",
-   "price": 999999,
-   "jobName": "거너(여)",
-   "avatarRarity": "상급",
-   "soldDate": "2026-10-31",
-   "itemIds": [
-    "e7bed4e5291f99d27f07dff5ff8c5707",
-    "988b1b5f85032fb4b4234e6d00ac1d40"
    ]
   }
  ]
