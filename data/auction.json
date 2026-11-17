@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T21:06:17.386Z",
+ "updatedAt": "2026-11-17T22:07:55.609Z",
  "categories": [
   {
    "id": "material",
@@ -11,21 +11,21 @@
      "itemRarity": "언커먼",
      "itemType": "재료",
      "avgPrice": 34,
-     "minPrice": 31,
-     "volume": 5047436,
+     "minPrice": 30,
+     "volume": 4717712,
      "prevAvg": 34,
-     "changePct": 0.006872446781718408
+     "changePct": 0.8441068342400915
     },
     {
      "itemId": "27a5877768a40a3a0eccc493d0a53b9b",
      "itemName": "광휘의 소울 결정",
      "itemRarity": "레전더리",
      "itemType": "부스터",
-     "avgPrice": 14751,
-     "minPrice": 13300,
-     "volume": 2334,
+     "avgPrice": 16332,
+     "minPrice": 12000,
+     "volume": 2261,
      "prevAvg": 17246,
-     "changePct": -14.465339056056711
+     "changePct": -5.300695203159235
     },
     {
      "itemId": "fbdf88559ec0414339d1b4d089b6bd62",
@@ -33,43 +33,43 @@
      "itemRarity": "레어",
      "itemType": "재료",
      "avgPrice": 798,
-     "minPrice": 797,
-     "volume": 31068,
+     "minPrice": 795,
+     "volume": 170078,
      "prevAvg": 800,
-     "changePct": -0.27358536114330434
+     "changePct": -0.23498924023095924
     },
     {
      "itemId": "d288ebf406a65f4ec23d1f9c33227888",
      "itemName": "태초 소울 결정",
      "itemRarity": "태초",
      "itemType": "부스터",
-     "avgPrice": 1728711,
-     "minPrice": 1690000,
-     "volume": 44,
+     "avgPrice": 1748493,
+     "minPrice": 1700000,
+     "volume": 46,
      "prevAvg": 1813951,
-     "changePct": -4.699148433447211
+     "changePct": -3.608587001523195
     },
     {
      "itemId": "c6947ff630cc59aebdcbabfb449258d1",
      "itemName": "레전더리 소울 결정",
      "itemRarity": "레전더리",
      "itemType": "부스터",
-     "avgPrice": 48751,
-     "minPrice": 47999,
-     "volume": 46,
+     "avgPrice": 48136,
+     "minPrice": 46999,
+     "volume": 100,
      "prevAvg": 48027,
-     "changePct": 1.5067611425095058
+     "changePct": 0.22635184375455292
     },
     {
      "itemId": "c7d845c65ab9dbcff6e55dc910fbea87",
      "itemName": "에픽 소울 결정",
      "itemRarity": "에픽",
      "itemType": "부스터",
-     "avgPrice": 982173,
-     "minPrice": 900000,
-     "volume": 18,
+     "avgPrice": 785587,
+     "minPrice": 690000,
+     "volume": 21,
      "prevAvg": 1168541,
-     "changePct": -15.948810430176508
+     "changePct": -32.771953597324725
     }
    ]
   },
@@ -82,11 +82,11 @@
      "itemName": "순수한 증폭서",
      "itemRarity": "레어",
      "itemType": "기타",
-     "avgPrice": 11270928,
+     "avgPrice": 11273104,
      "minPrice": 11200000,
-     "volume": 58,
+     "volume": 56,
      "prevAvg": 11262481,
-     "changePct": 0.07500200184041358
+     "changePct": 0.0943231335972953
     },
     {
      "itemId": "d90d47d8f06131f538f577426225ee7a",
@@ -132,42 +132,53 @@
      "itemName": "적아 울라드 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 738972,
-     "minPrice": 690000,
-     "volume": 44,
+     "avgPrice": 715104,
+     "minPrice": 670000,
+     "volume": 59,
      "prevAvg": 741875,
-     "changePct": -0.3913548288274503
-    },
-    {
-     "itemId": "58cdaa666abe90f37929da81ee642adb",
-     "itemName": "죽음의 트라우마트 카드",
-     "itemRarity": "유니크",
-     "itemType": "전문직업 재료",
-     "avgPrice": 38333,
-     "minPrice": 37000,
-     "volume": 8,
-     "prevAvg": null,
-     "changePct": null
+     "changePct": -3.6085411163308696
     },
     {
      "itemId": "aa5a7fba1ad7ac02921e2af27c0acd34",
      "itemName": "추락한 크리테스 카드",
      "itemRarity": "유니크",
      "itemType": "전문직업 재료",
-     "avgPrice": 37333,
-     "minPrice": 35000,
-     "volume": 6,
+     "avgPrice": 35250,
+     "minPrice": 30003,
+     "volume": 8,
      "prevAvg": null,
      "changePct": null
     },
     {
-     "itemId": "0847901be68daa694c509f067373f10f",
-     "itemName": "손의 트라우마트 카드",
+     "itemId": "58cdaa666abe90f37929da81ee642adb",
+     "itemName": "죽음의 트라우마트 카드",
      "itemRarity": "유니크",
      "itemType": "전문직업 재료",
-     "avgPrice": 36266,
-     "minPrice": 32000,
-     "volume": 5,
+     "avgPrice": 38916,
+     "minPrice": 38888,
+     "volume": 4,
+     "prevAvg": null,
+     "changePct": null
+    },
+    {
+     "itemId": "2abf4a1103ef88fde63cf9b0a110422d",
+     "itemName": "마법을 품은 배니부 카드",
+     "itemRarity": "레전더리",
+     "itemType": "전문직업 재료",
+     "avgPrice": 3893955,
+     "minPrice": 3887909,
+     "volume": 4,
+     "prevAvg": 3500000,
+     "changePct": 11.255842857142857
+    },
+    {
+     "itemId": "fa303a20ed4b974f754728a37a542b58",
+     "itemName": "왜곡된 욕신, 루브라 카드",
+     "itemRarity": "레전더리",
+     "itemType": "전문직업 재료",
+     "avgPrice": 1980000,
+     "minPrice": 890000,
+     "volume": 3,
      "prevAvg": null,
      "changePct": null
     },
@@ -176,20 +187,9 @@
      "itemName": "참혹의 트라우마트 카드",
      "itemRarity": "유니크",
      "itemType": "전문직업 재료",
-     "avgPrice": 38355,
-     "minPrice": 37000,
-     "volume": 5,
-     "prevAvg": null,
-     "changePct": null
-    },
-    {
-     "itemId": "b8a176f8d5c0f0805e4a6320b312688f",
-     "itemName": "뒤얽힌 사념 : 종언 카드",
-     "itemRarity": "유니크",
-     "itemType": "전문직업 재료",
-     "avgPrice": 37177,
-     "minPrice": 31000,
-     "volume": 5,
+     "avgPrice": 38925,
+     "minPrice": 38888,
+     "volume": 3,
      "prevAvg": null,
      "changePct": null
     }
