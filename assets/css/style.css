@@ -246,7 +246,10 @@ select.field--sm { flex: 0 0 auto; }
 .rank-fame { font-size: 14px; font-weight: 700; color: var(--accent); }
 
 /* 랭커 트렌드 */
-.trend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; align-items: start; }
+.trend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; align-items: stretch; }
+/* 두 상자 높이가 같아지도록 직업 분포 막대를 세로로 고르게 펼침 */
+#job-dist { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+#job-dist .bar-list { flex: 1; justify-content: space-between; }
 .trend-grid .chip { height: 34px; padding: 0 14px; font-size: 13px; }
 
 /* 막대 목록 (직업 분포) */
