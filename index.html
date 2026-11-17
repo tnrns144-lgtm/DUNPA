@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>던파노트 · 던전앤파이터 캐릭터 검색과 경매장 시세</title>
+<meta name="description" content="던전앤파이터 캐릭터 검색, 경매장 시세, 명성 랭킹, 아바타 마켓 거래가를 한곳에서 확인하는 팬 정보 사이트">
+<meta property="og:title" content="던파노트 · 던전앤파이터 정보">
+<meta property="og:description" content="캐릭터 검색, 경매장 시세, 명성 랭킹, 아바타 마켓 거래가">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0C0D12">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">던</span><span class="brand-name">던파노트</span></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="character.html">캐릭터</a>
+      <a href="#auction">경매장 시세</a>
+      <a href="#fame">명성 랭킹</a>
+      <a href="#avatar">아바타 마켓</a>
+      <a href="items.html">아이템 사전</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="search">
+  <div class="hero-inner">
+    <p class="eyebrow">던전앤파이터 팬 정보 사이트</p>
+    <h1 class="hero-title">아라드 모험가의 기록</h1>
+    <p class="hero-sub">명성·장비·아바타·크리쳐부터 경매장 시세까지, 던파 정보를 한곳에서</p>
+
+    <form class="search-panel" role="search" id="search-form">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      <label class="sr-only" for="server">서버</label>
+      <select class="field" id="server" name="server"></select>
+      <label class="sr-only" for="charname">캐릭터 이름</label>
+      <input class="field" id="charname" name="name" type="search" placeholder="캐릭터 이름을 입력하세요" autocomplete="off" maxlength="12">
+      <button class="btn-gold" type="submit">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        검색
+      </button>
+    </form>
+
+    <div class="recent-chips" id="recent-chips"></div>
+
+    <nav class="quick-links" aria-label="바로가기">
+      <a class="quick-link" href="#auction">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>
+        <span><strong>경매장 시세</strong><small>1시간마다 갱신</small></span>
+      </a>
+      <a class="quick-link" href="#fame">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4"/><path d="M17 6h3a3 3 0 0 1-3 4"/></svg>
+        <span><strong>명성 랭킹</strong><small>서버·직업별</small></span>
+      </a>
+      <a class="quick-link" href="#avatar">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 6l2 4 2-1v12h8V9l2 1 2-4-4-3a4 4 0 0 1-8 0z"/></svg>
+        <span><strong>아바타 마켓</strong><small>최근 거래가</small></span>
+      </a>
+      <a class="quick-link" href="items.html">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+        <span><strong>아이템 사전</strong><small>옵션·획득처</small></span>
+      </a>
+    </nav>
+  </div>
+</section>
+
+<div class="container">
+  <div class="ad-slot ad-top" data-ad="top" data-label="광고 영역 · 728×90 가로 배너"></div>
+</div>
+
+<div class="container layout">
+  <main>
+    <section class="section" id="auction" aria-labelledby="auction-title">
+      <div class="section-head">
+        <h2 id="auction-title">오늘의 경매장 시세</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <span class="meta" id="auction-updated"></span>
+      </div>
+      <div class="chips" id="auction-tabs" role="group" aria-label="시세 분류"></div>
+      <div class="panel table-wrap" id="auction-table" aria-live="polite"></div>
+      <p class="help">평균 거래가는 최근 거래 기준이고, 전일 대비는 어제 같은 시간대 평균과 비교한 값이에요.</p>
+    </section>
+
+    <section class="section" id="fame" aria-labelledby="fame-title">
+      <div class="section-head">
+        <h2 id="fame-title">명성 랭킹 TOP 10</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <label class="sr-only" for="fame-server">서버</label>
+        <select class="field field--sm" id="fame-server"></select>
+        <label class="sr-only" for="fame-job">직업</label>
+        <select class="field field--sm" id="fame-job"><option value="">전체 직업</option></select>
+      </div>
+      <div id="fame-body" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="avatar" aria-labelledby="avatar-title">
+      <div class="section-head">
+        <h2 id="avatar-title">아바타 마켓 최근 거래</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <span class="meta" id="avatar-updated"></span>
+      </div>
+      <div id="avatar-body" aria-live="polite"></div>
+    </section>
+
+    <div class="ad-slot ad-bottom" data-ad="bottom" data-label="광고 영역 · 본문 하단 가로 배너"></div>
+  </main>
+
+  <aside>
+    <div class="ad-slot ad-side" data-ad="side" data-label="광고 영역 · 300×250"></div>
+
+    <section class="panel panel--pad" aria-labelledby="dict-title">
+      <h2 class="side-title" id="dict-title">아이템 사전</h2>
+      <form class="inline-search" action="items.html" method="get" role="search">
+        <label class="sr-only" for="item-q">아이템 이름</label>
+        <input class="field field--sm" id="item-q" name="q" type="search" placeholder="아이템 이름" autocomplete="off">
+        <button class="btn-gold btn-gold--sm" type="submit" aria-label="아이템 검색">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        </button>
+      </form>
+      <p class="help">아이템 이름으로 옵션과 획득처를 찾아요.</p>
+    </section>
+
+    <section class="panel panel--pad" aria-labelledby="recent-title">
+      <h2 class="side-title" id="recent-title">내 최근 검색</h2>
+      <ol class="side-list" id="recent-list"></ol>
+    </section>
+
+    <section class="panel panel--pad" aria-labelledby="links-title">
+      <h2 class="side-title" id="links-title">바로가기</h2>
+      <ul class="side-list">
+        <li><a href="https://df.nexon.com/" target="_blank" rel="noopener">공식 홈페이지<span class="arrow" aria-hidden="true">›</span></a></li>
+        <li><a href="https://df.nexon.com/community/news/notice/list" target="_blank" rel="noopener">공식 공지사항<span class="arrow" aria-hidden="true">›</span></a></li>
+        <li><a href="https://df.nexon.com/community/news/update/list" target="_blank" rel="noopener">업데이트 소식<span class="arrow" aria-hidden="true">›</span></a></li>
+      </ul>
+    </section>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p>던파노트는 던전앤파이터 공식 사이트가 아닌 팬 정보 사이트입니다.</p>
+      <p>게임 데이터: Powered by Neople Open API · 던전앤파이터의 상표와 게임 콘텐츠의 권리는 (주)네오플에 있습니다.</p>
+    </div>
+    <nav aria-label="사이트 정보">
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="privacy.html#contact">문의하기</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

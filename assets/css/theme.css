@@ -1,0 +1,60 @@
+/*
+ * 던파노트 디자인 값 (테마)
+ * ------------------------------------------------------------
+ * 사이트 전체의 색, 글꼴, 테두리, 간격이 여기에 모여 있어요.
+ * 분위기를 바꾸고 싶으면 이 파일의 값만 바꾸면 돼요.
+ * 다른 게임 사이트를 만들 때도 이 파일만 새로 만들면 배치를 그대로 재활용할 수 있어요.
+ */
+:root {
+  /* 바탕과 면 */
+  --bg: #0C0D12;            /* 페이지 바탕 */
+  --bg-deep: #08080B;       /* 헤더·푸터 */
+  --surface: #15141B;       /* 카드 */
+  --surface-2: #1A1820;     /* 카드 그라데이션 위쪽 */
+  --surface-3: #0B0A0E;     /* 입력창 */
+  --line: #3A3022;          /* 기본 테두리 */
+  --line-soft: #2A2520;     /* 표 구분선 */
+  --line-strong: #6E5527;   /* 강조 테두리 */
+
+  /* 글자 */
+  --text: #ECE7DC;
+  --text-sub: #B9B0A0;
+  --text-dim: #9A927F;
+  --title: #F3E3BF;
+
+  /* 강조색 (금색) */
+  --accent: #E9B95C;
+  --accent-hover: #FFD88A;
+  --accent-light: #F6D58E;
+  --accent-grad: linear-gradient(180deg, #F3CF7E, #C08A34);
+  --accent-ink: #1A1206;    /* 금색 버튼 위 글자 */
+  --title-grad: linear-gradient(180deg, #FFF3D6 0%, #F1C873 55%, #B9832F 100%);
+
+  /* 등락 (국내 관례: 오르면 빨강, 내리면 파랑) */
+  --up: #FF7B7B;
+  --down: #6DB3FF;
+
+  /* 아이템 등급색 */
+  --rarity-common: #C9C9C9;
+  --rarity-uncommon: #68D5ED;
+  --rarity-rare: #B18CFF;
+  --rarity-unique: #F06AB0;
+  --rarity-legendary: #FF8A4C;
+  --rarity-epic: #F2C14E;
+  --rarity-primeval: #6FE0B8;
+  --rarity-mythic: #FF5A7A;
+
+  /* 순위 메달 */
+  --gold: #F1C873;
+  --silver: #C9CED8;
+  --bronze: #D9925A;
+
+  /* 글꼴 */
+  --font-body: 'Noto Sans KR', system-ui, sans-serif;
+  --font-display: 'Black Han Sans', 'Noto Sans KR', sans-serif;
+
+  /* 모양 */
+  --cut: 10px;              /* 카드 모서리 깎임 크기 */
+  --radius: 0px;            /* 둥근 모서리 (0 = 각진 게임 UI) */
+  --max-width: 1200px;
+}
