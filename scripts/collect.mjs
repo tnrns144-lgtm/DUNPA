@@ -187,8 +187,9 @@ async function collectTrends() {
     map.set(item.itemName, cur);
   };
   const isSlot = (s, id, name) => s.slotId === id || s.slotName === name;
-  // 클론 아바타가 있으면 겉으로 보이는 클론 쪽을 셉니다
-  const look = (a) => (a.clone && a.clone.itemName ? a.clone : a);
+  // 클론 아바타가 있으면 겉으로 보이는 클론 쪽을 셉니다.
+  // 단, '레어 무기 클론 아바타' 같은 이름 없는 공용 클론이면 원래 아바타를 셉니다.
+  const look = (a) => (a.clone && a.clone.itemName && !/클론 아바타/.test(a.clone.itemName) ? a.clone : a);
 
   let sample = 0;
   let failed = 0;
