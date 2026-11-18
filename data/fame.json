@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T09:19:27.182Z",
+ "updatedAt": "2026-11-18T09:58:26.306Z",
  "all": [
   {
    "serverId": "cain",
@@ -1053,15 +1053,6 @@
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 무녀",
    "fame": 135864
-  },
-  {
-   "serverId": "bakal",
-   "characterId": "747fc1fe2754ef3f248c7487624ffd65",
-   "characterName": "Spell",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 엘레멘탈마스터",
-   "fame": 135853
   },
   {
    "serverId": "cain",
@@ -2465,15 +2456,6 @@
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 소드마스터",
     "fame": 135942
-   },
-   {
-    "serverId": "bakal",
-    "characterId": "747fc1fe2754ef3f248c7487624ffd65",
-    "characterName": "Spell",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 엘레멘탈마스터",
-    "fame": 135853
    },
    {
     "serverId": "bakal",
