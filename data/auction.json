@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T11:15:44.721Z",
+ "updatedAt": "2026-11-18T12:15:07.522Z",
  "categories": [
   {
    "id": "material",
@@ -11,65 +11,65 @@
      "itemRarity": "언커먼",
      "itemType": "재료",
      "avgPrice": 33,
-     "minPrice": 32,
-     "volume": 7759835,
+     "minPrice": 30,
+     "volume": 6931266,
      "prevAvg": 34,
-     "changePct": -2.1391119633797473
+     "changePct": -2.7166775457589365
+    },
+    {
+     "itemId": "0620c107b1aae1f3a6cf9eee3aaf43d7",
+     "itemName": "유니크 소울 결정",
+     "itemRarity": "유니크",
+     "itemType": "부스터",
+     "avgPrice": 2369,
+     "minPrice": 1950,
+     "volume": 4040,
+     "prevAvg": null,
+     "changePct": null
     },
     {
      "itemId": "27a5877768a40a3a0eccc493d0a53b9b",
      "itemName": "광휘의 소울 결정",
      "itemRarity": "레전더리",
      "itemType": "부스터",
-     "avgPrice": 18579,
-     "minPrice": 15500,
-     "volume": 1292,
+     "avgPrice": 19341,
+     "minPrice": 16299,
+     "volume": 962,
      "prevAvg": 17246,
-     "changePct": 7.732003364893878
+     "changePct": 12.148142218883255
     },
     {
      "itemId": "c7d845c65ab9dbcff6e55dc910fbea87",
      "itemName": "에픽 소울 결정",
      "itemRarity": "에픽",
      "itemType": "부스터",
-     "avgPrice": 1131790,
-     "minPrice": 999800,
-     "volume": 300,
+     "avgPrice": 1196450,
+     "minPrice": 1150000,
+     "volume": 91,
      "prevAvg": 1168541,
-     "changePct": -3.1450746415116435
+     "changePct": 2.3883394142546432
+    },
+    {
+     "itemId": "d288ebf406a65f4ec23d1f9c33227888",
+     "itemName": "태초 소울 결정",
+     "itemRarity": "태초",
+     "itemType": "부스터",
+     "avgPrice": 1906923,
+     "minPrice": 1400000,
+     "volume": 26,
+     "prevAvg": 1813951,
+     "changePct": 5.125382277521444
     },
     {
      "itemId": "c6947ff630cc59aebdcbabfb449258d1",
      "itemName": "레전더리 소울 결정",
      "itemRarity": "레전더리",
      "itemType": "부스터",
-     "avgPrice": 47349,
+     "avgPrice": 46924,
      "minPrice": 45000,
-     "volume": 434,
+     "volume": 107,
      "prevAvg": 48027,
-     "changePct": -1.4112453450003546
-    },
-    {
-     "itemId": "fbdf88559ec0414339d1b4d089b6bd62",
-     "itemName": "황금 큐브 조각",
-     "itemRarity": "레어",
-     "itemType": "재료",
-     "avgPrice": 792,
-     "minPrice": 785,
-     "volume": 10318,
-     "prevAvg": 800,
-     "changePct": -1.0229937972475227
-    },
-    {
-     "itemId": "9e166de62df8867fadd7a7f71cbfb554",
-     "itemName": "[에픽] 소울 할인권 1개 상자",
-     "itemRarity": "에픽",
-     "itemType": "부스터",
-     "avgPrice": 856738,
-     "minPrice": 839000,
-     "volume": 17,
-     "prevAvg": null,
-     "changePct": null
+     "changePct": -2.2974810314058214
     }
    ]
   },
@@ -82,22 +82,22 @@
      "itemName": "순수한 증폭서",
      "itemRarity": "레어",
      "itemType": "기타",
-     "avgPrice": 11369666,
-     "minPrice": 11239000,
-     "volume": 28,
+     "avgPrice": 11435485,
+     "minPrice": 11248000,
+     "volume": 20,
      "prevAvg": 11262481,
-     "changePct": 0.9517028898237995
+     "changePct": 1.536111803429464
     },
     {
      "itemId": "d90d47d8f06131f538f577426225ee7a",
      "itemName": "고대의 황금 증폭서",
      "itemRarity": "유니크",
      "itemType": "기타",
-     "avgPrice": 31800000,
+     "avgPrice": 32012908,
      "minPrice": 31800000,
-     "volume": 3,
+     "volume": 8,
      "prevAvg": 31800000,
-     "changePct": 0
+     "changePct": 0.6695227987421384
     },
     {
      "itemId": "cc319038d2f601b56aa20b2a4754e0ad",
@@ -143,66 +143,66 @@
      "itemName": "적아 울라드 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 655608,
-     "minPrice": 599000,
-     "volume": 118,
+     "avgPrice": 684150,
+     "minPrice": 640000,
+     "volume": 109,
      "prevAvg": 741875,
-     "changePct": -11.628266674282129
+     "changePct": -7.780914648756018
     },
     {
      "itemId": "b91b4a562579211afc372fc93ad2097f",
      "itemName": "땅지기 카메린 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 660276,
-     "minPrice": 630000,
-     "volume": 33,
+     "avgPrice": 688818,
+     "minPrice": 620000,
+     "volume": 24,
      "prevAvg": 731330,
-     "changePct": -9.715756556444072
+     "changePct": -5.812970888654916
+    },
+    {
+     "itemId": "5f5d0a2e9dd8050b6e3c4655a09cf296",
+     "itemName": "기억의 도서관지기 카드",
+     "itemRarity": "레전더리",
+     "itemType": "전문직업 재료",
+     "avgPrice": 862714,
+     "minPrice": 854000,
+     "volume": 7,
+     "prevAvg": null,
+     "changePct": null
+    },
+    {
+     "itemId": "377b924a474633cbb2bc34a1512489e6",
+     "itemName": "영혼 사육자 몬데그린 카드",
+     "itemRarity": "유니크",
+     "itemType": "전문직업 재료",
+     "avgPrice": 54167,
+     "minPrice": 50000,
+     "volume": 6,
+     "prevAvg": null,
+     "changePct": null
     },
     {
      "itemId": "9f765670c9fdefeec6a7b31571748d04",
      "itemName": "폭음 크래시머 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 3166672,
-     "minPrice": 2000017,
+     "avgPrice": 2366667,
+     "minPrice": 2300000,
      "volume": 3,
      "prevAvg": 4216333,
-     "changePct": -24.895108300664738
+     "changePct": -43.86907612215006
     },
     {
-     "itemId": "cceb886a8e28517bb3dce05ddb85c2e7",
-     "itemName": "허망한 맹신, 호스디그 카드",
-     "itemRarity": "유니크",
-     "itemType": "전문직업 재료",
-     "avgPrice": 100500,
-     "minPrice": 51000,
-     "volume": 2,
-     "prevAvg": null,
-     "changePct": null
-    },
-    {
-     "itemId": "8745d6c19285f33c027cd76d1b43891d",
-     "itemName": "희망의 속삭임 레미엘 카드",
-     "itemRarity": "유니크",
-     "itemType": "전문직업 재료",
-     "avgPrice": 133835,
-     "minPrice": 67795,
-     "volume": 2,
-     "prevAvg": null,
-     "changePct": null
-    },
-    {
-     "itemId": "d764ad320566b4ecff5931574a148bb7",
-     "itemName": "거짓의 베리디쿠스 카드",
+     "itemId": "d9b8fb2e0aaeead63f6ab2c99b8bb3ae",
+     "itemName": "백금의 행운, 엘리브 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 9025000,
-     "minPrice": 7300000,
-     "volume": 2,
-     "prevAvg": 7678477,
-     "changePct": 17.536329144438408
+     "avgPrice": 4750000,
+     "minPrice": 4700000,
+     "volume": 3,
+     "prevAvg": 4800000,
+     "changePct": -1.0416666666666665
     }
    ]
   }

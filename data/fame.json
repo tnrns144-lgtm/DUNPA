@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T11:15:44.721Z",
+ "updatedAt": "2026-11-18T12:15:07.522Z",
  "all": [
   {
    "serverId": "cain",
@@ -44,6 +44,15 @@
    "level": 115,
    "jobName": "마법사(여)",
    "jobGrowName": "眞 엘레멘탈마스터",
+   "fame": 136707
+  },
+  {
+   "serverId": "diregie",
+   "characterId": "cd16f8a097b58c45a421fca214a268b8",
+   "characterName": "뷰",
+   "level": 115,
+   "jobName": "나이트",
+   "jobGrowName": "眞 팔라딘",
    "fame": 136707
   },
   {
@@ -99,15 +108,6 @@
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 다크템플러",
    "fame": 136647
-  },
-  {
-   "serverId": "diregie",
-   "characterId": "cd16f8a097b58c45a421fca214a268b8",
-   "characterName": "뷰",
-   "level": 115,
-   "jobName": "나이트",
-   "jobGrowName": "眞 팔라딘",
-   "fame": 136638
   },
   {
    "serverId": "diregie",
@@ -260,15 +260,6 @@
    "level": 115,
    "jobName": "격투가(여)",
    "jobGrowName": "眞 넨마스터",
-   "fame": 136394
-  },
-  {
-   "serverId": "bakal",
-   "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
-   "characterName": "오후햇살",
-   "level": 115,
-   "jobName": "귀검사(남)",
-   "jobGrowName": "眞 웨펀마스터",
    "fame": 136394
   },
   {
@@ -1646,21 +1637,21 @@
   "diregie": [
    {
     "serverId": "diregie",
+    "characterId": "cd16f8a097b58c45a421fca214a268b8",
+    "characterName": "뷰",
+    "level": 115,
+    "jobName": "나이트",
+    "jobGrowName": "眞 팔라딘",
+    "fame": 136707
+   },
+   {
+    "serverId": "diregie",
     "characterId": "4cd43256f95e1c78e039bcd6180b3849",
     "characterName": "STRIKER",
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 스트라이커",
     "fame": 136685
-   },
-   {
-    "serverId": "diregie",
-    "characterId": "cd16f8a097b58c45a421fca214a268b8",
-    "characterName": "뷰",
-    "level": 115,
-    "jobName": "나이트",
-    "jobGrowName": "眞 팔라딘",
-    "fame": 136638
    },
    {
     "serverId": "diregie",
@@ -2284,6 +2275,15 @@
    },
    {
     "serverId": "hilder",
+    "characterId": "f15eaa019d68cb7108bf06082dcff237",
+    "characterName": "희망의꽃",
+    "level": 115,
+    "jobName": "거너(여)",
+    "jobGrowName": "眞 패러메딕",
+    "fame": 134638
+   },
+   {
+    "serverId": "hilder",
     "characterId": "40c0ec33989329e585aa49eea1a039e3",
     "characterName": "Pablo",
     "level": 115,
@@ -2393,15 +2393,6 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
     "fame": 136432
-   },
-   {
-    "serverId": "bakal",
-    "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
-    "characterName": "오후햇살",
-    "level": 115,
-    "jobName": "귀검사(남)",
-    "jobGrowName": "眞 웨펀마스터",
-    "fame": 136394
    },
    {
     "serverId": "bakal",
