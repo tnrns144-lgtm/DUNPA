@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T13:38:01.274Z",
+ "updatedAt": "2026-11-18T15:12:50.137Z",
  "all": [
   {
    "serverId": "cain",
@@ -161,6 +161,15 @@
    "level": 115,
    "jobName": "격투가(여)",
    "jobGrowName": "眞 스트리트파이터",
+   "fame": 136501
+  },
+  {
+   "serverId": "cain",
+   "characterId": "82a61ac21fa1a12caf639644bf50c524",
+   "characterName": "별빛하울링",
+   "level": 115,
+   "jobName": "아처",
+   "jobGrowName": "眞 트래블러",
    "fame": 136501
   },
   {
@@ -1019,6 +1028,15 @@
    "fame": 135886
   },
   {
+   "serverId": "bakal",
+   "characterId": "149440a852ced4df822a6cb5a4ae9548",
+   "characterName": "=아스나=",
+   "level": 115,
+   "jobName": "귀검사(여)",
+   "jobGrowName": "眞 소드마스터",
+   "fame": 135864
+  },
+  {
    "serverId": "prey",
    "characterId": "08751d5bc043bb74235128d9ea1fc0a9",
    "characterName": "강춘식",
@@ -1289,6 +1307,15 @@
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 스트리트파이터",
+    "fame": 136501
+   },
+   {
+    "serverId": "cain",
+    "characterId": "82a61ac21fa1a12caf639644bf50c524",
+    "characterName": "별빛하울링",
+    "level": 115,
+    "jobName": "아처",
+    "jobGrowName": "眞 트래블러",
     "fame": 136501
    },
    {
@@ -1650,15 +1677,6 @@
     "jobName": "총검사",
     "jobGrowName": "眞 요원",
     "fame": 135823
-   },
-   {
-    "serverId": "cain",
-    "characterId": "80d5795bf263d0e142271bbe8e78b524",
-    "characterName": "Rovyn",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 어썰트",
-    "fame": 135584
    }
   ],
   "diregie": [
@@ -2293,6 +2311,15 @@
    },
    {
     "serverId": "hilder",
+    "characterId": "940a89fff60ad2b522e1ad1dda0c08dc",
+    "characterName": "소라센",
+    "level": 115,
+    "jobName": "아처",
+    "jobGrowName": "眞 뮤즈",
+    "fame": 134756
+   },
+   {
+    "serverId": "hilder",
     "characterId": "4440974784382c5a8f4fe6a879916248",
     "characterName": "게장맛꽃게랑",
     "level": 115,
@@ -2510,6 +2537,15 @@
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 소드마스터",
     "fame": 135942
+   },
+   {
+    "serverId": "bakal",
+    "characterId": "149440a852ced4df822a6cb5a4ae9548",
+    "characterName": "=아스나=",
+    "level": 115,
+    "jobName": "귀검사(여)",
+    "jobGrowName": "眞 소드마스터",
+    "fame": 135864
    },
    {
     "serverId": "bakal",
