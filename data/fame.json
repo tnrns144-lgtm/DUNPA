@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T12:15:07.522Z",
+ "updatedAt": "2026-11-18T13:38:01.274Z",
  "all": [
   {
    "serverId": "cain",
@@ -263,6 +263,15 @@
    "fame": 136394
   },
   {
+   "serverId": "bakal",
+   "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
+   "characterName": "오후햇살",
+   "level": 115,
+   "jobName": "귀검사(남)",
+   "jobGrowName": "眞 웨펀마스터",
+   "fame": 136394
+  },
+  {
    "serverId": "diregie",
    "characterId": "e393bde2f4113d633c8fb8e9ab597d87",
    "characterName": "로그대체왜함",
@@ -368,6 +377,15 @@
    "level": 115,
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 데몬슬레이어",
+   "fame": 136307
+  },
+  {
+   "serverId": "prey",
+   "characterId": "82bb52af2ac3d3dab12465b1f1cd9e27",
+   "characterName": "라스이솔레트",
+   "level": 115,
+   "jobName": "귀검사(남)",
+   "jobGrowName": "眞 검귀",
    "fame": 136307
   },
   {
@@ -579,15 +597,6 @@
   },
   {
    "serverId": "cain",
-   "characterId": "80d5795bf263d0e142271bbe8e78b524",
-   "characterName": "Rovyn",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 어썰트",
-   "fame": 136184
-  },
-  {
-   "serverId": "cain",
    "characterId": "2debff56c76abb75dfd1aa6a165d9da0",
    "characterName": "VluGod",
    "level": 115,
@@ -729,6 +738,15 @@
    "jobName": "마법사(여)",
    "jobGrowName": "眞 배틀메이지",
    "fame": 136090
+  },
+  {
+   "serverId": "cain",
+   "characterId": "25094509919d20bb888a601cf5c287b7",
+   "characterName": "눈꽃",
+   "level": 115,
+   "jobName": "제국기사",
+   "jobGrowName": "眞 브레이커",
+   "fame": 136085
   },
   {
    "serverId": "diregie",
@@ -1055,6 +1073,15 @@
    "fame": 135823
   },
   {
+   "serverId": "cain",
+   "characterId": "80d5795bf263d0e142271bbe8e78b524",
+   "characterName": "Rovyn",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
+   "fame": 135584
+  },
+  {
    "serverId": "casillas",
    "characterId": "609decd70233908cf4d2948297798555",
    "characterName": "The_연우",
@@ -1062,15 +1089,6 @@
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 베가본드",
    "fame": 135420
-  },
-  {
-   "serverId": "cain",
-   "characterId": "25094509919d20bb888a601cf5c287b7",
-   "characterName": "눈꽃",
-   "level": 115,
-   "jobName": "제국기사",
-   "jobGrowName": "眞 브레이커",
-   "fame": 135405
   },
   {
    "serverId": "cain",
@@ -1115,6 +1133,15 @@
    "level": 115,
    "jobName": "귀검사(남)",
    "jobGrowName": "眞 소울브링어",
+   "fame": 135027
+  },
+  {
+   "serverId": "anton",
+   "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
+   "characterName": "스팅거타이거",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 런처",
    "fame": 135027
   },
   {
@@ -1419,15 +1446,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "80d5795bf263d0e142271bbe8e78b524",
-    "characterName": "Rovyn",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 어썰트",
-    "fame": 136184
-   },
-   {
-    "serverId": "cain",
     "characterId": "2debff56c76abb75dfd1aa6a165d9da0",
     "characterName": "VluGod",
     "level": 115,
@@ -1497,6 +1515,15 @@
     "jobName": "마법사(여)",
     "jobGrowName": "眞 배틀메이지",
     "fame": 136090
+   },
+   {
+    "serverId": "cain",
+    "characterId": "25094509919d20bb888a601cf5c287b7",
+    "characterName": "눈꽃",
+    "level": 115,
+    "jobName": "제국기사",
+    "jobGrowName": "眞 브레이커",
+    "fame": 136085
    },
    {
     "serverId": "cain",
@@ -1626,12 +1653,12 @@
    },
    {
     "serverId": "cain",
-    "characterId": "25094509919d20bb888a601cf5c287b7",
-    "characterName": "눈꽃",
+    "characterId": "80d5795bf263d0e142271bbe8e78b524",
+    "characterName": "Rovyn",
     "level": 115,
-    "jobName": "제국기사",
-    "jobGrowName": "眞 브레이커",
-    "fame": 135405
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 어썰트",
+    "fame": 135584
    }
   ],
   "diregie": [
@@ -1898,6 +1925,15 @@
     "level": 115,
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 데몬슬레이어",
+    "fame": 136307
+   },
+   {
+    "serverId": "prey",
+    "characterId": "82bb52af2ac3d3dab12465b1f1cd9e27",
+    "characterName": "라스이솔레트",
+    "level": 115,
+    "jobName": "귀검사(남)",
+    "jobGrowName": "眞 검귀",
     "fame": 136307
    },
    {
@@ -2331,6 +2367,15 @@
    },
    {
     "serverId": "anton",
+    "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
+    "characterName": "스팅거타이거",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 런처",
+    "fame": 135027
+   },
+   {
+    "serverId": "anton",
     "characterId": "32483f87d78984c740bb710cfc30ca36",
     "characterName": "황야",
     "level": 115,
@@ -2393,6 +2438,15 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
     "fame": 136432
+   },
+   {
+    "serverId": "bakal",
+    "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
+    "characterName": "오후햇살",
+    "level": 115,
+    "jobName": "귀검사(남)",
+    "jobGrowName": "眞 웨펀마스터",
+    "fame": 136394
    },
    {
     "serverId": "bakal",
