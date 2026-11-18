@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T15:12:50.137Z",
+ "updatedAt": "2026-11-18T16:17:27.032Z",
  "all": [
   {
    "serverId": "cain",
@@ -126,15 +126,6 @@
    "jobName": "거너(남)",
    "jobGrowName": "眞 레인저",
    "fame": 136598
-  },
-  {
-   "serverId": "cain",
-   "characterId": "b2edbd877ee7d62f37625dd65b6c1fc6",
-   "characterName": "반말",
-   "level": 115,
-   "jobName": "도적",
-   "jobGrowName": "眞 로그",
-   "fame": 136592
   },
   {
    "serverId": "hilder",
@@ -603,6 +594,15 @@
    "jobName": "마법사(여)",
    "jobGrowName": "眞 배틀메이지",
    "fame": 136213
+  },
+  {
+   "serverId": "cain",
+   "characterId": "80d5795bf263d0e142271bbe8e78b524",
+   "characterName": "Rovyn",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
+   "fame": 136184
   },
   {
    "serverId": "cain",
@@ -1091,15 +1091,6 @@
    "fame": 135823
   },
   {
-   "serverId": "cain",
-   "characterId": "80d5795bf263d0e142271bbe8e78b524",
-   "characterName": "Rovyn",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 어썰트",
-   "fame": 135584
-  },
-  {
    "serverId": "casillas",
    "characterId": "609decd70233908cf4d2948297798555",
    "characterName": "The_연우",
@@ -1293,15 +1284,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "b2edbd877ee7d62f37625dd65b6c1fc6",
-    "characterName": "반말",
-    "level": 115,
-    "jobName": "도적",
-    "jobGrowName": "眞 로그",
-    "fame": 136592
-   },
-   {
-    "serverId": "cain",
     "characterId": "0fa3ea10e23577bf4849937c101c9f2b",
     "characterName": "꿈처럼멋지게",
     "level": 115,
@@ -1470,6 +1452,15 @@
     "jobName": "귀검사(남)",
     "jobGrowName": "眞 버서커",
     "fame": 136220
+   },
+   {
+    "serverId": "cain",
+    "characterId": "80d5795bf263d0e142271bbe8e78b524",
+    "characterName": "Rovyn",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 어썰트",
+    "fame": 136184
    },
    {
     "serverId": "cain",
