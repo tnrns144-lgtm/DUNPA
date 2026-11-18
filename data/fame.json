@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T18:04:34.592Z",
+ "updatedAt": "2026-11-18T19:13:40.781Z",
  "all": [
   {
    "serverId": "cain",
@@ -477,15 +477,6 @@
    "jobName": "거너(여)",
    "jobGrowName": "眞 스핏파이어",
    "fame": 136258
-  },
-  {
-   "serverId": "diregie",
-   "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
-   "characterName": "룡이찡~♥",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 마도학자",
-   "fame": 136243
   },
   {
    "serverId": "siroco",
@@ -984,6 +975,15 @@
   },
   {
    "serverId": "cain",
+   "characterId": "490f897136f1087bc1c6264c1b110ef3",
+   "characterName": "르베리오",
+   "level": 115,
+   "jobName": "총검사",
+   "jobGrowName": "眞 요원",
+   "fame": 135908
+  },
+  {
+   "serverId": "cain",
    "characterId": "b5ebc37fc6249335ff634d921caca716",
    "characterName": "네골",
    "level": 115,
@@ -1080,15 +1080,6 @@
    "jobName": "마법사(여)",
    "jobGrowName": "眞 엘레멘탈마스터",
    "fame": 135853
-  },
-  {
-   "serverId": "cain",
-   "characterId": "490f897136f1087bc1c6264c1b110ef3",
-   "characterName": "르베리오",
-   "level": 115,
-   "jobName": "총검사",
-   "jobGrowName": "眞 요원",
-   "fame": 135823
   },
   {
    "serverId": "casillas",
@@ -1626,6 +1617,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "490f897136f1087bc1c6264c1b110ef3",
+    "characterName": "르베리오",
+    "level": 115,
+    "jobName": "총검사",
+    "jobGrowName": "眞 요원",
+    "fame": 135908
+   },
+   {
+    "serverId": "cain",
     "characterId": "b5ebc37fc6249335ff634d921caca716",
     "characterName": "네골",
     "level": 115,
@@ -1659,15 +1659,6 @@
     "jobName": "프리스트(여)",
     "jobGrowName": "眞 무녀",
     "fame": 135864
-   },
-   {
-    "serverId": "cain",
-    "characterId": "490f897136f1087bc1c6264c1b110ef3",
-    "characterName": "르베리오",
-    "level": 115,
-    "jobName": "총검사",
-    "jobGrowName": "眞 요원",
-    "fame": 135823
    }
   ],
   "diregie": [
@@ -1733,15 +1724,6 @@
     "jobName": "나이트",
     "jobGrowName": "眞 팔라딘",
     "fame": 136263
-   },
-   {
-    "serverId": "diregie",
-    "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
-    "characterName": "룡이찡~♥",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 마도학자",
-    "fame": 136243
    },
    {
     "serverId": "diregie",
