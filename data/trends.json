@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-11-17T12:32:55.537Z",
- "sample": 134,
+ "updatedAt": "2026-11-18T09:19:27.182Z",
+ "sample": 132,
  "title": [
   {
    "itemId": "a77ac3d7c8ac9101494d10e46aa90409",
    "itemName": "이터널 크로노스[30Lv]",
    "itemRarity": "레어",
-   "count": 16
+   "count": 14
   },
   {
    "itemId": "7cdecc590ff1920d9cbffc684070d72a",
@@ -27,10 +27,16 @@
    "count": 7
   },
   {
-   "itemId": "7ab3ca045ffc15aa75bf43f183c72eb6",
-   "itemName": "순백의 눈꽃 결정[35Lv]",
+   "itemId": "a33cbd6ee4519308cafb65cd3189b279",
+   "itemName": "프로스트의 전설 플래티넘[80Lv]",
    "itemRarity": "레어",
-   "count": 7
+   "count": 6
+  },
+  {
+   "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
+   "itemName": "프로스트의 전설 플래티넘[75Lv]",
+   "itemRarity": "레어",
+   "count": 5
   },
   {
    "itemId": "beeb9b751428db954306ac80a3ccf985",
@@ -45,8 +51,8 @@
    "count": 5
   },
   {
-   "itemId": "a33cbd6ee4519308cafb65cd3189b279",
-   "itemName": "프로스트의 전설 플래티넘[80Lv]",
+   "itemId": "7ab3ca045ffc15aa75bf43f183c72eb6",
+   "itemName": "순백의 눈꽃 결정[35Lv]",
    "itemRarity": "레어",
    "count": 5
   },
@@ -55,21 +61,9 @@
    "itemName": "이터널 크로노스[45Lv]",
    "itemRarity": "레어",
    "count": 5
-  },
-  {
-   "itemId": "131aeea81c05b09dc803a2609c811876",
-   "itemName": "순백의 눈꽃 결정[75Lv]",
-   "itemRarity": "레어",
-   "count": 4
   }
  ],
  "creature": [
-  {
-   "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
-   "itemName": "순백의 옵타티오[30Lv]",
-   "itemRarity": "레어",
-   "count": 20
-  },
   {
    "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
    "itemName": "운명을 담는 여신[30Lv]",
@@ -77,16 +71,16 @@
    "count": 19
   },
   {
+   "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
+   "itemName": "순백의 옵타티오[30Lv]",
+   "itemRarity": "레어",
+   "count": 18
+  },
+  {
    "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
    "itemName": "운명을 담는 재단사 플래티넘[30Lv]",
    "itemRarity": "레어",
-   "count": 11
-  },
-  {
-   "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
-   "itemName": "운명을 담는 여신[35Lv]",
-   "itemRarity": "레어",
-   "count": 8
+   "count": 10
   },
   {
    "itemId": "9f0296852b314a1eab704fa89f48d2f6",
@@ -95,8 +89,14 @@
    "count": 7
   },
   {
-   "itemId": "c75fc16df20dc6aab207e9f9e2fd610a",
-   "itemName": "순백의 옵타티오[35Lv]",
+   "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
+   "itemName": "운명을 담는 여신[35Lv]",
+   "itemRarity": "레어",
+   "count": 7
+  },
+  {
+   "itemId": "161ce34497f84534a40c7968e2e6a043",
+   "itemName": "트로피컬 가이드 운디네[30Lv]",
    "itemRarity": "레어",
    "count": 6
   },
@@ -113,16 +113,16 @@
    "count": 5
   },
   {
-   "itemId": "161ce34497f84534a40c7968e2e6a043",
-   "itemName": "트로피컬 가이드 운디네[30Lv]",
+   "itemId": "c75fc16df20dc6aab207e9f9e2fd610a",
+   "itemName": "순백의 옵타티오[35Lv]",
    "itemRarity": "레어",
    "count": 5
   },
   {
-   "itemId": "f3d5ea283fdac01378ac70c7b2863d51",
-   "itemName": "운명을 담는 재단사 플래티넘[35Lv]",
+   "itemId": "c64bb148fe80d998a033392671725fdd",
+   "itemName": "운명을 담는 여신[80Lv]",
    "itemRarity": "레어",
-   "count": 4
+   "count": 5
   }
  ],
  "aura": [
@@ -130,13 +130,13 @@
    "itemId": "c6ca900e513cccb177890939de234227",
    "itemName": "열대야의 추억",
    "itemRarity": "레어",
-   "count": 60
+   "count": 61
   },
   {
    "itemId": "b115f9551fd7e226df474a14607b05ae",
    "itemName": "루미너스 게이트",
    "itemRarity": "레어",
-   "count": 42
+   "count": 39
   },
   {
    "itemId": "1c914aadf7b1828de3813b388ffec5e4",
@@ -165,26 +165,14 @@
    "count": 4
   },
   {
-   "itemId": "5465a9c7772ba3601d4fc8fe71b13ef2",
-   "itemName": "세레나데가 감싸는 우든 리라",
-   "itemRarity": "",
-   "count": 3
-  },
-  {
-   "itemId": "a475ee2b337d69cd894d51ec39f537ba",
-   "itemName": "레어 무기 클론 아바타[40Lv]",
+   "itemId": "2650069a87d6eaaac188383346669205",
+   "itemName": "레어 무기 클론 아바타[80Lv]",
    "itemRarity": "레어",
-   "count": 3
+   "count": 4
   },
   {
    "itemId": "d10215a9bff4371191ac8e4fe785e2a3",
    "itemName": "레어 무기 클론 아바타[70Lv]",
-   "itemRarity": "레어",
-   "count": 3
-  },
-  {
-   "itemId": "2650069a87d6eaaac188383346669205",
-   "itemName": "레어 무기 클론 아바타[80Lv]",
    "itemRarity": "레어",
    "count": 3
   },
@@ -203,6 +191,18 @@
   {
    "itemId": "7b2c1733cd628a57abdd14d4c23ffbf6",
    "itemName": "셋쇼마루의 무기",
+   "itemRarity": "",
+   "count": 2
+  },
+  {
+   "itemId": "057019a91f6be1d16e25ec65deaccd33",
+   "itemName": "자연의 무기",
+   "itemRarity": "",
+   "count": 2
+  },
+  {
+   "itemId": "f742d25f8e25513de703149cbd432e65",
+   "itemName": "엘프 여왕의 정령",
    "itemRarity": "",
    "count": 2
   }
