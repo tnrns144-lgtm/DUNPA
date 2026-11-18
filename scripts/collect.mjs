@@ -1,4 +1,4 @@
-// 던파노트 데이터 수집 스크립트
+// 던랩 데이터 수집 스크립트
 // GitHub Actions가 1시간마다 실행해요. 직접 실행하려면:
 //   NEOPLE_API_KEY=발급받은키 node scripts/collect.mjs
 // Node.js 18 이상 필요 (fetch 내장)

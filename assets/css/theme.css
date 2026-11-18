@@ -1,40 +1,58 @@
 /*
- * 던파노트 디자인 값 (테마)
+ * 던랩 디자인 값 (테마) — 콘셉트: 아라드의 마도 연구소
  * ------------------------------------------------------------
  * 사이트 전체의 색, 글꼴, 테두리, 간격이 여기에 모여 있어요.
  * 분위기를 바꾸고 싶으면 이 파일의 값만 바꾸면 돼요.
  * 다른 게임 사이트를 만들 때도 이 파일만 새로 만들면 배치를 그대로 재활용할 수 있어요.
+ *
+ * 색 구성: 어두운 청록 바탕(실험실 조명이 꺼진 밤) + 마력 빛 하늘색(강조) + 설계도 격자 무늬
  */
 :root {
   /* 바탕과 면 */
-  --bg: #0C0D12;            /* 페이지 바탕 */
-  --bg-deep: #08080B;       /* 헤더·푸터 */
-  --surface: #15141B;       /* 카드 */
-  --surface-2: #1A1820;     /* 카드 그라데이션 위쪽 */
-  --surface-3: #0B0A0E;     /* 입력창 */
-  --line: #3A3022;          /* 기본 테두리 */
-  --line-soft: #2A2520;     /* 표 구분선 */
-  --line-strong: #6E5527;   /* 강조 테두리 */
+  --bg: #070C11;            /* 페이지 바탕 */
+  --bg-deep: #04080B;       /* 헤더·푸터 */
+  --bg-pattern:             /* 바탕에 깔리는 설계도 격자 (없애려면 none) */
+    linear-gradient(rgba(94, 214, 232, 0.035) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, rgba(94, 214, 232, 0.035) 1px, transparent 1px) 0 0 / 28px 28px;
+  --surface: #0C151C;       /* 카드 */
+  --surface-2: #10202A;     /* 카드 그라데이션 위쪽 */
+  --surface-3: #050A0E;     /* 입력창·아이콘 칸 */
+  --surface-deep: #0A1218;  /* 카드 그라데이션 아래쪽 */
+  --header-bg: rgba(4, 9, 13, 0.9);
+  --hero-base: #061118;     /* 배경 그림이 뜨기 전 색 */
+  --glass: rgba(8, 18, 25, 0.82);        /* 반투명 유리판 (검색창·바로가기) */
+  --glass-hover: rgba(14, 34, 44, 0.92);
+  --chip-bg: rgba(16, 36, 46, 0.8);
+
+  /* 선 */
+  --line: #1B3442;          /* 기본 테두리 */
+  --line-soft: #13232D;     /* 표 구분선 */
+  --line-strong: #2B6C80;   /* 강조 테두리 */
+  --line-chip: #24485A;     /* 버튼·태그 테두리 */
+  --panel-glow: rgba(94, 214, 232, 0.16);  /* 카드 위쪽 가는 빛줄기 */
 
   /* 글자 */
-  --text: #ECE7DC;
-  --text-sub: #B9B0A0;
-  --text-dim: #9A927F;
-  --title: #F3E3BF;
+  --text: #E2EEF2;
+  --text-soft: #C4D6DD;
+  --text-sub: #93AAB5;
+  --text-dim: #6F8894;
+  --title: #DDF7FF;
 
-  /* 강조색 (금색) */
-  --accent: #E9B95C;
-  --accent-hover: #FFD88A;
-  --accent-light: #F6D58E;
-  --accent-grad: linear-gradient(180deg, #F3CF7E, #C08A34);
-  --accent-ink: #1A1206;    /* 금색 버튼 위 글자 */
-  --title-grad: linear-gradient(180deg, #FFF3D6 0%, #F1C873 55%, #B9832F 100%);
+  /* 강조색 (마력 빛 하늘색) */
+  --accent: #5ED6E8;
+  --accent-hover: #9BEAF5;
+  --accent-light: #A9F0F9;
+  --accent-soft: rgba(94, 214, 232, 0.07);
+  --accent-grad: linear-gradient(180deg, #86ECF7, #1F9CB4);
+  --accent-ink: #02161B;    /* 하늘색 버튼 위 글자 */
+  --title-grad: linear-gradient(180deg, #F4FEFF 0%, #8FE8F4 55%, #2C9FB9 100%);
+  --title-glow: rgba(70, 200, 230, 0.4);
 
   /* 등락 (국내 관례: 오르면 빨강, 내리면 파랑) */
   --up: #FF7B7B;
   --down: #6DB3FF;
 
-  /* 아이템 등급색 */
+  /* 아이템 등급색 (게임과 같게 유지) */
   --rarity-common: #C9C9C9;
   --rarity-uncommon: #68D5ED;
   --rarity-rare: #B18CFF;
@@ -46,12 +64,13 @@
 
   /* 순위 메달 */
   --gold: #F1C873;
-  --silver: #C9CED8;
+  --silver: #C9D6DE;
   --bronze: #D9925A;
 
   /* 글꼴 */
   --font-body: 'Noto Sans KR', system-ui, sans-serif;
   --font-display: 'Black Han Sans', 'Noto Sans KR', sans-serif;
+  --font-num: 'JetBrains Mono', 'Noto Sans KR', monospace;  /* 숫자·계측값 */
 
   /* 모양 */
   --cut: 10px;              /* 카드 모서리 깎임 크기 */

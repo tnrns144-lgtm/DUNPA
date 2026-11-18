@@ -29,7 +29,7 @@
 
   /* ---------- 검색 결과 ---------- */
   async function showSearch(server, name) {
-    document.title = `${name} 검색 결과 · 던파노트`;
+    document.title = `${name} 검색 결과 · 던랩`;
     main().innerHTML = `<section class="section">${sectionHead(`"${name}" 검색 결과`)}<div class="panel loading">${D.emptyState('찾는 중이에요', '')}</div></section>`;
     try {
       const data = await D.api('search', { server, name });
@@ -72,7 +72,7 @@
       main().innerHTML = `<div class="panel">${D.apiErrorMessage(err)}</div>`;
       return;
     }
-    document.title = `${basic.characterName} · 던파노트`;
+    document.title = `${basic.characterName} · 던랩`;
     D.addRecent({ serverId: server, characterId: id, characterName: basic.characterName });
     renderRecent();
 

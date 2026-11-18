@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>던파노트 · 던전앤파이터 캐릭터 검색과 경매장 시세</title>
+<title>던랩 · 던전앤파이터 데이터 연구소 (캐릭터 검색·경매장 시세·랭커 트렌드)</title>
 <meta name="description" content="던전앤파이터 캐릭터 검색, 경매장 시세, 명성 랭킹, 랭커 칭호·크리쳐 트렌드를 한곳에서 확인하는 팬 정보 사이트">
-<meta property="og:title" content="던파노트 · 던전앤파이터 정보">
+<meta property="og:title" content="던랩 · 던전앤파이터 데이터 연구소">
 <meta property="og:description" content="캐릭터 검색, 경매장 시세, 명성 랭킹, 랭커 트렌드">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0C0D12">
+<meta name="theme-color" content="#070C11">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="assets/css/theme.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -20,7 +20,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">던</span><span class="brand-name">던파노트</span></a>
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">던</span><span class="brand-name">던랩</span></a>
     <nav class="nav" aria-label="주요 메뉴">
       <a href="character.html">캐릭터</a>
       <a href="#auction">경매장 시세</a>
@@ -33,9 +33,9 @@
 
 <section class="hero" id="search">
   <div class="hero-inner">
-    <p class="eyebrow">던전앤파이터 팬 정보 사이트</p>
-    <h1 class="hero-title">아라드 모험가의 기록</h1>
-    <p class="hero-sub">명성·장비·아바타·크리쳐부터 경매장 시세까지, 던파 정보를 한곳에서</p>
+    <p class="eyebrow">DNF DATA LAB</p>
+    <h1 class="hero-title">아라드 데이터 연구소</h1>
+    <p class="hero-sub">랭커 장착품부터 경매장 시세까지, 매시간 데이터를 모아 분석합니다</p>
 
     <form class="search-panel" role="search" id="search-form">
       <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
@@ -80,7 +80,7 @@
   <main>
     <section class="section" id="auction" aria-labelledby="auction-title">
       <div class="section-head">
-        <h2 id="auction-title">오늘의 경매장 시세</h2>
+        <h2 id="auction-title">오늘의 경매장 시세</h2><span class="lab-code">LAB-01</span>
         <span class="rule" aria-hidden="true"></span>
         <span class="meta" id="auction-updated"></span>
       </div>
@@ -91,7 +91,7 @@
 
     <section class="section" id="fame" aria-labelledby="fame-title">
       <div class="section-head">
-        <h2 id="fame-title">명성 랭킹 TOP 10</h2>
+        <h2 id="fame-title">명성 랭킹 TOP 10</h2><span class="lab-code">LAB-02</span>
         <span class="rule" aria-hidden="true"></span>
         <label class="sr-only" for="fame-server">서버</label>
         <select class="field field--sm" id="fame-server"></select>
@@ -103,7 +103,7 @@
 
     <section class="section" id="trend" aria-labelledby="trend-title">
       <div class="section-head">
-        <h2 id="trend-title">랭커 트렌드</h2>
+        <h2 id="trend-title">랭커 트렌드</h2><span class="lab-code">LAB-03</span>
         <span class="rule" aria-hidden="true"></span>
         <span class="meta" id="trend-updated"></span>
       </div>
@@ -162,7 +162,7 @@
 <footer class="site-footer">
   <div class="container">
     <div>
-      <p>던파노트는 던전앤파이터 공식 사이트가 아닌 팬 정보 사이트입니다.</p>
+      <p>던랩는 던전앤파이터 공식 사이트가 아닌 팬 정보 사이트입니다.</p>
       <p>게임 데이터: Powered by Neople Open API · 던전앤파이터의 상표와 게임 콘텐츠의 권리는 (주)네오플에 있습니다.</p>
     </div>
     <nav aria-label="사이트 정보">

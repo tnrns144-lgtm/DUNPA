@@ -1,58 +1,122 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice">
-<!-- 던파노트 오리지널 배경: 붉게 갈라진 달, 폐허 성, 불씨. 다른 이미지로 바꾸려면 style.css의 .hero 배경 경로만 바꾸면 돼요. -->
+<!-- 던랩 오리지널 배경: 밤의 마도 연구실. 공중에 뜬 마법진, 홀로그램 계기판, 실험대 위 플라스크. 다른 이미지로 바꾸려면 style.css의 .hero 배경 경로만 바꾸면 돼요. -->
 <defs>
 <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0" stop-color="#140A1C"/>
-<stop offset="0.55" stop-color="#2B0F1D"/>
-<stop offset="1" stop-color="#0C0D12"/>
+<stop offset="0" stop-color="#030E15"/>
+<stop offset="0.6" stop-color="#082029"/>
+<stop offset="1" stop-color="#070C11"/>
 </linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+<path d="M32 0H0V32" fill="none" stroke="#5ED6E8" stroke-opacity="0.06" stroke-width="1"/>
+</pattern>
 <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-<stop offset="0" stop-color="#FF5A36" stop-opacity="0.55"/>
-<stop offset="0.45" stop-color="#B8262F" stop-opacity="0.22"/>
-<stop offset="1" stop-color="#B8262F" stop-opacity="0"/>
+<stop offset="0" stop-color="#5ED6E8" stop-opacity="0.35"/>
+<stop offset="0.5" stop-color="#1F9CB4" stop-opacity="0.12"/>
+<stop offset="1" stop-color="#1F9CB4" stop-opacity="0"/>
 </radialGradient>
-<radialGradient id="torch" cx="0.5" cy="0.5" r="0.5">
-<stop offset="0" stop-color="#FFB45A" stop-opacity="0.6"/>
-<stop offset="1" stop-color="#FFB45A" stop-opacity="0"/>
+<radialGradient id="violet" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#9C7BFF" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#9C7BFF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="cyanDot" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#7FEAF6" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#7FEAF6" stop-opacity="0"/>
 </radialGradient>
 <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0" stop-color="#0C0D12" stop-opacity="0"/>
-<stop offset="1" stop-color="#0C0D12" stop-opacity="1"/>
+<stop offset="0" stop-color="#070C11" stop-opacity="0"/>
+<stop offset="1" stop-color="#070C11" stop-opacity="1"/>
 </linearGradient>
 </defs>
+
 <rect width="1440" height="640" fill="url(#sky)"/>
-<circle cx="1080" cy="190" r="300" fill="url(#glow)"/>
-<circle cx="1080" cy="190" r="96" fill="#13080D"/>
-<circle cx="1080" cy="190" r="96" fill="none" stroke="#F0573A" stroke-width="3" opacity="0.9"/>
-<path d="M1040 120 L1072 168 L1058 190 L1096 232 L1088 262" fill="none" stroke="#FF7A45" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-<path d="M1072 168 L1108 150 L1130 172" fill="none" stroke="#FF7A45" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-<path d="M0 420 L120 360 L230 395 L340 330 L470 385 L580 340 L700 392 L820 350 L940 400 L1060 345 L1180 390 L1300 340 L1440 380 L1440 640 L0 640 Z" fill="#1E1020"/>
-<g fill="#140B17">
-<rect x="1150" y="290" width="34" height="160"/>
-<path d="M1146 290 L1167 248 L1188 290 Z"/>
-<rect x="1196" y="330" width="90" height="120"/>
-<rect x="1204" y="318" width="12" height="14"/><rect x="1228" y="318" width="12" height="14"/><rect x="1252" y="318" width="12" height="14"/><rect x="1274" y="318" width="12" height="14"/>
-<rect x="1296" y="262" width="40" height="190"/>
-<path d="M1290 262 L1316 210 L1342 262 Z"/>
-<rect x="1346" y="350" width="60" height="100"/>
-<rect x="210" y="340" width="26" height="110"/>
-<path d="M206 340 L223 306 L240 340 Z"/>
+<rect width="1440" height="640" fill="url(#grid)"/>
+
+<!-- 공중의 마법진 -->
+<circle cx="1100" cy="250" r="330" fill="url(#glow)"/>
+<g fill="none" stroke="#5ED6E8" transform="translate(1100 250)">
+<circle r="200" stroke-opacity="0.55" stroke-width="2"/>
+<circle r="186" stroke-opacity="0.35" stroke-width="10" stroke-dasharray="2 9"/>
+<circle r="168" stroke-opacity="0.45" stroke-width="1.5"/>
+<circle r="120" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="30 8 4 8"/>
+<circle r="60" stroke-opacity="0.6" stroke-width="2"/>
+<circle r="22" stroke-opacity="0.8" stroke-width="2"/>
+<path d="M0 -168 L145.5 84 L-145.5 84 Z" stroke-opacity="0.45" stroke-width="1.5"/>
+<path d="M0 168 L145.5 -84 L-145.5 -84 Z" stroke-opacity="0.45" stroke-width="1.5"/>
+<path d="M-200 0 H200 M0 -200 V200" stroke-opacity="0.18" stroke-width="1"/>
+<g fill="#5ED6E8" stroke="none" fill-opacity="0.75">
+<rect x="-5" y="-209" width="10" height="10" transform="rotate(45 0 -204)"/>
+<rect x="-5" y="199" width="10" height="10" transform="rotate(45 0 204)"/>
+<rect x="-209" y="-5" width="10" height="10" transform="rotate(45 -204 0)"/>
+<rect x="199" y="-5" width="10" height="10" transform="rotate(45 204 0)"/>
+<circle cx="145.5" cy="84" r="5"/><circle cx="-145.5" cy="84" r="5"/><circle cx="0" cy="-168" r="5"/>
+<circle cx="145.5" cy="-84" r="5"/><circle cx="-145.5" cy="-84" r="5"/><circle cx="0" cy="168" r="5"/>
 </g>
-<rect x="1310" y="300" width="8" height="12" fill="#FFB45A" opacity="0.8"/>
-<rect x="1162" y="320" width="6" height="10" fill="#FFB45A" opacity="0.7"/>
-<path d="M0 500 L90 460 L200 480 L300 440 L420 470 L520 430 L640 475 L760 445 L880 485 L1000 450 L1120 480 L1240 455 L1360 490 L1440 470 L1440 640 L0 640 Z" fill="#110A13"/>
-<circle cx="140" cy="470" r="120" fill="url(#torch)"/>
-<circle cx="1300" cy="480" r="110" fill="url(#torch)"/>
-<g fill="#FFC06A">
-<circle cx="120" cy="420" r="2" opacity="0.8"/><circle cx="160" cy="380" r="1.5" opacity="0.6"/><circle cx="200" cy="330" r="2.5" opacity="0.5"/>
-<circle cx="260" cy="280" r="1.5" opacity="0.4"/><circle cx="330" cy="430" r="2" opacity="0.7"/><circle cx="400" cy="250" r="1.5" opacity="0.35"/>
-<circle cx="480" cy="360" r="2" opacity="0.5"/><circle cx="560" cy="200" r="1.5" opacity="0.3"/><circle cx="620" cy="420" r="2.5" opacity="0.6"/>
-<circle cx="700" cy="300" r="1.5" opacity="0.4"/><circle cx="780" cy="390" r="2" opacity="0.55"/><circle cx="860" cy="240" r="1.5" opacity="0.35"/>
-<circle cx="920" cy="440" r="2" opacity="0.7"/><circle cx="990" cy="330" r="2.5" opacity="0.5"/><circle cx="1180" cy="230" r="1.5" opacity="0.45"/>
-<circle cx="1240" cy="400" r="2" opacity="0.7"/><circle cx="1290" cy="300" r="1.5" opacity="0.5"/><circle cx="1340" cy="420" r="2.5" opacity="0.75"/>
-<circle cx="1390" cy="350" r="1.5" opacity="0.5"/><circle cx="60" cy="300" r="1.5" opacity="0.4"/><circle cx="1010" cy="460" r="1.5" opacity="0.6"/>
 </g>
-<ellipse cx="400" cy="520" rx="420" ry="40" fill="#FFFFFF" opacity="0.03"/>
-<ellipse cx="1100" cy="540" rx="460" ry="44" fill="#FFFFFF" opacity="0.03"/>
-<rect y="380" width="1440" height="260" fill="url(#fade)"/>
+<!-- 마법진 아래로 내려오는 빛기둥 -->
+<path d="M1078 272 L1040 520 L1160 520 L1122 272 Z" fill="#5ED6E8" fill-opacity="0.05"/>
+
+<!-- 왼쪽 홀로그램 계기판 -->
+<g transform="translate(110 120)">
+<rect width="280" height="180" fill="#5ED6E8" fill-opacity="0.04" stroke="#5ED6E8" stroke-opacity="0.35"/>
+<path d="M0 18 V0 H18 M262 0 H280 V18 M280 162 V180 H262 M18 180 H0 V162" fill="none" stroke="#5ED6E8" stroke-opacity="0.9" stroke-width="2"/>
+<rect x="18" y="18" width="70" height="6" fill="#5ED6E8" fill-opacity="0.6"/>
+<rect x="18" y="30" width="120" height="3" fill="#5ED6E8" fill-opacity="0.25"/>
+<g fill="#5ED6E8" fill-opacity="0.45">
+<rect x="22" y="120" width="16" height="40"/><rect x="46" y="100" width="16" height="60"/><rect x="70" y="130" width="16" height="30"/>
+<rect x="94" y="84" width="16" height="76"/><rect x="118" y="110" width="16" height="50"/>
+</g>
+<polyline points="150,140 172,118 194,126 216,92 238,104 260,64" fill="none" stroke="#9BEAF5" stroke-opacity="0.8" stroke-width="2"/>
+<g fill="#9BEAF5"><circle cx="216" cy="92" r="3"/><circle cx="260" cy="64" r="3"/></g>
+<path d="M150 160 H262" stroke="#5ED6E8" stroke-opacity="0.3"/>
+</g>
+<!-- 작은 계기판 -->
+<g transform="translate(250 330)" fill="none" stroke="#5ED6E8">
+<rect width="150" height="70" fill="#5ED6E8" fill-opacity="0.03" stroke-opacity="0.3"/>
+<circle cx="35" cy="35" r="22" stroke-opacity="0.5" stroke-width="3" stroke-dasharray="100 40"/>
+<path d="M70 24 H136 M70 36 H120 M70 48 H130" stroke-opacity="0.35" stroke-width="3"/>
+</g>
+
+<!-- 실험대 -->
+<path d="M0 520 H1440 V640 H0 Z" fill="#050B10"/>
+<path d="M0 520 H1440" stroke="#5ED6E8" stroke-opacity="0.25" stroke-width="2"/>
+
+<!-- 플라스크들 -->
+<circle cx="190" cy="500" r="90" fill="url(#cyanDot)"/>
+<g>
+<path d="M176 400 H204 M180 400 V450 L140 512 Q136 520 146 520 H234 Q244 520 240 512 L200 450 V400" fill="#0B1A22" stroke="#5ED6E8" stroke-opacity="0.6" stroke-width="2"/>
+<path d="M156 488 L224 488 L240 512 Q244 520 234 520 H146 Q136 520 140 512 Z" fill="#5ED6E8" fill-opacity="0.55"/>
+<circle cx="176" cy="470" r="4" fill="#9BEAF5" fill-opacity="0.7"/><circle cx="196" cy="440" r="3" fill="#9BEAF5" fill-opacity="0.5"/>
+</g>
+<circle cx="340" cy="490" r="80" fill="url(#violet)"/>
+<g>
+<path d="M330 410 V446 A44 44 0 1 0 350 446 V410" fill="#0D1520" stroke="#9C7BFF" stroke-opacity="0.7" stroke-width="2"/>
+<path d="M298 492 A44 44 0 0 0 382 492 Z" fill="#9C7BFF" fill-opacity="0.55"/>
+<path d="M326 410 H354" stroke="#9C7BFF" stroke-opacity="0.7" stroke-width="3"/>
+</g>
+<!-- 시험관 거치대 -->
+<g transform="translate(1240 430)">
+<rect x="-10" y="60" width="150" height="10" fill="#0C1A22" stroke="#5ED6E8" stroke-opacity="0.35"/>
+<g stroke="#5ED6E8" stroke-opacity="0.55" stroke-width="2" fill="#0B1A22">
+<path d="M10 0 V76 A9 9 0 0 0 28 76 V0"/>
+<path d="M46 10 V76 A9 9 0 0 0 64 76 V10"/>
+<path d="M82 -6 V76 A9 9 0 0 0 100 76 V-6"/>
+<path d="M118 14 V76 A9 9 0 0 0 136 76 V14"/>
+</g>
+<rect x="11" y="44" width="16" height="38" fill="#5ED6E8" fill-opacity="0.6"/>
+<rect x="47" y="56" width="16" height="26" fill="#9C7BFF" fill-opacity="0.6"/>
+<rect x="83" y="30" width="16" height="52" fill="#6FE0B8" fill-opacity="0.55"/>
+<rect x="119" y="62" width="16" height="20" fill="#F2C14E" fill-opacity="0.55"/>
+</g>
+<!-- 플라스크에서 마법진으로 이어지는 관 -->
+<path d="M234 470 C420 470 520 560 760 540 S1000 470 1040 430" fill="none" stroke="#5ED6E8" stroke-opacity="0.18" stroke-width="3" stroke-dasharray="6 10"/>
+
+<!-- 떠다니는 마력 입자 -->
+<g fill="#9BEAF5">
+<circle cx="960" cy="420" r="2" opacity="0.7"/><circle cx="1010" cy="470" r="1.5" opacity="0.5"/><circle cx="1180" cy="440" r="2" opacity="0.6"/>
+<circle cx="1230" cy="380" r="1.5" opacity="0.5"/><circle cx="900" cy="300" r="1.5" opacity="0.4"/><circle cx="1320" cy="200" r="2" opacity="0.5"/>
+<circle cx="520" cy="200" r="1.5" opacity="0.4"/><circle cx="600" cy="420" r="2" opacity="0.4"/><circle cx="700" cy="140" r="1.5" opacity="0.35"/>
+<circle cx="80" cy="360" r="1.5" opacity="0.4"/><circle cx="430" cy="300" r="2" opacity="0.35"/>
+</g>
+
+<rect y="460" width="1440" height="180" fill="url(#fade)"/>
 </svg>

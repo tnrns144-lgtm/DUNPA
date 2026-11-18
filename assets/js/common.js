@@ -1,4 +1,4 @@
-/* 던파노트 공통 기능: 데이터 불러오기, 숫자 표시, 등급색, 최근 검색, 광고 */
+/* 던랩 공통 기능: 데이터 불러오기, 숫자 표시, 등급색, 최근 검색, 광고 */
 (function () {
   const CFG = window.DNF_CONFIG || {};
 
@@ -96,7 +96,7 @@
   }
 
   /* ----- 최근 검색 (이 브라우저에만 저장) ----- */
-  const RECENT_KEY = 'dnfnote.recent';
+  const RECENT_KEY = 'dnfnote.recent'; // 옛 이름이지만 바꾸면 방문자의 최근 검색 기록이 사라져서 그대로 둬요
   function getRecent() {
     try { return JSON.parse(localStorage.getItem(RECENT_KEY)) || []; } catch (e) { return []; }
   }
