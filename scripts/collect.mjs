@@ -214,11 +214,40 @@ async function collectTrends() {
     }
   }
 
-  const top = (map) => [...map.values()].sort((a, b) => b.count - a.count).slice(0, 10);
+  if (!sample) throw new Error('랭커 장착 정보를 하나도 받지 못했어요');
+
+  // 관측 일지: 날짜별 전체 사용 수를 30일 보관하고, 직전 기록과 비교해 변화량을 계산해요
+  const KEYS = Object.keys(counters);
+  const counts = Object.fromEntries(KEYS.map((k) => [k, Object.fromEntries([...counters[k].values()].map((v) => [v.itemName, v.count]))]));
+  const today = kstDate(now);
+  const history = await readJSON('data/history/trends-daily.json', {});
+  const prevDate = Object.keys(history).filter((d) => d < today).sort().pop() || null;
+  const prevCounts = prevDate ? history[prevDate].counts : null;
+  history[today] = { sample, counts };
+  const keepDays = Object.keys(history).sort().slice(-30);
+  await writeJSON('data/history/trends-daily.json', Object.fromEntries(keepDays.map((d) => [d, history[d]])));
+
+  const withChange = (key, item) => {
+    if (!prevCounts) return item;
+    const before = prevCounts[key]?.[item.itemName];
+    return before === undefined ? { ...item, isNew: true } : { ...item, delta: item.count - before };
+  };
+  const top = (key) => [...counters[key].values()].sort((a, b) => b.count - a.count).slice(0, 10).map((it) => withChange(key, it));
+
+  // 직전 기록보다 사용자가 가장 많이 늘어난 장착품 (분류 상관없이 5개)
+  const risers = prevCounts
+    ? KEYS.flatMap((k) => [...counters[k].values()].map((it) => ({ category: k, ...withChange(k, it) })))
+      .map((it) => ({ ...it, gain: it.isNew ? it.count : it.delta }))
+      .filter((it) => it.gain > 0)
+      .sort((a, b) => b.gain - a.gain || b.count - a.count)
+      .slice(0, 5)
+    : [];
+
   await writeJSON('data/trends.json', {
-    updatedAt, sample,
-    title: top(counters.title), creature: top(counters.creature),
-    aura: top(counters.aura), weapon: top(counters.weapon)
+    updatedAt, sample, prevDate,
+    title: top('title'), creature: top('creature'), aura: top('aura'), weapon: top('weapon'),
+    risers,
+    counts  // 캐릭터 연구 보고서에서 '랭커 몇 %가 쓰는지' 찾을 때 사용
   });
   report.ok.push(`랭커 트렌드 ${sample}명`);
   if (failed) report.failed.push(`랭커 트렌드 조회 실패 ${failed}명`);

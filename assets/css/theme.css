@@ -52,6 +52,12 @@
   --up: #FF7B7B;
   --down: #6DB3FF;
 
+  /* 연구 보고서 판정색 (최고 / 좋음 / 보통 / 낮음) */
+  --grade-best: #5ED6E8;
+  --grade-good: #6FE0B8;
+  --grade-mid: #C4D6DD;
+  --grade-low: #6F8894;
+
   /* 아이템 등급색 (게임과 같게 유지) */
   --rarity-common: #C9C9C9;
   --rarity-uncommon: #68D5ED;

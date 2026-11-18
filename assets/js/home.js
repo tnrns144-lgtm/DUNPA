@@ -195,6 +195,7 @@
 
   async function loadTrends() {
     try { trendData = await D.getJSON('data/trends.json'); } catch (e) { trendData = null; }
+    renderTrendLog();
     const tabs = TREND_TABS.filter((t) => (trendData?.[t.id] || []).length);
     if (!tabs.length) {
       $('trend-tabs').innerHTML = '';
@@ -214,6 +215,45 @@
     renderTrend(tabs[0].id);
   }
 
+  // 직전 관측 대비 변화 표시 (▲ 늘어남 / ▼ 줄어듦 / NEW 새로 등장)
+  function changeBadge(it) {
+    if (it.isNew) return '<span class="chg chg-new">NEW</span>';
+    if (it.delta > 0) return `<span class="chg chg-up">▲${it.delta}</span>`;
+    if (it.delta < 0) return `<span class="chg chg-down">▼${-it.delta}</span>`;
+    return '';
+  }
+
+  function renderTrendLog() {
+    const el = $('trend-log');
+    if (!trendData) {
+      el.innerHTML = D.emptyState('관측 데이터가 아직 없어요', '하루 한 번 자동으로 채워져요.');
+      return;
+    }
+    if (!trendData.prevDate) {
+      el.innerHTML = D.emptyState('관측 기록을 쌓는 중이에요', '내일부터 전날과 비교해 랭커 장착품이 어떻게 바뀌었는지 여기에 기록돼요.');
+      return;
+    }
+    const risers = trendData.risers || [];
+    const label = Object.fromEntries(TREND_TABS.map((t) => [t.id, t.name]));
+    const since = trendData.prevDate.slice(5).replace('-', '.');
+    if (!risers.length) {
+      el.innerHTML = D.emptyState('조용한 하루였어요', `${since} 관측 이후 랭커 장착품에 눈에 띄는 변화가 없어요.`);
+      return;
+    }
+    el.innerHTML = `<p class="help">${since} 관측 대비, 랭커 사이에서 가장 많이 늘어난 장착품</p>
+      <ol class="use-list">
+        ${risers.map((it) => `
+          <li>
+            <span class="lab-code">${D.esc(label[it.category] || '')}</span>
+            <div class="item-cell" style="${D.rarityStyle(it.itemRarity)}">
+              <span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
+              <span style="min-width:0"><span class="item-name">${D.esc(it.itemName)}</span><span class="item-sub">현재 ${D.num(it.count)}명 사용</span></span>
+            </div>
+            <span class="use-count">${changeBadge(it)}</span>
+          </li>`).join('')}
+      </ol>`;
+  }
+
   function renderTrend(id) {
     const list = trendData?.[id] || [];
     const sample = trendData?.sample || 0;
@@ -225,7 +265,7 @@
             <span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
             <span style="min-width:0"><span class="item-name">${D.esc(it.itemName)}</span><span class="item-sub">${D.esc(it.itemRarity || '')}</span></span>
           </div>
-          <span class="use-count"><strong>${D.num(it.count)}명</strong>${sample ? `<br>${(it.count / sample * 100).toFixed(0)}%` : ''}</span>
+          <span class="use-count">${changeBadge(it)} <strong>${D.num(it.count)}명</strong>${sample ? `<br>${(it.count / sample * 100).toFixed(0)}%` : ''}</span>
         </li>`).join('')}
     </ol>
     ${sample ? `<p class="help">조사한 랭커 ${D.num(sample)}명 기준</p>` : ''}`;

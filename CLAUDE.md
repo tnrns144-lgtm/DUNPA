@@ -32,7 +32,7 @@
 ## 데이터 수집 (GitHub Actions)
 - `.github/workflows/collect.yml`이 매시 17분에 `scripts/collect.mjs`를 실행하고, 바뀐 `data/`를 커밋한다.
 - 로컬 실행: `NEOPLE_API_KEY=키 node scripts/collect.mjs` (`NEOPLE_API_BASE`로 API 주소를 바꿔 모의 서버 테스트 가능)
-- 결과 파일: `data/auction.json`, `data/fame.json`, `data/avatar.json`, `data/servers.json`, `data/meta.json`, `data/history/auction-daily.json`(전일 대비 계산용, 30일 보관), `data/trends.json`(랭커 트렌드)
+- 결과 파일: `data/auction.json`, `data/fame.json`, `data/avatar.json`, `data/servers.json`, `data/meta.json`, `data/history/auction-daily.json`(전일 대비 계산용, 30일 보관), `data/trends.json`(랭커 트렌드), `data/history/trends-daily.json`(관측 일지용 날짜별 장착 수, 30일 보관)
 - 경매장 시세: `config/tracked-items.json`의 `items`(정확한 이름, 항상 표시) + `keywords`(이름에 들어간 단어로 `wordType=full` 검색 후 거래 많은 순으로 `top`개 자동 선택). 정확한 이름만 쓰던 첫 방식은 이름이 틀려서 실패했기 때문에 키워드 방식으로 바꿨다.
 - 명성 랭킹: `/df/servers/all/characters-fame?limit=200` + 서버별 50. API가 최고 명성 기준 2,000 범위만 돌려줘서 실제 개수는 더 적다.
 - 아바타 마켓: `/df/avatar-market/sold`에 `sort=goodsNo:desc`(거부되면 기본 순서로 다시 받고 거래일순 정렬).
@@ -48,7 +48,7 @@
 - 푸터에 "Powered by Neople Open API" 출처와 비공식 팬사이트 안내를 유지한다.
 
 ## 현재 상태 (2026-11-18)
-- 완료: 사이트 개통, 데이터 자동 수집, 캐릭터 검색·상세, 아이템 사전, 개인정보처리방침, 서치 콘솔 등록·색인 요청, 아바타 마켓 섹션을 "랭커 트렌드"(직업 분포·칭호/크리쳐/오라/무기 아바타 TOP 10)로 개편하고 아바타 거래는 한 줄 목록 5건으로 축소, 사이트 이름을 던랩으로 바꾸고 연구소 분위기로 디자인 개편
+- 완료: 사이트 개통, 데이터 자동 수집, 캐릭터 검색·상세, 아이템 사전, 개인정보처리방침, 서치 콘솔 등록·색인 요청, 아바타 마켓 섹션을 "랭커 트렌드"(직업 분포·칭호/크리쳐/오라/무기 아바타 TOP 10)로 개편하고 아바타 거래는 한 줄 목록 5건으로 축소, 사이트 이름을 던랩으로 바꾸고 연구소 분위기로 디자인 개편, 특색 기능 2개 추가: ① 캐릭터 연구 보고서(character.js `renderReport`: 명성 순위·직업 점유·칭호/크리쳐/오라/무기 아바타를 랭커와 비교해 "랭커 싱크로율" 계산) ② 관측 일지(메인 랭커 트렌드의 전날 대비 ▲▼/NEW와 급상승 TOP 5, trends.json의 `risers`·`prevDate`)
 - 남은 일
   1. 서치 콘솔 색인 상태 확인 (등록 후 며칠~2주)
   2. 며칠 운영 후 애드센스 신청. `계정.github.io/저장소` 형태 주소는 루트에 `ads.txt`를 둘 수 없어서 승인이 막히면 도메인 구매(연 1~2만 원)를 검토한다.

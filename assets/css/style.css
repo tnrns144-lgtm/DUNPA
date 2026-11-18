@@ -398,3 +398,51 @@ select.field--sm { flex: 0 0 auto; }
 .bar-fill { box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 45%, transparent); }
 .eyebrow { font-family: var(--font-num); letter-spacing: 2px; }
 .data-table .item-name { white-space: nowrap; }
+
+/* ---------- 관측 일지 변화 표시 ---------- */
+.chg { font-family: var(--font-num); font-size: 12px; font-weight: 700; margin-right: 4px; }
+.chg-up { color: var(--up); }
+.chg-down { color: var(--down); }
+.chg-new { color: var(--accent-ink); background: var(--accent); padding: 1px 5px; }
+.use-list .lab-code { flex: 0 0 auto; min-width: 5.5em; text-align: center; }
+
+/* ---------- 캐릭터 연구 보고서 ---------- */
+.report-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.report-date { margin-left: auto; font-family: var(--font-num); font-size: 12px; color: var(--text-sub); }
+.report-body { display: grid; grid-template-columns: minmax(200px, 260px) 1fr; gap: 20px; align-items: start; }
+.sync-box {
+  display: flex; flex-direction: column; gap: 8px; padding: 18px;
+  background: var(--accent-soft); border: 1px solid var(--line-strong);
+}
+.sync-label { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 1px; }
+.sync-value { font-family: var(--font-num); font-size: 52px; font-weight: 700; line-height: 1; color: var(--title); text-shadow: 0 0 18px var(--title-glow); }
+.sync-value small { font-size: 22px; color: var(--accent); margin-left: 2px; }
+.sync-bar { height: 8px; background: var(--bg-deep); border: 1px solid var(--line-soft); }
+.sync-bar span { display: block; height: 100%; background: var(--accent-grad); box-shadow: 0 0 8px var(--accent); }
+.sync-comment { font-weight: 700; color: var(--text); }
+.report-rows { display: flex; flex-direction: column; }
+.report-row {
+  --gc: var(--grade-mid);
+  display: grid; grid-template-columns: 6.5em 1fr auto; align-items: center; gap: 12px;
+  padding: 10px 0 10px 12px; border-top: 1px solid var(--line-soft); border-left: 2px solid var(--gc);
+}
+.report-row:first-child { border-top: 0; }
+.report-row.grade-best { --gc: var(--grade-best); }
+.report-row.grade-good { --gc: var(--grade-good); }
+.report-row.grade-mid { --gc: var(--grade-mid); }
+.report-row.grade-low { --gc: var(--grade-low); }
+.report-label { font-size: 13px; color: var(--text-sub); }
+.report-main { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.report-main small { font-size: 12px; color: var(--text-dim); }
+.report-main .item-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.report-num { font-family: var(--font-num); font-size: 16px; }
+.report-empty { color: var(--text-dim); }
+.report-verdict { font-size: 13px; font-weight: 700; color: var(--gc); text-align: right; white-space: nowrap; }
+@media (max-width: 720px) {
+  .report-body { grid-template-columns: 1fr; }
+  .report-row { grid-template-columns: 1fr auto; }
+  .report-label { grid-column: 1 / -1; }
+  .report-date { margin-left: 0; width: 100%; }
+}
+/* 좁은 화면에서 사이드바 아이템 검색 버튼이 입력칸을 밀어내지 않게 */
+@media (max-width: 640px) { .inline-search .btn-gold { flex: 0 0 auto; } }
