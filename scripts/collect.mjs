@@ -416,6 +416,7 @@ async function writeBrief() {
       <div class="brief-grid">
         ${cards.join('\n        ')}
       </div>
+      <p class="job-links"><a class="chip" href="reports.html">주간 연구 리포트 ›</a><a class="chip" href="jobs.html">직업별 랭커 세팅 ›</a></p>
     </section>
     `;
   const file = join(ROOT, 'index.html');
@@ -672,6 +673,176 @@ ${footer}
   report.ok.push(`직업 페이지 ${jobs.length}개 생성`);
 }
 
+/* ---------- 주간 연구 리포트 (reports.html 목록 + reports/YYYY-Www.html) ---------- */
+// 이번 주(월~일, 한국 시간) 리포트는 매번 다시 쓰고, 지난 주 리포트는 손대지 않아 그대로 보관돼요.
+function isoWeek(dateStr) {
+  const d = new Date(`${dateStr}T00:00:00Z`);
+  const day = (d.getUTCDay() + 6) % 7;            // 월=0 … 일=6
+  const monday = new Date(d.getTime() - day * 86400000);
+  const thursday = new Date(monday.getTime() + 3 * 86400000);
+  const year = thursday.getUTCFullYear();
+  const jan4 = new Date(Date.UTC(year, 0, 4));
+  const week = 1 + Math.round(((thursday - jan4) / 86400000 - 3 + ((jan4.getUTCDay() + 6) % 7)) / 7);
+  const iso = (t) => new Date(t).toISOString().slice(0, 10);
+  return { id: `${year}-W${String(week).padStart(2, '0')}`, year, week, start: iso(monday), end: iso(monday.getTime() + 6 * 86400000) };
+}
+
+async function writeWeeklyReport() {
+  const listFile = join(ROOT, 'reports.html');
+  let list;
+  try { list = await readFile(listFile, 'utf8'); } catch { return; }
+  const nl = list.includes('\r\n') ? '\r\n' : '\n';
+  const BASE = 'https://tnrns144-lgtm.github.io/DUNPA/';
+  const today = kstDate(now);
+  const wk = isoWeek(today);
+  const [auctionHist, trendHist, fame, trends, jobsData, auction] = await Promise.all([
+    readJSON('data/history/auction-daily.json', {}), readJSON('data/history/trends-daily.json', {}),
+    readJSON('data/fame.json', null), readJSON('data/trends.json', null), readJSON('data/jobs.json', null), readJSON('data/auction.json', null)
+  ]);
+  const inWeek = (d) => d >= wk.start && d <= wk.end;
+  const md = (d) => `${Number(d.slice(5, 7))}월 ${Number(d.slice(8, 10))}일`;
+
+  // 1) 시세 변화: 주 첫 기록 vs 마지막 기록
+  const aDays = Object.keys(auctionHist).filter(inWeek).sort();
+  const idOf = new Map((auction?.categories || []).flatMap((c) => c.items || []).concat(auction?.reference || []).map((it) => [it.itemName, it.itemId]));
+  let movers = [];
+  if (aDays.length >= 2) {
+    const names = new Set(aDays.flatMap((d) => Object.keys(auctionHist[d])));
+    movers = [...names].map((name) => {
+      const vals = aDays.map((d) => auctionHist[d][name]).filter((v) => v > 0);
+      if (vals.length < 2) return null;
+      return { name, first: vals[0], last: vals[vals.length - 1], pct: (vals[vals.length - 1] - vals[0]) / vals[0] * 100 };
+    }).filter((m) => m && Math.abs(m.pct) >= 0.05);
+  }
+  const risers = [...movers].sort((a, b) => b.pct - a.pct).filter((m) => m.pct > 0).slice(0, 5);
+  const fallers = [...movers].sort((a, b) => a.pct - b.pct).filter((m) => m.pct < 0).slice(0, 5);
+
+  // 2) 랭커 장착품 변화: 주 첫 관측 vs 마지막 관측
+  const tDays = Object.keys(trendHist).filter(inWeek).sort();
+  const label = { title: '칭호', creature: '크리쳐', aura: '오라', weapon: '무기 아바타' };
+  let gearUp = [];
+  if (tDays.length >= 2) {
+    const a = trendHist[tDays[0]].counts || {};
+    const b = trendHist[tDays[tDays.length - 1]].counts || {};
+    gearUp = Object.keys(label).flatMap((k) => Object.entries(b[k] || {}).map(([name, n]) => ({ k, name, n, d: n - ((a[k] || {})[name] || 0) })))
+      .filter((x) => x.d > 0).sort((x, y) => y.d - x.d).slice(0, 5);
+  }
+
+  if (!aDays.length && !tDays.length) return; // 이번 주 데이터가 아직 없음
+
+  const IMG_ITEM = (id) => `https://img-api.neople.co.kr/df/items/${encodeURIComponent(id)}`;
+  const icon = (id) => (id ? `<span class="item-icon"><img src="${IMG_ITEM(id)}" alt="" loading="lazy" width="28" height="28"></span>` : '');
+  const moverRow = (m) => `<tr><td><span class="item-cell">${icon(idOf.get(m.name))}<span class="item-name">${escHtml(m.name)}</span></span></td><td class="num">${goldKo(m.first)} → ${goldKo(m.last)}</td><td class="num"><span class="brief-chg ${m.pct > 0 ? 'up' : 'down'}">${m.pct > 0 ? '▲' : '▼'}${Math.abs(m.pct).toFixed(1)}%</span></td></tr>`;
+  const table = (rows) => rows.length ? `<table class="brief-table"><tbody>${rows.map(moverRow).join('')}</tbody></table>` : '<p class="help">이번 주에는 해당하는 변화가 아직 없어요.</p>';
+  const all = fame?.all || [];
+  const topJobs = [...(jobsData?.jobs || [])].sort((a, b) => b.topFame - a.topFame).slice(0, 5);
+  const range = `${md(wk.start)} ~ ${md(wk.end)}`;
+  const ongoing = today <= wk.end;
+  // 이름 뒤 조사가 어색해지지 않게 '이름(변화)' 꼴로 써요
+  const leadParts = [];
+  if (risers[0]) leadParts.push(`경매장 최대 상승은 ${escHtml(risers[0].name)}(▲${risers[0].pct.toFixed(1)}%)`);
+  if (fallers[0]) leadParts.push(`최대 하락은 ${escHtml(fallers[0].name)}(▼${Math.abs(fallers[0].pct).toFixed(1)}%)`);
+  if (gearUp[0]) leadParts.push(`랭커 장착품 중 가장 많이 늘어난 것은 ${label[gearUp[0].k]} ${escHtml(gearUp[0].name)}(▲${gearUp[0].d}명)`);
+  const lead = leadParts.length ? `이번 주 ${leadParts.join(', ')}이에요.` : '이번 주 데이터를 모으는 중이에요.';
+
+  const body = `
+    <section class="section">
+      <div class="section-head"><h2>${wk.year}년 ${wk.week}주차 요약</h2><span class="lab-code">${wk.id}</span><span class="rule" aria-hidden="true"></span><span class="meta">${range}${ongoing ? ' · 진행 중' : ''}</span></div>
+      <p class="brief-intro">${range} 던전앤파이터 주간 연구 리포트예요. ${lead}${ongoing ? ' 이번 주가 끝날 때까지 매일 갱신돼요.' : ''}</p>
+      <div class="brief-grid">
+        <article class="brief-card"><h3><span class="brief-code">UP</span>시세 상승 TOP 5</h3><p class="brief-note">주 첫 기록 → 마지막 기록 평균 거래가</p>${table(risers)}</article>
+        <article class="brief-card"><h3><span class="brief-code">DOWN</span>시세 하락 TOP 5</h3><p class="brief-note">주 첫 기록 → 마지막 기록 평균 거래가</p>${table(fallers)}</article>
+        <article class="brief-card"><h3><span class="brief-code">GEAR</span>랭커 장착품 변화</h3><p class="brief-note">이번 주 사용 인원이 가장 많이 늘어난 장착품</p>${gearUp.length ? `<dl class="brief-dl">${gearUp.map((x) => `<div><dt>${label[x.k]}</dt><dd>${escHtml(x.name)}<b>▲${x.d}명</b></dd></div>`).join('')}</dl>` : '<p class="help">관측이 이틀 이상 쌓이면 변화가 나와요.</p>'}
+          ${trends?.sample ? `<p class="brief-note">현재 1위 · ${Object.keys(label).filter((k) => (trends[k] || [])[0]).map((k) => `${label[k]} ${escHtml(trends[k][0].itemName)}`).join(' · ')}</p>` : ''}</article>
+        <article class="brief-card"><h3><span class="brief-code">FAME</span>명성 랭킹</h3>${all.length ? `<ol class="brief-rank">${all.slice(0, 3).map((c, i) => `<li><span class="brief-medal r${i + 1}">${i + 1}</span><span class="brief-who"><strong>${escHtml(c.characterName)}</strong><small>${escHtml(SERVER_KO[c.serverId] || c.serverId)} · ${escHtml(c.jobGrowName || c.jobName)}</small></span><span class="num">명성 ${Number(c.fame).toLocaleString('ko-KR')}</span></li>`).join('')}</ol>` : ''}
+          ${topJobs.length ? `<p class="brief-note">최고 명성이 높은 직업</p><p class="brief-chips">${topJobs.map((j) => `<a href="jobs/${j.id}.html"><span>${escHtml(j.finalName)} <b>${Number(j.topFame).toLocaleString('ko-KR')}</b></span></a>`).join('')}</p>` : ''}</article>
+      </div>
+      <p class="job-links"><a class="chip" href="reports.html">지난 리포트 목록 ›</a><a class="chip" href="index.html">오늘의 시세 보기 ›</a><a class="chip" href="jobs.html">직업 연구 ›</a></p>
+    </section>`;
+
+  // 상세 페이지 (reports.html의 머리글·바닥글 재사용)
+  const header = (list.match(/<header class="site-header">[\s\S]*?<\/header>/) || [''])[0];
+  const footer = (list.match(/<footer class="site-footer">[\s\S]*?<\/footer>/) || [''])[0];
+  const title = `${wk.year}년 ${wk.week}주차 던파 주간 리포트 (${range})`;
+  const page = `<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<title>${title} · 던랩</title>
+<meta name="description" content="${escHtml(`${range} 던전앤파이터 주간 리포트: 경매장 시세 상승·하락 TOP 5, 랭커 장착품 변화, 명성 랭킹 요약.`)}">
+<meta name="theme-color" content="#070C11">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="canonical" href="${BASE}reports/${wk.id}.html">
+</head>
+<body>
+
+${header}
+
+<section class="hero hero--compact">
+  <div class="hero-inner">
+    <p class="eyebrow">WEEKLY REPORT · ${wk.id}</p>
+    <h1 class="hero-title">${wk.year}년 ${wk.week}주차 리포트</h1>
+    <p class="hero-sub">${range} 아라드 데이터 정리</p>
+  </div>
+</section>
+
+<div class="container jobs-wrap">
+  <main>${body}
+  </main>
+</div>
+
+${footer}
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/common.js"></script>
+</body>
+</html>
+`;
+  await mkdir(join(ROOT, 'reports'), { recursive: true });
+  await writeFile(join(ROOT, 'reports', `${wk.id}.html`), page);
+
+  // 목록 페이지 (보관된 모든 주차, 최신순)
+  const { readdir } = await import('node:fs/promises');
+  const ids = (await readdir(join(ROOT, 'reports'))).filter((f) => /^\d{4}-W\d{2}\.html$/.test(f)).map((f) => f.slice(0, -5)).sort().reverse();
+  const listHtml = `
+    <section class="section">
+      <div class="section-head"><h2>리포트 목록</h2><span class="lab-code">ARCHIVE</span><span class="rule" aria-hidden="true"></span></div>
+      <div class="job-grid">
+        ${ids.map((id) => {
+          const [y, w] = id.split('-W');
+          return `<a class="job-card" href="reports/${id}.html"><strong>${y}년 ${Number(w)}주차</strong><small>${id === wk.id ? `${range} · 진행 중` : id}</small></a>`;
+        }).join('')}
+      </div>
+    </section>
+    `;
+  const re = /(<!-- AUTO-REPORTS:START[^>]*-->)[\s\S]*?(\s*<!-- AUTO-REPORTS:END -->)/;
+  if (re.test(list)) {
+    list = list.replace(re, (_, a, b) => a + listHtml.replace(/\n/g, nl) + b);
+    await writeFile(listFile, list);
+  }
+
+  // 사이트맵
+  const smFile = join(ROOT, 'sitemap.xml');
+  try {
+    let sm = await readFile(smFile, 'utf8');
+    const snl = sm.includes('\r\n') ? '\r\n' : '\n';
+    const urls = [`${BASE}reports.html`, ...ids.map((id) => `${BASE}reports/${id}.html`)]
+      .map((u) => `  <url>${snl}    <loc>${u}</loc>${snl}    <lastmod>${today}</lastmod>${snl}    <changefreq>weekly</changefreq>${snl}    <priority>0.6</priority>${snl}  </url>`).join(snl);
+    const block = `  <!-- AUTO-REPORTS:START -->${snl}${urls}${snl}  <!-- AUTO-REPORTS:END -->`;
+    const rx = /  <!-- AUTO-REPORTS:START -->[\s\S]*?<!-- AUTO-REPORTS:END -->/;
+    sm = rx.test(sm) ? sm.replace(rx, block) : sm.replace('</urlset>', `${block}${snl}</urlset>`);
+    await writeFile(smFile, sm);
+  } catch { /* 사이트맵이 없으면 건너뜀 */ }
+  report.ok.push(`주간 리포트 ${wk.id}`);
+}
+
 /* ---------- 실행 ---------- */
 let serverIds = ['cain', 'diregie', 'siroco', 'prey', 'casillas', 'hilder', 'anton', 'bakal'];
 try { serverIds = await collectServers(); } catch (e) { report.failed.push(`서버 목록: ${e.message}`); }
@@ -680,6 +851,7 @@ for (const [label, job] of [['경매장', collectAuction], ['명성', () => coll
 }
 try { await writeBrief(); } catch (e) { report.failed.push('브리핑: ' + e.message); }
 try { await writeJobPages(); } catch (e) { report.failed.push('직업 페이지: ' + e.message); }
+try { await writeWeeklyReport(); } catch (e) { report.failed.push('주간 리포트: ' + e.message); }
 await writeJSON('data/meta.json', { updatedAt });
 
 console.log('수집 완료:', report.ok.join(' / ') || '없음');

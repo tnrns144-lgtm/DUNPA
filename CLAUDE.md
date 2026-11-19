@@ -52,6 +52,10 @@
 - `scripts/collect.mjs`의 `writeBrief`가 매시간 index.html의 `<!-- AUTO-BRIEF:START -->`~`END` 사이에 "오늘의 연구 브리핑"(시세·랭킹·트렌드·아바타 마켓 요약)을 직접 써 넣고, sitemap.xml의 메인·아바타 마켓 lastmod를 오늘로 바꾼다. 그래서 collect.yml은 `git add data index.html sitemap.xml`. 이 구간은 손으로 고치지 않는다.
 - 각 페이지 아래 "안내"(소개 + 자주 묻는 질문, `.about-wrap`)와 canonical, 메인에 WebSite 구조화 데이터(JSON-LD)와 og:url. 숨긴 글은 넣지 않는다(구글 규칙 위반).
 - 경매장 수집이 하나도 못 받으면 기존 auction.json을 덮어쓰지 않고 유지한다.
+- 직업 연구(2026-11-20): `collectJobs`(하루 1번, trends와 같은 조건·force_trends로 강제)가 /df/jobs 전직마다 명성 상위 최대 10명(명성 검색은 최고 명성 기준 2,000 범위라 범위를 2,001씩 내려가며 최대 12회)을 골라 세트(2부위 이상)·칭호·크리쳐·오라·무기 아바타 집계 → data/jobs.json. `writeJobPages`가 jobs.html의 AUTO-JOBS 구간과 jobs/{jobGrowId}.html 정적 페이지(<base href="../">, 머리글·바닥글은 jobs.html에서 복사)를 만들고 사이트맵 AUTO-JOBS 구간을 갱신. /df/jobs 응답 형식은 문서에 없어 rows[].rows[](jobGrowId, jobGrowName, next…)로 가정 → 첫 실제 실행 결과 확인 필요.
+- 주간 리포트: `writeWeeklyReport`가 매 실행마다 이번 주(월~일, KST) reports/YYYY-Www.html을 다시 쓰고(지난 주 파일은 보관), reports.html AUTO-REPORTS 목록과 사이트맵 AUTO-REPORTS 구간 갱신. 시세는 auction-daily, 장착품은 trends-daily의 주 첫날 vs 마지막날 비교.
+- 경매장 시세 그래프: 메인 표에서 아이템 클릭 → history/auction-daily.json으로 SVG 꺾은선(외부 라이브러리 없음).
+- collect.yml 저장 단계: git add data index.html sitemap.xml jobs.html reports.html + jobs/·reports/ 폴더(있을 때만).
 
 ## 시뮬레이터 조사 결과 (2026-11-19)
 - 강화 시뮬레이터: 공식 확률 공개됨. 강화 https://df.nexon.com/probability?no=139 , 증폭 no=140, 실패 규칙 https://df.nexon.com/guide?no=710 (강화)·727 (증폭). 재련 확률과 일반 강화 비용은 미공개. 확률 페이지에 날짜가 없어 주기적으로 재확인.

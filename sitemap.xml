@@ -32,4 +32,18 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- AUTO-REPORTS:START -->
+  <url>
+    <loc>https://tnrns144-lgtm.github.io/DUNPA/reports.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tnrns144-lgtm.github.io/DUNPA/reports/2026-W47.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- AUTO-REPORTS:END -->
 </urlset>
