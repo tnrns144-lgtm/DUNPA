@@ -886,3 +886,12 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
 .gear-items li:first-child, .gear-items li { border-top: 1px solid var(--line-soft); }
 .gear-slot { flex: 0 0 4.5em; font-size: 12px; color: var(--text-sub); }
 .gear-items .item-cell { flex: 1; }
+
+/* 흐르는 아이콘 띠의 깜빡임·반짝임 방지:
+   픽셀 그대로 그리기(pixelated)는 1픽셀보다 작게 움직일 때 떨려 보여서 부드럽게 그리고,
+   움직이는 동안 다시 계산되는 그림자·빛·확대 효과는 끄고, 띠 전체를 한 덩어리로 움직여요 */
+.band-track { will-change: transform; backface-visibility: hidden; transform: translate3d(0, 0, 0); }
+.band-slot { box-shadow: inset 0 0 0 1px var(--bevel-lo); background: var(--surface-3); }
+.band-slot img { image-rendering: auto; filter: none; transition: none; }
+.band-slot:hover img { transform: none; }
+@keyframes band-scroll { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
