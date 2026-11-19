@@ -998,3 +998,26 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
   .forge-body { grid-template-columns: 1fr; }
   .forge-left { border-right: 0; border-bottom: 1px solid var(--line-soft); }
 }
+
+/* ---------- 실시간 경매장 검색 ---------- */
+.live-search { max-width: none; margin-top: 0; }
+.live-search .field { flex: 1 1 320px; }
+#live-result { display: flex; flex-direction: column; gap: 12px; }
+.live-cands { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 8px; }
+.live-cands button {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; cursor: pointer; text-align: left;
+  color: var(--text); background: linear-gradient(180deg, var(--surface-2), var(--surface-3)); border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 var(--bevel-hi);
+}
+.live-cands button:hover { border-color: var(--frame-hi); }
+.live-min { font-size: 12px; color: var(--text-sub); white-space: nowrap; }
+.live-min b { font-family: var(--font-num); color: var(--gold); }
+.live-card { gap: 16px; }
+.live-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.live-name { font-size: 18px; }
+.live-sub { margin: 4px 0 0; font-family: var(--font-display); font-weight: 400; font-size: 17px; color: var(--title); }
+.live-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.live-table { min-width: 0; font-size: 13px; }
+.live-table td, .live-table th { padding: 8px 10px; }
+.dot--trade { fill: color-mix(in srgb, var(--accent) 55%, transparent); stroke: none; }
+#auction-table .item-name, #ref-table .item-name { cursor: pointer; text-decoration: underline dotted var(--line-strong); text-underline-offset: 3px; }

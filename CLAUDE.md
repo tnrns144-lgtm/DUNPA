@@ -15,6 +15,7 @@
 - 실시간 조회 Worker: https://dunpa-api.tnrns144.workers.dev (Cloudflare Workers, 이름 `dunpa-api`)
   - 변수: `NEOPLE_API_KEY`(Secret), `ALLOWED_ORIGIN`=`https://tnrns144-lgtm.github.io`
   - `worker/worker.js`를 고치면 Cloudflare 대시보드에서 코드를 다시 붙여넣고 Deploy해야 반영된다 (자동 배포 아님).
+  - 경로: search, character, items, item, auction(현재 매물 /df/auction, wordType match·front·full, 낮은 단가순 100개, 캐시 60초), auction-sold(최근 거래 100건, 캐시 120초). auction 계열은 2026-11-20 추가(경매장 시세 페이지 실시간 검색, assets/js/live-auction.js).
 - GitHub Secrets: `NEOPLE_API_KEY` (데이터 수집용)
 - 문의 이메일: hagomstudio.support@gmail.com
 - 구글 서치 콘솔: URL 접두어 속성으로 등록, sitemap.xml 제출 완료 (2026-11-17). 저장소 루트의 `google*.html`은 서치 콘솔 인증 파일이라 지우면 안 된다.

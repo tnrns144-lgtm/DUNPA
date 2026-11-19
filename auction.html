@@ -41,9 +41,22 @@
 
 <div class="container jobs-wrap">
   <main>
+    <section class="section" id="live" aria-labelledby="live-title">
+      <div class="section-head">
+        <h2 id="live-title">실시간 경매장 검색</h2><span class="lab-code">LIVE</span>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <form class="search-panel live-search" id="live-form" role="search">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <label class="sr-only" for="live-q">아이템 이름</label>
+        <input class="field" id="live-q" name="q" type="search" placeholder="아이템 이름을 입력하세요 (예: 무색 큐브 조각)" autocomplete="off" maxlength="30">
+        <button class="btn-gold" type="submit">시세 검색</button>
+      </form>
+      <div id="live-result" aria-live="polite"><p class="help">아이템 이름 앞부분만 입력해도 돼요. 지금 경매장에 올라온 최저가와 최근 거래 동향을 바로 조회해요.</p></div>
+    </section>
     <section class="section" id="auction" aria-labelledby="auction-title">
       <div class="section-head">
-        <h2 id="auction-title">오늘의 경매장 시세</h2><span class="lab-code">LAB-01</span>
+        <h2 id="auction-title">주요 아이템 시세</h2><span class="lab-code">LAB-01</span>
         <span class="rule" aria-hidden="true"></span>
         <span class="meta" id="auction-updated"></span>
       </div>
@@ -87,5 +100,6 @@
 <script src="assets/js/config.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/home.js"></script>
+<script src="assets/js/live-auction.js"></script>
 </body>
 </html>

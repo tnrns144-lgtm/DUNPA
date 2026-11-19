@@ -13,6 +13,8 @@
  *   /character?server=cain&id=캐릭터ID&part=basic|equipment|avatar|creature|status
  *   /items?name=아이템명
  *   /item?id=아이템ID
+ *   /auction?name=아이템명&type=match|front|full   (경매장 현재 판매 목록, 낮은 단가순)
+ *   /auction-sold?name=아이템명                     (경매장 최근 거래 기록)
  */
 
 const API = 'https://api.neople.co.kr';
@@ -25,7 +27,8 @@ const PARTS = {
   status: '/status'
 };
 const ID_RE = /^[0-9a-f]{32}$/i;
-const CACHE_SECONDS = { search: 120, character: 120, items: 3600, item: 86400 };
+const CACHE_SECONDS = { search: 120, character: 120, items: 3600, item: 86400, auction: 60, 'auction-sold': 120 };
+const WORD_TYPES = new Set(['match', 'front', 'full']);
 
 function corsHeaders(request, env) {
   const origin = request.headers.get('Origin') || '';
@@ -80,6 +83,18 @@ function buildUpstream(route, q) {
     const id = q.get('id') || '';
     if (!ID_RE.test(id)) return { error: '아이템 ID가 올바르지 않아요.' };
     return { path: `/df/items/${id}`, params: {} };
+  }
+  if (route === 'auction') {
+    const name = (q.get('name') || '').trim();
+    const type = q.get('type') || 'match';
+    if (!name || name.length > 30) return { error: '아이템 이름을 확인해 주세요.' };
+    if (!WORD_TYPES.has(type)) return { error: '검색 방식이 올바르지 않아요.' };
+    return { path: '/df/auction', params: { itemName: name, wordType: type, limit: 100, sort: 'unitPrice:asc' } };
+  }
+  if (route === 'auction-sold') {
+    const name = (q.get('name') || '').trim();
+    if (!name || name.length > 30) return { error: '아이템 이름을 확인해 주세요.' };
+    return { path: '/df/auction-sold', params: { itemName: name, wordType: 'match', limit: 100 } };
   }
   return null;
 }
