@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T20:20:24.063Z",
+ "updatedAt": "2026-11-19T22:04:20.104Z",
  "sale": [
   {
    "goodsNo": 4806927,
@@ -6746,6 +6746,34 @@
      "itemId": "dd74043cd9f73adc76eba1191cbdf295",
      "itemName": "사르포자의 보라색 피부[A타입]",
      "slotName": "스킨 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4303587,
+   "title": "여거너 상급2부위",
+   "price": 2400000,
+   "jobs": [
+    "거너(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "c018ce7d690c2e1eeb420e4fa3e555f6",
+     "itemName": "셋쇼마루 어머니의 신발[D타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "148ad32beca14e8373655b3efd06250c",
+     "itemName": "셋쇼마루 어머니의 목가슴[D타입]",
+     "slotName": "목가슴 아바타",
      "itemRarity": "커먼",
      "emblems": []
     }

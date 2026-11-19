@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T20:20:24.063Z",
+ "updatedAt": "2026-11-19T22:04:20.104Z",
  "all": [
   {
    "serverId": "cain",
@@ -2299,15 +2299,6 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 패러메딕",
     "fame": 134638
-   },
-   {
-    "serverId": "hilder",
-    "characterId": "40c0ec33989329e585aa49eea1a039e3",
-    "characterName": "Pablo",
-    "level": 115,
-    "jobName": "격투가(여)",
-    "jobGrowName": "眞 넨마스터",
-    "fame": 134602
    }
   ],
   "anton": [
