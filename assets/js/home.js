@@ -282,7 +282,7 @@
           <span class="use-count">${changeBadge(it)} <strong>${D.num(it.count)}명</strong>${sample ? `<br>${(it.count / sample * 100).toFixed(0)}%` : ''}</span>
         </li>`).join('')}
     </ol>
-    ${hasWearers ? '<p class="help">항목을 누르면 아래 랭커 룩 갤러리에 착용 랭커가 나와요</p>' : ''}`;
+    ${hasWearers ? '<p class="help">누르면 본문 랭커 룩 갤러리에 착용 랭커가 나와요</p>' : ''}`;
     renderLook(id, 0);
   }
 

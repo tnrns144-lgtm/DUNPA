@@ -609,3 +609,21 @@ select.field--sm { flex: 0 0 auto; }
 .ad-bottom.ad-slot--placeholder { display: none; }
 /* 양쪽 세로 배너도 광고가 연결되기 전에는 자리만 두고 숨겨요 */
 .ad-rail.ad-slot--placeholder { display: none; }
+
+/* ---------- 사이드바 랭커 트렌드 (작게) ---------- */
+.side-trend .bar-list { gap: 6px; }
+.side-trend .bar-list li { grid-template-columns: minmax(70px, 7.5em) 1fr auto; gap: 8px; font-size: 12px; }
+.side-trend .bar-track { height: 6px; }
+.side-trend .bar-count { font-size: 11px; min-width: 3em; }
+.side-trend .chips { gap: 4px; }
+.side-trend .chip { height: 28px; padding: 0 9px; font-size: 12px; }
+.side-trend .use-list li { gap: 8px; padding: 5px 4px; }
+.side-trend .item-icon { width: 30px; height: 30px; }
+.side-trend .item-icon img { width: 24px; height: 24px; }
+.side-trend .item-name { font-size: 12px; }
+.side-trend .item-sub { display: none; }
+.side-trend .rank-no { width: 18px; font-size: 12px; }
+.side-trend .use-count { font-size: 11px; }
+.side-trend .use-count strong { font-size: 12px; }
+.side-trend .chg { font-size: 10px; }
+.side-trend .help { font-size: 11px; }
