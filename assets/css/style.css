@@ -607,3 +607,5 @@ select.field--sm { flex: 0 0 auto; }
 .side-links .side-list a { padding: 6px 0; font-size: 13px; }
 /* 본문 하단 배너: 광고가 연결되기 전(안내 상자 상태)에는 자리만 두고 화면에서 숨겨요 */
 .ad-bottom.ad-slot--placeholder { display: none; }
+/* 양쪽 세로 배너도 광고가 연결되기 전에는 자리만 두고 숨겨요 */
+.ad-rail.ad-slot--placeholder { display: none; }
