@@ -171,17 +171,29 @@
       const job = r.jobGrowName || r.jobName;
       if (job) counts.set(job, (counts.get(job) || 0) + 1);
     });
-    const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+    // 전체 인원 대비 비율로 표시. 상위 9개 직업 + 나머지는 '기타'로 묶어 합계가 100%가 되게 해요
+    const total = rows.length;
+    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+    const top = sorted.slice(0, 9);
+    const rest = sorted.slice(9);
+    const restN = rest.reduce((s, [, n]) => s + n, 0);
     const max = top.length ? top[0][1] : 1;
+    const pct = (n) => `${(n / total * 100).toFixed(1)}%`;
     el.innerHTML = `<ol class="bar-list">
       ${top.map(([job, n]) => `
-        <li>
-          <span class="bar-name" title="${D.esc(job)}">${D.esc(job)}</span>
+        <li title="${D.esc(job)} ${D.num(n)}명">
+          <span class="bar-name">${D.esc(job)}</span>
           <span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:${(n / max * 100).toFixed(1)}%"></span></span>
-          <span class="bar-count">${D.num(n)}명</span>
+          <span class="bar-count">${pct(n)}</span>
         </li>`).join('')}
+      ${restN ? `
+        <li class="bar-rest" title="${rest.map(([j, n]) => `${j} ${n}명`).join(', ')}">
+          <span class="bar-name">기타 ${D.num(rest.length)}개 직업</span>
+          <span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:${Math.min(100, restN / max * 100).toFixed(1)}%"></span></span>
+          <span class="bar-count">${pct(restN)}</span>
+        </li>` : ''}
     </ol>
-    <p class="help">상위 ${D.num(rows.length)}명 중 직업별 인원</p>`;
+    <p class="help">명성 상위 ${D.num(total)}명 전체 대비 비율 · 막대는 1위 직업 대비 길이</p>`;
   }
 
   /* ---------- 랭커 트렌드: 장착품 순위 (data/trends.json) ---------- */
@@ -275,7 +287,7 @@
   async function loadAvatar() {
     let data = null;
     try { data = await D.getJSON('data/avatar.json'); } catch (e) { data = null; }
-    const rows = data?.rows || [];
+    const rows = data?.sold || data?.rows || [];
     const el = $('avatar-recent');
     if (!rows.length) {
       el.innerHTML = '<li><span class="help">최근 거래 내역이 없어요.</span></li>';
@@ -283,8 +295,8 @@
     }
     el.innerHTML = rows.slice(0, 5).map((r) => `
       <li>
-        <small>${D.esc((r.soldDate || '').slice(5).replace('-', '.'))}</small>
-        <small>${D.esc(r.jobName || '공용')}</small>
+        <small>${D.esc((r.date || r.soldDate || '').slice(5, 10).replace('-', '.'))}</small>
+        <small>${D.esc((r.jobs && r.jobs[0]) || r.jobName || '공용')}</small>
         <span class="mini-title">${D.esc(r.title)}</span>
         <span class="mini-price">${D.gold(r.price)} 골드</span>
       </li>`).join('');

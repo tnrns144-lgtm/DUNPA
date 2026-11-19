@@ -253,29 +253,58 @@ async function collectTrends() {
   if (failed) report.failed.push(`랭커 트렌드 조회 실패 ${failed}명`);
 }
 
-/* ---------- 아바타 마켓 최근 거래 ---------- */
-async function collectAvatar() {
-  // 최근 거래부터 받기 (정렬 조건이 거부되면 기본 순서로 다시 받기)
-  let data;
-  try {
-    data = await call('/df/avatar-market/sold', { limit: 50, sort: 'goodsNo:desc' });
-  } catch (e) {
-    report.failed.push(`아바타 정렬: ${e.message}`);
-    data = await call('/df/avatar-market/sold', { limit: 50 });
-  }
-  // 받은 결과도 거래일 최신순으로 한 번 더 정렬
-  data.rows = (data.rows || []).sort((a, b) => String(b.soldDate).localeCompare(String(a.soldDate)) || (b.goodsNo - a.goodsNo)).slice(0, 24);
-  const rows = (data.rows || []).map((r) => ({
+/* ---------- 아바타 마켓 (판매 중 매물 + 최근 거래) ---------- */
+// API 응답 필드 이름이 문서에 다 나와 있지 않아서, 있을 법한 이름을 여러 개 받아 둬요.
+function pickGoods(r) {
+  const tags = r.hashtag || r.hashtags || [];
+  return {
     goodsNo: r.goodsNo,
-    title: r.title,
+    title: r.title || '',
     price: r.price,
-    jobName: (r.jobs && r.jobs[0] && r.jobs[0].jobName) || r.jobName || '',
+    jobs: (r.jobs || []).map((j) => j.jobName).filter(Boolean).concat(r.jobName && !r.jobs ? [r.jobName] : []),
     avatarRarity: r.avatarRarity || '',
-    soldDate: r.soldDate,
-    itemIds: (r.avatar || []).map((a) => a.itemId).filter(Boolean)
-  }));
-  await writeJSON('data/avatar.json', { updatedAt, rows });
-  report.ok.push(`아바타 마켓 ${rows.length}건`);
+    avatarSet: r.avatarSet ?? null,
+    date: r.soldDate || r.regDate || r.registDate || r.saleDate || '',
+    hashtags: tags.map((h) => (typeof h === 'string' ? h : h.hashtag || h.name || '')).filter(Boolean),
+    parts: (r.avatar || []).map((a) => ({
+      itemId: a.itemId || '', itemName: a.itemName || '', slotName: a.slotName || '', itemRarity: a.itemRarity || '',
+      emblems: (a.emblems || []).map((e) => e.itemName).filter(Boolean)
+    }))
+  };
+}
+
+async function collectAvatar() {
+  // 판매 중: 등급(상급·레어·혼합) × (최신 등록순, 낮은 가격순)으로 여러 번 받아 합쳐요 (한 번에 최대 50개라서)
+  const sale = new Map();
+  let firstKeys = null;
+  for (const rarity of ['상급', '레어', '혼합']) {
+    for (const sort of ['goodsNo:desc', 'price:asc']) {
+      try {
+        const data = await call('/df/avatar-market/sale', { limit: 50, sort, q: `avatarRarity:${rarity}` });
+        for (const r of data.rows || []) {
+          if (!firstKeys) firstKeys = Object.keys(r).join(',');
+          if (!sale.has(r.goodsNo)) sale.set(r.goodsNo, pickGoods(r));
+        }
+      } catch (e) {
+        report.failed.push(`아바타 판매 ${rarity}/${sort}: ${e.message}`);
+      }
+    }
+  }
+
+  // 최근 거래
+  let sold = [];
+  try {
+    const data = await call('/df/avatar-market/sold', { limit: 50, sort: 'goodsNo:desc' });
+    sold = (data.rows || []).map(pickGoods).sort((a, b) => String(b.date).localeCompare(String(a.date)) || (b.goodsNo - a.goodsNo));
+  } catch (e) {
+    report.failed.push(`아바타 거래: ${e.message}`);
+  }
+
+  if (!sale.size && !sold.length) throw new Error('아바타 마켓 데이터를 받지 못했어요');
+  const saleRows = [...sale.values()].sort((a, b) => b.goodsNo - a.goodsNo);
+  await writeJSON('data/avatar.json', { updatedAt, sale: saleRows, sold });
+  report.ok.push(`아바타 마켓 판매 ${saleRows.length}건 / 거래 ${sold.length}건`);
+  if (firstKeys) console.log('아바타 판매 응답 필드:', firstKeys); // 필드 확인용 (Actions 로그)
 }
 
 /* ---------- 실행 ---------- */

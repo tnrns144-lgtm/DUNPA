@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tnrns144-lgtm.github.io/DUNPA/avatar.html</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tnrns144-lgtm.github.io/DUNPA/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

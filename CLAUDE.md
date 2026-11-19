@@ -22,7 +22,7 @@
 
 ## 구조
 - 빌드 과정 없는 정적 사이트 (HTML/CSS/바닐라 JS). 프레임워크를 도입하지 않는다.
-- `index.html` 메인 / `character.html` 캐릭터 검색·상세(장비·아바타·크리쳐·능력치 탭) / `items.html` 아이템 사전 / `privacy.html` 개인정보처리방침 / `sitemap.xml`
+- `index.html` 메인 / `character.html` 캐릭터 검색·상세(장비·아바타·크리쳐·능력치 탭) / `items.html` 아이템 사전 / `avatar.html` 아바타 마켓(판매 중·최근 거래, 게임 속 부위 칸 배치) / `privacy.html` 개인정보처리방침 / `sitemap.xml`
 - `assets/css/theme.css`: 색·글꼴·테두리 등 디자인 값 전부 (현재: 어두운 청록 바탕 + 마력 빛 하늘색 강조 + 설계도 격자, 숫자는 JetBrains Mono). style.css에는 색을 직접 적지 말고 theme.css 변수만 쓴다. 분위기 변경은 이 파일만 고친다. 다음 게임 사이트도 이 파일만 바꿔 배치를 재활용한다.
 - `assets/css/style.css`: 배치. `assets/js/common.js`: 공통 기능(데이터 로드, 숫자 표시, 등급색, 최근 검색, 광고). `home.js` / `character.js` / `items.js`: 페이지별 기능.
 - `assets/js/config.js`: `workerUrl`(입력 완료), `adsenseClient`·`adSlots`(애드센스 승인 후 입력. 비어 있으면 광고 자리에 안내 상자 표시)
