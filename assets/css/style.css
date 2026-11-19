@@ -822,7 +822,8 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
 .icon-band:hover .band-track { animation-play-state: paused; }
 .band-slot { width: 40px; height: 40px; border: 1px solid var(--rc, var(--line)); }
 @keyframes band-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .band-track { animation: none; } }
+/* 윈도우 "애니메이션 효과 끄기" 설정에서도 멈추지 않고, 더 천천히 흘러요 */
+@media (prefers-reduced-motion: reduce) { .band-track { animation-duration: 180s; } }
 
 /* ---------- 직업 페이지 대표 이미지 (API 캐릭터 이미지) ---------- */
 .hero--job { overflow: hidden; }
