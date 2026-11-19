@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T12:05:06.755Z",
+ "updatedAt": "2026-11-19T12:16:50.984Z",
  "sale": [
   {
    "goodsNo": 4806927,
@@ -5103,11 +5103,11 @@
    ]
   },
   {
-   "goodsNo": 4730529,
-   "title": "나이트 상급2부위",
+   "goodsNo": 4730531,
+   "title": "남마법사 상급2부위",
    "price": 2400000,
    "jobs": [
-    "나이트"
+    "마법사(남)"
    ],
    "avatarRarity": "상급",
    "avatarSet": false,
@@ -5115,18 +5115,18 @@
    "hashtags": [],
    "parts": [
     {
-     "itemId": "0e56c663ba03ba38934715d7676bafa5",
-     "itemName": "체육아이돌 포니테일[D타입]",
-     "slotName": "머리 아바타",
+     "itemId": "6a5d24d6f3ceee50047b0a5e6a3459cf",
+     "itemName": "트로피컬 바캉스 바디 페인팅[A타입]",
+     "slotName": "모자 아바타",
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든속성저항]"
      ]
     },
     {
-     "itemId": "9357bf002e2ac10c642f3b5f38bed62b",
-     "itemName": "발할라 리턴즈 청아한 발키리의 홀리아머 스커트[A타입]",
-     "slotName": "하의 아바타",
+     "itemId": "1c8fee598a8c266dc7c549372ef08307",
+     "itemName": "트로피컬 바캉스 목가슴 투명 아바타[A타입]",
+     "slotName": "목가슴 아바타",
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든속성저항]"

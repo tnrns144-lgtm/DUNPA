@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T12:05:06.755Z",
+ "updatedAt": "2026-11-19T12:16:50.984Z",
  "all": [
   {
    "serverId": "cain",
@@ -71,6 +71,15 @@
    "level": 115,
    "jobName": "격투가(여)",
    "jobGrowName": "眞 스트라이커",
+   "fame": 136685
+  },
+  {
+   "serverId": "cain",
+   "characterId": "25094509919d20bb888a601cf5c287b7",
+   "characterName": "눈꽃",
+   "level": 115,
+   "jobName": "제국기사",
+   "jobGrowName": "眞 브레이커",
    "fame": 136685
   },
   {
@@ -749,15 +758,6 @@
    "fame": 136090
   },
   {
-   "serverId": "cain",
-   "characterId": "25094509919d20bb888a601cf5c287b7",
-   "characterName": "눈꽃",
-   "level": 115,
-   "jobName": "제국기사",
-   "jobGrowName": "眞 브레이커",
-   "fame": 136085
-  },
-  {
    "serverId": "diregie",
    "characterId": "a15baef72c382b1322eea0b3de53a2df",
    "characterName": "메카닉(남)",
@@ -1266,6 +1266,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "25094509919d20bb888a601cf5c287b7",
+    "characterName": "눈꽃",
+    "level": 115,
+    "jobName": "제국기사",
+    "jobGrowName": "眞 브레이커",
+    "fame": 136685
+   },
+   {
+    "serverId": "cain",
     "characterId": "25fc2f732d43848eb6283abe0f706d06",
     "characterName": "삼각형",
     "level": 115,
@@ -1551,15 +1560,6 @@
     "jobName": "마법사(여)",
     "jobGrowName": "眞 배틀메이지",
     "fame": 136090
-   },
-   {
-    "serverId": "cain",
-    "characterId": "25094509919d20bb888a601cf5c287b7",
-    "characterName": "눈꽃",
-    "level": 115,
-    "jobName": "제국기사",
-    "jobGrowName": "眞 브레이커",
-    "fame": 136085
    },
    {
     "serverId": "cain",
@@ -1888,6 +1888,15 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 메카닉",
     "fame": 134602
+   },
+   {
+    "serverId": "siroco",
+    "characterId": "97633139e21e323138be9a4e3bb7d9da",
+    "characterName": "시나모롤",
+    "level": 115,
+    "jobName": "마법사(여)",
+    "jobGrowName": "眞 엘레멘탈마스터",
+    "fame": 134564
    }
   ],
   "prey": [
