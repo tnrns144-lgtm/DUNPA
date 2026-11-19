@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T15:14:16.470Z",
+ "updatedAt": "2026-11-19T16:21:37.324Z",
  "all": [
   {
    "serverId": "cain",
@@ -875,15 +875,6 @@
    "fame": 136008
   },
   {
-   "serverId": "cain",
-   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
-   "characterName": "영양어썰",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 어썰트",
-   "fame": 136001
-  },
-  {
    "serverId": "hilder",
    "characterId": "02271bd244be88c0634110bddb8708b2",
    "characterName": "닳고닳은뉴비",
@@ -1581,15 +1572,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
-    "characterName": "영양어썰",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 어썰트",
-    "fame": 136001
-   },
-   {
-    "serverId": "cain",
     "characterId": "887f743b17cd247777cab166309ddcf6",
     "characterName": "블미생",
     "level": 115,
@@ -1650,6 +1632,15 @@
     "jobName": "총검사",
     "jobGrowName": "眞 요원",
     "fame": 135902
+   },
+   {
+    "serverId": "cain",
+    "characterId": "ac5d4a8f673e3e0ad3608f85f0e6a113",
+    "characterName": "소나타아티카",
+    "level": 115,
+    "jobName": "귀검사(여)",
+    "jobGrowName": "眞 소드마스터",
+    "fame": 135864
    }
   ],
   "diregie": [
@@ -2372,6 +2363,15 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
+    "fame": 134643
+   },
+   {
+    "serverId": "anton",
+    "characterId": "f5504077c532927e9ac4e4df85301c57",
+    "characterName": "니힐",
+    "level": 115,
+    "jobName": "나이트",
+    "jobGrowName": "眞 엘븐나이트",
     "fame": 134643
    },
    {
