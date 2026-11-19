@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T05:24:38.888Z",
+ "updatedAt": "2026-11-19T07:38:08.866Z",
  "all": [
   {
    "serverId": "cain",
@@ -1199,6 +1199,15 @@
    "fame": 134951
   },
   {
+   "serverId": "hilder",
+   "characterId": "9f33782351514503704109e6b258e2ec",
+   "characterName": "로망캔슬",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 레인저",
+   "fame": 134950
+  },
+  {
    "serverId": "bakal",
    "characterId": "d25051f7116373da1cead1b5da566079",
    "characterName": "순수",
@@ -2263,6 +2272,15 @@
     "jobName": "귀검사(남)",
     "jobGrowName": "眞 웨펀마스터",
     "fame": 135027
+   },
+   {
+    "serverId": "hilder",
+    "characterId": "9f33782351514503704109e6b258e2ec",
+    "characterName": "로망캔슬",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 레인저",
+    "fame": 134950
    },
    {
     "serverId": "hilder",
