@@ -696,3 +696,19 @@ select.field--sm { flex: 0 0 auto; }
 .brief-stats > div:first-child strong { color: var(--title); }
 .brief-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 760px) { .brief-grid { grid-template-columns: 1fr; } }
+
+/* ---------- 경매장 시세 그래프 ---------- */
+.price-row { cursor: pointer; }
+.price-row:hover td, .price-row[aria-expanded="true"] td { background: var(--accent-soft); }
+.price-hint { padding: 0 4px; }
+.price-chart-row td { padding: 12px 20px 16px; background: var(--surface-3); }
+.price-chart { display: flex; flex-direction: column; gap: 8px; }
+.price-chart-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; font-size: 13px; color: var(--text-sub); }
+.price-chart-head strong { color: var(--title); font-size: 15px; }
+.price-chart-head b { font-family: var(--font-num); color: var(--text); }
+.price-chart svg { width: 100%; height: auto; max-height: 220px; }
+.price-chart .grid { stroke: var(--line-soft); stroke-width: 1; }
+.price-chart .axis { fill: var(--text-dim); font-size: 10px; font-family: var(--font-num); }
+.price-chart .line { fill: none; stroke: var(--accent); stroke-width: 2; }
+.price-chart .area { fill: var(--accent-soft); }
+.price-chart .dot { fill: var(--bg); stroke: var(--accent); stroke-width: 2; }

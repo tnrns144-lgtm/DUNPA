@@ -52,6 +52,7 @@
       tabs.querySelectorAll('[data-cat]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
       renderAuction(btn.dataset.cat);
     });
+    bindPriceChart();
     renderAuction(cats[0].id);
   }
 
@@ -79,7 +80,7 @@
         </tr></thead>
         <tbody>
           ${items.map((it) => `
-            <tr>
+            <tr class="price-row" data-item="${D.esc(it.itemName)}" tabindex="0" role="button" aria-expanded="false" title="눌러서 30일 시세 그래프 보기">
               <td><div class="item-cell" style="${D.rarityStyle(it.itemRarity)}">
                 <span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
                 <span><span class="item-name">${D.esc(it.itemName)}</span><span class="item-sub">${D.esc(it.itemRarity || '')}${it.itemType ? ' · ' + D.esc(it.itemType) : ''}</span></span>
@@ -89,7 +90,80 @@
               <td class="num" style="color:var(--text-sub)">${D.num(it.volume)}개</td>
             </tr>`).join('')}
         </tbody>
-      </table>`;
+      </table>
+      <p class="help price-hint">아이템을 누르면 최근 30일 시세 그래프가 펼쳐져요.</p>`;
+  }
+
+  /* ---------- 경매장 시세 그래프 (data/history/auction-daily.json: 날짜별 평균가) ---------- */
+  let priceHistory = null;
+  async function getHistory() {
+    if (!priceHistory) priceHistory = D.getJSON('data/history/auction-daily.json').catch(() => ({}));
+    return priceHistory;
+  }
+
+  function bindPriceChart() {
+    const box = $('auction-table');
+    const toggle = async (row) => {
+      if (!row) return;
+      const next = row.nextElementSibling;
+      if (next && next.classList.contains('price-chart-row')) {
+        next.remove();
+        row.setAttribute('aria-expanded', 'false');
+        return;
+      }
+      box.querySelectorAll('.price-chart-row').forEach((r) => { r.previousElementSibling?.setAttribute('aria-expanded', 'false'); r.remove(); });
+      const tr = document.createElement('tr');
+      tr.className = 'price-chart-row';
+      tr.innerHTML = `<td colspan="4">${D.emptyState('그래프를 그리는 중이에요', '')}</td>`;
+      row.after(tr);
+      row.setAttribute('aria-expanded', 'true');
+      const hist = await getHistory();
+      const name = row.dataset.item;
+      const points = Object.keys(hist).sort().map((d) => ({ d, v: hist[d][name] })).filter((p) => p.v > 0);
+      tr.firstElementChild.innerHTML = priceChart(name, points);
+    };
+    box.addEventListener('click', (e) => toggle(e.target.closest('.price-row')));
+    box.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { const row = e.target.closest('.price-row'); if (row) { e.preventDefault(); toggle(row); } }
+    });
+  }
+
+  // 외부 라이브러리 없이 SVG로 꺾은선 그래프를 그려요
+  function priceChart(name, points) {
+    if (points.length < 2) {
+      return `<div class="price-chart">${D.emptyState('기록이 더 쌓여야 그래프가 나와요', `${D.esc(name)}의 시세 기록이 ${points.length}일치예요. 매일 한 칸씩 늘어나 최대 30일까지 보여줘요.`)}</div>`;
+    }
+    const W = 640, H = 180, L = 64, R = 12, T = 14, B = 26;
+    const vals = points.map((p) => p.v);
+    let min = Math.min(...vals), max = Math.max(...vals);
+    if (min === max) { min *= 0.95; max *= 1.05; }
+    const pad = (max - min) * 0.12;
+    min = Math.max(0, min - pad); max += pad;
+    const x = (i) => L + (i / (points.length - 1)) * (W - L - R);
+    const y = (v) => T + (1 - (v - min) / (max - min)) * (H - T - B);
+    const line = points.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ');
+    const area = `${line} L${x(points.length - 1).toFixed(1)},${H - B} L${x(0).toFixed(1)},${H - B} Z`;
+    const ticks = [max, (max + min) / 2, min];
+    const first = vals[0], last = vals[vals.length - 1];
+    const diff = ((last - first) / first) * 100;
+    const hi = Math.max(...vals), lo = Math.min(...vals);
+    const label = (d) => d.slice(5).replace('-', '.');
+    const step = Math.max(1, Math.ceil(points.length / 6));
+    return `<div class="price-chart">
+      <div class="price-chart-head">
+        <strong>${D.esc(name)}</strong>
+        <span>${points.length}일 변화 <b class="${diff >= 0 ? 'trend-up' : 'trend-down'}">${diff >= 0 ? '▲' : '▼'} ${Math.abs(diff).toFixed(1)}%</b></span>
+        <span>최고 <b>${D.gold(hi)}</b></span><span>최저 <b>${D.gold(lo)}</b></span>
+      </div>
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${D.esc(name)} 최근 ${points.length}일 평균 거래가 그래프">
+        ${ticks.map((t) => `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(t).toFixed(1)}" y2="${y(t).toFixed(1)}"/><text class="axis" x="${L - 8}" y="${(y(t) + 4).toFixed(1)}" text-anchor="end">${D.gold(Math.round(t))}</text>`).join('')}
+        <path class="area" d="${area}"/>
+        <path class="line" d="${line}"/>
+        ${points.map((p, i) => `<circle class="dot" cx="${x(i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="3"><title>${label(p.d)} · ${D.gold(p.v)} 골드</title></circle>`).join('')}
+        ${points.map((p, i) => (i % step === 0 || i === points.length - 1) ? `<text class="axis" x="${x(i).toFixed(1)}" y="${H - 8}" text-anchor="middle">${label(p.d)}</text>` : '').join('')}
+      </svg>
+      <p class="help">하루 평균 거래가 기준 · 점에 마우스를 올리면 날짜별 가격이 보여요.</p>
+    </div>`;
   }
 
   /* ---------- 명성 랭킹 ---------- */
