@@ -194,8 +194,14 @@
     }
     const prices = live.map((r) => r.unitPrice);
     const qty = live.reduce((s, r) => s + (r.count || 1), 0);
-    const soldQty = sold.reduce((s, r) => s + (r.count || 1), 0);
-    const soldAvg = soldQty ? sold.reduce((s, r) => s + r.unitPrice * (r.count || 1), 0) / soldQty : 0;
+    // 거래 평균은 최근 6시간 거래로 (100건 전체는 며칠 전 가격까지 섞여 지금 시세와 동떨어질 수 있어요). 5건 미만이면 최근 10건
+    const byTime = [...sold].sort((a, b) => time(b.soldDate) - time(a.soldDate));
+    const latest = byTime.length ? time(byTime[0].soldDate) : 0;
+    let recent = byTime.filter((r) => latest - time(r.soldDate) <= 6 * 3600 * 1000);
+    const recentLabel = recent.length >= 5 ? '최근 6시간' : '최근 10건';
+    if (recent.length < 5) recent = byTime.slice(0, 10);
+    const soldQty = recent.reduce((s, r) => s + (r.count || 1), 0);
+    const soldAvg = soldQty ? recent.reduce((s, r) => s + r.unitPrice * (r.count || 1), 0) / soldQty : 0;
     const lowest = prices.length ? Math.min(...prices) : 0;
     const gap = lowest && soldAvg ? ((lowest - soldAvg) / soldAvg) * 100 : null;
 
@@ -209,7 +215,7 @@
         <div class="result-grid">
           <div class="result-cell result-cost"><span>현재 최저가</span><strong>${lowest ? `${D.gold(lowest)}` : '-'}</strong><small>${lowest ? '골드 · 개당' : '판매 중인 매물 없음'}</small></div>
           <div class="result-cell"><span>판매 중</span><strong>${D.num(live.length)}건</strong><small>총 ${D.num(qty)}개</small></div>
-          <div class="result-cell"><span>최근 거래 평균</span><strong>${soldAvg ? D.gold(Math.round(soldAvg)) : '-'}</strong><small>${sold.length ? `최근 ${D.num(sold.length)}건 · 개당` : '거래 기록 없음'}</small></div>
+          <div class="result-cell"><span>거래 평균가</span><strong>${soldAvg ? D.gold(Math.round(soldAvg)) : '-'}</strong><small>${sold.length ? `${recentLabel} ${D.num(recent.length)}건 · 개당` : '거래 기록 없음'}</small></div>
           <div class="result-cell"><span>최저가 vs 거래 평균</span><strong class="${gap === null ? '' : gap > 0 ? 'trend-up' : 'trend-down'}">${gap === null ? '-' : `${gap > 0 ? '▲' : '▼'} ${Math.abs(gap).toFixed(1)}%`}</strong><small>${gap === null ? '' : gap > 0 ? '최근 거래보다 비싸게 올라와 있어요' : '최근 거래보다 싸게 올라와 있어요'}</small></div>
         </div>
         <h3 class="live-sub">최근 거래 동향</h3>
@@ -218,7 +224,7 @@
           <div>
             <h3 class="live-sub">현재 최저가 매물</h3>
             ${live.length ? `<div class="table-wrap"><table class="data-table live-table"><thead><tr><th scope="col" class="num">개당</th><th scope="col" class="num">수량</th><th scope="col" class="num">총액</th><th scope="col">옵션</th><th scope="col">만료</th></tr></thead><tbody>
-              ${live.slice(0, 10).map((r) => `<tr><td class="num"><strong>${D.gold(r.unitPrice)}</strong></td><td class="num">${D.num(r.count || 1)}</td><td class="num">${D.gold(r.price || r.unitPrice * (r.count || 1))}</td>
+              ${live.slice(0, 10).map((r) => `<tr><td class="num"><strong>${D.gold(r.unitPrice)}</strong></td><td class="num">${D.num(r.count || 1)}</td><td class="num">${D.gold(r.price > 0 ? r.price : r.unitPrice * (r.count || 1))}</td>
                 <td>${[r.reinforce ? `+${r.reinforce}${r.amplificationName ? ' 증폭' : ''}` : '', r.refine ? `제련 ${r.refine}` : ''].filter(Boolean).join(' · ') || '-'}</td><td>${D.esc(hm(r.expireDate))}</td></tr>`).join('')}
             </tbody></table></div>` : '<p class="help">지금 판매 중인 매물이 없어요.</p>'}
           </div>
