@@ -895,3 +895,106 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
 .band-slot img { image-rendering: auto; filter: none; transition: none; }
 .band-slot:hover img { transform: none; }
 @keyframes band-scroll { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+
+/* 아이콘 띠: 움직이면 눈이 피로하다는 의견으로 흐르지 않게 고정 (가운데 정렬, 넘치는 부분은 양끝 흐리게) */
+.band-track, .icon-band:hover .band-track { animation: none !important; transform: none !important; width: auto; justify-content: center; }
+
+/* ---------- 명성 랭킹 페이지 ---------- */
+.rank-controls { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.rank-filters { display: flex; gap: 8px; }
+.rank-filters .field { min-width: 200px; }
+.rank-filters [hidden] { display: none; }
+#rank-body { display: flex; flex-direction: column; gap: 12px; }
+.rank-table td { vertical-align: middle; }
+.rank-char { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; }
+.rank-char:hover strong { color: var(--accent); }
+.rank-thumb { width: 36px; height: 44px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; background: var(--slot-bg); border: 1px solid var(--line-soft); }
+.rank-thumb img { height: 60px; width: auto; max-width: none; object-fit: cover; object-position: center 20%; }
+
+/* ---------- 강화 창 (게임 강화 UI 느낌) ---------- */
+.forge { padding: 0; display: flex; flex-direction: column; }
+.forge-tabs { display: flex; gap: 2px; padding: 10px 12px 0; border-bottom: 1px solid var(--line-strong); background: linear-gradient(180deg, var(--bg-deep), var(--surface-deep)); }
+.forge-tab {
+  position: relative; min-width: 110px; height: 40px; padding: 0 18px; cursor: pointer;
+  font-family: var(--font-display); font-size: 16px; color: var(--text-sub);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-3)); border: 1px solid var(--line); border-bottom: 0;
+  clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
+  box-shadow: inset 0 1px 0 var(--bevel-hi);
+}
+.forge-tab:hover { color: var(--text); }
+.forge-tab[aria-pressed="true"] { color: var(--accent-ink); background: var(--accent-grad); border-color: var(--frame-hi); }
+.forge-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 1fr); }
+.forge-left { display: flex; flex-direction: column; gap: 16px; padding: 20px; border-right: 1px solid var(--line-soft); }
+.forge-right { padding: 20px; background: radial-gradient(ellipse at 50% 30%, var(--accent-soft), transparent 70%); }
+.forge-row, .forge-presets { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.forge-row[hidden] { display: none; }
+.forge-label { min-width: 5em; font-size: 13px; color: var(--text-sub); }
+.forge-seg { display: inline-flex; border: 1px solid var(--line-chip); }
+.seg {
+  height: 34px; padding: 0 14px; cursor: pointer; font-size: 13px; color: var(--text-soft);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-3)); border: 1px solid var(--line-chip);
+  box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -2px 0 var(--bevel-lo);
+}
+.forge-seg .seg { border: 0; border-right: 1px solid var(--line-chip); }
+.forge-seg .seg:last-child { border-right: 0; }
+.seg:hover { color: var(--text); border-color: var(--frame-hi); }
+.seg[aria-pressed="true"] { color: var(--accent-ink); background: var(--accent-grad); font-weight: 700; }
+.forge-presets .seg { font-family: var(--font-num); }
+
+/* 현재 ▶ 목표: 큰 숫자 + − / + 버튼 */
+.forge-levels { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.lv-box { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 14px; background: var(--slot-bg); border: 1px solid var(--line-strong); box-shadow: inset 0 0 0 1px var(--bevel-lo), inset 0 2px 8px var(--bevel-lo); }
+.lv-box--goal { border-color: var(--frame); box-shadow: inset 0 0 0 1px var(--bevel-lo), 0 0 14px color-mix(in srgb, var(--accent) 25%, transparent); }
+.lv-cap { font-size: 11px; letter-spacing: 2px; color: var(--text-sub); }
+.stepper { display: flex; align-items: center; gap: 6px; }
+.step-btn {
+  width: 34px; height: 34px; cursor: pointer; font-size: 20px; line-height: 1; color: var(--accent);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-3)); border: 1px solid var(--line-chip);
+  box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -2px 0 var(--bevel-lo);
+}
+.step-btn:hover { border-color: var(--frame-hi); color: var(--accent-hover); }
+.step-btn:active { transform: translateY(1px); }
+.lv-input {
+  width: 74px; height: 46px; text-align: center; font-family: var(--font-num); font-size: 28px; font-weight: 700; color: var(--title);
+  background: transparent; border: 0; -moz-appearance: textfield;
+}
+.lv-input::-webkit-outer-spin-button, .lv-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.lv-input:focus { outline: 1px solid var(--accent); }
+.lv-arrow { font-size: 22px; color: var(--accent); text-shadow: 0 0 10px var(--accent); }
+
+/* 보호권 스위치 */
+.forge-switch { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; color: var(--text-soft); }
+.forge-switch[hidden] { display: none; }
+.forge-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.forge-switch .switch { position: relative; flex: 0 0 auto; width: 46px; height: 24px; background: var(--surface-3); border: 1px solid var(--line-chip); box-shadow: inset 0 2px 4px var(--bevel-lo); transition: background .15s; }
+.forge-switch .switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; background: var(--text-dim); transition: transform .15s, background .15s; }
+.forge-switch input:checked + .switch { background: color-mix(in srgb, var(--accent) 30%, var(--surface-3)); border-color: var(--frame); }
+.forge-switch input:checked + .switch::after { transform: translateX(22px); background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+.forge-switch input:focus-visible + .switch { outline: 2px solid var(--accent); outline-offset: 2px; }
+.forge-switch small { color: var(--text-dim); }
+
+/* 비용 설정 접기 */
+.forge-cost { border: 1px dashed var(--line-strong); }
+.forge-cost summary { cursor: pointer; padding: 10px 12px; font-weight: 700; color: var(--title); list-style: none; }
+.forge-cost summary::-webkit-details-marker { display: none; }
+.forge-cost summary::before { content: "▸ "; color: var(--accent); }
+.forge-cost[open] summary::before { content: "▾ "; }
+.forge-cost summary small { font-weight: 400; color: var(--text-dim); margin-left: 6px; }
+.forge-cost-body { display: flex; flex-direction: column; gap: 10px; padding: 0 12px 12px; }
+.forge-go { align-self: stretch; height: 52px; font-size: 18px; }
+
+/* 직접 강화: 마법진 위 단계 숫자 */
+.forge-right .try-stage { position: relative; min-height: 170px; justify-content: center; background: var(--slot-bg); border: 1px solid var(--line-strong); overflow: hidden; }
+.try-ring {
+  position: absolute; left: 50%; top: 50%; width: 150px; height: 150px; transform: translate(-50%, -50%);
+  border: 2px solid var(--frame); border-radius: 50%; opacity: .55;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--magic) 35%, transparent), inset 0 0 20px color-mix(in srgb, var(--magic) 25%, transparent);
+  background: repeating-conic-gradient(from 0deg, color-mix(in srgb, var(--magic) 22%, transparent) 0 6deg, transparent 6deg 30deg);
+  -webkit-mask: radial-gradient(circle, transparent 52%, #000 53%); mask: radial-gradient(circle, transparent 52%, #000 53%);
+}
+.try-level, .try-state { position: relative; }
+.forge-right #try-one { min-width: 140px; height: 48px; font-size: 20px; }
+@media (max-width: 860px) {
+  .forge-body { grid-template-columns: 1fr; }
+  .forge-left { border-right: 0; border-bottom: 1px solid var(--line-soft); }
+}

@@ -17,6 +17,20 @@
     $('try-one').addEventListener('click', () => tryOnce());
     $('try-goal').addEventListener('click', tryToGoal);
     $('try-reset').addEventListener('click', resetTry);
+    // − / + 버튼으로 단계 조절
+    document.querySelectorAll('[data-step]').forEach((b) => b.addEventListener('click', () => {
+      const el = $(b.dataset.step);
+      el.value = (parseInt(el.value, 10) || 0) + Number(b.dataset.d);
+      if (b.dataset.step === 'from' && Number($('to').value) <= Number(el.value)) $('to').value = Number(el.value) + 1;
+      el.dispatchEvent(new Event('change'));
+    }));
+    // 빠른 선택 (예: 10 → 12)
+    document.querySelectorAll('[data-preset]').forEach((b) => b.addEventListener('click', () => {
+      const [a, z] = b.dataset.preset.split('-').map(Number);
+      $('from').value = a;
+      $('to').value = z;
+      $('to').dispatchEvent(new Event('change'));
+    }));
 
     syncMode();
     renderTable();
@@ -149,7 +163,7 @@
     const o = opts();
     Object.assign(tryState, { level: o.from, count: 0, tickets: 0, gold: 0, dead: false, fails: 0 });
     $('try-log').innerHTML = '';
-    paintTry('', '위 조건으로 시작해요');
+    paintTry('', '왼쪽 조건으로 시작해요');
   }
 
   function curRate() {

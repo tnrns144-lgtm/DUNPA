@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>강화 시뮬레이터 · 명성 계산기 · 연구실 · 던랩</title>
-<meta name="description" content="던전앤파이터 강화·증폭 시뮬레이터와 명성 계산기. 공식 확률로 평균 시도 횟수·파괴 확률·예상 비용을 계산하고, 장비를 바꿨을 때 명성 변화를 확인해요.">
-<meta name="theme-color" content="#070C11">
+<title>강화 시뮬레이터 · 연구실 · 던랩</title>
+<meta name="description" content="던전앤파이터 강화·증폭·안전 강화 시뮬레이터. 공식 확률로 목표 단계까지 평균 시도 횟수, 파괴 확률, 예상 비용을 계산하고 직접 강화해 볼 수 있어요.">
+<meta name="theme-color" content="#0D0A0F">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +20,9 @@
   <div class="container">
     <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">던</span><span class="brand-name">던랩</span></a>
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="character.html">캐릭터</a>
-      <a href="index.html#auction">경매장 시세</a>
-      <a href="index.html#fame">명성 랭킹</a>
-      <a href="index.html#trend">랭커 트렌드</a>
+      <a href="auction.html">경매장 시세</a>
+      <a href="ranking.html">명성 랭킹</a>
+      <a href="trend.html">랭커 트렌드</a>
       <a href="avatar.html">아바타 마켓</a>
       <a href="jobs.html">직업 연구</a>
       <a href="lab.html" aria-current="page">연구실</a>
@@ -34,115 +33,127 @@
 
 <section class="hero hero--compact">
   <div class="hero-inner">
-    <p class="eyebrow">DUNLAB TOOLS</p>
-    <h1 class="hero-title">던랩 연구실</h1>
-    <p class="hero-sub">공식 데이터로 계산하는 강화 시뮬레이터 · 명성 계산기</p>
+    <p class="eyebrow">ENHANCE LAB</p>
+    <h1 class="hero-title">강화 연구실</h1>
+    <p class="hero-sub">공식 확률로 계산하는 강화 · 증폭 · 안전 강화 시뮬레이터</p>
   </div>
 </section>
 
-<div class="container layout">
+<div class="container jobs-wrap">
   <main>
     <section class="section" aria-labelledby="sim-title">
       <div class="section-head">
-        <h2 id="sim-title">실험 조건</h2><span class="lab-code">EXP-01</span>
+        <h2 id="sim-title">강화 창</h2><span class="lab-code">EXP-01</span>
         <span class="rule" aria-hidden="true"></span>
       </div>
 
-      <form class="panel panel--pad lab-form" id="sim-form">
-        <div class="lab-row">
-          <span class="lab-label">종류</span>
-          <div class="chips" role="group" aria-label="강화 종류">
-            <button type="button" class="chip" data-mode="reinforce" aria-pressed="true">강화</button>
-            <button type="button" class="chip" data-mode="amplify" aria-pressed="false">증폭</button>
-            <button type="button" class="chip" data-mode="safe" aria-pressed="false">안전 강화</button>
-          </div>
-        </div>
-        <div class="lab-row" id="part-row">
-          <span class="lab-label">부위</span>
-          <div class="chips" role="group" aria-label="장비 부위">
-            <button type="button" class="chip" data-part="weapon" aria-pressed="true">무기</button>
-            <button type="button" class="chip" data-part="armor" aria-pressed="false">방어구·악세서리·특수장비</button>
-          </div>
-        </div>
-        <div class="lab-row">
-          <label class="lab-label" for="from">현재 단계</label>
-          <input class="field field--sm lab-num" id="from" type="number" min="0" max="30" value="10" inputmode="numeric">
-          <label class="lab-label" for="to">목표 단계</label>
-          <input class="field field--sm lab-num" id="to" type="number" min="1" max="31" value="12" inputmode="numeric">
-        </div>
-        <div class="lab-row" id="ticket-row">
-          <span class="lab-label">파괴 대비</span>
-          <label class="lab-check"><input type="checkbox" id="ticket" checked> <span id="ticket-label">장비 보호권</span> 사용 (파괴 대신 0단계로)</label>
+      <form class="panel forge" id="sim-form">
+        <!-- 게임 창처럼 위쪽 탭 -->
+        <div class="forge-tabs" role="group" aria-label="강화 종류">
+          <button type="button" class="forge-tab" data-mode="reinforce" aria-pressed="true">강화</button>
+          <button type="button" class="forge-tab" data-mode="amplify" aria-pressed="false">증폭</button>
+          <button type="button" class="forge-tab" data-mode="safe" aria-pressed="false">안전 강화</button>
         </div>
 
-        <fieldset class="lab-cost">
-          <legend>비용 <span class="help">(시세는 경매장 평균으로 자동 입력, 직접 고칠 수 있어요)</span></legend>
-          <div class="lab-row" id="cost-custom">
-            <label class="lab-label" for="c-gold">1회 골드</label>
-            <input class="field field--sm lab-money" id="c-gold" type="number" min="0" step="1000" value="0" inputmode="numeric">
-            <label class="lab-label" for="c-cube">1회 큐브 조각</label>
-            <input class="field field--sm lab-num" id="c-cube" type="number" min="0" value="0" inputmode="numeric"><span class="help">개 × 시세</span>
-            <input class="field field--sm lab-money" id="p-cube" type="number" min="0" value="0" inputmode="numeric" aria-label="무색 큐브 조각 시세"><span class="help">골드</span>
-          </div>
-          <div class="lab-row" id="cost-mat">
-            <label class="lab-label" for="p-mat">모순의 결정체</label>
-            <input class="field field--sm lab-money" id="p-mat" type="number" min="0" value="0" inputmode="numeric"><span class="help" id="p-mat-src">골드/개</span>
-          </div>
-          <div class="lab-row" id="cost-ticket">
-            <label class="lab-label" for="p-ticket">보호권 시세</label>
-            <input class="field field--sm lab-money" id="p-ticket" type="number" min="0" value="0" inputmode="numeric"><span class="help" id="p-ticket-src">골드/장</span>
-          </div>
-          <p class="help" id="cost-note"></p>
-        </fieldset>
+        <div class="forge-body">
+          <!-- 왼쪽: 조건 -->
+          <div class="forge-left">
+            <div class="forge-row" id="part-row">
+              <span class="forge-label">부위</span>
+              <div class="forge-seg" role="group" aria-label="장비 부위">
+                <button type="button" class="seg" data-part="weapon" aria-pressed="true">무기</button>
+                <button type="button" class="seg" data-part="armor" aria-pressed="false">방어구·악세·특수</button>
+              </div>
+            </div>
 
-        <button class="btn-gold" type="submit">10,000번 실험하기</button>
+            <div class="forge-levels">
+              <div class="lv-box">
+                <span class="lv-cap">현재</span>
+                <div class="stepper">
+                  <button type="button" class="step-btn" data-step="from" data-d="-1" aria-label="현재 단계 내리기">−</button>
+                  <label class="sr-only" for="from">현재 단계</label>
+                  <input class="lv-input" id="from" type="number" min="0" max="30" value="10" inputmode="numeric">
+                  <button type="button" class="step-btn" data-step="from" data-d="1" aria-label="현재 단계 올리기">+</button>
+                </div>
+              </div>
+              <span class="lv-arrow" aria-hidden="true">▶</span>
+              <div class="lv-box lv-box--goal">
+                <span class="lv-cap">목표</span>
+                <div class="stepper">
+                  <button type="button" class="step-btn" data-step="to" data-d="-1" aria-label="목표 단계 내리기">−</button>
+                  <label class="sr-only" for="to">목표 단계</label>
+                  <input class="lv-input" id="to" type="number" min="1" max="31" value="12" inputmode="numeric">
+                  <button type="button" class="step-btn" data-step="to" data-d="1" aria-label="목표 단계 올리기">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="forge-presets" role="group" aria-label="자주 쓰는 구간">
+              <span class="forge-label">빠른 선택</span>
+              <button type="button" class="seg" data-preset="0-10">0 → 10</button>
+              <button type="button" class="seg" data-preset="10-11">10 → 11</button>
+              <button type="button" class="seg" data-preset="10-12">10 → 12</button>
+              <button type="button" class="seg" data-preset="12-13">12 → 13</button>
+              <button type="button" class="seg" data-preset="13-15">13 → 15</button>
+            </div>
+
+            <label class="forge-switch" id="ticket-row">
+              <input type="checkbox" id="ticket" checked>
+              <span class="switch" aria-hidden="true"></span>
+              <span><b id="ticket-label">장비 보호권</b> 사용 <small>· 파괴되면 +0으로 남아요</small></span>
+            </label>
+
+            <details class="forge-cost">
+              <summary>비용 설정 <small>경매장 시세 자동 입력 · 필요할 때만 열어 보세요</small></summary>
+              <div class="forge-cost-body">
+                <div class="lab-row" id="cost-custom">
+                  <label class="lab-label" for="c-gold">1회 골드</label>
+                  <input class="field field--sm lab-money" id="c-gold" type="number" min="0" step="1000" value="0" inputmode="numeric">
+                  <label class="lab-label" for="c-cube">1회 큐브 조각</label>
+                  <input class="field field--sm lab-num" id="c-cube" type="number" min="0" value="0" inputmode="numeric"><span class="help">개 ×</span>
+                  <input class="field field--sm lab-money" id="p-cube" type="number" min="0" value="0" inputmode="numeric" aria-label="무색 큐브 조각 시세"><span class="help">골드</span>
+                </div>
+                <div class="lab-row" id="cost-mat">
+                  <label class="lab-label" for="p-mat">모순의 결정체</label>
+                  <input class="field field--sm lab-money" id="p-mat" type="number" min="0" value="0" inputmode="numeric"><span class="help" id="p-mat-src">골드/개</span>
+                </div>
+                <div class="lab-row" id="cost-ticket">
+                  <label class="lab-label" for="p-ticket">보호권 시세</label>
+                  <input class="field field--sm lab-money" id="p-ticket" type="number" min="0" value="0" inputmode="numeric"><span class="help" id="p-ticket-src">골드/장</span>
+                </div>
+                <p class="help" id="cost-note"></p>
+              </div>
+            </details>
+
+            <button class="btn-gold forge-go" type="submit">확률 분석하기</button>
+          </div>
+
+          <!-- 오른쪽: 직접 강화해 보기 (게임 강화 창) -->
+          <div class="forge-right try-box" aria-labelledby="try-title">
+            <h3 class="side-title" id="try-title">직접 강화해 보기</h3>
+            <div class="try-stage">
+              <span class="try-ring" aria-hidden="true"></span>
+              <span class="try-level" id="try-level">+10</span>
+              <span class="try-state" id="try-state">왼쪽 조건으로 시작해요</span>
+            </div>
+            <div class="try-buttons">
+              <button type="button" class="btn-gold" id="try-one">강화!</button>
+              <button type="button" class="chip" id="try-goal">목표까지 자동</button>
+              <button type="button" class="chip" id="try-reset">처음부터</button>
+            </div>
+            <dl class="try-stats">
+              <div><dt>시도</dt><dd id="try-count">0회</dd></div>
+              <div><dt>보호권</dt><dd id="try-tickets">0장</dd></div>
+              <div><dt>쓴 비용</dt><dd id="try-cost">0 골드</dd></div>
+            </dl>
+            <ol class="try-log" id="try-log" aria-live="polite"></ol>
+          </div>
+        </div>
       </form>
 
       <div class="panel panel--pad" id="sim-result" aria-live="polite">
-        <p class="help">조건을 고르고 실험하기를 누르면 결과가 나와요.</p>
+        <p class="help">조건을 고르고 "확률 분석하기"를 누르면 평균 시도 횟수, 파괴 확률, 예상 비용이 나와요.</p>
       </div>
-    </section>
-
-    <section class="section" aria-labelledby="try-title">
-      <div class="section-head">
-        <h2 id="try-title">직접 강화해 보기</h2><span class="lab-code">EXP-02</span>
-        <span class="rule" aria-hidden="true"></span>
-      </div>
-      <div class="panel panel--pad try-box">
-        <div class="try-stage">
-          <span class="try-level" id="try-level">+10</span>
-          <span class="try-state" id="try-state">위 조건으로 시작해요</span>
-        </div>
-        <div class="try-buttons">
-          <button type="button" class="btn-gold" id="try-one">1번 시도</button>
-          <button type="button" class="chip" id="try-goal">목표까지 자동</button>
-          <button type="button" class="chip" id="try-reset">처음부터</button>
-        </div>
-        <dl class="try-stats">
-          <div><dt>시도</dt><dd id="try-count">0회</dd></div>
-          <div><dt>보호권</dt><dd id="try-tickets">0장</dd></div>
-          <div><dt>쓴 비용</dt><dd id="try-cost">0 골드</dd></div>
-        </dl>
-        <ol class="try-log" id="try-log" aria-live="polite"></ol>
-      </div>
-    </section>
-
-    <section class="section" id="fame-calc" aria-labelledby="fame-title">
-      <div class="section-head">
-        <h2 id="fame-title">명성 계산기</h2><span class="lab-code">EXP-03</span>
-        <span class="rule" aria-hidden="true"></span>
-      </div>
-      <form class="panel panel--pad lab-form" id="fame-form">
-        <p class="help">캐릭터를 불러오면 장착품마다 공식 기본 명성을 보여주고, 부위를 바꿨을 때 명성이 얼마나 달라지는지 계산해요.</p>
-        <div class="lab-row">
-          <label class="sr-only" for="fame-server">서버</label>
-          <select class="field field--sm" id="fame-server"></select>
-          <label class="sr-only" for="fame-name">캐릭터 이름</label>
-          <input class="field field--sm" id="fame-name" type="search" placeholder="캐릭터 이름" maxlength="12" autocomplete="off">
-          <button class="btn-gold btn-gold--sm" type="submit">불러오기</button>
-        </div>
-      </form>
-      <div id="fame-result" aria-live="polite"></div>
     </section>
 
     <section class="section" aria-labelledby="rate-title">
@@ -156,26 +167,15 @@
 
     <div class="ad-slot ad-bottom" data-ad="bottom" data-label="광고 영역 · 본문 하단 가로 배너"></div>
   </main>
-
-  <aside>
-    <section class="panel panel--pad">
-      <h2 class="side-title">연구실 도구</h2>
-      <ul class="side-list">
-        <li><a href="lab.html">강화 시뮬레이터<span class="arrow" aria-hidden="true">›</span></a></li>
-        <li><a href="#fame-calc">명성 계산기<span class="arrow" aria-hidden="true">›</span></a></li>
-      </ul>
-    </section>
-  </aside>
 </div>
 
 <div class="container about-wrap">
   <section class="section about" aria-labelledby="about-title">
     <div class="section-head"><h2 id="about-title">연구실 안내</h2><span class="lab-code">GUIDE</span><span class="rule" aria-hidden="true"></span></div>
     <div class="panel panel--pad about-body">
-      <p>던랩 연구실은 공식 데이터로 계산하는 도구 모음이에요. 강화 시뮬레이터는 강화·증폭·안전 강화의 공식 확률로 목표 단계까지의 평균 시도 횟수, 파괴 확률, 예상 비용을 계산하고, 명성 계산기는 장착품마다 공식 기본 명성을 합산해 장비를 바꿨을 때 명성이 얼마나 달라지는지 보여줘요.</p>
+      <p>던랩 강화 연구실은 강화·증폭·안전 강화의 공식 확률로 목표 단계까지의 평균 시도 횟수, 파괴 확률, 예상 비용을 계산하고, 게임처럼 직접 강화해 볼 수 있는 시뮬레이터예요.</p>
       <details class="faq"><summary>시뮬레이터 결과는 얼마나 정확한가요?</summary><p>평균 시도 횟수와 성공·파괴 확률은 공식 확률로 정확히 계산했어요. 다만 일반 강화 무기 11·12강의 실패 보정치는 오르는 폭이 공개되지 않아 계산에 넣지 않았어요.</p></details>
       <details class="faq"><summary>일반 강화 비용은 왜 직접 입력하나요?</summary><p>일반 강화의 단계별 골드·재료 수량은 공식 자료가 없어요. 증폭과 안전 강화는 공식 비용으로 자동 계산하고, 보호권과 재료 시세는 경매장 평균을 자동으로 넣어요.</p></details>
-      <details class="faq"><summary>명성 계산기의 "그 외 명성"은 무엇인가요?</summary><p>캐릭터 명성에서 장착품 기본 명성 합을 뺀 값이에요. 강화·증폭·재련 등으로 붙는 명성이 여기에 들어가는데, 공식 계산식이 없어 따로 나눠 보여주지는 못해요.</p></details>
     </div>
   </section>
 </div>
@@ -198,6 +198,5 @@
 <script src="assets/js/common.js"></script>
 <script src="assets/js/enhance-engine.js"></script>
 <script src="assets/js/lab.js"></script>
-<script src="assets/js/fame-calc.js"></script>
 </body>
 </html>

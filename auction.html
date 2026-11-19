@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경매장 시세 · 던랩</title>
+<meta name="description" content="던전앤파이터 경매장 시세. 강화 재료·소모품·카드의 평균 거래가, 전일 대비 등락, 거래량, 최근 30일 시세 그래프를 1시간마다 갱신해요.">
+<meta name="theme-color" content="#0D0A0F">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="canonical" href="https://tnrns144-lgtm.github.io/DUNPA/auction.html">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">던</span><span class="brand-name">던랩</span></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="auction.html" aria-current="page">경매장 시세</a>
+      <a href="ranking.html">명성 랭킹</a>
+      <a href="trend.html">랭커 트렌드</a>
+      <a href="avatar.html">아바타 마켓</a>
+      <a href="jobs.html">직업 연구</a>
+      <a href="lab.html">연구실</a>
+      <a href="items.html">아이템 사전</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero--compact">
+  <div class="hero-inner">
+    <p class="eyebrow">AUCTION HOUSE</p>
+    <h1 class="hero-title">경매장 시세</h1>
+    <p class="hero-sub">1시간마다 모으는 평균 거래가와 30일 시세 그래프</p>
+  </div>
+</section>
+
+<div class="container jobs-wrap">
+  <main>
+    <section class="section" id="auction" aria-labelledby="auction-title">
+      <div class="section-head">
+        <h2 id="auction-title">오늘의 경매장 시세</h2><span class="lab-code">LAB-01</span>
+        <span class="rule" aria-hidden="true"></span>
+        <span class="meta" id="auction-updated"></span>
+      </div>
+      <div class="chips" id="auction-tabs" role="group" aria-label="시세 분류"></div>
+      <div class="panel table-wrap" id="auction-table" aria-live="polite"></div>
+      <p class="help">평균 거래가는 최근 거래 기준이고, 전일 대비는 어제 같은 시간대 평균과 비교한 값이에요. 아이템 줄을 누르면 30일 그래프, 아이콘을 누르면 상세 정보가 나와요.</p>
+    </section>
+    <section class="section" aria-labelledby="ref-title">
+      <div class="section-head"><h2 id="ref-title">강화 재료 시세</h2><span class="lab-code">REF</span><span class="rule" aria-hidden="true"></span></div>
+      <div class="panel table-wrap" id="ref-table" aria-live="polite"></div>
+      <p class="help">연구실 강화 시뮬레이터의 예상 비용 계산에 쓰는 재료·보호권 시세예요.</p>
+    </section>
+  </main>
+</div>
+
+<div class="container about-wrap">
+  <section class="section about" aria-labelledby="about-title">
+    <div class="section-head"><h2 id="about-title">경매장 시세 안내</h2><span class="lab-code">GUIDE</span><span class="rule" aria-hidden="true"></span></div>
+    <div class="panel panel--pad about-body">
+      <p>던랩은 네오플 오픈 API의 경매장 거래 기록을 1시간마다 모아 아이템별 평균 거래가, 최저가, 거래량을 계산해요. 날짜별 평균가는 30일 동안 보관해서 시세 그래프로 보여줘요.</p>
+      <details class="faq"><summary>시세 그래프는 며칠까지 보여주나요?</summary><p>하루 평균 거래가를 매일 기록해서 최대 30일까지 보여줘요.</p></details>
+      <details class="faq"><summary>보여주는 아이템은 어떻게 정하나요?</summary><p>강화 재료·소모품·카드 분류마다 정해 둔 아이템과, 이름에 키워드가 들어간 아이템 중 거래가 많은 것을 자동으로 골라요.</p></details>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p>던랩은 던전앤파이터 공식 사이트가 아닌 팬 정보 사이트입니다.</p>
+      <p>게임 데이터: Powered by Neople Open API · 던전앤파이터의 상표와 게임 콘텐츠의 권리는 (주)네오플에 있습니다.</p>
+    </div>
+    <nav aria-label="사이트 정보">
+      <a href="reports.html">주간 리포트</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="privacy.html#contact">문의하기</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

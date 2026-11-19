@@ -46,6 +46,21 @@
     <priority>0.6</priority>
   </url>
   <!-- AUTO-REPORTS:END -->
+  <url>
+    <loc>https://tnrns144-lgtm.github.io/DUNPA/auction.html</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tnrns144-lgtm.github.io/DUNPA/ranking.html</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tnrns144-lgtm.github.io/DUNPA/trend.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- AUTO-JOBS:START -->
   <url>
     <loc>https://tnrns144-lgtm.github.io/DUNPA/jobs.html</loc>

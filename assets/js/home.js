@@ -1,4 +1,5 @@
-/* 메인 페이지: 경매장 시세, 명성 랭킹, 랭커 트렌드, 아바타 거래 (GitHub Actions가 모은 data/*.json 사용) */
+/* 메인·경매장 시세·랭커 트렌드 페이지 공용: 경매장 시세, 명성 랭킹, 랭커 트렌드, 아바타 거래 (data/*.json 사용)
+   각 기능은 그 페이지에 해당 칸(id)이 있을 때만 실행돼요. */
 (function () {
   const D = window.DNF;
   const $ = (id) => document.getElementById(id);
@@ -6,11 +7,11 @@
   document.addEventListener('DOMContentLoaded', () => {
     D.bindSearchForm($('search-form'));
     D.renderRecentChips($('recent-chips'));
-    renderRecentList();
-    loadAuction();
-    loadFame();
-    loadTrends();
-    loadAvatar();
+    if ($('recent-list')) renderRecentList();
+    if ($('auction-table')) loadAuction();
+    if ($('fame-body') || $('job-dist')) loadFame();
+    if ($('trend-list') || $('trend-log')) loadTrends();
+    if ($('avatar-recent')) loadAvatar();
     loadIconBand();
   });
 
@@ -30,8 +31,7 @@
     if (icons.length < 8) { el.remove(); return; }
     const cell = (it) => `<span class="item-icon band-slot" style="${D.rarityStyle(it.rarity)}" title="${D.esc(it.name || '')}"><img src="${D.IMG.item(it.id)}" alt="${D.esc(it.name || '')}" loading="lazy" width="28" height="28"></span>`;
     const row = icons.slice(0, 40).map(cell).join('');
-    // 끊김 없이 이어지게 같은 줄을 두 번 붙여요
-    el.innerHTML = `<div class="band-track">${row}${row}</div>`;
+    el.innerHTML = `<div class="band-track">${row}</div>`; // 흐르지 않는 고정 띠
   }
 
   /* ---------- 내 최근 검색 ---------- */
@@ -75,6 +75,7 @@
     });
     bindPriceChart();
     renderAuction(cats[0].id);
+    renderReference();
   }
 
   function trendCell(pct) {
@@ -113,6 +114,40 @@
         </tbody>
       </table>
       <p class="help price-hint">아이템을 누르면 최근 30일 시세 그래프가 펼쳐져요.</p>`;
+  }
+
+  /* ---------- 강화 재료 시세 (경매장 시세 페이지 전용, auction.json의 reference) ---------- */
+  function renderReference() {
+    const el = $('ref-table');
+    if (!el) return;
+    const rows = (auctionData?.reference || []).filter((it) => it.avgPrice);
+    if (!rows.length) { el.innerHTML = D.emptyState('재료 시세가 아직 없어요', '1시간마다 자동으로 채워져요.'); return; }
+    el.innerHTML = `<table class="data-table"><thead><tr><th scope="col">재료</th><th scope="col" class="num">평균 거래가</th><th scope="col" class="num">최저가</th><th scope="col" class="num">전일 대비</th></tr></thead><tbody>
+      ${rows.map((it) => `<tr class="price-row" data-item="${D.esc(it.itemName)}" tabindex="0" role="button" aria-expanded="false">
+        <td><div class="item-cell" style="${D.rarityStyle(it.itemRarity)}"><span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span><span><span class="item-name">${D.esc(it.itemName)}</span><span class="item-sub">${D.esc(it.itemRarity || '')}</span></span></div></td>
+        <td class="num"><strong>${D.gold(it.avgPrice)}</strong> <span class="gold-unit">골드</span></td>
+        <td class="num">${D.gold(it.minPrice)} <span class="gold-unit">골드</span></td>
+        <td class="num">${trendCell(it.changePct)}</td></tr>`).join('')}
+    </tbody></table>`;
+    // 재료 표에서도 줄을 누르면 시세 그래프
+    if (!el.dataset.bound) {
+      el.dataset.bound = '1';
+      el.addEventListener('click', async (e) => {
+        const row = e.target.closest('.price-row');
+        if (!row) return;
+        const next = row.nextElementSibling;
+        if (next && next.classList.contains('price-chart-row')) { next.remove(); row.setAttribute('aria-expanded', 'false'); return; }
+        el.querySelectorAll('.price-chart-row').forEach((r) => r.remove());
+        const tr = document.createElement('tr');
+        tr.className = 'price-chart-row';
+        tr.innerHTML = '<td colspan="4"></td>';
+        row.after(tr);
+        row.setAttribute('aria-expanded', 'true');
+        const hist = await getHistory();
+        const pts = Object.keys(hist).sort().map((d) => ({ d, v: hist[d][row.dataset.item] })).filter((p) => p.v > 0);
+        tr.firstElementChild.innerHTML = priceChart(row.dataset.item, pts);
+      });
+    }
   }
 
   /* ---------- 경매장 시세 그래프 (data/history/auction-daily.json: 날짜별 평균가) ---------- */
@@ -192,13 +227,14 @@
 
   async function loadFame() {
     const serverSel = $('fame-server');
-    D.fillServerSelect(serverSel);
+    if (serverSel) D.fillServerSelect(serverSel);
     try {
       fameData = await D.getJSON('data/fame.json');
     } catch (e) {
       fameData = null;
     }
-    renderJobDist();
+    if ($('job-dist')) renderJobDist();
+    if (!$('fame-body')) return; // 명성 랭킹 칸이 없는 페이지(랭커 트렌드)
     if (!fameData || !(fameData.all || []).length) {
       $('fame-body').innerHTML = `<div class="panel">${D.emptyState('랭킹 수집 전이에요', 'API 키를 등록하면 자동으로 채워져요.')}</div>`;
       return;
@@ -333,6 +369,7 @@
 
   function renderTrendLog() {
     const el = $('trend-log');
+    if (!el) return;
     if (!trendData) {
       el.innerHTML = D.emptyState('관측 데이터가 아직 없어요', '하루 한 번 자동으로 채워져요.');
       return;
