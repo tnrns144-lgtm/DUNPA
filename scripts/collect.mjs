@@ -575,6 +575,9 @@ async function writeJobPages() {
   const listFile = join(ROOT, 'jobs.html');
   let list;
   try { list = await readFile(listFile, 'utf8'); } catch { return; }
+  // 목록 페이지의 ?v= 버전을 그대로 붙여서, 디자인·스크립트를 고치면 브라우저가 새 파일을 받게 해요
+  const assetVer = (list.match(/style\.css\?v=([0-9a-z]+)/) || [])[1];
+  const assetQ = assetVer ? `?v=${assetVer}` : '';
   const nl = list.includes('\r\n') ? '\r\n' : '\n';
   const BASE = 'https://tnrns144-lgtm.github.io/DUNPA/';
   const IMG_ITEM = (id) => `https://img-api.neople.co.kr/df/items/${encodeURIComponent(id)}`;
@@ -637,8 +640,8 @@ async function writeJobPages() {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="assets/css/theme.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/theme.css${assetQ}">
+<link rel="stylesheet" href="assets/css/style.css${assetQ}">
 <link rel="canonical" href="${BASE}jobs/${jobPageId(j)}.html">
 </head>
 <body>
@@ -686,8 +689,8 @@ ${header}
 
 ${footer}
 
-<script src="assets/js/config.js"></script>
-<script src="assets/js/common.js"></script>
+<script src="assets/js/config.js${assetQ}"></script>
+<script src="assets/js/common.js${assetQ}"></script>
 </body>
 </html>
 `;
@@ -729,6 +732,9 @@ async function writeWeeklyReport() {
   const listFile = join(ROOT, 'reports.html');
   let list;
   try { list = await readFile(listFile, 'utf8'); } catch { return; }
+  // 목록 페이지의 ?v= 버전을 그대로 붙여서, 디자인·스크립트를 고치면 브라우저가 새 파일을 받게 해요
+  const assetVer = (list.match(/style\.css\?v=([0-9a-z]+)/) || [])[1];
+  const assetQ = assetVer ? `?v=${assetVer}` : '';
   const nl = list.includes('\r\n') ? '\r\n' : '\n';
   const BASE = 'https://tnrns144-lgtm.github.io/DUNPA/';
   const today = kstDate(now);
@@ -815,8 +821,8 @@ async function writeWeeklyReport() {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="assets/css/theme.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/theme.css${assetQ}">
+<link rel="stylesheet" href="assets/css/style.css${assetQ}">
 <link rel="canonical" href="${BASE}reports/${wk.id}.html">
 </head>
 <body>
@@ -838,8 +844,8 @@ ${header}
 
 ${footer}
 
-<script src="assets/js/config.js"></script>
-<script src="assets/js/common.js"></script>
+<script src="assets/js/config.js${assetQ}"></script>
+<script src="assets/js/common.js${assetQ}"></script>
 </body>
 </html>
 `;
