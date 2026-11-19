@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T01:30:05.291Z",
+ "updatedAt": "2026-11-19T03:06:07.055Z",
  "all": [
   {
    "serverId": "cain",
@@ -1187,7 +1187,7 @@
    "level": 115,
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 이단심판관",
-   "fame": 134992
+   "fame": 134997
   },
   {
    "serverId": "siroco",
@@ -2317,15 +2317,6 @@
     "jobName": "귀검사(남)",
     "jobGrowName": "眞 웨펀마스터",
     "fame": 134766
-   },
-   {
-    "serverId": "hilder",
-    "characterId": "940a89fff60ad2b522e1ad1dda0c08dc",
-    "characterName": "소라센",
-    "level": 115,
-    "jobName": "아처",
-    "jobGrowName": "眞 뮤즈",
-    "fame": 134756
    },
    {
     "serverId": "hilder",
