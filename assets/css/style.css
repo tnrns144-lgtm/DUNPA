@@ -546,3 +546,21 @@ select.field--sm { flex: 0 0 auto; }
 .data-table tr.in-range td { background: var(--accent-soft); }
 .cost-cell { font-size: 12px; color: var(--text-sub); }
 .lab-form .btn-gold { flex: 0 0 auto; }
+
+/* ---------- 랭커 룩 갤러리 ---------- */
+.use-list--pick li { cursor: pointer; padding-left: 6px; padding-right: 6px; border-left: 2px solid transparent; }
+.use-list--pick li:hover { background: var(--accent-soft); }
+.use-list--pick li[aria-pressed="true"] { background: var(--accent-soft); border-left-color: var(--accent); }
+.look-head { padding-bottom: 4px; }
+.look-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+.look-card {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 6px; text-align: center;
+  text-decoration: none; color: var(--text); background: var(--surface-3); border: 1px solid var(--line-soft);
+}
+.look-card:hover { border-color: var(--accent); color: var(--text); }
+.look-img { width: 100%; height: 130px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden;
+  background: radial-gradient(circle at 50% 70%, var(--accent-soft), transparent 70%); }
+.look-img img { max-height: 100%; width: auto; object-fit: contain; }
+.look-card strong { font-size: 13px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.look-card small { font-size: 11px; color: var(--text-sub); }
+.look-card .look-fame { font-family: var(--font-num); color: var(--accent); }

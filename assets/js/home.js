@@ -212,6 +212,7 @@
     if (!tabs.length) {
       $('trend-tabs').innerHTML = '';
       $('trend-list').innerHTML = D.emptyState('트렌드 수집 전이에요', '하루 한 번 자동으로 채워져요.');
+      $('look-gallery').innerHTML = D.emptyState('갤러리 준비 중이에요', '랭커 트렌드가 모이면 착용 랭커 모습이 나와요.');
       return;
     }
     $('trend-updated').textContent = trendData.updatedAt ? `${D.timeLabel(trendData.updatedAt)} 기준` : '';
@@ -224,6 +225,7 @@
       tabsEl.querySelectorAll('[data-trend]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
       renderTrend(btn.dataset.trend);
     });
+    bindLookPicker();
     renderTrend(tabs[0].id);
   }
 
@@ -269,9 +271,10 @@
   function renderTrend(id) {
     const list = trendData?.[id] || [];
     const sample = trendData?.sample || 0;
-    $('trend-list').innerHTML = `<ol class="use-list">
+    const hasWearers = !!trendData?.wearers?.[id];
+    $('trend-list').innerHTML = `<ol class="use-list${hasWearers ? ' use-list--pick' : ''}">
       ${list.map((it, i) => `
-        <li>
+        <li${hasWearers ? ` tabindex="0" role="button" data-pick="${i}" aria-pressed="${i === 0}"` : ''}>
           <span class="rank-no">${i + 1}</span>
           <div class="item-cell" style="${D.rarityStyle(it.itemRarity)}">
             <span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
@@ -280,7 +283,51 @@
           <span class="use-count">${changeBadge(it)} <strong>${D.num(it.count)}명</strong>${sample ? `<br>${(it.count / sample * 100).toFixed(0)}%` : ''}</span>
         </li>`).join('')}
     </ol>
-    ${sample ? `<p class="help">조사한 랭커 ${D.num(sample)}명 기준</p>` : ''}`;
+    ${sample ? `<p class="help">조사한 랭커 ${D.num(sample)}명 기준${hasWearers ? ' · 항목을 누르면 아래 랭커 룩 갤러리에 착용 랭커가 나와요' : ''}</p>` : ''}`;
+    renderLook(id, 0);
+  }
+
+  /* ---------- 랭커 룩 갤러리: 이 장착품을 실제로 쓰는 랭커들의 모습 ---------- */
+  function bindLookPicker() {
+    const box = $('trend-list');
+    const pick = (li) => {
+      if (!li) return;
+      box.querySelectorAll('[data-pick]').forEach((x) => x.setAttribute('aria-pressed', String(x === li)));
+      const tab = document.querySelector('#trend-tabs [aria-pressed="true"]');
+      renderLook(tab ? tab.dataset.trend : 'title', Number(li.dataset.pick));
+    };
+    box.addEventListener('click', (e) => pick(e.target.closest('[data-pick]')));
+    box.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { const li = e.target.closest('[data-pick]'); if (li) { e.preventDefault(); pick(li); } }
+    });
+  }
+
+  function renderLook(id, index) {
+    const el = $('look-gallery');
+    if (!el) return;
+    const item = (trendData?.[id] || [])[index];
+    const people = item ? (trendData?.wearers?.[id]?.[item.itemName] || []) : [];
+    if (!item || !people.length) {
+      el.innerHTML = D.emptyState('갤러리 준비 중이에요', '다음 랭커 트렌드 수집(하루 한 번)부터 착용 랭커 모습이 나와요.');
+      return;
+    }
+    const label = (TREND_TABS.find((t) => t.id === id) || {}).name || '';
+    el.innerHTML = `
+      <div class="look-head">
+        <span class="item-cell" style="${D.rarityStyle(item.itemRarity)}">
+          <span class="item-icon">${item.itemId ? `<img src="${D.IMG.item(item.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
+          <span style="min-width:0"><span class="item-name">${D.esc(item.itemName)}</span><span class="item-sub">${D.esc(label)} · 랭커 ${D.num(item.count)}명 착용${people.length < item.count ? ` · 명성 높은 ${people.length}명 표시` : ''}</span></span>
+        </span>
+      </div>
+      <div class="look-grid">
+        ${people.map((p) => `
+          <a class="look-card" href="${D.characterLink(p.serverId, p.characterId)}">
+            <span class="look-img"><img src="${D.IMG.character(p.serverId, p.characterId, 1)}" alt="${D.esc(p.characterName)}" loading="lazy"></span>
+            <strong>${D.esc(p.characterName)}</strong>
+            <small>${D.esc(p.jobGrowName || '')}</small>
+            <small class="look-fame">${D.esc(D.serverName(p.serverId))} · ${D.num(p.fame)}</small>
+          </a>`).join('')}
+      </div>`;
   }
 
   /* ---------- 아바타 마켓 최근 거래 (한 줄 목록) ---------- */

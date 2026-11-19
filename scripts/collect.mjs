@@ -192,12 +192,20 @@ async function collectTrends() {
   if (!chars.length) throw new Error('명성 데이터가 없어요');
 
   const counters = { title: new Map(), creature: new Map(), aura: new Map(), weapon: new Map() };
+  // 랭커 룩 갤러리: 장착품마다 실제로 쓰는 랭커 목록 (명성 높은 순으로 들어와요)
+  const wearers = { title: new Map(), creature: new Map(), aura: new Map(), weapon: new Map() };
+  let who = null;
   const add = (key, item) => {
     if (!item || !item.itemName) return;
     const map = counters[key];
     const cur = map.get(item.itemName) || { itemId: item.itemId || '', itemName: item.itemName, itemRarity: item.itemRarity || '', count: 0 };
     cur.count++;
     map.set(item.itemName, cur);
+    if (who) {
+      const list = wearers[key].get(item.itemName) || [];
+      if (list.length < 12) list.push(who);
+      wearers[key].set(item.itemName, list);
+    }
   };
   const isSlot = (s, id, name) => s.slotId === id || s.slotName === name;
   // 클론 아바타가 있으면 겉으로 보이는 클론 쪽을 셉니다.
@@ -215,6 +223,7 @@ async function collectTrends() {
         call(`${base}/equip/creature`)
       ]);
       sample++;
+      who = { serverId: c.serverId, characterId: c.characterId, characterName: c.characterName, jobGrowName: c.jobGrowName || c.jobName, fame: c.fame };
       add('title', (eq.equipment || []).find((e) => isSlot(e, 'TITLE', '칭호')));
       const avatars = av.avatar || [];
       const aura = avatars.find((a) => isSlot(a, 'AURORA', '오라'));
@@ -260,6 +269,8 @@ async function collectTrends() {
     updatedAt, sample, prevDate,
     title: top('title'), creature: top('creature'), aura: top('aura'), weapon: top('weapon'),
     risers,
+    // 순위(TOP 10)에 든 장착품만 착용 랭커 목록을 남겨요 (랭커 룩 갤러리)
+    wearers: Object.fromEntries(KEYS.map((k) => [k, Object.fromEntries(top(k).map((it) => [it.itemName, wearers[k].get(it.itemName) || []]))])),
     counts  // 캐릭터 연구 보고서에서 '랭커 몇 %가 쓰는지' 찾을 때 사용
   });
   report.ok.push(`랭커 트렌드 ${sample}명`);
