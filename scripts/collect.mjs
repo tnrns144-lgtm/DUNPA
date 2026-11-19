@@ -355,48 +355,66 @@ async function writeBrief() {
   ]);
   const kst = new Date(now.getTime() + 9 * 3600 * 1000);
   const when = `${kst.getUTCFullYear()}년 ${kst.getUTCMonth() + 1}월 ${kst.getUTCDate()}일 ${kst.getUTCHours()}시`;
-  const parts = [];
+  const cards = [];
+  const card = (title, code, href, inner) =>
+    `<article class="brief-card"><h3><span class="brief-code">${code}</span>${title}</h3>${inner}<a class="brief-more" href="${href}">자세히 보기 ›</a></article>`;
+  const chg = (p) => (Number.isFinite(p) && Math.abs(p) >= 0.05
+    ? `<span class="brief-chg ${p > 0 ? 'up' : 'down'}">${p > 0 ? '▲' : '▼'}${Math.abs(p).toFixed(1)}%</span>`
+    : '<span class="brief-chg">-</span>');
 
+  // 1) 경매장 시세: 분류별 2개씩 표
   const items = (auction?.categories || []).flatMap((c) => (c.items || []).slice(0, 2).map((it) => ({ ...it, cat: c.name }))).filter((it) => it.avgPrice);
   if (items.length) {
-    parts.push(`<h3>경매장 시세</h3><ul>${items.map((it) => {
-      const ch = Number.isFinite(it.changePct) && Math.abs(it.changePct) >= 0.05 ? ` (전일 대비 ${it.changePct > 0 ? '▲' : '▼'}${Math.abs(it.changePct).toFixed(1)}%)` : '';
-      return `<li>${escHtml(it.cat)} · ${escHtml(it.itemName)}: 평균 ${goldKo(it.avgPrice)} 골드${ch}</li>`;
-    }).join('')}</ul>`);
+    cards.push(card('경매장 시세', 'LAB-01', '#auction',
+      `<p class="brief-note">평균 거래가 · 전일 대비</p><table class="brief-table"><tbody>${items.map((it) =>
+        `<tr><td><span class="brief-cat">${escHtml(it.cat)}</span>${escHtml(it.itemName)}</td><td class="num">${goldKo(it.avgPrice)} 골드</td><td class="num">${chg(it.changePct)}</td></tr>`).join('')}</tbody></table>`));
   }
 
+  // 2) 명성 랭킹: 1~3위 + 최다 직업 + 서버별 1위
   const all = fame?.all || [];
   if (all.length) {
-    const who = (c) => `${escHtml(SERVER_KO[c.serverId] || c.serverId)} 서버 ${escHtml(c.characterName)}(${escHtml(c.jobGrowName || c.jobName)}, 명성 ${Number(c.fame).toLocaleString('ko-KR')})`;
-    const tops = Object.entries(fame.byServer || {}).map(([id, list]) => list && list[0] ? `${escHtml(SERVER_KO[id] || id)} ${escHtml(list[0].characterName)}` : '').filter(Boolean);
+    const tops = Object.entries(fame.byServer || {}).filter(([, list]) => list && list[0])
+      .map(([id, list]) => `<span>${escHtml(SERVER_KO[id] || id)} <b>${escHtml(list[0].characterName)}</b></span>`);
     const jobs = new Map();
     all.forEach((c) => { const j = c.jobGrowName || c.jobName; if (j) jobs.set(j, (jobs.get(j) || 0) + 1); });
     const [topJob, topN] = [...jobs.entries()].sort((a, b) => b[1] - a[1])[0] || [];
-    parts.push(`<h3>명성 랭킹</h3><p>전체 서버 명성 1위는 ${who(all[0])}${all[1] ? `, 2위는 ${who(all[1])}` : ''}${all[2] ? `, 3위는 ${who(all[2])}` : ''}예요.${tops.length ? ` 서버별 1위: ${tops.join(', ')}.` : ''}${topJob ? ` 랭커 중 가장 많은 직업: ${escHtml(topJob)}(${(topN / all.length * 100).toFixed(1)}%).` : ''}</p>`);
+    cards.push(card('명성 랭킹', 'LAB-02', '#fame',
+      `<ol class="brief-rank">${all.slice(0, 3).map((c, i) =>
+        `<li><span class="brief-medal r${i + 1}">${i + 1}</span><span class="brief-who"><strong>${escHtml(c.characterName)}</strong><small>${escHtml(SERVER_KO[c.serverId] || c.serverId)} · ${escHtml(c.jobGrowName || c.jobName)}</small></span><span class="num">명성 ${Number(c.fame).toLocaleString('ko-KR')}</span></li>`).join('')}</ol>`
+      + (topJob ? `<p class="brief-line"><span>랭커 최다 직업</span><strong>${escHtml(topJob)} ${(topN / all.length * 100).toFixed(1)}%</strong></p>` : '')
+      + (tops.length ? `<p class="brief-note">서버별 1위</p><p class="brief-chips">${tops.join('')}</p>` : '')));
   }
 
+  // 3) 랭커 트렌드: 분류별 1위 + 급상승
   if (trends?.sample) {
     const label = { title: '칭호', creature: '크리쳐', aura: '오라', weapon: '무기 아바타' };
-    const picks = Object.keys(label).map((k) => (trends[k] || [])[0] ? `${label[k]}는 ${escHtml(trends[k][0].itemName)}(${Math.round(trends[k][0].count / trends.sample * 100)}%)` : '').filter(Boolean);
+    const rows = Object.keys(label).filter((k) => (trends[k] || [])[0]).map((k) =>
+      `<div><dt>${label[k]}</dt><dd>${escHtml(trends[k][0].itemName)}<b>${Math.round(trends[k][0].count / trends.sample * 100)}%</b></dd></div>`);
     const rise = (trends.risers || [])[0];
-    if (picks.length) parts.push(`<h3>랭커 트렌드</h3><p>랭커들이 가장 많이 쓰는 ${picks.join(', ')}예요.${rise ? ` 직전 관측보다 가장 많이 늘어난 장착품: ${escHtml(label[rise.category] || '')} ${escHtml(rise.itemName)}.` : ''}</p>`);
+    const riseRow = rise ? `<div class="brief-rise"><dt>급상승</dt><dd>${escHtml(label[rise.category] || '')} · ${escHtml(rise.itemName)}<b>${rise.isNew ? 'NEW' : `▲${rise.delta}`}</b></dd></div>` : '';
+    if (rows.length) cards.push(card('랭커 트렌드', 'LAB-03', '#trend', `<p class="brief-note">랭커가 가장 많이 쓰는 장착품 · 사용 비율</p><dl class="brief-dl">${rows.join('')}${riseRow}</dl>`));
   }
 
+  // 4) 아바타 마켓: 숫자 타일
   const sale = avatar?.sale || [];
   const sold = avatar?.sold || [];
   if (sale.length || sold.length) {
-    const low = (r) => { const p = sale.filter((x) => x.avatarRarity === r && x.price > 0).map((x) => x.price); return p.length ? `${r} 최저 ${goldKo(Math.min(...p))} 골드` : ''; };
-    const lows = ['상급', '레어', '혼합'].map(low).filter(Boolean);
-    parts.push(`<h3>아바타 마켓</h3><p>지금 판매 중인 매물 ${sale.length.toLocaleString('ko-KR')}건을 모았어요${lows.length ? ` (${lows.join(', ')})` : ''}.${sold[0] ? ` 가장 최근 거래: ${escHtml(sold[0].title)}, ${goldKo(sold[0].price)} 골드.` : ''}</p>`);
+    const low = (r) => {
+      const p = sale.filter((x) => x.avatarRarity === r && x.price > 0).map((x) => x.price);
+      return p.length ? `<div><span>${r} 최저가</span><strong>${goldKo(Math.min(...p))}</strong></div>` : '';
+    };
+    cards.push(card('아바타 마켓', 'LAB-04', 'avatar.html',
+      `<div class="brief-stats"><div><span>판매 중 매물</span><strong>${sale.length.toLocaleString('ko-KR')}건</strong></div>${['상급', '레어', '혼합'].map(low).join('')}</div>`
+      + (sold[0] ? `<p class="brief-line"><span>최근 거래</span><strong>${escHtml(sold[0].title)} · ${goldKo(sold[0].price)} 골드</strong></p>` : '')));
   }
 
-  if (!parts.length) return;
+  if (!cards.length) return;
   const html = `
     <section class="section brief" id="brief" aria-labelledby="brief-title">
       <div class="section-head"><h2 id="brief-title">오늘의 연구 브리핑</h2><span class="lab-code">BRIEF</span><span class="rule" aria-hidden="true"></span><span class="meta">${when} 기준</span></div>
-      <div class="panel panel--pad brief-body">
-        <p>${when} 기준으로 던랩이 네오플 오픈 API에서 모은 던전앤파이터 데이터 요약이에요.</p>
-        ${parts.join('\n        ')}
+      <p class="brief-intro">${when} 기준으로 던랩이 네오플 오픈 API에서 모은 던전앤파이터 경매장 시세, 명성 랭킹, 랭커 장착품, 아바타 마켓 요약이에요.</p>
+      <div class="brief-grid">
+        ${cards.join('\n        ')}
       </div>
     </section>
     `;
