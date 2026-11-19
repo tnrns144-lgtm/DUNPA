@@ -133,11 +133,24 @@ async function collectAuction() {
     categories.push({ id: cat.id, name: cat.name, items: [...picked.values()] });
   }
 
+  // 화면에는 안 나오지만 연구실(강화 시뮬레이터) 비용 계산에 쓰는 재료 시세
+  const reference = [];
+  for (const name of config.reference || []) {
+    try {
+      const data = await call('/df/auction-sold', { itemName: name, wordType: 'match', limit: 100 });
+      const rows = (data.rows || []).filter((r) => r.unitPrice > 0);
+      if (rows.length) reference.push(summarize(rows, history, today, yesterday, dayAgo));
+      else missing.push(name);
+    } catch (e) {
+      missing.push(name);
+    }
+  }
+
   // 30일치만 보관
   const keep = Object.keys(history).sort().slice(-30);
   const trimmed = Object.fromEntries(keep.map((k) => [k, history[k]]));
   await writeJSON('data/history/auction-daily.json', trimmed);
-  await writeJSON('data/auction.json', { updatedAt, categories, missing });
+  await writeJSON('data/auction.json', { updatedAt, categories, reference, missing });
   report.ok.push(`경매장 시세 ${categories.reduce((s, c) => s + c.items.length, 0)}개 (이름 못 찾음: ${missing.length}개)`);
 }
 

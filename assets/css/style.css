@@ -502,3 +502,47 @@ select.field--sm { flex: 0 0 auto; }
   .market-list { grid-template-columns: 1fr; }
   .market-filters .field, .market-filters input.field { flex: 1 1 45%; min-width: 0; }
 }
+
+/* ---------- 연구실 (강화 시뮬레이터) ---------- */
+.lab-form { gap: 14px; }
+.lab-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.lab-row[hidden] { display: none; }
+.lab-label { min-width: 6.5em; font-size: 14px; color: var(--text-sub); }
+.lab-num { width: 90px; font-family: var(--font-num); }
+.lab-money { width: 150px; font-family: var(--font-num); }
+.lab-check { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-soft); cursor: pointer; }
+.lab-check input { width: 18px; height: 18px; accent-color: var(--accent); }
+.lab-cost { margin: 0; padding: 14px; border: 1px dashed var(--line-strong); display: flex; flex-direction: column; gap: 10px; }
+.lab-cost legend { padding: 0 6px; font-weight: 700; color: var(--title); }
+.lab-form .btn-gold { align-self: flex-start; }
+.result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+.result-cell, .luck-row > div {
+  display: flex; flex-direction: column; gap: 4px; padding: 14px;
+  background: var(--accent-soft); border: 1px solid var(--line);
+}
+.result-cell span, .luck-row span { font-size: 12px; color: var(--text-sub); }
+.result-cell strong { font-family: var(--font-num); font-size: 24px; color: var(--title); line-height: 1.2; word-break: break-all; }
+.result-cell small, .luck-row small { font-size: 12px; color: var(--text-dim); }
+.result-cost { border-color: var(--line-strong); }
+.result-cost strong { color: var(--gold); font-size: 20px; }
+.luck-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.luck-row strong { font-family: var(--font-num); font-size: 18px; color: var(--text); }
+.try-box { gap: 16px; }
+.try-stage { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 18px; background: var(--surface-3); border: 1px solid var(--line-soft); }
+.try-level { font-family: var(--font-num); font-size: 56px; font-weight: 700; line-height: 1; color: var(--title); text-shadow: 0 0 18px var(--title-glow); transition: color .2s; }
+.try-level.ok { color: var(--grade-good); }
+.try-level.goal { color: var(--gold); text-shadow: 0 0 24px var(--gold); }
+.try-level.bad { color: var(--up); text-shadow: none; }
+.try-state { font-size: 14px; color: var(--text-sub); text-align: center; }
+.try-buttons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.try-buttons button:disabled { opacity: .45; cursor: not-allowed; }
+.try-stats { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
+.try-stats dt { font-size: 12px; color: var(--text-sub); }
+.try-stats dd { margin: 2px 0 0; font-family: var(--font-num); font-weight: 700; color: var(--text); }
+.try-log { margin: 0; padding: 0; list-style: none; max-height: 220px; overflow-y: auto; font-family: var(--font-num); font-size: 13px; border-top: 1px solid var(--line-soft); }
+.try-log li { padding: 5px 2px; border-bottom: 1px solid var(--line-soft); color: var(--text-sub); }
+.try-log li.ok { color: var(--grade-good); }
+.try-log li.bad { color: var(--up); }
+.data-table tr.in-range td { background: var(--accent-soft); }
+.cost-cell { font-size: 12px; color: var(--text-sub); }
+.lab-form .btn-gold { flex: 0 0 auto; }
