@@ -29,7 +29,101 @@
     }, true);
     const q = new URLSearchParams(location.search).get('q');
     if (q) { form.q.value = q; search(q); }
+    bindSuggest(form);
   });
+
+  /* ---------- 자동완성: 입력하면 연관 아이템을 아이콘과 함께 아래에 보여줘요 ----------
+     Worker의 /items(이름 앞부분 검색, 1시간 캐시)를 써요. 2글자 이상, 입력을 멈추고 0.25초 뒤에 조회 */
+  function bindSuggest(form) {
+    const input = form.q;
+    const box = document.createElement('ul');
+    box.className = 'suggest';
+    box.id = 'live-suggest';
+    box.setAttribute('role', 'listbox');
+    box.hidden = true;
+    form.appendChild(box);
+    input.setAttribute('role', 'combobox');
+    input.setAttribute('aria-autocomplete', 'list');
+    input.setAttribute('aria-controls', 'live-suggest');
+    input.setAttribute('aria-expanded', 'false');
+    const cache = {};
+    let timer = null;
+    let items = [];
+    let active = -1;
+    let lastQ = '';
+
+    const close = () => { box.hidden = true; active = -1; input.setAttribute('aria-expanded', 'false'); };
+    const paint = () => {
+      box.querySelectorAll('li').forEach((li, i) => li.setAttribute('aria-selected', String(i === active)));
+      const cur = box.children[active];
+      if (cur) cur.scrollIntoView({ block: 'nearest' });
+    };
+    const choose = (i) => {
+      const it = items[i];
+      if (!it) return;
+      input.value = it.itemName;
+      close();
+      history.replaceState(null, '', `auction.html?q=${encodeURIComponent(it.itemName)}#live`);
+      select(it.itemName);
+    };
+    const show = (q, list) => {
+      // 이름이 같은 아이템은 하나만, 입력과 정확히 같은 이름을 맨 위로
+      const seen = new Set();
+      items = list.filter((it) => !seen.has(it.itemName) && seen.add(it.itemName))
+        .sort((a, b) => (b.itemName === q) - (a.itemName === q) || a.itemName.length - b.itemName.length)
+        .slice(0, 10);
+      if (!items.length) {
+        box.innerHTML = '<li class="suggest-empty">연관 아이템이 없어요</li>';
+      } else {
+        const hl = (name) => {
+          const i = name.indexOf(q);
+          return i < 0 ? D.esc(name) : `${D.esc(name.slice(0, i))}<mark>${D.esc(name.slice(i, i + q.length))}</mark>${D.esc(name.slice(i + q.length))}`;
+        };
+        box.innerHTML = items.map((it, i) => `
+          <li role="option" data-i="${i}" aria-selected="false">
+            <span class="item-cell" style="${D.rarityStyle(it.itemRarity)}">
+              <span class="item-icon">${it.itemId ? `<img src="${D.IMG.item(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span>
+              <span><span class="item-name">${hl(it.itemName)}</span><span class="item-sub">${D.esc(it.itemRarity || '')}${it.itemTypeDetail || it.itemType ? ' · ' + D.esc(it.itemTypeDetail || it.itemType) : ''}</span></span>
+            </span>
+          </li>`).join('');
+      }
+      active = -1;
+      box.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    };
+    const lookup = async (q) => {
+      lastQ = q;
+      try {
+        if (!cache[q]) cache[q] = D.api('items', { name: q }).then((d) => d.rows || []).catch((e) => { delete cache[q]; throw e; });
+        const list = await cache[q];
+        if (q === lastQ && input.value.trim() === q) show(q, list);
+      } catch (e) { close(); }
+    };
+
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      const q = input.value.trim();
+      if (q.length < 2) { close(); return; }
+      timer = setTimeout(() => lookup(q), 250);
+    });
+    input.addEventListener('keydown', (e) => {
+      if (box.hidden || !items.length) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); active = (active + 1) % items.length; paint(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); active = (active - 1 + items.length) % items.length; paint(); }
+      else if (e.key === 'Enter' && active >= 0) { e.preventDefault(); choose(active); }
+      else if (e.key === 'Escape') { close(); }
+    });
+    // 아이콘 클릭(상세 팝업)보다 먼저 받지 않도록 mousedown으로 선택
+    box.addEventListener('mousedown', (e) => {
+      const li = e.target.closest('[data-i]');
+      if (!li) return;
+      e.preventDefault();
+      choose(Number(li.dataset.i));
+    });
+    input.addEventListener('blur', () => setTimeout(close, 150));
+    input.addEventListener('focus', () => { if (items.length && input.value.trim().length >= 2) { box.hidden = false; input.setAttribute('aria-expanded', 'true'); } });
+    form.addEventListener('submit', close);
+  }
 
   function errorBox(err) {
     if (err && err.status === 404 && /없는 주소/.test(err.message || '')) {

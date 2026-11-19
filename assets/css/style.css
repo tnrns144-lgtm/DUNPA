@@ -1021,3 +1021,18 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
 .live-table td, .live-table th { padding: 8px 10px; }
 .dot--trade { fill: color-mix(in srgb, var(--accent) 55%, transparent); stroke: none; }
 #auction-table .item-name, #ref-table .item-name { cursor: pointer; text-decoration: underline dotted var(--line-strong); text-underline-offset: 3px; }
+
+/* ---------- 검색 자동완성 목록 ---------- */
+.live-search { position: relative; z-index: 6; }
+.suggest {
+  position: absolute; left: 14px; right: 14px; top: calc(100% - 6px); z-index: 20; margin: 0; padding: 4px 0; list-style: none;
+  max-height: 380px; overflow-y: auto; background: linear-gradient(180deg, var(--surface-2), var(--bg-deep));
+  border: 1px solid var(--frame); box-shadow: var(--tip-shadow);
+}
+.suggest[hidden] { display: none; }
+.suggest li { padding: 6px 12px; cursor: pointer; border-bottom: 1px solid var(--line-soft); }
+.suggest li:last-child { border-bottom: 0; }
+.suggest li:hover, .suggest li[aria-selected="true"] { background: var(--accent-soft); box-shadow: inset 2px 0 0 var(--accent); }
+.suggest .item-name { font-size: 14px; }
+.suggest mark { background: none; color: var(--accent-hover); text-decoration: underline; text-underline-offset: 3px; }
+.suggest-empty { color: var(--text-dim); cursor: default; font-size: 13px; }
