@@ -441,13 +441,245 @@ async function writeBrief() {
   report.ok.push('브리핑 갱신');
 }
 
+/* ---------- 직업별 랭커 세팅 (하루 1번) ---------- */
+// /df/jobs로 전직 목록을 받고, 전직마다 명성 상위 랭커를 최대 JOB_SAMPLE명 골라 장착품을 집계해요.
+// 명성 검색은 한 번에 '최고 명성 기준 2,000 범위'만 돌려줘서, 랭커가 모자라면 범위를 아래로 옮겨 가며 다시 찾아요.
+const JOB_SAMPLE = 10;
+const JOB_WINDOWS = 12;   // 범위를 아래로 옮기는 최대 횟수 (API 호출을 무료 범위 안으로 제한)
+
+function lastGrow(g) { let x = g; while (x && x.next) x = x.next; return x || g; }
+
+async function collectJobs() {
+  const prev = await readJSON('data/jobs.json', null);
+  const age = prev?.updatedAt ? now - new Date(prev.updatedAt) : Infinity;
+  if (process.env.FORCE_TRENDS !== '1' && age < 20 * 3600 * 1000) { report.ok.push('직업 연구 건너뜀 (하루 1번)'); return; }
+
+  const fame = await readJSON('data/fame.json', null);
+  const topFame = Number(fame?.all?.[0]?.fame) || 0;
+  if (!topFame) throw new Error('명성 데이터가 없어요');
+  const jobsRes = await call('/df/jobs');
+  const grows = [];
+  for (const j of jobsRes.rows || []) {
+    for (const g of j.rows || []) {
+      if (!g.jobGrowId) continue;
+      grows.push({ jobId: j.jobId, jobName: j.jobName, jobGrowId: g.jobGrowId, growName: g.jobGrowName, finalName: lastGrow(g).jobGrowName || g.jobGrowName });
+    }
+  }
+  if (!grows.length) throw new Error('직업 목록이 비어 있어요');
+
+  const isSlot = (s, id, name) => s.slotId === id || s.slotName === name;
+  const look = (a) => (a.clone && a.clone.itemName && !/클론 아바타/.test(a.clone.itemName) ? a.clone : a);
+  const topN = (map, n) => [...map.values()].sort((a, b) => b.count - a.count).slice(0, n);
+  const out = [];
+  let failed = 0;
+
+  for (const g of grows) {
+    // 1) 이 전직의 명성 상위 랭커 찾기
+    const found = new Map();
+    let max = topFame;
+    for (let w = 0; w < JOB_WINDOWS && found.size < JOB_SAMPLE && max > 0; w++) {
+      try {
+        const res = await call('/df/servers/all/characters-fame', {
+          jobId: g.jobId, jobGrowId: g.jobGrowId, isAllJobGrow: 'true', maxFame: max, minFame: Math.max(0, max - 2000), limit: 200
+        });
+        for (const r of res.rows || []) if (!found.has(r.characterId)) found.set(r.characterId, pickChar(r));
+      } catch (e) { failed++; break; }
+      max -= 2001;
+    }
+    const rankers = [...found.values()].sort((a, b) => b.fame - a.fame).slice(0, JOB_SAMPLE);
+    if (!rankers.length) continue;
+
+    // 2) 랭커마다 장비·아바타·크리쳐 조회해서 집계
+    const counters = { title: new Map(), creature: new Map(), aura: new Map(), weapon: new Map() };
+    const sets = new Map();
+    const add = (key, item) => {
+      if (!item || !item.itemName) return;
+      const cur = counters[key].get(item.itemName) || { itemId: item.itemId || '', itemName: item.itemName, itemRarity: item.itemRarity || '', count: 0 };
+      cur.count++;
+      counters[key].set(item.itemName, cur);
+    };
+    let sample = 0;
+    for (const c of rankers) {
+      const base = `/df/servers/${c.serverId}/characters/${c.characterId}`;
+      try {
+        const [eq, av, cr] = await Promise.all([call(`${base}/equip/equipment`), call(`${base}/equip/avatar`), call(`${base}/equip/creature`)]);
+        sample++;
+        const equip = eq.equipment || [];
+        add('title', equip.find((e) => isSlot(e, 'TITLE', '칭호')));
+        const pieces = new Map();
+        equip.forEach((e) => { if (e.setItemName) pieces.set(e.setItemName, (pieces.get(e.setItemName) || 0) + 1); });
+        pieces.forEach((n, name) => { if (n >= 2) { const s = sets.get(name) || { itemName: name, count: 0 }; s.count++; sets.set(name, s); } });
+        const avatars = av.avatar || [];
+        const aura = avatars.find((a) => isSlot(a, 'AURORA', '오라'));
+        const weapon = avatars.find((a) => isSlot(a, 'WEAPON', '무기'));
+        if (aura) add('aura', look(aura));
+        if (weapon) add('weapon', look(weapon));
+        add('creature', cr.creature);
+      } catch (e) { failed++; }
+    }
+    // 최종 전직 이름은 실제 랭커들이 가장 많이 가진 이름으로
+    const names = new Map();
+    rankers.forEach((c) => { if (c.jobGrowName) names.set(c.jobGrowName, (names.get(c.jobGrowName) || 0) + 1); });
+    const finalName = [...names.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || g.finalName;
+    out.push({
+      id: g.jobGrowId, jobId: g.jobId, jobName: g.jobName, growName: g.growName, finalName, sample,
+      topFame: rankers[0].fame, avgFame: Math.round(rankers.reduce((s, c) => s + c.fame, 0) / rankers.length),
+      rankers, sets: topN(sets, 5),
+      title: topN(counters.title, 3), creature: topN(counters.creature, 3), aura: topN(counters.aura, 3), weapon: topN(counters.weapon, 3)
+    });
+  }
+
+  if (!out.length) throw new Error('직업별 랭커를 하나도 찾지 못했어요');
+  await writeJSON('data/jobs.json', { updatedAt, jobs: out });
+  report.ok.push(`직업 연구 ${out.length}개 전직`);
+  if (failed) report.failed.push(`직업 연구 조회 실패 ${failed}건`);
+}
+
+/* ---------- 직업 연구 정적 페이지 생성 (jobs.html 목록 + jobs/전직ID.html) ---------- */
+// 검색엔진이 바로 읽을 수 있게 내용을 HTML에 직접 써 넣어요. 머리글·바닥글은 jobs.html의 것을 그대로 가져와요.
+async function writeJobPages() {
+  const data = await readJSON('data/jobs.json', null);
+  if (!data?.jobs?.length) return;
+  const listFile = join(ROOT, 'jobs.html');
+  let list;
+  try { list = await readFile(listFile, 'utf8'); } catch { return; }
+  const nl = list.includes('\r\n') ? '\r\n' : '\n';
+  const BASE = 'https://tnrns144-lgtm.github.io/DUNPA/';
+  const IMG_ITEM = (id) => `https://img-api.neople.co.kr/df/items/${encodeURIComponent(id)}`;
+  const IMG_CHAR = (s, id) => `https://img-api.neople.co.kr/df/servers/${s}/characters/${id}?zoom=1`;
+  const kst = new Date(new Date(data.updatedAt).getTime() + 9 * 3600 * 1000);
+  const when = `${kst.getUTCFullYear()}년 ${kst.getUTCMonth() + 1}월 ${kst.getUTCDate()}일`;
+  const jobs = [...data.jobs].sort((a, b) => b.topFame - a.topFame);
+  const fameKo = (n) => Number(n).toLocaleString('ko-KR');
+
+  // 목록 페이지 본문: 직업군별로 묶어서 카드
+  const groups = new Map();
+  jobs.forEach((j) => { if (!groups.has(j.jobName)) groups.set(j.jobName, []); groups.get(j.jobName).push(j); });
+  const listHtml = `
+    <section class="section" aria-labelledby="jobs-title">
+      <div class="section-head"><h2 id="jobs-title">전직별 랭커 세팅</h2><span class="lab-code">LAB-05</span><span class="rule" aria-hidden="true"></span><span class="meta">${when} 기준</span></div>
+      <p class="brief-intro">${when} 기준으로 ${jobs.length}개 전직의 명성 상위 랭커 장착 데이터를 분석했어요. 직업을 누르면 많이 쓰는 세트 장비·칭호·크리쳐·오라·무기 아바타와 랭커 모습을 볼 수 있어요.</p>
+      ${[...groups.entries()].map(([group, list]) => `
+      <div class="job-group">
+        <h3 class="job-group-title">${escHtml(group)}</h3>
+        <div class="job-grid">
+          ${list.map((j) => `<a class="job-card" href="jobs/${j.id}.html">
+            <strong>${escHtml(j.finalName)}</strong>
+            <small>${escHtml(j.growName)} 계열 · 최고 명성 ${fameKo(j.topFame)}</small>
+            ${j.sets[0] ? `<span class="job-card-set">인기 세트 · ${escHtml(j.sets[0].itemName)}</span>` : ''}
+          </a>`).join('')}
+        </div>
+      </div>`).join('')}
+    </section>
+    `;
+  const re = /(<!-- AUTO-JOBS:START[^>]*-->)[\s\S]*?(\s*<!-- AUTO-JOBS:END -->)/;
+  if (!re.test(list)) { report.failed.push('직업 연구: jobs.html에 표시(AUTO-JOBS)가 없어요'); return; }
+  list = list.replace(re, (_, a, b) => a + listHtml.replace(/\n/g, nl) + b);
+  await writeFile(listFile, list);
+
+  // 상세 페이지: jobs.html의 머리글·바닥글을 재사용하고, <base href="../">로 경로를 맞춰요
+  const header = (list.match(/<header class="site-header">[\s\S]*?<\/header>/) || [''])[0];
+  const footer = (list.match(/<footer class="site-footer">[\s\S]*?<\/footer>/) || [''])[0];
+  const itemRow = (it, total) => `<li><span class="item-cell"><span class="item-icon">${it.itemId ? `<img src="${IMG_ITEM(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span><span class="item-name">${escHtml(it.itemName)}</span></span><b>${total ? Math.round(it.count / total * 100) : 0}%</b></li>`;
+  const block = (title, arr, total) => `<article class="brief-card"><h3>${title}</h3>${arr.length ? `<ul class="job-items">${arr.map((it) => itemRow(it, total)).join('')}</ul>` : '<p class="help">데이터가 없어요</p>'}</article>`;
+  await mkdir(join(ROOT, 'jobs'), { recursive: true });
+  for (const j of jobs) {
+    const siblings = jobs.filter((x) => x.jobName === j.jobName && x.id !== j.id);
+    const desc = `던전앤파이터 ${j.finalName} 랭커 세팅: 명성 상위 랭커들이 많이 쓰는 세트 장비${j.sets[0] ? `(${j.sets[0].itemName} 등)` : ''}, 칭호, 크리쳐, 오라, 무기 아바타를 매일 분석해요.`;
+    const page = `<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<title>${escHtml(j.finalName)} 랭커 세팅 · 직업 연구 · 던랩</title>
+<meta name="description" content="${escHtml(desc)}">
+<meta name="theme-color" content="#070C11">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="canonical" href="${BASE}jobs/${j.id}.html">
+</head>
+<body>
+
+${header}
+
+<section class="hero hero--compact">
+  <div class="hero-inner">
+    <p class="eyebrow">JOB RESEARCH · ${escHtml(j.jobName)}</p>
+    <h1 class="hero-title">${escHtml(j.finalName)} 랭커 세팅</h1>
+    <p class="hero-sub">명성 상위 랭커들의 장착품을 ${when} 기준으로 분석했어요</p>
+  </div>
+</section>
+
+<div class="container jobs-wrap">
+  <main>
+    <section class="section">
+      <div class="section-head"><h2>세팅 요약</h2><span class="lab-code">${escHtml(j.growName)}</span><span class="rule" aria-hidden="true"></span><span class="meta">${when} 기준</span></div>
+      <p class="brief-intro">${escHtml(j.finalName)}(${escHtml(j.jobName)}) 명성 상위 랭커들의 최고 명성은 ${fameKo(j.topFame)}, 평균 명성은 ${fameKo(j.avgFame)}이에요. 비율은 조사한 랭커 가운데 해당 장착품을 쓰는 비율이에요.</p>
+      <div class="brief-grid">
+        ${block('많이 쓰는 세트 장비', j.sets, j.sample)}
+        ${block('칭호', j.title, j.sample)}
+        ${block('크리쳐', j.creature, j.sample)}
+        ${block('오라 · 무기 아바타', [...j.aura.slice(0, 2), ...j.weapon.slice(0, 2)], j.sample)}
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head"><h2>${escHtml(j.finalName)} 랭커</h2><span class="lab-code">LOOK</span><span class="rule" aria-hidden="true"></span></div>
+      <div class="look-grid">
+        ${j.rankers.map((c) => `<a class="look-card" href="character.html?server=${c.serverId}&amp;id=${c.characterId}">
+          <span class="look-img"><img src="${IMG_CHAR(c.serverId, c.characterId)}" alt="${escHtml(c.characterName)}" loading="lazy"></span>
+          <strong>${escHtml(c.characterName)}</strong>
+          <small>${escHtml(SERVER_KO[c.serverId] || c.serverId)}</small>
+          <small class="look-fame">${fameKo(c.fame)}</small>
+        </a>`).join('')}
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head"><h2>다른 직업 보기</h2><span class="rule" aria-hidden="true"></span></div>
+      <p class="job-links">${siblings.map((x) => `<a class="chip" href="jobs/${x.id}.html">${escHtml(x.finalName)}</a>`).join('')}<a class="chip" href="jobs.html">전체 직업 목록 ›</a></p>
+    </section>
+  </main>
+</div>
+
+${footer}
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/common.js"></script>
+</body>
+</html>
+`;
+    await writeFile(join(ROOT, 'jobs', `${j.id}.html`), page);
+  }
+
+  // 사이트맵에 직업 페이지 목록 갱신
+  const smFile = join(ROOT, 'sitemap.xml');
+  try {
+    let sm = await readFile(smFile, 'utf8');
+    const snl = sm.includes('\r\n') ? '\r\n' : '\n';
+    const today = kstDate(now);
+    const urls = [`${BASE}jobs.html`, ...jobs.map((j) => `${BASE}jobs/${j.id}.html`)]
+      .map((u) => `  <url>${snl}    <loc>${u}</loc>${snl}    <lastmod>${today}</lastmod>${snl}    <changefreq>daily</changefreq>${snl}    <priority>0.7</priority>${snl}  </url>`).join(snl);
+    const block = `  <!-- AUTO-JOBS:START -->${snl}${urls}${snl}  <!-- AUTO-JOBS:END -->`;
+    sm = /  <!-- AUTO-JOBS:START -->[\s\S]*?<!-- AUTO-JOBS:END -->/.test(sm)
+      ? sm.replace(/  <!-- AUTO-JOBS:START -->[\s\S]*?<!-- AUTO-JOBS:END -->/, block)
+      : sm.replace('</urlset>', `${block}${snl}</urlset>`);
+    await writeFile(smFile, sm);
+  } catch { /* 사이트맵이 없으면 건너뜀 */ }
+  report.ok.push(`직업 페이지 ${jobs.length}개 생성`);
+}
+
 /* ---------- 실행 ---------- */
 let serverIds = ['cain', 'diregie', 'siroco', 'prey', 'casillas', 'hilder', 'anton', 'bakal'];
 try { serverIds = await collectServers(); } catch (e) { report.failed.push(`서버 목록: ${e.message}`); }
-for (const [label, job] of [['경매장', collectAuction], ['명성', () => collectFame(serverIds)], ['트렌드', collectTrends], ['아바타', collectAvatar]]) {
+for (const [label, job] of [['경매장', collectAuction], ['명성', () => collectFame(serverIds)], ['트렌드', collectTrends], ['직업', collectJobs], ['아바타', collectAvatar]]) {
   try { await job(); } catch (e) { report.failed.push(`${label}: ${e.message}`); }
 }
 try { await writeBrief(); } catch (e) { report.failed.push('브리핑: ' + e.message); }
+try { await writeJobPages(); } catch (e) { report.failed.push('직업 페이지: ' + e.message); }
 await writeJSON('data/meta.json', { updatedAt });
 
 console.log('수집 완료:', report.ok.join(' / ') || '없음');
