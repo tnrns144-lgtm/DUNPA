@@ -35,7 +35,7 @@
 - 결과 파일: `data/auction.json`, `data/fame.json`, `data/avatar.json`, `data/servers.json`, `data/meta.json`, `data/history/auction-daily.json`(전일 대비 계산용, 30일 보관), `data/trends.json`(랭커 트렌드), `data/history/trends-daily.json`(관측 일지용 날짜별 장착 수, 30일 보관)
 - 경매장 시세: `config/tracked-items.json`의 `items`(정확한 이름, 항상 표시) + `keywords`(이름에 들어간 단어로 `wordType=full` 검색 후 거래 많은 순으로 `top`개 자동 선택). 정확한 이름만 쓰던 첫 방식은 이름이 틀려서 실패했기 때문에 키워드 방식으로 바꿨다.
 - 명성 랭킹: `/df/servers/all/characters-fame?limit=200` + 서버별 50. API가 최고 명성 기준 2,000 범위만 돌려줘서 실제 개수는 더 적다.
-- 아바타 마켓: `/df/avatar-market/sold`에 `sort=goodsNo:desc`(거부되면 기본 순서로 다시 받고 거래일순 정렬).
+- 아바타 마켓: `/df/avatar-market/sale`을 등급(상급·레어·혼합) × 정렬(goodsNo:desc, price:asc)로 6번 받아 합치고(한 번에 최대 50개), `/sold`는 최근 50개. 결과는 `data/avatar.json`의 `sale`·`sold`. 응답 필드가 문서에 없어서 `pickGoods`가 여러 이름을 대비하고, Actions 로그에 "아바타 판매 응답 필드"를 찍는다(실제 필드 확인용).
 - 랭커 트렌드: fame.json의 전체 상위 캐릭터마다 `equip/equipment`(칭호 slotId TITLE)·`equip/avatar`(오라 AURORA, 무기 WEAPON, 클론 우선)·`equip/creature`를 조회해 많이 쓰는 순 TOP 10 집계. 약 600회 호출이라 **하루 1번만** 실행(trends.json이 20시간 이내면 건너뜀). Actions 수동 실행 때 `force_trends`를 체크하면 바로 다시 모은다. 직업 분포는 화면에서 fame.json으로 바로 계산한다.
 - 로컬 테스트: 이 PC에 Node.js v26 설치됨(`C:/Program Files/nodejs`). 실제 data를 덮어쓰지 않도록 임시 폴더에 복사해서 모의 서버(`NEOPLE_API_BASE`)로 돌린다.
 
@@ -47,8 +47,13 @@
 - 문서: https://developers.neople.co.kr/contents/apiDocs/df
 - 푸터에 "Powered by Neople Open API" 출처와 비공식 팬사이트 안내를 유지한다.
 
-## 현재 상태 (2026-11-18)
-- 완료: 사이트 개통, 데이터 자동 수집, 캐릭터 검색·상세, 아이템 사전, 개인정보처리방침, 서치 콘솔 등록·색인 요청, 아바타 마켓 섹션을 "랭커 트렌드"(직업 분포·칭호/크리쳐/오라/무기 아바타 TOP 10)로 개편하고 아바타 거래는 한 줄 목록 5건으로 축소, 사이트 이름을 던랩으로 바꾸고 연구소 분위기로 디자인 개편, 특색 기능 2개 추가: ① 캐릭터 연구 보고서(character.js `renderReport`: 명성 순위·직업 점유·칭호/크리쳐/오라/무기 아바타를 랭커와 비교해 "랭커 싱크로율" 계산) ② 관측 일지(메인 랭커 트렌드의 전날 대비 ▲▼/NEW와 급상승 TOP 5, trends.json의 `risers`·`prevDate`)
+## 시뮬레이터 조사 결과 (2026-11-19)
+- 강화 시뮬레이터: 공식 확률 공개됨. 강화 https://df.nexon.com/probability?no=139 , 증폭 no=140, 실패 규칙 https://df.nexon.com/guide?no=710 (강화)·727 (증폭). 재련 확률과 일반 강화 비용은 미공개. 확률 페이지에 날짜가 없어 주기적으로 재확인.
+- 명성 계산: `/df/items/{itemId}`에 아이템별 `fame`이 있어 기본 명성 합은 정확. `equip/equipment`에는 아이템별 fame이 없고 강화·증폭·재련·마법부여·조율 값만 있음. 강화 등으로 붙는 명성은 공식 공식이 없어 랭커 실측(총명성 − 기본 명성 합)으로 역산 추정해야 함.
+- 아바타 룩: API 이미지는 캐릭터 현재 모습 1장과 아이템 아이콘뿐이라 "입혀보기"는 불가(게임 파일 추출은 이미지 원칙 위반). 대안: 부위 아이콘 코디 보드, 같은 아바타를 입은 랭커 캐릭터 이미지 모음.
+
+## 현재 상태 (2026-11-19)
+- 완료: 사이트 개통, 데이터 자동 수집, 캐릭터 검색·상세, 아이템 사전, 개인정보처리방침, 서치 콘솔 등록·색인 요청, 아바타 마켓 섹션을 "랭커 트렌드"(직업 분포·칭호/크리쳐/오라/무기 아바타 TOP 10)로 개편하고 아바타 거래는 한 줄 목록 5건으로 축소, 사이트 이름을 던랩으로 바꾸고 연구소 분위기로 디자인 개편, 특색 기능 2개 추가: ① 캐릭터 연구 보고서(character.js `renderReport`: 명성 순위·직업 점유·칭호/크리쳐/오라/무기 아바타를 랭커와 비교해 "랭커 싱크로율" 계산) ② 관측 일지(메인 랭커 트렌드의 전날 대비 ▲▼/NEW와 급상승 TOP 5, trends.json의 `risers`·`prevDate`), 아바타 마켓 전용 페이지(avatar.html), 직업 분포를 전체 대비 %로 변경
 - 남은 일
   1. 서치 콘솔 색인 상태 확인 (등록 후 며칠~2주)
   2. 며칠 운영 후 애드센스 신청. `계정.github.io/저장소` 형태 주소는 루트에 `ads.txt`를 둘 수 없어서 승인이 막히면 도메인 구매(연 1~2만 원)를 검토한다.
