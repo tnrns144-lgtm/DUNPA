@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T11:14:59.098Z",
+ "updatedAt": "2026-11-19T12:05:06.755Z",
  "all": [
   {
    "serverId": "cain",
@@ -1172,6 +1172,15 @@
    "fame": 134997
   },
   {
+   "serverId": "diregie",
+   "characterId": "6466540e20a66d4e955fec8d86add88d",
+   "characterName": "봄",
+   "level": 115,
+   "jobName": "마법사(여)",
+   "jobGrowName": "眞 인챈트리스",
+   "fame": 134978
+  },
+  {
    "serverId": "siroco",
    "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
    "characterName": "전뮤",
@@ -1763,6 +1772,15 @@
    },
    {
     "serverId": "diregie",
+    "characterId": "6466540e20a66d4e955fec8d86add88d",
+    "characterName": "봄",
+    "level": 115,
+    "jobName": "마법사(여)",
+    "jobGrowName": "眞 인챈트리스",
+    "fame": 134978
+   },
+   {
+    "serverId": "diregie",
     "characterId": "05a7513fd175594785fa29a76e49d7b2",
     "characterName": "LA벤데타",
     "level": 115,
@@ -1852,15 +1870,6 @@
     "jobName": "아처",
     "jobGrowName": "眞 뮤즈",
     "fame": 134978
-   },
-   {
-    "serverId": "siroco",
-    "characterId": "0038584f2be8e20ba798cbcc9a99effc",
-    "characterName": "황경쇠",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 어썰트",
-    "fame": 134703
    },
    {
     "serverId": "siroco",
@@ -2290,15 +2299,6 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 메카닉",
     "fame": 134704
-   },
-   {
-    "serverId": "hilder",
-    "characterId": "9059f9c9c52601e7a2461789e468f523",
-    "characterName": "오혜민",
-    "level": 115,
-    "jobName": "거너(여)",
-    "jobGrowName": "眞 메카닉",
-    "fame": 134666
    },
    {
     "serverId": "hilder",

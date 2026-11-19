@@ -1,6 +1,39 @@
 {
- "updatedAt": "2026-11-19T11:14:59.098Z",
+ "updatedAt": "2026-11-19T12:05:06.755Z",
  "sale": [
+  {
+   "goodsNo": 4806927,
+   "title": "남프리스트 레어1부위 상급1부위",
+   "price": 11000000,
+   "jobs": [
+    "프리스트(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "06478118058b0764f77f3eefa02a13a6",
+     "itemName": "아라드 코스프레 닐바스 상의[A타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 녹색빛 엠블렘[HP MAX]",
+      "빛나는 녹색빛 엠블렘[HP MAX]"
+     ]
+    },
+    {
+     "itemId": "48f7096cf13d822cb1aeaf64ffdcc14a",
+     "itemName": "레드 인페르노 팬츠",
+     "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[영광의 축복]"
+     ]
+    }
+   ]
+  },
   {
    "goodsNo": 4806339,
    "title": "아처 레어1부위 상급7부위",
