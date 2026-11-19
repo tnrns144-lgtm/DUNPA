@@ -496,6 +496,7 @@ async function collectJobs() {
     // 2) 랭커마다 장비·아바타·크리쳐 조회해서 집계
     const counters = { title: new Map(), creature: new Map(), aura: new Map(), weapon: new Map() };
     const sets = new Map();
+    const gear = new Map();   // 부위(slotId) → 아이템별 사용 수
     const add = (key, item) => {
       if (!item || !item.itemName) return;
       const cur = counters[key].get(item.itemName) || { itemId: item.itemId || '', itemName: item.itemName, itemRarity: item.itemRarity || '', count: 0 };
@@ -509,6 +510,15 @@ async function collectJobs() {
         const [eq, av, cr] = await Promise.all([call(`${base}/equip/equipment`), call(`${base}/equip/avatar`), call(`${base}/equip/creature`)]);
         sample++;
         const equip = eq.equipment || [];
+        // 부위별 장비 집계 (칭호 제외): 세트로 묶지 않고 실제 장비를 세어 아이콘까지 보여줘요
+        equip.forEach((e) => {
+          if (!e.itemId || !e.slotId || e.slotId === 'TITLE') return;
+          if (!gear.has(e.slotId)) gear.set(e.slotId, { slotName: e.slotName || e.slotId, items: new Map() });
+          const g = gear.get(e.slotId).items;
+          const cur = g.get(e.itemId) || { itemId: e.itemId, itemName: e.itemName, itemRarity: e.itemRarity || '', count: 0 };
+          cur.count++;
+          g.set(e.itemId, cur);
+        });
         add('title', equip.find((e) => isSlot(e, 'TITLE', '칭호')));
         // 세트 이름에는 이미지가 없어서, 그 세트의 대표 장비(상의 우선) 아이콘을 함께 기록해요
         const pieces = new Map();
@@ -544,6 +554,9 @@ async function collectJobs() {
       id: g.jobGrowId, jobId: g.jobId, jobName: g.jobName, growName: g.growName, finalName, sample,
       topFame: rankers[0].fame, avgFame: Math.round(rankers.reduce((s, c) => s + c.fame, 0) / rankers.length),
       rankers, sets: topN(sets, 5),
+      gear: ['WEAPON', 'JACKET', 'SHOULDER', 'PANTS', 'SHOES', 'WAIST', 'AMULET', 'WRIST', 'RING', 'SUPPORT', 'MAGIC_STON', 'EARRING']
+        .filter((id) => gear.has(id)).concat([...gear.keys()].filter((id) => !['WEAPON', 'JACKET', 'SHOULDER', 'PANTS', 'SHOES', 'WAIST', 'AMULET', 'WRIST', 'RING', 'SUPPORT', 'MAGIC_STON', 'EARRING'].includes(id)))
+        .map((id) => { const g = gear.get(id); const top = topN(g.items, 1)[0]; return { slotId: id, slotName: g.slotName, ...top }; }),
       title: topN(counters.title, 3), creature: topN(counters.creature, 3), aura: topN(counters.aura, 3), weapon: topN(counters.weapon, 3)
     });
   }
@@ -647,7 +660,7 @@ ${header}
       <div class="section-head"><h2>세팅 요약</h2><span class="lab-code">${escHtml(j.growName)}</span><span class="rule" aria-hidden="true"></span><span class="meta">${when} 기준</span></div>
       <p class="brief-intro">${escHtml(j.finalName)}(${escHtml(j.jobName)}) 명성 상위 랭커들의 최고 명성은 ${fameKo(j.topFame)}, 평균 명성은 ${fameKo(j.avgFame)}이에요. 비율은 조사한 랭커 가운데 해당 장착품을 쓰는 비율이에요.</p>
       <div class="brief-grid">
-        ${block('많이 쓰는 세트 장비', j.sets, j.sample)}
+        ${(j.gear || []).length ? `<article class="brief-card gear-card"><h3>부위별 인기 장비</h3><ul class="job-items gear-items">${j.gear.map((g) => `<li><span class="gear-slot">${escHtml(g.slotName)}</span><span class="item-cell"><span class="item-icon"><img src="${IMG_ITEM(g.itemId)}" alt="" loading="lazy" width="28" height="28"></span><span class="item-name">${escHtml(g.itemName)}</span></span><b>${j.sample ? Math.round(g.count / j.sample * 100) : 0}%</b></li>`).join('')}</ul>${j.sets.length ? `<p class="brief-note">많이 입은 세트 · ${j.sets.map((x) => `${escHtml(x.itemName)} ${j.sample ? Math.round(x.count / j.sample * 100) : 0}%`).join(' · ')}</p>` : ''}</article>` : block('많이 쓰는 세트 장비', j.sets, j.sample)}
         ${block('칭호', j.title, j.sample)}
         ${block('크리쳐', j.creature, j.sample)}
         ${block('오라 · 무기 아바타', [...j.aura.slice(0, 2), ...j.weapon.slice(0, 2)], j.sample)}
