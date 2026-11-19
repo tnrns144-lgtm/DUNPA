@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T09:23:11.881Z",
+ "updatedAt": "2026-11-19T11:14:59.098Z",
  "all": [
   {
    "serverId": "cain",
@@ -306,15 +306,6 @@
    "jobName": "마법사(여)",
    "jobGrowName": "眞 소환사",
    "fame": 136369
-  },
-  {
-   "serverId": "anton",
-   "characterId": "108123cca29d4a934c0d6777d003df80",
-   "characterName": "^모^",
-   "level": 115,
-   "jobName": "격투가(여)",
-   "jobGrowName": "眞 넨마스터",
-   "fame": 136368
   },
   {
    "serverId": "cain",
@@ -2337,15 +2328,6 @@
     "jobName": "마법사(남)",
     "jobGrowName": "眞 엘레멘탈 바머",
     "fame": 136369
-   },
-   {
-    "serverId": "anton",
-    "characterId": "108123cca29d4a934c0d6777d003df80",
-    "characterName": "^모^",
-    "level": 115,
-    "jobName": "격투가(여)",
-    "jobGrowName": "眞 넨마스터",
-    "fame": 136368
    },
    {
     "serverId": "anton",
