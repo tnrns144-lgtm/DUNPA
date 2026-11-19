@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T19:15:30.579Z",
+ "updatedAt": "2026-11-19T20:20:24.063Z",
  "sale": [
   {
    "goodsNo": 4806927,
@@ -647,88 +647,6 @@
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4799236,
-   "title": "남프리스트 레어1부위 상급6부위",
-   "price": 26000000,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "28412d934aa0e381d0e5c93ff706775f",
-     "itemName": "축복의 반짝임",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]",
-      "빛나는 붉은빛 엠블렘[힘]"
-     ]
-    },
-    {
-     "itemId": "2e99c77b57da0d9ad48ce45be839e10c",
-     "itemName": "마제스티 와일드 롱 헤어[A타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "찬란한 붉은빛 엠블렘[체력]",
-      "찬란한 붉은빛 엠블렘[체력]"
-     ]
-    },
-    {
-     "itemId": "f45c0c3e1c922c05c97fa35a98b96e87",
-     "itemName": "바칼의 눈동자와 타투[A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "7c1eb1e0ceecc4661acf334c3b79b6f7",
-     "itemName": "올림푸스 포세이돈의 목장식 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 녹색빛 엠블렘[MP MAX]",
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "af204fef47dcb821c72515e9c87ee827",
-     "itemName": "올림푸스 포세이돈의 하의[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]",
-      "빛나는 녹색빛 엠블렘[HP MAX]"
-     ]
-    },
-    {
-     "itemId": "a78b6cf76e5da4bc508b28437f548aea",
-     "itemName": "진 퇴마사의 염주와 날개 옷[B타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]",
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "203dfe64661c22801b6c4cf9a0966665",
-     "itemName": "할로윈 악마의 도끼 [박쥐 타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
     }
    ]
   },
@@ -3141,6 +3059,89 @@
      "emblems": [
       "빛나는 다색 엠블렘[인벤토리]"
      ]
+    },
+    {
+     "itemId": "c0fa4c60466a316dddb480f809bff0e3",
+     "itemName": "트렌드세터의 순백의 피부[A타입]",
+     "slotName": "스킨 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4786611,
+   "title": "아처 레어1부위 상급7부위/피부",
+   "price": 32000000,
+   "jobs": [
+    "아처"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [
+    "온라인게임",
+    "깔끔한"
+   ],
+   "parts": [
+    {
+     "itemId": "2e012cdcd582810d5571a5f00e500ba0",
+     "itemName": "시카고 불스 스타일 머리띠[A타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "1f07f1250300f3f0526232d949fbc90f",
+     "itemName": "골드 셀레스티얼 만두 머리",
+     "slotName": "머리 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "f9f199cf30ae13d402b42fc6cb7d8cf1",
+     "itemName": "2026 서부의 보안관 렌즈와 귀걸이[B타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "2660e398272aa396ce5e4dd453a04d4b",
+     "itemName": "숲속의 유랑악단 블라우스[D타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "371787d80544c2cafe1b8c1c443b5da5",
+     "itemName": "2026 서부의 보안관 팬츠[B타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "51a21d7fcd5b91832eeb297be65392aa",
+     "itemName": "유가영의 신발[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]",
+      "빛나는 푸른빛 엠블렘[마법방어]"
+     ]
+    },
+    {
+     "itemId": "7122a5bb825e23d29139e633dac57e51",
+     "itemName": "숲속의 유랑악단 두 갈래 장식[D타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "ebe9590960966ba62cb9456e67145450",
+     "itemName": "숲속의 유랑악단 가방[D타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
     },
     {
      "itemId": "c0fa4c60466a316dddb480f809bff0e3",

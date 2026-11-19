@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T19:15:30.579Z",
+ "updatedAt": "2026-11-19T20:20:24.063Z",
  "all": [
   {
    "serverId": "cain",
@@ -2355,15 +2355,6 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 스핏파이어",
     "fame": 134748
-   },
-   {
-    "serverId": "anton",
-    "characterId": "d7b55a21dd1fe9fd71355b6b0d91237d",
-    "characterName": "셀루",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 인챈트리스",
-    "fame": 134668
    },
    {
     "serverId": "anton",
