@@ -582,7 +582,8 @@ async function writeJobPages() {
       <div class="job-group">
         <h3 class="job-group-title">${escHtml(group)}</h3>
         <div class="job-grid">
-          ${list.map((j) => `<a class="job-card" href="jobs/${jobPageId(j)}.html">
+          ${list.map((j) => `<a class="job-card job-card--img" href="jobs/${jobPageId(j)}.html">
+            ${j.rankers[0] ? `<span class="job-card-img"><img src="${IMG_CHAR(j.rankers[0].serverId, j.rankers[0].characterId)}" alt="" loading="lazy"></span>` : ''}
             <strong>${escHtml(j.finalName)}</strong>
             <small>${escHtml(j.growName)} 계열 · 최고 명성 ${fameKo(j.topFame)}</small>
             ${j.sets[0] ? `<span class="job-card-set">인기 세트 · ${escHtml(j.sets[0].itemName)}</span>` : ''}
@@ -631,7 +632,8 @@ async function writeJobPages() {
 
 ${header}
 
-<section class="hero hero--compact">
+<section class="hero hero--compact hero--job">
+  ${j.rankers[0] ? `<a class="hero-champion" href="character.html?server=${j.rankers[0].serverId}&amp;id=${j.rankers[0].characterId}" title="${escHtml(j.finalName)} 명성 1위 ${escHtml(j.rankers[0].characterName)}"><img src="${IMG_CHAR(j.rankers[0].serverId, j.rankers[0].characterId).replace('zoom=1', 'zoom=2')}" alt="${escHtml(j.finalName)} 명성 1위 ${escHtml(j.rankers[0].characterName)}"><span>명성 1위 · ${escHtml(j.rankers[0].characterName)}</span></a>` : ''}
   <div class="hero-inner">
     <p class="eyebrow">JOB RESEARCH · ${escHtml(j.jobName)}</p>
     <h1 class="hero-title">${escHtml(j.finalName)} 랭커 세팅</h1>

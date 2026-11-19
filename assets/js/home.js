@@ -11,7 +11,28 @@
     loadFame();
     loadTrends();
     loadAvatar();
+    loadIconBand();
   });
+
+  /* ---------- 인기 아이템 아이콘 띠 (게임 인벤토리 장식) ---------- */
+  // 경매장 시세·랭커 장착품·아바타 마켓에서 모은 실제 아이템 아이콘을 천천히 흘려 보여줘요. 누르면 상세 팝업
+  async function loadIconBand() {
+    const el = $('icon-band');
+    if (!el) return;
+    const [auction, trends, avatar] = await Promise.all(['data/auction.json', 'data/trends.json', 'data/avatar.json']
+      .map((p) => D.getJSON(p).catch(() => null)));
+    const seen = new Set();
+    const icons = [];
+    const push = (id, rarity, name) => { if (id && !seen.has(id)) { seen.add(id); icons.push({ id, rarity, name }); } };
+    (auction?.categories || []).forEach((c) => (c.items || []).forEach((it) => push(it.itemId, it.itemRarity, it.itemName)));
+    ['title', 'creature', 'aura', 'weapon'].forEach((k) => (trends?.[k] || []).forEach((it) => push(it.itemId, it.itemRarity, it.itemName)));
+    (avatar?.sale || []).slice(0, 15).forEach((g) => (g.parts || []).slice(0, 3).forEach((p) => push(p.itemId, p.itemRarity, p.itemName)));
+    if (icons.length < 8) { el.remove(); return; }
+    const cell = (it) => `<span class="item-icon band-slot" style="${D.rarityStyle(it.rarity)}" title="${D.esc(it.name || '')}"><img src="${D.IMG.item(it.id)}" alt="${D.esc(it.name || '')}" loading="lazy" width="28" height="28"></span>`;
+    const row = icons.slice(0, 40).map(cell).join('');
+    // 끊김 없이 이어지게 같은 줄을 두 번 붙여요
+    el.innerHTML = `<div class="band-track">${row}${row}</div>`;
+  }
 
   /* ---------- 내 최근 검색 ---------- */
   function renderRecentList() {

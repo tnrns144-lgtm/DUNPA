@@ -765,3 +765,88 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
 .tip-explain { margin: 0; white-space: pre-line; color: var(--text-soft); font-size: 12px; }
 .tip-flavor { margin: 0; white-space: pre-line; color: var(--text-dim); font-size: 12px; font-style: italic; }
 .tip-foot { margin: 0; padding: 8px 12px 10px; font-size: 11px; color: var(--text-dim); border-top: 1px solid var(--line-soft); }
+
+/* ---------- 게임 UI풍 장식 (색은 theme.css 변수) ---------- */
+/* 상자 네 모서리에 금속 L자 장식 */
+.panel, .brief-card, .market-card, .job-card, .look-card, .podium-card, .result-cell { position: relative; }
+.panel::after, .brief-card::after, .job-card::after, .result-cell::after {
+  content: ""; position: absolute; inset: -1px; pointer-events: none;
+  background:
+    linear-gradient(var(--frame), var(--frame)) left top / 12px 2px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) left top / 2px 12px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) right top / 12px 2px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) right top / 2px 12px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) left bottom / 12px 2px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) left bottom / 2px 12px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) right bottom / 12px 2px no-repeat,
+    linear-gradient(var(--frame), var(--frame)) right bottom / 2px 12px no-repeat;
+}
+.panel:hover::after, .brief-card:hover::after, .job-card:hover::after { filter: drop-shadow(0 0 3px var(--frame-hi)); }
+/* 상자 안쪽 입체감 */
+.panel, .brief-card, .job-card { box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -2px 0 var(--bevel-lo), 0 6px 16px var(--bevel-lo); }
+
+/* 아이템 아이콘을 게임 인벤토리 칸처럼 */
+.item-icon, .av-slot.filled {
+  background: var(--slot-bg);
+  box-shadow: inset 0 0 0 1px var(--bevel-lo), inset 0 2px 4px var(--bevel-lo), inset 0 -1px 0 var(--bevel-hi),
+    inset 0 0 10px color-mix(in srgb, var(--rc, transparent) 35%, transparent);
+}
+.item-icon img, .av-slot img { filter: drop-shadow(0 1px 1px var(--bevel-lo)); transition: transform .12s; }
+.item-icon:hover img, .av-slot.filled:hover img { transform: scale(1.12); }
+
+/* 버튼(칩)을 게임 버튼처럼 입체로 */
+.chip {
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-3));
+  box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -2px 0 var(--bevel-lo);
+}
+.chip:hover { border-color: var(--frame-hi); }
+.chip[aria-pressed="true"] { box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -2px 0 var(--bevel-lo), 0 0 10px color-mix(in srgb, var(--accent) 45%, transparent); }
+.btn-gold { box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -3px 0 var(--bevel-lo), 0 0 14px color-mix(in srgb, var(--accent) 35%, transparent); }
+
+/* 섹션 제목 장식: 양옆 보석 */
+.section-head .rule { position: relative; }
+.section-head .rule::after {
+  content: ""; position: absolute; right: 0; top: -3px; width: 7px; height: 7px;
+  background: var(--frame); transform: rotate(45deg); box-shadow: 0 0 6px var(--frame-hi);
+}
+
+/* ---------- 인기 아이템 아이콘 띠 ---------- */
+.icon-band {
+  overflow: hidden; padding: 10px 0; border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--bg-deep), var(--surface-deep));
+  box-shadow: inset 0 1px 0 var(--bevel-hi), inset 0 -1px 0 var(--bevel-lo);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.band-track { display: flex; gap: 8px; width: max-content; animation: band-scroll 90s linear infinite; }
+.icon-band:hover .band-track { animation-play-state: paused; }
+.band-slot { width: 40px; height: 40px; border: 1px solid var(--rc, var(--line)); }
+@keyframes band-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .band-track { animation: none; } }
+
+/* ---------- 직업 페이지 대표 이미지 (API 캐릭터 이미지) ---------- */
+.hero--job { overflow: hidden; }
+.hero-champion {
+  position: absolute; right: max(24px, calc((100% - var(--max-width)) / 2 + 24px)); bottom: 0; z-index: 1;
+  display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none;
+}
+.hero-champion img { height: 230px; width: auto; filter: drop-shadow(0 0 18px color-mix(in srgb, var(--accent) 55%, transparent)); }
+.hero-champion::before {
+  content: ""; position: absolute; bottom: 18px; left: 50%; width: 220px; height: 44px; transform: translateX(-50%);
+  border: 2px solid var(--frame); border-radius: 50%; box-shadow: 0 0 18px var(--frame-hi), inset 0 0 18px var(--frame); opacity: .7;
+}
+.hero-champion span {
+  position: relative; margin-bottom: 8px; padding: 3px 10px; font-size: 12px; color: var(--title);
+  background: var(--glass); border: 1px solid var(--line-strong);
+}
+.hero--job .hero-inner { position: relative; z-index: 2; }
+@media (max-width: 900px) { .hero-champion { display: none; } }
+
+.job-card--img { padding-left: 74px; min-height: 84px; overflow: hidden; }
+.job-card-img {
+  position: absolute; left: 6px; bottom: 0; width: 62px; height: 84px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden;
+  background: radial-gradient(circle at 50% 80%, var(--accent-soft), transparent 70%);
+}
+.job-card-img img { height: 84px; width: auto; max-width: none; }
+/* 스크롤 되는 상자(표)에서는 모서리 장식이 밖으로 삐져나가 스크롤 막대가 생기지 않게 안쪽에 맞춰요 */
+.table-wrap::after, .panel.table-wrap::after { inset: 0; }

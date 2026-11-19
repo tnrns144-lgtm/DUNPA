@@ -24,6 +24,7 @@
 - 빌드 과정 없는 정적 사이트 (HTML/CSS/바닐라 JS). 프레임워크를 도입하지 않는다.
 - `index.html` 메인 / `character.html` 캐릭터 검색·상세(장비·아바타·크리쳐·능력치 탭) / `items.html` 아이템 사전 / `avatar.html` 아바타 마켓(판매 중·최근 거래, 게임 속 부위 칸 배치) / `privacy.html` 개인정보처리방침 / `sitemap.xml`
 - `assets/css/theme.css`: 색·글꼴·테두리 등 디자인 값 전부 (현재: 어두운 청록 바탕 + 마력 빛 하늘색 강조 + 설계도 격자, 숫자는 JetBrains Mono). style.css에는 색을 직접 적지 말고 theme.css 변수만 쓴다. 분위기 변경은 이 파일만 고친다. 다음 게임 사이트도 이 파일만 바꿔 배치를 재활용한다.
+- 게임 UI풍 장식(2026-11-20): theme.css의 `--frame`·`--frame-hi`·`--bevel-hi/lo`·`--slot-bg`로 상자 네 모서리 금속 L자 장식(`::after`, 스크롤 상자는 inset 0), 입체 버튼, 인벤토리 칸 아이콘. 메인 히어로 아래 인기 아이템 아이콘 띠(home.js `loadIconBand`), 직업 페이지에 1위 랭커 실제 모습(히어로·목록 카드). 공식 일러스트·로고·게임 파일 이미지는 저작권·애드센스 문제로 쓰지 않고 img-api 이미지만 쓴다.
 - `assets/css/style.css`: 배치. `assets/js/common.js`: 공통 기능(데이터 로드, 숫자 표시, 등급색, 최근 검색, 광고). `home.js` / `character.js` / `items.js`: 페이지별 기능.
 - `assets/js/config.js`: `workerUrl`(입력 완료), `adsenseClient`·`adSlots`(애드센스 승인 후 입력. 비어 있으면 광고 자리에 안내 상자 표시). 광고 자리는 화면 양쪽 여백의 세로 배너 `railLeft`·`railRight`(common.js가 모든 페이지에 자동 삽입, 폭 1680px 이상에서만 보임. 히어로 그림 아래에서 시작해 스크롤 시 위에 붙어 따라오고 푸터 앞에서 멈춤. 광고 연결 전에는 숨김)와 본문 맨 아래 `bottom`(광고 연결 전에는 자리만 두고 숨김)뿐. 본문 중간·사이드바 배너는 사용자가 거슬린다고 해서 뺐다.
 - `assets/img/hero-bg.svg`: 검색창 뒤 배경. 직접 그린 오리지널 그림(밤의 마도 연구실: 마법진·홀로그램 계기판·플라스크). 게임 공식 이미지는 허락 없이 쓰지 않는다. 게임 이미지는 API가 주는 `img-api.neople.co.kr` 주소만 쓴다.
