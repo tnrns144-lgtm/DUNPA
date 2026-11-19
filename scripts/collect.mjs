@@ -280,7 +280,10 @@ async function collectTrends() {
 /* ---------- 아바타 마켓 (판매 중 매물 + 최근 거래) ---------- */
 // API 응답 필드 이름이 문서에 다 나와 있지 않아서, 있을 법한 이름을 여러 개 받아 둬요.
 function pickGoods(r) {
-  const tags = r.hashtag || r.hashtags || [];
+  // 이름을 모르는 항목은 'date'·'hash'가 들어간 키를 찾아 써요
+  const dateKey = Object.keys(r).find((k) => /date/i.test(k) && r[k]);
+  const hashKey = Object.keys(r).find((k) => /hash/i.test(k) && Array.isArray(r[k]));
+  const tags = (hashKey && r[hashKey]) || [];
   return {
     goodsNo: r.goodsNo,
     title: r.title || '',
@@ -288,7 +291,7 @@ function pickGoods(r) {
     jobs: (r.jobs || []).map((j) => j.jobName).filter(Boolean).concat(r.jobName && !r.jobs ? [r.jobName] : []),
     avatarRarity: r.avatarRarity || '',
     avatarSet: r.avatarSet ?? null,
-    date: r.soldDate || r.regDate || r.registDate || r.saleDate || '',
+    date: r.soldDate || r.regDate || (dateKey ? String(r[dateKey]) : ''),
     hashtags: tags.map((h) => (typeof h === 'string' ? h : h.hashtag || h.name || '')).filter(Boolean),
     parts: (r.avatar || []).map((a) => ({
       itemId: a.itemId || '', itemName: a.itemName || '', slotName: a.slotName || '', itemRarity: a.itemRarity || '',

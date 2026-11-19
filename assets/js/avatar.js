@@ -132,7 +132,7 @@
             ${(r.hashtags || []).length ? `<p class="market-hash">${r.hashtags.slice(0, 4).map((h) => `#${D.esc(h)}`).join(' ')}</p>` : ''}
             <div class="market-foot">
               <span class="market-price"><strong>${D.gold(r.price)}</strong> 골드</span>
-              <small>${mode === 'sale' ? '등록' : '거래'} ${D.esc(dateLabel(r.date))}</small>
+              ${r.date ? `<small>${mode === 'sale' ? '등록' : '거래'} ${D.esc(dateLabel(r.date))}</small>` : ''}
             </div>
           </div>
         </div>
