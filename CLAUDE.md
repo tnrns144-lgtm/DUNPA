@@ -54,6 +54,7 @@
 - 경매장 수집이 하나도 못 받으면 기존 auction.json을 덮어쓰지 않고 유지한다.
 - 직업 연구(2026-11-20): `collectJobs`(하루 1번, trends와 같은 조건·force_trends로 강제)가 /df/jobs 전직마다 명성 상위 최대 10명(명성 검색은 최고 명성 기준 2,000 범위라 범위를 2,001씩 내려가며 최대 12회)을 골라 세트(2부위 이상)·칭호·크리쳐·오라·무기 아바타 집계 → data/jobs.json. `writeJobPages`가 jobs.html의 AUTO-JOBS 구간과 jobs/{jobId 앞 8자}-{jobGrowId 앞 8자}.html 정적 페이지(jobGrowId는 직업마다 겹쳐서 단독으로 쓰면 파일이 덮어써짐. 지난 파일은 자동 삭제. 세트는 이미지가 없어 대표 장비(상의 우선) 아이콘을 itemId로 기록)(<base href="../">, 머리글·바닥글은 jobs.html에서 복사)를 만들고 사이트맵 AUTO-JOBS 구간을 갱신. /df/jobs 응답은 rows[].rows[](jobGrowId, jobGrowName, next…) 형식으로 확인됨(첫 실행 71개 전직 수집 성공).
 - 주간 리포트: `writeWeeklyReport`가 매 실행마다 이번 주(월~일, KST) reports/YYYY-Www.html을 다시 쓰고(지난 주 파일은 보관), reports.html AUTO-REPORTS 목록과 사이트맵 AUTO-REPORTS 구간 갱신. 시세는 auction-daily, 장착품은 trends-daily의 주 첫날 vs 마지막날 비교.
+- 아이템 상세 팝업: common.js `bindItemTips`가 사이트 전체의 img-api 아이템 이미지 클릭을 가로채(캡처 단계) Worker `item`으로 상세(이름·등급·레벨·명성·능력치·세트·설명)를 아이콘 옆 팝업으로 표시. 좁은 화면은 아래쪽 시트. 기본 정보라 강화 등 캐릭터별 수치는 없음.
 - 경매장 시세 그래프: 메인 표에서 아이템 클릭 → history/auction-daily.json으로 SVG 꺾은선(외부 라이브러리 없음).
 - collect.yml 저장 단계: git add data index.html sitemap.xml jobs.html reports.html + jobs/·reports/ 폴더(있을 때만).
 

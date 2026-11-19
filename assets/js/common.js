@@ -191,6 +191,105 @@
       `<a href="${characterLink(r.serverId, r.characterId)}">${esc(r.characterName)}</a>`).join('');
   }
 
+  /* ----- 아이템 상세 팝업: 아이템 아이콘을 누르면 게임 툴팁처럼 옆에 스펙이 나와요 ----- */
+  // 사이트 어디든 img-api 아이템 이미지면 동작해요. 정보는 Worker의 'item' 경로(하루 캐시)로 받아요.
+  const tipCache = {};
+  let tipEl = null;
+  let tipFor = null;
+
+  function closeTip() {
+    if (tipEl) tipEl.remove();
+    tipEl = null;
+    tipFor = null;
+  }
+
+  function tipHtml(d) {
+    const status = (d.itemStatus || []).filter((s) => s && s.name);
+    const explain = d.itemExplainDetail || d.itemExplain || '';
+    return `
+      <div class="tip-head">
+        <span class="item-icon"><img src="${IMG.item(d.itemId)}" alt="" width="28" height="28"></span>
+        <div class="tip-title">
+          <strong class="item-name">${esc(d.itemName)}</strong>
+          <small>${esc(d.itemRarity || '')}${d.itemTypeDetail || d.itemType ? ` · ${esc(d.itemTypeDetail || d.itemType)}` : ''}</small>
+        </div>
+        <button type="button" class="tip-close" aria-label="닫기">×</button>
+      </div>
+      <div class="tip-body">
+        ${d.itemAvailableLevel ? `<p class="tip-line"><span>착용 레벨</span><b>Lv.${esc(d.itemAvailableLevel)}</b></p>` : ''}
+        ${typeof d.fame === 'number' && d.fame ? `<p class="tip-line"><span>모험가 명성</span><b>${num(d.fame)}</b></p>` : ''}
+        ${status.length ? `<dl class="tip-stats">${status.filter((s) => !/명성/.test(s.name)).map((s) => `<div><dt>${esc(s.name)}</dt><dd>${esc(typeof s.value === 'number' ? num(s.value) : s.value)}</dd></div>`).join('')}</dl>` : ''}
+        ${d.setItemName ? `<p class="tip-set">${esc(d.setItemName)}</p>` : ''}
+        ${explain ? `<p class="tip-explain">${esc(explain)}</p>` : ''}
+        ${d.itemFlavorText ? `<p class="tip-flavor">${esc(d.itemFlavorText)}</p>` : ''}
+      </div>
+      <p class="tip-foot">아이템 기본 정보예요. 강화·마법부여 등 캐릭터별 수치는 포함되지 않아요.</p>`;
+  }
+
+  // 아이콘 오른쪽에 띄우고, 화면 밖으로 나가면 왼쪽·위로 옮겨요. 좁은 화면에서는 아래쪽에 고정
+  function placeTip(anchor) {
+    if (!tipEl) return;
+    if (window.innerWidth < 640) { tipEl.classList.add('tip--sheet'); return; }
+    tipEl.classList.remove('tip--sheet');
+    const r = anchor.getBoundingClientRect();
+    const w = tipEl.offsetWidth;
+    const h = tipEl.offsetHeight;
+    let left = r.right + 10;
+    if (left + w > window.innerWidth - 12) left = Math.max(12, r.left - w - 10);
+    let top = r.top;
+    if (top + h > window.innerHeight - 12) top = Math.max(12, window.innerHeight - h - 12);
+    tipEl.style.left = `${Math.round(left)}px`;
+    tipEl.style.top = `${Math.round(top)}px`;
+  }
+
+  async function openTip(img) {
+    const m = img.src.match(/\/df\/items\/([0-9a-f]{32})/i);
+    if (!m) return;
+    const id = m[1];
+    if (tipFor === img) { closeTip(); return; }
+    closeTip();
+    tipFor = img;
+    tipEl = document.createElement('div');
+    tipEl.className = 'item-tip';
+    tipEl.setAttribute('role', 'dialog');
+    tipEl.setAttribute('aria-label', '아이템 상세 정보');
+    tipEl.innerHTML = '<p class="tip-loading">아이템 정보를 불러오는 중이에요…</p>';
+    document.body.appendChild(tipEl);
+    placeTip(img);
+    try {
+      if (!tipCache[id]) tipCache[id] = api('item', { id }).catch((err) => { delete tipCache[id]; throw err; });
+      const d = await tipCache[id];
+      if (tipFor !== img || !tipEl) return; // 그새 다른 아이콘을 눌렀으면 무시
+      tipEl.innerHTML = tipHtml(d);
+      const rs = rarityStyle(d.itemRarity);
+      if (rs) tipEl.setAttribute('style', rs);
+      placeTip(img);
+    } catch (err) {
+      if (tipEl && tipFor === img) { tipEl.innerHTML = `<p class="tip-loading">${esc(err.message || '정보를 불러오지 못했어요')}</p>`; placeTip(img); }
+    }
+  }
+
+  function bindItemTips() {
+    // 아이콘이 있는 줄 자체가 눌리는 곳(시세 그래프·랭커 갤러리 등)보다 먼저 받아서, 아이콘 클릭은 팝업만 열어요
+    document.addEventListener('click', (e) => {
+      if (tipEl && tipEl.contains(e.target)) {
+        if (e.target.closest('.tip-close')) closeTip();
+        return;
+      }
+      const img = e.target.closest && e.target.closest('img');
+      if (img && /img-api\.neople\.co\.kr\/df\/items\//.test(img.src)) {
+        e.preventDefault();
+        e.stopPropagation();
+        openTip(img);
+        return;
+      }
+      if (tipEl) closeTip();
+    }, true);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeTip(); });
+    window.addEventListener('scroll', () => { if (tipEl && tipFor && !tipEl.classList.contains('tip--sheet')) placeTip(tipFor); }, { passive: true });
+    window.addEventListener('resize', () => { if (tipEl && tipFor) placeTip(tipFor); });
+  }
+
   window.DNF = {
     CFG, SERVER_NAMES, IMG, esc, num, gold, rarityStyle, serverName, timeLabel,
     getJSON, api, emptyState, apiErrorMessage, getRecent, addRecent, characterLink,
@@ -206,6 +305,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     addRailAds();
     initAds();
+    bindItemTips();
     document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
   });
 })();
