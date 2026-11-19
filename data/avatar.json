@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T12:45:50.117Z",
+ "updatedAt": "2026-11-19T13:41:01.275Z",
  "sale": [
   {
    "goodsNo": 4806927,
@@ -4413,6 +4413,56 @@
    ]
   },
   {
+   "goodsNo": 4752705,
+   "title": "남격투가 레어3부위 상급1부위",
+   "price": 31000000,
+   "jobs": [
+    "격투가(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "97ba3fb9b34b029318320288e640c653",
+     "itemName": "광호제의 포니테일머리[D타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 붉은빛 엠블렘[지능]",
+      "빛나는 붉은빛 엠블렘[지능]"
+     ]
+    },
+    {
+     "itemId": "bb648b7095c005b51ea5a5102872553d",
+     "itemName": "앱솔루트 다크 코트",
+     "slotName": "상의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[강권](남)",
+      "빛나는 녹색빛 엠블렘[HP MAX]"
+     ]
+    },
+    {
+     "itemId": "096bd214f931caae06fdc369011b15b7",
+     "itemName": "남격투가의 흑요석 갑옷 하의",
+     "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[뒷골목 싸움법]"
+     ]
+    },
+    {
+     "itemId": "aa53f118dbd755a79d80367d2918da46",
+     "itemName": "혼돈의 루시퍼 검은 날개",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    }
+   ]
+  },
+  {
    "goodsNo": 4750766,
    "title": "아처 상급2부위",
    "price": 2222222,
@@ -6100,97 +6150,6 @@
    ]
   },
   {
-   "goodsNo": 4598634,
-   "title": "여마법사 레어1부위 상급7부위/피부",
-   "price": 32400000,
-   "jobs": [
-    "마법사(여)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [
-    "판타지",
-    "강인한"
-   ],
-   "parts": [
-    {
-     "itemId": "b27e2e95dc2d26aa9f4e67a9fd94f818",
-     "itemName": "총명한 발키리의 날개 장식 서클릿[A타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "c8122f067423d93d9f15108ed34b9404",
-     "itemName": "총명한 발키리의 느슨하게 땋은머리[A타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "b88744dce9a46dc8e82b65f7e0fcbe4b",
-     "itemName": "루실의 경건한 얼굴",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "e2d2ccbb81e90eda26ed9a9d0871a358",
-     "itemName": "올림푸스 아르테미스의 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "10c44a124b549a13befe69a024060a80",
-     "itemName": "미드썸머 아라드 프릴 수영복 하의[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 녹색빛 엠블렘[MP MAX]",
-      "빛나는 녹색빛 엠블렘[MP MAX]"
-     ]
-    },
-    {
-     "itemId": "82c692b64a0636e8825c13a1095961da",
-     "itemName": "올림푸스 아르테미스의 샌들[D타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 푸른빛 엠블렘[점프력]"
-     ]
-    },
-    {
-     "itemId": "9fcf15f5e170af020dbd68fe4e814399",
-     "itemName": "올림푸스 아르테미스의 활[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "23534e5f47c6e58e4fc033d50742c119",
-     "itemName": "꽃의 요정 - 신록의 벨트",
-     "slotName": "허리 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "화려한 푸른빛 엠블렘[적중률]",
-      "화려한 푸른빛 엠블렘[적중률]"
-     ]
-    },
-    {
-     "itemId": "1de5cc1df174c28191bafd230785b3f6",
-     "itemName": "아라드 협객단의 살굿빛 피부[B타입]",
-     "slotName": "스킨 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "화려한 붉은빛 엠블렘[지능]",
-      "화려한 붉은빛 엠블렘[지능]"
-     ]
-    }
-   ]
-  },
-  {
    "goodsNo": 4592893,
    "title": "여귀검사 상급2부위",
    "price": 2200000,
@@ -6716,34 +6675,6 @@
      "itemId": "dd74043cd9f73adc76eba1191cbdf295",
      "itemName": "사르포자의 보라색 피부[A타입]",
      "slotName": "스킨 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4303587,
-   "title": "여거너 상급2부위",
-   "price": 2400000,
-   "jobs": [
-    "거너(여)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "c018ce7d690c2e1eeb420e4fa3e555f6",
-     "itemName": "셋쇼마루 어머니의 신발[D타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "148ad32beca14e8373655b3efd06250c",
-     "itemName": "셋쇼마루 어머니의 목가슴[D타입]",
-     "slotName": "목가슴 아바타",
      "itemRarity": "커먼",
      "emblems": []
     }

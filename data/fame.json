@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T12:45:50.117Z",
+ "updatedAt": "2026-11-19T13:41:01.275Z",
  "all": [
   {
    "serverId": "cain",
@@ -875,6 +875,15 @@
    "fame": 136008
   },
   {
+   "serverId": "cain",
+   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
+   "characterName": "영양어썰",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
+   "fame": 136001
+  },
+  {
    "serverId": "hilder",
    "characterId": "02271bd244be88c0634110bddb8708b2",
    "characterName": "닳고닳은뉴비",
@@ -1080,15 +1089,6 @@
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 무녀",
    "fame": 135864
-  },
-  {
-   "serverId": "bakal",
-   "characterId": "747fc1fe2754ef3f248c7487624ffd65",
-   "characterName": "Spell",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 엘레멘탈마스터",
-   "fame": 135853
   },
   {
    "serverId": "casillas",
@@ -1599,6 +1599,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
+    "characterName": "영양어썰",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 어썰트",
+    "fame": 136001
+   },
+   {
+    "serverId": "cain",
     "characterId": "887f743b17cd247777cab166309ddcf6",
     "characterName": "블미생",
     "level": 115,
@@ -1649,15 +1658,6 @@
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 넨마스터",
-    "fame": 135902
-   },
-   {
-    "serverId": "cain",
-    "characterId": "d7a9880acf4e5c2129ef26e6a18641b1",
-    "characterName": "센치한요원",
-    "level": 115,
-    "jobName": "총검사",
-    "jobGrowName": "眞 요원",
     "fame": 135902
    }
   ],
@@ -2308,6 +2308,15 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 패러메딕",
     "fame": 134638
+   },
+   {
+    "serverId": "hilder",
+    "characterId": "40c0ec33989329e585aa49eea1a039e3",
+    "characterName": "Pablo",
+    "level": 115,
+    "jobName": "격투가(여)",
+    "jobGrowName": "眞 넨마스터",
+    "fame": 134602
    }
   ],
   "anton": [
@@ -2372,15 +2381,6 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
-    "fame": 134643
-   },
-   {
-    "serverId": "anton",
-    "characterId": "f5504077c532927e9ac4e4df85301c57",
-    "characterName": "니힐",
-    "level": 115,
-    "jobName": "나이트",
-    "jobGrowName": "眞 엘븐나이트",
     "fame": 134643
    },
    {
@@ -2492,15 +2492,6 @@
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 소드마스터",
     "fame": 135864
-   },
-   {
-    "serverId": "bakal",
-    "characterId": "747fc1fe2754ef3f248c7487624ffd65",
-    "characterName": "Spell",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 엘레멘탈마스터",
-    "fame": 135853
    },
    {
     "serverId": "bakal",
