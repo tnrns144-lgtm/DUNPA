@@ -627,3 +627,17 @@ select.field--sm { flex: 0 0 auto; }
 .side-trend .use-count strong { font-size: 12px; }
 .side-trend .chg { font-size: 10px; }
 .side-trend .help { font-size: 11px; }
+
+/* ---------- 오늘의 연구 브리핑 · 안내 · 자주 묻는 질문 (검색엔진도 읽는 글) ---------- */
+.brief-body, .about-body { gap: 10px; font-size: 14px; line-height: 1.75; color: var(--text-soft); }
+.brief-body p, .about-body p { margin: 0; }
+.brief-body h3 { margin: 6px 0 0; font-size: 15px; color: var(--title); }
+.brief-body ul { margin: 0; padding-left: 1.2em; }
+.brief-body li { margin: 2px 0; }
+.about-wrap { padding-bottom: 48px; }
+.faq { border-top: 1px solid var(--line-soft); padding: 8px 0; }
+.faq summary { cursor: pointer; font-weight: 700; color: var(--text); list-style: none; display: flex; gap: 8px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "Q"; font-family: var(--font-num); color: var(--accent); }
+.faq[open] summary { color: var(--accent); }
+.faq p { margin: 6px 0 0 1.4em; color: var(--text-sub); }

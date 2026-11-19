@@ -146,6 +146,9 @@ async function collectAuction() {
     }
   }
 
+  // API가 먹통이라 하나도 못 받았으면, 기존 시세를 빈 값으로 덮어쓰지 않고 그대로 둬요
+  if (!categories.some((c) => c.items.length) && !reference.length) throw new Error('시세를 하나도 받지 못해 기존 데이터를 유지해요');
+
   // 30일치만 보관
   const keep = Object.keys(history).sort().slice(-30);
   const trimmed = Object.fromEntries(keep.map((k) => [k, history[k]]));
@@ -334,12 +337,99 @@ async function collectAvatar() {
   if (firstKeys) console.log('아바타 판매 응답 필드:', firstKeys); // 필드 확인용 (Actions 로그)
 }
 
+/* ---------- 검색엔진용 브리핑 (index.html에 직접 써 넣는 글) ---------- */
+// 메인 화면 내용은 브라우저에서 자바스크립트로 채워져서, 구글이 처음 읽는 HTML에는 글이 거의 없어요.
+// 그래서 매시간 모은 데이터로 '오늘의 연구 브리핑' 문장을 만들어 HTML 원본에 넣어요. (화면에도 그대로 보여요)
+const SERVER_KO = { cain: '카인', diregie: '디레지에', siroco: '시로코', prey: '프레이', casillas: '카시야스', hilder: '힐더', anton: '안톤', bakal: '바칼' };
+const escHtml = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+function goldKo(n) {
+  n = Math.round(Number(n) || 0);
+  if (n >= 1e8) { const e = Math.floor(n / 1e8); const m = Math.floor((n % 1e8) / 1e4); return `${e}억${m ? ` ${m.toLocaleString('ko-KR')}만` : ''}`; }
+  if (n >= 1e4) { const m = Math.floor(n / 1e4); const r = n % 1e4; return `${m.toLocaleString('ko-KR')}만${r ? ` ${r.toLocaleString('ko-KR')}` : ''}`; }
+  return n.toLocaleString('ko-KR');
+}
+
+async function writeBrief() {
+  const [auction, fame, trends, avatar] = await Promise.all([
+    readJSON('data/auction.json', null), readJSON('data/fame.json', null), readJSON('data/trends.json', null), readJSON('data/avatar.json', null)
+  ]);
+  const kst = new Date(now.getTime() + 9 * 3600 * 1000);
+  const when = `${kst.getUTCFullYear()}년 ${kst.getUTCMonth() + 1}월 ${kst.getUTCDate()}일 ${kst.getUTCHours()}시`;
+  const parts = [];
+
+  const items = (auction?.categories || []).flatMap((c) => (c.items || []).slice(0, 2).map((it) => ({ ...it, cat: c.name }))).filter((it) => it.avgPrice);
+  if (items.length) {
+    parts.push(`<h3>경매장 시세</h3><ul>${items.map((it) => {
+      const ch = Number.isFinite(it.changePct) && Math.abs(it.changePct) >= 0.05 ? ` (전일 대비 ${it.changePct > 0 ? '▲' : '▼'}${Math.abs(it.changePct).toFixed(1)}%)` : '';
+      return `<li>${escHtml(it.cat)} · ${escHtml(it.itemName)}: 평균 ${goldKo(it.avgPrice)} 골드${ch}</li>`;
+    }).join('')}</ul>`);
+  }
+
+  const all = fame?.all || [];
+  if (all.length) {
+    const who = (c) => `${escHtml(SERVER_KO[c.serverId] || c.serverId)} 서버 ${escHtml(c.characterName)}(${escHtml(c.jobGrowName || c.jobName)}, 명성 ${Number(c.fame).toLocaleString('ko-KR')})`;
+    const tops = Object.entries(fame.byServer || {}).map(([id, list]) => list && list[0] ? `${escHtml(SERVER_KO[id] || id)} ${escHtml(list[0].characterName)}` : '').filter(Boolean);
+    const jobs = new Map();
+    all.forEach((c) => { const j = c.jobGrowName || c.jobName; if (j) jobs.set(j, (jobs.get(j) || 0) + 1); });
+    const [topJob, topN] = [...jobs.entries()].sort((a, b) => b[1] - a[1])[0] || [];
+    parts.push(`<h3>명성 랭킹</h3><p>전체 서버 명성 1위는 ${who(all[0])}${all[1] ? `, 2위는 ${who(all[1])}` : ''}${all[2] ? `, 3위는 ${who(all[2])}` : ''}예요.${tops.length ? ` 서버별 1위: ${tops.join(', ')}.` : ''}${topJob ? ` 랭커 중 가장 많은 직업: ${escHtml(topJob)}(${(topN / all.length * 100).toFixed(1)}%).` : ''}</p>`);
+  }
+
+  if (trends?.sample) {
+    const label = { title: '칭호', creature: '크리쳐', aura: '오라', weapon: '무기 아바타' };
+    const picks = Object.keys(label).map((k) => (trends[k] || [])[0] ? `${label[k]}는 ${escHtml(trends[k][0].itemName)}(${Math.round(trends[k][0].count / trends.sample * 100)}%)` : '').filter(Boolean);
+    const rise = (trends.risers || [])[0];
+    if (picks.length) parts.push(`<h3>랭커 트렌드</h3><p>랭커들이 가장 많이 쓰는 ${picks.join(', ')}예요.${rise ? ` 직전 관측보다 가장 많이 늘어난 장착품: ${escHtml(label[rise.category] || '')} ${escHtml(rise.itemName)}.` : ''}</p>`);
+  }
+
+  const sale = avatar?.sale || [];
+  const sold = avatar?.sold || [];
+  if (sale.length || sold.length) {
+    const low = (r) => { const p = sale.filter((x) => x.avatarRarity === r && x.price > 0).map((x) => x.price); return p.length ? `${r} 최저 ${goldKo(Math.min(...p))} 골드` : ''; };
+    const lows = ['상급', '레어', '혼합'].map(low).filter(Boolean);
+    parts.push(`<h3>아바타 마켓</h3><p>지금 판매 중인 매물 ${sale.length.toLocaleString('ko-KR')}건을 모았어요${lows.length ? ` (${lows.join(', ')})` : ''}.${sold[0] ? ` 가장 최근 거래: ${escHtml(sold[0].title)}, ${goldKo(sold[0].price)} 골드.` : ''}</p>`);
+  }
+
+  if (!parts.length) return;
+  const html = `
+    <section class="section brief" id="brief" aria-labelledby="brief-title">
+      <div class="section-head"><h2 id="brief-title">오늘의 연구 브리핑</h2><span class="lab-code">BRIEF</span><span class="rule" aria-hidden="true"></span><span class="meta">${when} 기준</span></div>
+      <div class="panel panel--pad brief-body">
+        <p>${when} 기준으로 던랩이 네오플 오픈 API에서 모은 던전앤파이터 데이터 요약이에요.</p>
+        ${parts.join('\n        ')}
+      </div>
+    </section>
+    `;
+  const file = join(ROOT, 'index.html');
+  let page;
+  try { page = await readFile(file, 'utf8'); } catch { return; }
+  const re = /(<!-- AUTO-BRIEF:START[^>]*-->)[\s\S]*?(\s*<!-- AUTO-BRIEF:END -->)/;
+  if (!re.test(page)) { report.failed.push('브리핑: index.html에 표시(AUTO-BRIEF)가 없어요'); return; }
+  const nl = page.includes('\r\n') ? '\r\n' : '\n';
+  page = page.replace(re, (_, a, b) => a + html.replace(/\n/g, nl) + b);
+  await writeFile(file, page);
+
+  // 사이트맵의 메인·아바타 마켓 날짜를 오늘로 (구글이 새 내용이 있다는 걸 알 수 있게)
+  const smFile = join(ROOT, 'sitemap.xml');
+  try {
+    let sm = await readFile(smFile, 'utf8');
+    const today = kstDate(now);
+    for (const loc of ['https://tnrns144-lgtm.github.io/DUNPA/', 'https://tnrns144-lgtm.github.io/DUNPA/avatar.html']) {
+      const block = new RegExp(`(<loc>${loc.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')}</loc>)(\\s*<lastmod>[^<]*</lastmod>)?`);
+      sm = sm.replace(block, (_, l) => `${l}${nl}    <lastmod>${today}</lastmod>`);
+    }
+    await writeFile(smFile, sm);
+  } catch { /* 사이트맵이 없으면 건너뜀 */ }
+  report.ok.push('브리핑 갱신');
+}
+
 /* ---------- 실행 ---------- */
 let serverIds = ['cain', 'diregie', 'siroco', 'prey', 'casillas', 'hilder', 'anton', 'bakal'];
 try { serverIds = await collectServers(); } catch (e) { report.failed.push(`서버 목록: ${e.message}`); }
 for (const [label, job] of [['경매장', collectAuction], ['명성', () => collectFame(serverIds)], ['트렌드', collectTrends], ['아바타', collectAvatar]]) {
   try { await job(); } catch (e) { report.failed.push(`${label}: ${e.message}`); }
 }
+try { await writeBrief(); } catch (e) { report.failed.push('브리핑: ' + e.message); }
 await writeJSON('data/meta.json', { updatedAt });
 
 console.log('수집 완료:', report.ok.join(' / ') || '없음');

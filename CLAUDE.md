@@ -47,6 +47,12 @@
 - 문서: https://developers.neople.co.kr/contents/apiDocs/df
 - 푸터에 "Powered by Neople Open API" 출처와 비공식 팬사이트 안내를 유지한다.
 
+## 검색엔진(SEO) 메모 (2026-11-19)
+- 서치 콘솔에서 메인이 "크롤링됨 - 현재 색인이 생성되지 않음"(11-17). 메인 내용이 JS로 채워져 HTML 원본에 글이 거의 없던 것이 약점이라 보강함.
+- `scripts/collect.mjs`의 `writeBrief`가 매시간 index.html의 `<!-- AUTO-BRIEF:START -->`~`END` 사이에 "오늘의 연구 브리핑"(시세·랭킹·트렌드·아바타 마켓 요약)을 직접 써 넣고, sitemap.xml의 메인·아바타 마켓 lastmod를 오늘로 바꾼다. 그래서 collect.yml은 `git add data index.html sitemap.xml`. 이 구간은 손으로 고치지 않는다.
+- 각 페이지 아래 "안내"(소개 + 자주 묻는 질문, `.about-wrap`)와 canonical, 메인에 WebSite 구조화 데이터(JSON-LD)와 og:url. 숨긴 글은 넣지 않는다(구글 규칙 위반).
+- 경매장 수집이 하나도 못 받으면 기존 auction.json을 덮어쓰지 않고 유지한다.
+
 ## 시뮬레이터 조사 결과 (2026-11-19)
 - 강화 시뮬레이터: 공식 확률 공개됨. 강화 https://df.nexon.com/probability?no=139 , 증폭 no=140, 실패 규칙 https://df.nexon.com/guide?no=710 (강화)·727 (증폭). 재련 확률과 일반 강화 비용은 미공개. 확률 페이지에 날짜가 없어 주기적으로 재확인.
 - 명성 계산: `/df/items/{itemId}`에 아이템별 `fame`이 있어 기본 명성 합은 정확. `equip/equipment`에는 아이템별 fame이 없고 강화·증폭·재련·마법부여·조율 값만 있음. 강화 등으로 붙는 명성은 공식 공식이 없어 랭커 실측(총명성 − 기본 명성 합)으로 역산 추정해야 함.
