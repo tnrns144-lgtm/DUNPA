@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-19T12:05:06.755Z",
- "sample": 135,
+ "updatedAt": "2026-11-19T12:45:50.117Z",
+ "sample": 134,
  "prevDate": "2026-11-18",
  "title": [
   {
@@ -53,18 +53,18 @@
    "delta": 2
   },
   {
-   "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
-   "itemName": "프로스트의 전설 플래티넘[75Lv]",
-   "itemRarity": "레어",
-   "count": 5,
-   "delta": 0
-  },
-  {
    "itemId": "beeb9b751428db954306ac80a3ccf985",
    "itemName": "이터널 크로노스[40Lv]",
    "itemRarity": "레어",
    "count": 5,
    "delta": 0
+  },
+  {
+   "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
+   "itemName": "프로스트의 전설 플래티넘[45Lv]",
+   "itemRarity": "레어",
+   "count": 5,
+   "delta": 1
   },
   {
    "itemId": "f88604c768bb3937e915fddfe93d7423",
@@ -151,8 +151,8 @@
    "itemId": "c6ca900e513cccb177890939de234227",
    "itemName": "열대야의 추억",
    "itemRarity": "레어",
-   "count": 61,
-   "delta": 1
+   "count": 60,
+   "delta": 0
   },
   {
    "itemId": "b115f9551fd7e226df474a14607b05ae",
@@ -192,17 +192,17 @@
    "delta": 0
   },
   {
-   "itemId": "bbc1f68238beb55987c254d12526b2ab",
-   "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
+   "itemId": "b33ee796622d2a657426d8669c6baa02",
+   "itemName": "악몽을 이겨낸 오염된 피의 쾌",
    "itemRarity": "",
    "count": 4,
    "isNew": true
   },
   {
-   "itemId": "b33ee796622d2a657426d8669c6baa02",
-   "itemName": "악몽을 이겨낸 오염된 피의 쾌",
+   "itemId": "bbc1f68238beb55987c254d12526b2ab",
+   "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
    "itemRarity": "",
-   "count": 3,
+   "count": 4,
    "isNew": true
   },
   {
@@ -244,6 +244,15 @@
  "risers": [
   {
    "category": "weapon",
+   "itemId": "b33ee796622d2a657426d8669c6baa02",
+   "itemName": "악몽을 이겨낸 오염된 피의 쾌",
+   "itemRarity": "",
+   "count": 4,
+   "isNew": true,
+   "gain": 4
+  },
+  {
+   "category": "weapon",
    "itemId": "bbc1f68238beb55987c254d12526b2ab",
    "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
    "itemRarity": "",
@@ -258,15 +267,6 @@
    "itemRarity": "레어",
    "count": 42,
    "delta": 3,
-   "gain": 3
-  },
-  {
-   "category": "weapon",
-   "itemId": "b33ee796622d2a657426d8669c6baa02",
-   "itemName": "악몽을 이겨낸 오염된 피의 쾌",
-   "itemRarity": "",
-   "count": 3,
-   "isNew": true,
    "gain": 3
   },
   {
@@ -551,6 +551,13 @@
     },
     {
      "serverId": "cain",
+     "characterId": "25094509919d20bb888a601cf5c287b7",
+     "characterName": "눈꽃",
+     "jobGrowName": "眞 브레이커",
+     "fame": 136685
+    },
+    {
+     "serverId": "cain",
      "characterId": "a1ac82fca53a5e8c899aa2c2e4a782fd",
      "characterName": "허벅지모에",
      "jobGrowName": "眞 트래블러",
@@ -562,13 +569,6 @@
      "characterName": "VluGod",
      "jobGrowName": "眞 퇴마사",
      "fame": 136184
-    },
-    {
-     "serverId": "cain",
-     "characterId": "25094509919d20bb888a601cf5c287b7",
-     "characterName": "눈꽃",
-     "jobGrowName": "眞 브레이커",
-     "fame": 136085
     },
     {
      "serverId": "hilder",
@@ -724,43 +724,6 @@
      "fame": 135027
     }
    ],
-   "프로스트의 전설 플래티넘[75Lv]": [
-    {
-     "serverId": "cain",
-     "characterId": "8cf955048bec36f40b12b095a8908b15",
-     "characterName": "치료",
-     "jobGrowName": "眞 크루세이더",
-     "fame": 136773
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "ea8f7a1ffa20eb522b215959d66a5c83",
-     "characterName": "수I",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 136394
-    },
-    {
-     "serverId": "cain",
-     "characterId": "80d5795bf263d0e142271bbe8e78b524",
-     "characterName": "Rovyn",
-     "jobGrowName": "眞 어썰트",
-     "fame": 136184
-    },
-    {
-     "serverId": "cain",
-     "characterId": "7979bcc2a3455f213036808a876da546",
-     "characterName": "간판",
-     "jobGrowName": "眞 크루세이더",
-     "fame": 135269
-    },
-    {
-     "serverId": "cain",
-     "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
-     "characterName": "영양어썰",
-     "jobGrowName": "眞 어썰트",
-     "fame": 134951
-    }
-   ],
    "이터널 크로노스[40Lv]": [
     {
      "serverId": "prey",
@@ -796,6 +759,43 @@
      "characterName": "모데미풀",
      "jobGrowName": "眞 카오스",
      "fame": 136222
+    }
+   ],
+   "프로스트의 전설 플래티넘[45Lv]": [
+    {
+     "serverId": "cain",
+     "characterId": "c98990e0b5417c31da1c3cdd40079197",
+     "characterName": "테오타르",
+     "jobGrowName": "眞 레인저",
+     "fame": 136707
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "57f8f24821e53d612e7e182539f319ca",
+     "characterName": "샤투킬",
+     "jobGrowName": "眞 레인저",
+     "fame": 136222
+    },
+    {
+     "serverId": "cain",
+     "characterId": "7ee0dafaab05afed9bf830f29d952ba2",
+     "characterName": "운라이오닐",
+     "jobGrowName": "眞 레인저",
+     "fame": 136184
+    },
+    {
+     "serverId": "diregie",
+     "characterId": "97166ceee6609f7c072dd375eadaca4f",
+     "characterName": "외발",
+     "jobGrowName": "眞 레인저",
+     "fame": 135952
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "9f33782351514503704109e6b258e2ec",
+     "characterName": "로망캔슬",
+     "jobGrowName": "眞 레인저",
+     "fame": 134950
     }
    ],
    "운명이 담긴 책[30Lv]": [
@@ -1207,6 +1207,13 @@
     },
     {
      "serverId": "cain",
+     "characterId": "25094509919d20bb888a601cf5c287b7",
+     "characterName": "눈꽃",
+     "jobGrowName": "眞 브레이커",
+     "fame": 136685
+    },
+    {
+     "serverId": "cain",
      "characterId": "82a61ac21fa1a12caf639644bf50c524",
      "characterName": "별빛하울링",
      "jobGrowName": "眞 트래블러",
@@ -1225,13 +1232,6 @@
      "characterName": "VluGod",
      "jobGrowName": "眞 퇴마사",
      "fame": 136184
-    },
-    {
-     "serverId": "cain",
-     "characterId": "25094509919d20bb888a601cf5c287b7",
-     "characterName": "눈꽃",
-     "jobGrowName": "眞 브레이커",
-     "fame": 136085
     },
     {
      "serverId": "hilder",
@@ -1521,6 +1521,13 @@
      "fame": 136685
     },
     {
+     "serverId": "cain",
+     "characterId": "25094509919d20bb888a601cf5c287b7",
+     "characterName": "눈꽃",
+     "jobGrowName": "眞 브레이커",
+     "fame": 136685
+    },
+    {
      "serverId": "bakal",
      "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
      "characterName": "라독커",
@@ -1568,13 +1575,6 @@
      "characterName": "테토",
      "jobGrowName": "眞 엘레멘탈마스터",
      "fame": 136417
-    },
-    {
-     "serverId": "cain",
-     "characterId": "a1ac82fca53a5e8c899aa2c2e4a782fd",
-     "characterName": "허벅지모에",
-     "jobGrowName": "眞 트래블러",
-     "fame": 136414
     }
    ],
    "신선한 햇살의 조각": [
@@ -1797,6 +1797,36 @@
      "fame": 135420
     }
    ],
+   "악몽을 이겨낸 오염된 피의 쾌": [
+    {
+     "serverId": "cain",
+     "characterId": "25fc2f732d43848eb6283abe0f706d06",
+     "characterName": "삼각형",
+     "jobGrowName": "眞 레인저",
+     "fame": 136685
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "57f8f24821e53d612e7e182539f319ca",
+     "characterName": "샤투킬",
+     "jobGrowName": "眞 레인저",
+     "fame": 136222
+    },
+    {
+     "serverId": "siroco",
+     "characterId": "a3e13ef287a1b96f2f3d42fb8024f232",
+     "characterName": "선화양",
+     "jobGrowName": "眞 레인저",
+     "fame": 136038
+    },
+    {
+     "serverId": "diregie",
+     "characterId": "97166ceee6609f7c072dd375eadaca4f",
+     "characterName": "외발",
+     "jobGrowName": "眞 레인저",
+     "fame": 135952
+    }
+   ],
    "악몽을 이겨낸 구속하는 공작의 차원도": [
     {
      "serverId": "casillas",
@@ -1825,29 +1855,6 @@
      "characterName": "노윤서",
      "jobGrowName": "眞 소드마스터",
      "fame": 135942
-    }
-   ],
-   "악몽을 이겨낸 오염된 피의 쾌": [
-    {
-     "serverId": "cain",
-     "characterId": "25fc2f732d43848eb6283abe0f706d06",
-     "characterName": "삼각형",
-     "jobGrowName": "眞 레인저",
-     "fame": 136685
-    },
-    {
-     "serverId": "siroco",
-     "characterId": "a3e13ef287a1b96f2f3d42fb8024f232",
-     "characterName": "선화양",
-     "jobGrowName": "眞 레인저",
-     "fame": 136038
-    },
-    {
-     "serverId": "diregie",
-     "characterId": "97166ceee6609f7c072dd375eadaca4f",
-     "characterName": "외발",
-     "jobGrowName": "眞 레인저",
-     "fame": 135952
     }
    ],
    "검은 나비의 순백의 리볼버": [
@@ -1970,15 +1977,15 @@
  "counts": {
   "title": {
    "순백의 눈꽃 결정[75Lv]": 4,
-   "프로스트의 전설 플래티넘[75Lv]": 5,
+   "프로스트의 전설 플래티넘[75Lv]": 4,
    "이터널 크로노스[35Lv]": 7,
    "순백의 눈꽃 결정[30Lv]": 10,
    "이터널 크로노스[40Lv]": 5,
    "이터널 크로노스[30Lv]": 15,
-   "프로스트의 전설 플래티넘[45Lv]": 4,
+   "프로스트의 전설 플래티넘[45Lv]": 5,
    "순백의 눈꽃 결정[45Lv]": 4,
    "운명이 담긴 책[30Lv]": 5,
-   "천공의 지배자 플래티넘[30Lv]": 4,
+   "천공의 지배자 플래티넘[30Lv]": 3,
    "순백의 눈꽃 결정[35Lv]": 7,
    "운명이 담긴 책[60Lv]": 1,
    "프로스트의 전설 플래티넘[30Lv]": 13,
@@ -2014,7 +2021,7 @@
   },
   "creature": {
    "운명을 담는 여신[75Lv]": 4,
-   "운명을 담는 재단사 플래티넘[75Lv]": 3,
+   "운명을 담는 재단사 플래티넘[75Lv]": 2,
    "트로피컬 가이드 운디네[35Lv]": 2,
    "순백의 옵타티오[30Lv]": 19,
    "순백의 옵타티오[40Lv]": 5,
@@ -2035,7 +2042,7 @@
    "트로피컬 가이드 운디네[45Lv]": 1,
    "운명을 담는 여신[40Lv]": 3,
    "순백의 옵타티오[75Lv]": 2,
-   "플로럴 스태그 플래티넘[30Lv]": 1,
+   "플로럴 스태그 플래티넘[45Lv]": 1,
    "실반 소네트 페어리[30Lv]": 1,
    "운명을 담는 재단사 플래티넘[70Lv]": 1,
    "트로피컬 가이드 운디네[75Lv]": 1,
@@ -2050,7 +2057,7 @@
   },
   "aura": {
    "신선한 햇살의 조각": 32,
-   "열대야의 추억": 61,
+   "열대야의 추억": 60,
    "루미너스 게이트": 42
   },
   "weapon": {
@@ -2062,7 +2069,8 @@
    "발키리 : 수호의 검": 2,
    "팬텀 리퍼 드래곤 테일": 1,
    "샤이닝 로어 글러브[카오스]": 2,
-   "악몽을 이겨낸 오염된 피의 쾌": 3,
+   "샤이닝 로어 앵커[카오스]": 1,
+   "악몽을 이겨낸 오염된 피의 쾌": 4,
    "악몽을 이겨낸 구속하는 공작의 차원도": 4,
    "신검 경": 1,
    "발키리 : 천상의 검": 1,
@@ -2097,9 +2105,8 @@
    "악몽을 이겨낸 요도 : 날뛰는 흑혈": 1,
    "팬텀 : 혼돈의 둔기": 1,
    "알쏭달쏭 만능 빗자루": 1,
-   "금강의 무기": 2,
+   "금강의 무기": 1,
    "2025 아라드 패스 요들소녀 플로라의 꽃다발": 2,
-   "DNF 폴리스 제압용 스턴건": 1,
    "순백의 위성": 1,
    "영검 구귀문": 1,
    "고고한 별자리의 기억": 1,
@@ -2117,7 +2124,6 @@
    "2025 아라드 패스 서부의 보안관 라이플 보우": 2,
    "레어 무기 클론 아바타[60Lv]": 1,
    "레이 프리미티브": 1,
-   "샤이닝 로어 앵커[카오스]": 1,
    "마피아의 클래식 리볼버": 1,
    "할로윈 베트 보우 [박쥐 타입]": 1,
    "카론의 검": 2,
@@ -2142,10 +2148,10 @@
    "승천룡": 1,
    "2025 시리카의 피나": 1,
    "히만 스텔라의 마이크": 1,
+   "베테랑즈 블로우": 1,
    "2025 아라드 패스 고양이 킹덤의 냥냥 토템": 1,
    "샤이닝 로어 로드[카오스]": 1,
    "2026 아라드 패스 차원의 별이 깃든 선현궁": 1,
-   "펄스건": 1,
    "루미나리에 리볼버": 1,
    "샤이닝 로어 도[코스모스]": 1
   }

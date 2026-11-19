@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T12:16:50.984Z",
+ "updatedAt": "2026-11-19T12:45:50.117Z",
  "all": [
   {
    "serverId": "cain",
@@ -1190,15 +1190,6 @@
    "fame": 134978
   },
   {
-   "serverId": "cain",
-   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
-   "characterName": "영양어썰",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 어썰트",
-   "fame": 134951
-  },
-  {
    "serverId": "hilder",
    "characterId": "9f33782351514503704109e6b258e2ec",
    "characterName": "로망캔슬",
@@ -2317,15 +2308,6 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 패러메딕",
     "fame": 134638
-   },
-   {
-    "serverId": "hilder",
-    "characterId": "40c0ec33989329e585aa49eea1a039e3",
-    "characterName": "Pablo",
-    "level": 115,
-    "jobName": "격투가(여)",
-    "jobGrowName": "眞 넨마스터",
-    "fame": 134602
    }
   ],
   "anton": [
