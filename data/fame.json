@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T03:06:07.055Z",
+ "updatedAt": "2026-11-19T04:14:39.814Z",
  "all": [
   {
    "serverId": "cain",
@@ -2436,6 +2436,15 @@
     "jobName": "나이트",
     "jobGrowName": "眞 엘븐나이트",
     "fame": 134643
+   },
+   {
+    "serverId": "anton",
+    "characterId": "88e6df761e482cc8d1cd7f43ec628275",
+    "characterName": "상다미",
+    "level": 115,
+    "jobName": "귀검사(여)",
+    "jobGrowName": "眞 블레이드",
+    "fame": 134446
    },
    {
     "serverId": "anton",
