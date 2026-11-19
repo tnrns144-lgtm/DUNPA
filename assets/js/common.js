@@ -131,6 +131,21 @@
       el.setAttribute('aria-label', '광고');
       document.body.appendChild(el);
     });
+    // 배경 그림(히어로) 아래에서 시작하고, 스크롤하면 위에 붙어 따라오다가 푸터 앞에서 멈춰요
+    const place = () => {
+      const rails = document.querySelectorAll('.ad-rail');
+      if (!rails.length || getComputedStyle(rails[0]).display === 'none') return;
+      const top0 = document.querySelector('.hero') || document.querySelector('.site-header');
+      const foot = document.querySelector('.site-footer');
+      const h = rails[0].offsetHeight;
+      let top = Math.max(24, (top0 ? top0.getBoundingClientRect().bottom : 0) + 36);
+      if (foot) top = Math.min(top, foot.getBoundingClientRect().top - 24 - h);
+      rails.forEach((r) => { r.style.top = `${Math.round(top)}px`; });
+    };
+    window.addEventListener('scroll', place, { passive: true });
+    window.addEventListener('resize', place);
+    window.addEventListener('load', place);
+    place();
   }
 
   function initAds() {

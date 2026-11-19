@@ -25,7 +25,7 @@
 - `index.html` 메인 / `character.html` 캐릭터 검색·상세(장비·아바타·크리쳐·능력치 탭) / `items.html` 아이템 사전 / `avatar.html` 아바타 마켓(판매 중·최근 거래, 게임 속 부위 칸 배치) / `privacy.html` 개인정보처리방침 / `sitemap.xml`
 - `assets/css/theme.css`: 색·글꼴·테두리 등 디자인 값 전부 (현재: 어두운 청록 바탕 + 마력 빛 하늘색 강조 + 설계도 격자, 숫자는 JetBrains Mono). style.css에는 색을 직접 적지 말고 theme.css 변수만 쓴다. 분위기 변경은 이 파일만 고친다. 다음 게임 사이트도 이 파일만 바꿔 배치를 재활용한다.
 - `assets/css/style.css`: 배치. `assets/js/common.js`: 공통 기능(데이터 로드, 숫자 표시, 등급색, 최근 검색, 광고). `home.js` / `character.js` / `items.js`: 페이지별 기능.
-- `assets/js/config.js`: `workerUrl`(입력 완료), `adsenseClient`·`adSlots`(애드센스 승인 후 입력. 비어 있으면 광고 자리에 안내 상자 표시). 광고 자리는 화면 양쪽 여백의 세로 배너 `railLeft`·`railRight`(common.js가 모든 페이지에 자동 삽입, 폭 1680px 이상에서만 보임)와 본문 맨 아래 `bottom`뿐. 본문 중간·사이드바 배너는 사용자가 거슬린다고 해서 뺐다.
+- `assets/js/config.js`: `workerUrl`(입력 완료), `adsenseClient`·`adSlots`(애드센스 승인 후 입력. 비어 있으면 광고 자리에 안내 상자 표시). 광고 자리는 화면 양쪽 여백의 세로 배너 `railLeft`·`railRight`(common.js가 모든 페이지에 자동 삽입, 폭 1680px 이상에서만 보임. 히어로 그림 아래에서 시작해 스크롤 시 위에 붙어 따라오고 푸터 앞에서 멈춤)와 본문 맨 아래 `bottom`(광고 연결 전에는 자리만 두고 숨김)뿐. 본문 중간·사이드바 배너는 사용자가 거슬린다고 해서 뺐다.
 - `assets/img/hero-bg.svg`: 검색창 뒤 배경. 직접 그린 오리지널 그림(밤의 마도 연구실: 마법진·홀로그램 계기판·플라스크). 게임 공식 이미지는 허락 없이 쓰지 않는다. 게임 이미지는 API가 주는 `img-api.neople.co.kr` 주소만 쓴다.
 - 옛 디자인 시안(던파노트 시절 금색 팬사이트 스타일, 배치 참고용): https://claude.ai/artifact/KmYqVLKmnZWF5W4Ert1gPj
 

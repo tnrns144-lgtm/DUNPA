@@ -605,3 +605,5 @@ select.field--sm { flex: 0 0 auto; }
 .mini-list--side .mini-price { order: 2; margin-left: auto; font-size: 13px; }
 .side-compact .more-link { padding: 2px 0; font-size: 13px; }
 .side-links .side-list a { padding: 6px 0; font-size: 13px; }
+/* 본문 하단 배너: 광고가 연결되기 전(안내 상자 상태)에는 자리만 두고 화면에서 숨겨요 */
+.ad-bottom.ad-slot--placeholder { display: none; }
