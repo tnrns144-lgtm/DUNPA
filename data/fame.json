@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T04:14:39.814Z",
+ "updatedAt": "2026-11-19T05:24:38.888Z",
  "all": [
   {
    "serverId": "cain",
@@ -269,15 +269,6 @@
    "level": 115,
    "jobName": "격투가(여)",
    "jobGrowName": "眞 넨마스터",
-   "fame": 136394
-  },
-  {
-   "serverId": "bakal",
-   "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
-   "characterName": "오후햇살",
-   "level": 115,
-   "jobName": "귀검사(남)",
-   "jobGrowName": "眞 웨펀마스터",
    "fame": 136394
   },
   {
@@ -1206,24 +1197,6 @@
    "jobName": "거너(남)",
    "jobGrowName": "眞 어썰트",
    "fame": 134951
-  },
-  {
-   "serverId": "hilder",
-   "characterId": "9f33782351514503704109e6b258e2ec",
-   "characterName": "로망캔슬",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 레인저",
-   "fame": 134950
-  },
-  {
-   "serverId": "hilder",
-   "characterId": "d5425b2fc531bfced7e73d7fd540cd24",
-   "characterName": "담배핌",
-   "level": 115,
-   "jobName": "프리스트(여)",
-   "jobGrowName": "眞 크루세이더",
-   "fame": 134940
   },
   {
    "serverId": "bakal",
@@ -2293,24 +2266,6 @@
    },
    {
     "serverId": "hilder",
-    "characterId": "9f33782351514503704109e6b258e2ec",
-    "characterName": "로망캔슬",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 레인저",
-    "fame": 134950
-   },
-   {
-    "serverId": "hilder",
-    "characterId": "d5425b2fc531bfced7e73d7fd540cd24",
-    "characterName": "담배핌",
-    "level": 115,
-    "jobName": "프리스트(여)",
-    "jobGrowName": "眞 크루세이더",
-    "fame": 134940
-   },
-   {
-    "serverId": "hilder",
     "characterId": "026c586858dfdad89f06396c332157f2",
     "characterName": "천월",
     "level": 115,
@@ -2477,15 +2432,6 @@
    },
    {
     "serverId": "bakal",
-    "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
-    "characterName": "오후햇살",
-    "level": 115,
-    "jobName": "귀검사(남)",
-    "jobGrowName": "眞 웨펀마스터",
-    "fame": 136394
-   },
-   {
-    "serverId": "bakal",
     "characterId": "b8b6e0658a5a61a1c81733ad1085621e",
     "characterName": "팽귄스핏",
     "level": 115,
@@ -2600,6 +2546,15 @@
     "jobName": "도적",
     "jobGrowName": "眞 쿠노이치",
     "fame": 134840
+   },
+   {
+    "serverId": "bakal",
+    "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
+    "characterName": "오후햇살",
+    "level": 115,
+    "jobName": "귀검사(남)",
+    "jobGrowName": "眞 웨펀마스터",
+    "fame": 134774
    }
   ]
  }
