@@ -851,3 +851,31 @@ img[src*="img-api.neople.co.kr/df/items/"] { cursor: help; }
 .job-card-img img { height: 84px; width: auto; max-width: none; }
 /* 스크롤 되는 상자(표)에서는 모서리 장식이 밖으로 삐져나가 스크롤 막대가 생기지 않게 안쪽에 맞춰요 */
 .table-wrap::after, .panel.table-wrap::after { inset: 0; }
+
+/* ---------- 3D 히어로 장면 (황혼의 마을과 강화 연구소, 직접 그린 4겹 그림) ---------- */
+.hero.hero--scene { background: var(--hero-base); }
+.hero-scene { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.scene-layer {
+  position: absolute; inset: -40px -60px; background-position: center bottom; background-size: cover; background-repeat: no-repeat;
+  will-change: transform; transition: transform .25s ease-out;
+}
+.l-sky { background-image: url("../img/scene-sky.svg"); }
+.l-far { background-image: url("../img/scene-far.svg"); }
+.l-mid { background-image: url("../img/scene-mid.svg"); }
+.l-front { background-image: url("../img/scene-front.svg"); }
+/* 가운데 글씨가 잘 읽히도록 어둡게 받쳐 줘요 */
+.hero-scene::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 46% 60% at 50% 48%, color-mix(in srgb, var(--bg) 62%, transparent), transparent 75%),
+              linear-gradient(180deg, transparent 70%, var(--bg) 100%);
+}
+.hero--scene .hero-inner, .hero--scene .hero-champion { position: relative; z-index: 2; }
+.hero--scene .hero-champion { position: absolute; }
+.hero--compact.hero--scene .hero-inner { padding-top: 64px; padding-bottom: 52px; }
+.hero-title { text-shadow: none; filter: drop-shadow(0 4px 18px var(--title-glow)) drop-shadow(0 2px 0 var(--bevel-lo)); }
+
+/* 입체 기울기: 부드럽게 */
+.podium-card, .job-card, .look-card, .brief-card, .market-card, .quick-link, .result-cell { transition: transform .15s ease-out, box-shadow .15s; transform-style: preserve-3d; }
+.podium-card:hover, .job-card:hover, .look-card:hover, .quick-link:hover { box-shadow: 0 14px 28px var(--bevel-lo), 0 0 18px color-mix(in srgb, var(--accent) 22%, transparent); }
+.hero { background: var(--hero-base); } /* 예전 hero-bg.svg 대신 3D 장면(scene-*.svg)을 써요 */
+.hero--compact .scene-layer { background-position: center 64%; } /* 낮은 히어로에서도 마을·연구소가 보이게 */

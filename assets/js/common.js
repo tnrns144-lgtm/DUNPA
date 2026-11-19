@@ -290,6 +290,61 @@
     window.addEventListener('resize', () => { if (tipEl && tipFor) placeTip(tipFor); });
   }
 
+  /* ----- 3D 장면: 히어로 배경을 여러 겹(하늘·먼 마을·연구소·앞 가로등)으로 깔고 마우스·스크롤에 따라 겹마다 다르게 움직여요 ----- */
+  const SCENE_LAYERS = [
+    { cls: 'l-sky', depth: 6 }, { cls: 'l-far', depth: 14 }, { cls: 'l-mid', depth: 26 }, { cls: 'l-front', depth: 44 }
+  ];
+  function addHeroScene() {
+    const hero = document.querySelector('.hero');
+    if (!hero || hero.querySelector('.hero-scene')) return;
+    const scene = document.createElement('div');
+    scene.className = 'hero-scene';
+    scene.setAttribute('aria-hidden', 'true');
+    scene.innerHTML = SCENE_LAYERS.map((l) => `<div class="scene-layer ${l.cls}"></div>`).join('');
+    hero.prepend(scene);
+    hero.classList.add('hero--scene');
+    const layers = [...scene.children];
+    let mx = 0, my = 0, ticking = false;
+    const apply = () => {
+      ticking = false;
+      const rect = hero.getBoundingClientRect();
+      if (rect.bottom < 0) return; // 화면 밖이면 계산 안 함
+      const sy = Math.max(0, -rect.top);
+      layers.forEach((el, i) => {
+        const d = SCENE_LAYERS[i].depth;
+        el.style.transform = `translate3d(${(-mx * d).toFixed(1)}px, ${(-my * d * 0.5 + sy * d * 0.012).toFixed(1)}px, 0) scale(${1 + d / 900})`;
+      });
+    };
+    const request = () => { if (!ticking) { ticking = true; requestAnimationFrame(apply); } };
+    window.addEventListener('pointermove', (e) => {
+      if (e.pointerType && e.pointerType !== 'mouse') return;
+      mx = (e.clientX / window.innerWidth) * 2 - 1;
+      my = (e.clientY / window.innerHeight) * 2 - 1;
+      request();
+    }, { passive: true });
+    window.addEventListener('scroll', request, { passive: true });
+    apply();
+  }
+
+  // 카드에 마우스를 올리면 살짝 기울어지는 입체 효과 (마우스에서만)
+  const TILT = '.podium-card, .job-card, .look-card, .brief-card, .market-card, .quick-link, .result-cell';
+  function bindTilt() {
+    let cur = null;
+    const reset = (el) => { if (el) el.style.transform = ''; };
+    document.addEventListener('pointermove', (e) => {
+      if (e.pointerType !== 'mouse') return;
+      const card = e.target.closest && e.target.closest(TILT);
+      if (card !== cur) { reset(cur); cur = card; }
+      if (!card) return;
+      const r = card.getBoundingClientRect();
+      const nx = (e.clientX - r.left) / r.width - 0.5;
+      const ny = (e.clientY - r.top) / r.height - 0.5;
+      const k = r.width > 500 ? 3 : 7; // 넓은 카드는 덜 기울게
+      card.style.transform = `perspective(800px) rotateX(${(-ny * k).toFixed(2)}deg) rotateY(${(nx * k).toFixed(2)}deg) translateY(-3px)`;
+    }, { passive: true });
+    document.addEventListener('pointerleave', () => { reset(cur); cur = null; });
+  }
+
   window.DNF = {
     CFG, SERVER_NAMES, IMG, esc, num, gold, rarityStyle, serverName, timeLabel,
     getJSON, api, emptyState, apiErrorMessage, getRecent, addRecent, characterLink,
@@ -303,9 +358,11 @@
   }, true);
 
   document.addEventListener('DOMContentLoaded', () => {
+    addHeroScene();
     addRailAds();
     initAds();
     bindItemTips();
+    bindTilt();
     document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
   });
 })();

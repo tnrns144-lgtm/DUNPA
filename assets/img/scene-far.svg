@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMax slice">
+<!-- 던랩 오리지널 배경 2층: 먼 언덕 위 성과 마을 지붕, 하늘을 나는 비행선 (직접 그린 그림) -->
+<g fill="#3A1B33" opacity="0.92">
+<path d="M0 470 C160 420 300 440 420 410 C560 375 640 420 780 405 C920 390 1040 360 1180 392 C1320 420 1460 380 1600 400 V700 H0 Z"/>
+</g>
+<!-- 언덕 위 성 (왼쪽) -->
+<g fill="#2C1428">
+<rect x="150" y="300" width="26" height="130"/><path d="M146 300 L163 262 L180 300 Z"/>
+<rect x="186" y="340" width="70" height="90"/>
+<rect x="192" y="330" width="10" height="12"/><rect x="212" y="330" width="10" height="12"/><rect x="232" y="330" width="10" height="12"/>
+<rect x="262" y="280" width="34" height="150"/><path d="M256 280 L279 228 L302 280 Z"/>
+<rect x="302" y="350" width="60" height="80"/>
+<rect x="368" y="320" width="22" height="110"/><path d="M364 320 L379 290 L394 320 Z"/>
+</g>
+<g fill="#F7B868" opacity="0.8">
+<rect x="270" y="310" width="6" height="10"/><rect x="282" y="340" width="6" height="10"/><rect x="198" y="370" width="6" height="9"/><rect x="320" y="372" width="6" height="9"/>
+</g>
+<!-- 성당 첨탑 (가운데 왼쪽) -->
+<g fill="#2C1428">
+<rect x="560" y="330" width="40" height="100"/><path d="M552 330 L580 210 L608 330 Z"/>
+<rect x="604" y="360" width="80" height="70"/><path d="M600 360 L644 330 L688 360 Z"/>
+<circle cx="580" cy="300" r="7" fill="#F7B868" opacity="0.85"/>
+</g>
+<!-- 먼 지붕들 (오른쪽) -->
+<g fill="#2C1428">
+<path d="M960 420 L990 388 L1020 420 Z"/><rect x="964" y="420" width="52" height="40"/>
+<path d="M1030 410 L1068 372 L1106 410 Z"/><rect x="1036" y="410" width="64" height="50"/>
+<rect x="1120" y="360" width="24" height="100"/><path d="M1116 360 L1132 330 L1148 360 Z"/>
+<path d="M1160 420 L1196 384 L1232 420 Z"/><rect x="1166" y="420" width="60" height="40"/>
+<path d="M1400 400 L1440 360 L1480 400 Z"/><rect x="1406" y="400" width="68" height="60"/>
+</g>
+<g fill="#F7B868" opacity="0.75">
+<rect x="980" y="430" width="6" height="8"/><rect x="1052" y="424" width="6" height="8"/><rect x="1076" y="438" width="6" height="8"/><rect x="1186" y="430" width="6" height="8"/><rect x="1430" y="414" width="6" height="8"/>
+</g>
+<!-- 굴뚝 연기 -->
+<g fill="none" stroke="#C48A86" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round">
+<path d="M1132 330 C1120 300 1150 280 1135 250 C1122 225 1150 205 1140 180"/>
+<path d="M379 290 C370 260 395 245 384 215"/>
+</g>
+<!-- 비행선 -->
+<g transform="translate(760 150)" fill="#2A1430">
+<ellipse cx="0" cy="0" rx="120" ry="36"/>
+<path d="M110 -6 L150 -30 L148 30 L110 6 Z"/>
+<rect x="-40" y="34" width="70" height="18" rx="4"/>
+<path d="M-30 30 L-36 36 M20 30 L26 36" stroke="#2A1430" stroke-width="3"/>
+<g fill="#F7B868" opacity="0.85"><rect x="-30" y="39" width="8" height="7"/><rect x="-14" y="39" width="8" height="7"/><rect x="2" y="39" width="8" height="7"/></g>
+<path d="M-110 -2 H110" stroke="#5A2E4A" stroke-width="2"/>
+</g>
+</svg>

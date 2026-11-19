@@ -1,70 +1,71 @@
 /*
- * 던랩 디자인 값 (테마) — 콘셉트: 아라드의 마도 연구소
+ * 던랩 디자인 값 (테마) — 콘셉트: 황혼의 아라드 마을과 마도 강화 연구소
  * ------------------------------------------------------------
  * 사이트 전체의 색, 글꼴, 테두리, 간격이 여기에 모여 있어요.
  * 분위기를 바꾸고 싶으면 이 파일의 값만 바꾸면 돼요.
  * 다른 게임 사이트를 만들 때도 이 파일만 새로 만들면 배치를 그대로 재활용할 수 있어요.
  *
- * 색 구성: 어두운 청록 바탕(실험실 조명이 꺼진 밤) + 마력 빛 하늘색(강조) + 설계도 격자 무늬
+ * 색 구성: 던파 UI처럼 어두운 바탕 + 금색 테두리·강조, 마법진의 청록빛은 포인트(--magic)
  */
 :root {
   /* 바탕과 면 */
-  --bg: #070C11;            /* 페이지 바탕 */
-  --bg-deep: #04080B;       /* 헤더·푸터 */
-  --bg-pattern:             /* 바탕에 깔리는 설계도 격자 (없애려면 none) */
-    linear-gradient(rgba(94, 214, 232, 0.035) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(90deg, rgba(94, 214, 232, 0.035) 1px, transparent 1px) 0 0 / 28px 28px;
-  --surface: #0C151C;       /* 카드 */
-  --surface-2: #10202A;     /* 카드 그라데이션 위쪽 */
-  --surface-3: #050A0E;     /* 입력창·아이콘 칸 */
-  --surface-deep: #0A1218;  /* 카드 그라데이션 아래쪽 */
-  --header-bg: rgba(4, 9, 13, 0.9);
-  --hero-base: #061118;     /* 배경 그림이 뜨기 전 색 */
-  --glass: rgba(8, 18, 25, 0.82);        /* 반투명 유리판 (검색창·바로가기) */
-  --glass-hover: rgba(14, 34, 44, 0.92);
-  --chip-bg: rgba(16, 36, 46, 0.8);
+  --bg: #0D0A0F;            /* 페이지 바탕 */
+  --bg-deep: #070508;       /* 헤더·푸터 */
+  --bg-pattern:             /* 바탕에 깔리는 옅은 금빛 격자 (없애려면 none) */
+    linear-gradient(rgba(233, 185, 92, 0.025) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(90deg, rgba(233, 185, 92, 0.025) 1px, transparent 1px) 0 0 / 32px 32px;
+  --surface: #17121A;       /* 카드 */
+  --surface-2: #1F1822;     /* 카드 그라데이션 위쪽 */
+  --surface-3: #0A080C;     /* 입력창·아이콘 칸 */
+  --surface-deep: #120E15;  /* 카드 그라데이션 아래쪽 */
+  --header-bg: rgba(10, 7, 11, 0.92);
+  --hero-base: #1A1022;     /* 배경 그림이 뜨기 전 색 */
+  --glass: rgba(16, 11, 18, 0.84);       /* 반투명 판 (검색창·바로가기) */
+  --glass-hover: rgba(36, 25, 30, 0.92);
+  --chip-bg: rgba(42, 31, 26, 0.8);
 
   /* 선 */
-  --line: #1B3442;          /* 기본 테두리 */
-  --line-soft: #13232D;     /* 표 구분선 */
-  --line-strong: #2B6C80;   /* 강조 테두리 */
-  --line-chip: #24485A;     /* 버튼·태그 테두리 */
-  --panel-glow: rgba(94, 214, 232, 0.16);  /* 카드 위쪽 가는 빛줄기 */
-  --tip-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);  /* 아이템 팝업 그림자 */
+  --line: #3A2D22;          /* 기본 테두리 */
+  --line-soft: #29211C;     /* 표 구분선 */
+  --line-strong: #7A5A2E;   /* 강조 테두리 */
+  --line-chip: #4E3D26;     /* 버튼·태그 테두리 */
+  --panel-glow: rgba(241, 200, 115, 0.14);  /* 카드 위쪽 가는 빛줄기 */
+  --tip-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);  /* 아이템 팝업 그림자 */
 
   /* 게임 UI풍 장식 (모서리 장식·입체 버튼·인벤토리 칸) */
-  --frame: #3F93A8;         /* 모서리 장식 금속색 */
-  --frame-hi: #9BE8F4;      /* 모서리 장식 반짝임 */
-  --bevel-hi: rgba(190, 240, 255, 0.10);  /* 입체 윗면 밝은 선 */
-  --bevel-lo: rgba(0, 0, 0, 0.55);        /* 입체 아랫면 그림자 */
-  --slot-bg: radial-gradient(circle at 50% 35%, #11252F, #040709 75%);  /* 아이템 칸 바닥 */
+  --frame: #B88A3F;         /* 모서리 장식 금속색 (금) */
+  --frame-hi: #FFD88A;      /* 모서리 장식 반짝임 */
+  --bevel-hi: rgba(255, 228, 175, 0.10);  /* 입체 윗면 밝은 선 */
+  --bevel-lo: rgba(0, 0, 0, 0.6);         /* 입체 아랫면 그림자 */
+  --slot-bg: radial-gradient(circle at 50% 35%, #2A1E17, #060406 75%);  /* 아이템 칸 바닥 */
+  --magic: #5ED6E8;         /* 마법진 빛 (포인트) */
 
   /* 글자 */
-  --text: #E2EEF2;
-  --text-soft: #C4D6DD;
-  --text-sub: #93AAB5;
-  --text-dim: #6F8894;
-  --title: #DDF7FF;
+  --text: #EFE7D9;
+  --text-soft: #D9CDB8;
+  --text-sub: #B4A790;
+  --text-dim: #8E8170;
+  --title: #F7E7C3;
 
-  /* 강조색 (마력 빛 하늘색) */
-  --accent: #5ED6E8;
-  --accent-hover: #9BEAF5;
-  --accent-light: #A9F0F9;
-  --accent-soft: rgba(94, 214, 232, 0.07);
-  --accent-grad: linear-gradient(180deg, #86ECF7, #1F9CB4);
-  --accent-ink: #02161B;    /* 하늘색 버튼 위 글자 */
-  --title-grad: linear-gradient(180deg, #F4FEFF 0%, #8FE8F4 55%, #2C9FB9 100%);
-  --title-glow: rgba(70, 200, 230, 0.4);
+  /* 강조색 (던파 금색) */
+  --accent: #E9B95C;
+  --accent-hover: #FFD88A;
+  --accent-light: #F6D58E;
+  --accent-soft: rgba(233, 185, 92, 0.08);
+  --accent-grad: linear-gradient(180deg, #F6D58E, #B9832F);
+  --accent-ink: #1A1206;    /* 금색 버튼 위 글자 */
+  --title-grad: linear-gradient(180deg, #FFF4D9 0%, #F1C873 55%, #B9832F 100%);
+  --title-glow: rgba(240, 150, 60, 0.45);
 
   /* 등락 (국내 관례: 오르면 빨강, 내리면 파랑) */
   --up: #FF7B7B;
   --down: #6DB3FF;
 
   /* 연구 보고서 판정색 (최고 / 좋음 / 보통 / 낮음) */
-  --grade-best: #5ED6E8;
+  --grade-best: #F1C873;
   --grade-good: #6FE0B8;
-  --grade-mid: #C4D6DD;
-  --grade-low: #6F8894;
+  --grade-mid: #D9CDB8;
+  --grade-low: #8E8170;
 
   /* 아이템 등급색 (게임과 같게 유지) */
   --rarity-common: #C9C9C9;
@@ -78,7 +79,7 @@
 
   /* 순위 메달 */
   --gold: #F1C873;
-  --silver: #C9D6DE;
+  --silver: #C9CED8;
   --bronze: #D9925A;
 
   /* 글꼴 */

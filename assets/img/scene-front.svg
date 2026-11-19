@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMax slice">
+<!-- 던랩 오리지널 배경 4층: 앞쪽 가로등, 난간, 상자, 떠다니는 불씨 (직접 그린 그림) -->
+<defs>
+<radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#FFD48A" stop-opacity="0.9"/>
+<stop offset="0.35" stop-color="#FFB45A" stop-opacity="0.35"/>
+<stop offset="1" stop-color="#FFB45A" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0D0A0F" stop-opacity="0"/>
+<stop offset="1" stop-color="#0D0A0F" stop-opacity="1"/>
+</linearGradient>
+</defs>
+<!-- 돌바닥 -->
+<path d="M0 590 C400 570 1200 570 1600 590 V700 H0 Z" fill="#0F090E"/>
+<g stroke="#2A1C22" stroke-width="2" opacity="0.8">
+<path d="M0 615 C400 598 1200 598 1600 615"/><path d="M0 645 C400 630 1200 630 1600 645"/>
+<path d="M120 595 L110 700 M300 588 L292 700 M480 584 L476 700 M1120 584 L1124 700 M1300 588 L1308 700 M1480 595 L1490 700"/>
+</g>
+<!-- 왼쪽 가로등 -->
+<circle cx="90" cy="372" r="130" fill="url(#lamp)"/>
+<g fill="#120A10">
+<rect x="84" y="380" width="12" height="220"/>
+<rect x="74" y="590" width="32" height="12"/>
+<path d="M70 352 H110 L104 392 H76 Z"/>
+<path d="M66 352 L90 330 L114 352 Z"/>
+</g>
+<rect x="80" y="358" width="20" height="28" fill="#FFD48A"/>
+<!-- 오른쪽 가로등 -->
+<circle cx="1510" cy="372" r="130" fill="url(#lamp)"/>
+<g fill="#120A10">
+<rect x="1504" y="380" width="12" height="220"/>
+<rect x="1494" y="590" width="32" height="12"/>
+<path d="M1490 352 H1530 L1524 392 H1496 Z"/>
+<path d="M1486 352 L1510 330 L1534 352 Z"/>
+</g>
+<rect x="1500" y="358" width="20" height="28" fill="#FFD48A"/>
+<!-- 난간 -->
+<g stroke="#120A10" stroke-width="6">
+<path d="M130 548 H330 M1270 548 H1470"/>
+<path d="M150 548 V592 M190 548 V592 M230 548 V592 M270 548 V592 M310 548 V592"/>
+<path d="M1290 548 V592 M1330 548 V592 M1370 548 V592 M1410 548 V592 M1450 548 V592"/>
+</g>
+<!-- 상자와 술통 -->
+<g fill="#160D13" stroke="#3A2620" stroke-width="2">
+<rect x="350" y="540" width="56" height="52"/><path d="M350 540 L406 592 M406 540 L350 592"/>
+<ellipse cx="440" cy="572" rx="24" ry="30"/>
+<rect x="1196" y="548" width="48" height="44"/>
+</g>
+<!-- 불씨 -->
+<g fill="#FFC56E">
+<circle cx="220" cy="460" r="2.5" opacity="0.8"/><circle cx="260" cy="420" r="1.8" opacity="0.6"/><circle cx="520" cy="500" r="2" opacity="0.5"/>
+<circle cx="1080" cy="480" r="2.2" opacity="0.6"/><circle cx="1350" cy="440" r="2.5" opacity="0.8"/><circle cx="1420" cy="500" r="1.6" opacity="0.6"/>
+<circle cx="640" cy="440" r="1.5" opacity="0.4"/><circle cx="960" cy="420" r="1.6" opacity="0.45"/>
+</g>
+<g fill="#7FEAF6">
+<circle cx="1240" cy="430" r="2" opacity="0.7"/><circle cx="1180" cy="470" r="1.5" opacity="0.6"/>
+</g>
+<rect y="560" width="1600" height="140" fill="url(#fade)"/>
+</svg>

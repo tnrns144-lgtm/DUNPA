@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMax slice">
+<!-- 던랩 오리지널 배경 3층: 목조 집들(왼쪽)과 마법진이 빛나는 강화 연구소(오른쪽) (직접 그린 그림, 특정 게임 장소를 베끼지 않음) -->
+<defs>
+<radialGradient id="magic" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#7FEAF6" stop-opacity="0.75"/>
+<stop offset="0.5" stop-color="#5ED6E8" stop-opacity="0.25"/>
+<stop offset="1" stop-color="#5ED6E8" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="warm" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#FFC56E" stop-opacity="0.6"/>
+<stop offset="1" stop-color="#FFC56E" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<!-- 왼쪽: 목조 골조 집들 -->
+<g>
+<path d="M0 520 L0 360 L60 300 L120 360 L120 520 Z" fill="#1C1018"/>
+<path d="M120 520 L120 330 L195 255 L270 330 L270 520 Z" fill="#21131C"/>
+<path d="M270 520 L270 380 L320 340 L370 380 L370 520 Z" fill="#1C1018"/>
+<g stroke="#3A2028" stroke-width="5" fill="none">
+<path d="M130 340 H260 M130 400 H260 M195 270 V520 M140 340 L195 400 L250 340"/>
+<path d="M10 380 H110 M60 310 V520"/>
+</g>
+<g fill="#FFC56E">
+<rect x="145" y="355" width="30" height="34" opacity="0.9"/><rect x="215" y="355" width="30" height="34" opacity="0.75"/>
+<rect x="145" y="420" width="30" height="34" opacity="0.6"/><rect x="25" y="395" width="24" height="30" opacity="0.8"/>
+<rect x="300" y="400" width="22" height="28" opacity="0.7"/>
+</g>
+<circle cx="190" cy="390" r="120" fill="url(#warm)" opacity="0.35"/>
+<!-- 걸린 간판 -->
+<path d="M270 300 H330" stroke="#3A2028" stroke-width="5"/>
+<rect x="300" y="300" width="44" height="34" fill="#2A1820" stroke="#B88A3F" stroke-width="3"/>
+<path d="M310 322 L322 308 L334 322 Z" fill="#E9B95C"/>
+</g>
+
+<!-- 오른쪽: 마도 강화 연구소 -->
+<g>
+<circle cx="1290" cy="330" r="190" fill="url(#magic)" opacity="0.55"/>
+<!-- 본관 -->
+<rect x="1150" y="330" width="290" height="190" fill="#1E1320"/>
+<!-- 돔 -->
+<path d="M1170 330 C1170 220 1420 220 1420 330 Z" fill="#241626"/>
+<g stroke="#3B2436" stroke-width="4" fill="none">
+<path d="M1295 228 V330 M1230 245 C1250 280 1255 310 1255 330 M1360 245 C1340 280 1335 310 1335 330"/>
+</g>
+<rect x="1285" y="196" width="20" height="34" fill="#241626"/>
+<circle cx="1295" cy="190" r="10" fill="#5ED6E8"/>
+<!-- 마법진 창 -->
+<g transform="translate(1295 405)">
+<circle r="58" fill="#0E2730" stroke="#B88A3F" stroke-width="6"/>
+<circle r="46" fill="none" stroke="#7FEAF6" stroke-width="2.5"/>
+<circle r="30" fill="none" stroke="#7FEAF6" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M0 -44 L38 22 L-38 22 Z M0 44 L38 -22 L-38 -22 Z" fill="none" stroke="#7FEAF6" stroke-width="2"/>
+<circle r="8" fill="#BFF6FC"/>
+</g>
+<!-- 양쪽 창문 -->
+<g fill="#FFC56E" opacity="0.85">
+<rect x="1175" y="370" width="34" height="46"/><rect x="1175" y="440" width="34" height="46" opacity="0.6"/>
+<rect x="1381" y="370" width="34" height="46"/><rect x="1381" y="440" width="34" height="46" opacity="0.7"/>
+</g>
+<!-- 증기 파이프와 마력탑 -->
+<g fill="none" stroke="#3B2436" stroke-width="10">
+<path d="M1440 470 H1490 V360"/><path d="M1150 480 H1110 V400"/>
+</g>
+<rect x="1478" y="250" width="26" height="110" fill="#241626"/>
+<g fill="none" stroke="#B88A3F" stroke-width="3"><circle cx="1491" cy="270" r="18"/><circle cx="1491" cy="300" r="14"/></g>
+<circle cx="1491" cy="240" r="9" fill="#BFF6FC"/>
+<g stroke="#7FEAF6" stroke-width="2" fill="none" opacity="0.9">
+<path d="M1491 240 L1470 214 L1480 200 L1462 180"/><path d="M1491 240 L1514 218 L1504 204 L1522 186"/>
+</g>
+<!-- 연구소 간판: 모루 표식 -->
+<rect x="1255" y="300" width="80" height="22" fill="#2A1820" stroke="#B88A3F" stroke-width="2"/>
+<path d="M1276 316 H1314 M1282 316 C1282 309 1308 309 1308 306 H1286" stroke="#E9B95C" stroke-width="3" fill="none"/>
+</g>
+
+<!-- 오른쪽 옆집 -->
+<path d="M1440 520 L1440 380 L1500 330 L1560 380 L1560 520 Z" fill="#1C1018"/>
+<path d="M1560 520 L1560 400 L1600 370 L1600 520 Z" fill="#21131C"/>
+<rect x="1488" y="410" width="24" height="30" fill="#FFC56E" opacity="0.75"/>
+
+<!-- 바닥선 -->
+<rect x="0" y="515" width="1600" height="185" fill="#140C13"/>
+</svg>
