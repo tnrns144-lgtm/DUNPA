@@ -233,6 +233,7 @@
         <h2 class="side-title">캐릭터 연구 보고서</h2>
         <span class="lab-code">REPORT #${D.esc(id.slice(0, 6).toUpperCase())}</span>
         <span class="report-date">${D.esc(today)} · 랭커 ${D.num(trends.sample || 0)}명 표본</span>
+        <a class="chip report-link" href="lab.html?server=${encodeURIComponent(server)}&id=${encodeURIComponent(id)}#fame-calc">명성 계산기로 분석 ›</a>
       </div>
       <div class="report-body">
         <div class="sync-box">

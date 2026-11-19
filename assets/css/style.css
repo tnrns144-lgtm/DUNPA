@@ -564,3 +564,22 @@ select.field--sm { flex: 0 0 auto; }
 .look-card strong { font-size: 13px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .look-card small { font-size: 11px; color: var(--text-sub); }
 .look-card .look-fame { font-family: var(--font-num); color: var(--accent); }
+
+/* ---------- 명성 계산기 ---------- */
+#fame-result { display: flex; flex-direction: column; gap: 12px; }
+.fame-table { min-width: 520px; }
+.fame-table td { vertical-align: top; }
+.fame-table tfoot td { border-top: 1px solid var(--line-strong); color: var(--text-sub); font-size: 13px; }
+.fame-table tr.swapped td { background: var(--accent-soft); }
+.fame-extra { color: var(--accent); font-family: var(--font-num); }
+.fame-swap-to { margin-top: 6px; font-size: 13px; color: var(--text-sub); display: flex; align-items: center; gap: 6px; }
+.fame-btn { height: 30px; padding: 0 10px; font-size: 12px; }
+.fame-search { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.fame-search[hidden] { display: none; }
+.fame-cands { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; max-height: 260px; overflow-y: auto; border: 1px solid var(--line-soft); }
+.fame-cands button { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 8px; background: none; border: 0; border-bottom: 1px solid var(--line-soft); color: var(--text); cursor: pointer; text-align: left; }
+.fame-cands button:hover { background: var(--accent-soft); }
+.fame-cands small { color: var(--text-dim); font-size: 11px; white-space: nowrap; }
+.fame-cands .help { padding: 8px; }
+.report-link { height: 32px; padding: 0 12px; display: inline-flex; align-items: center; font-size: 12px; text-decoration: none; }
+#fame-result [data-reset-all] { align-self: flex-start; }

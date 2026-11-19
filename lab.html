@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>강화 시뮬레이터 · 연구실 · 던랩</title>
-<meta name="description" content="던전앤파이터 강화·증폭 시뮬레이터. 공식 확률로 목표 단계까지 평균 시도 횟수, 파괴 확률, 예상 비용을 계산하고 직접 강화해 볼 수 있어요.">
+<title>강화 시뮬레이터 · 명성 계산기 · 연구실 · 던랩</title>
+<meta name="description" content="던전앤파이터 강화·증폭 시뮬레이터와 명성 계산기. 공식 확률로 평균 시도 횟수·파괴 확률·예상 비용을 계산하고, 장비를 바꿨을 때 명성 변화를 확인해요.">
 <meta name="theme-color" content="#070C11">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +32,9 @@
 
 <section class="hero hero--compact">
   <div class="hero-inner">
-    <p class="eyebrow">ENHANCE LAB</p>
-    <h1 class="hero-title">강화 연구실</h1>
-    <p class="hero-sub">공식 확률로 계산하는 강화·증폭 시뮬레이터</p>
+    <p class="eyebrow">DUNLAB TOOLS</p>
+    <h1 class="hero-title">던랩 연구실</h1>
+    <p class="hero-sub">공식 데이터로 계산하는 강화 시뮬레이터 · 명성 계산기</p>
   </div>
 </section>
 
@@ -129,6 +129,24 @@
       </div>
     </section>
 
+    <section class="section" id="fame-calc" aria-labelledby="fame-title">
+      <div class="section-head">
+        <h2 id="fame-title">명성 계산기</h2><span class="lab-code">EXP-03</span>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <form class="panel panel--pad lab-form" id="fame-form">
+        <p class="help">캐릭터를 불러오면 장착품마다 공식 기본 명성을 보여주고, 부위를 바꿨을 때 명성이 얼마나 달라지는지 계산해요.</p>
+        <div class="lab-row">
+          <label class="sr-only" for="fame-server">서버</label>
+          <select class="field field--sm" id="fame-server"></select>
+          <label class="sr-only" for="fame-name">캐릭터 이름</label>
+          <input class="field field--sm" id="fame-name" type="search" placeholder="캐릭터 이름" maxlength="12" autocomplete="off">
+          <button class="btn-gold btn-gold--sm" type="submit">불러오기</button>
+        </div>
+      </form>
+      <div id="fame-result" aria-live="polite"></div>
+    </section>
+
     <section class="section" aria-labelledby="rate-title">
       <div class="section-head">
         <h2 id="rate-title">단계별 공식 확률</h2><span class="lab-code">DATA</span>
@@ -146,7 +164,7 @@
       <h2 class="side-title">연구실 도구</h2>
       <ul class="side-list">
         <li><a href="lab.html">강화 시뮬레이터<span class="arrow" aria-hidden="true">›</span></a></li>
-        <li><span class="help" style="display:block;padding:10px 0">명성 계산기 · 준비 중</span></li>
+        <li><a href="#fame-calc">명성 계산기<span class="arrow" aria-hidden="true">›</span></a></li>
       </ul>
     </section>
     <div class="ad-slot ad-side" data-ad="side" data-label="광고 영역 · 300×250"></div>
@@ -170,5 +188,6 @@
 <script src="assets/js/common.js"></script>
 <script src="assets/js/enhance-engine.js"></script>
 <script src="assets/js/lab.js"></script>
+<script src="assets/js/fame-calc.js"></script>
 </body>
 </html>
