@@ -448,6 +448,9 @@ async function writeBrief() {
 const JOB_SAMPLE = 10;
 const JOB_WINDOWS = 12;   // 범위를 아래로 옮기는 최대 횟수 (API 호출을 무료 범위 안으로 제한)
 
+// 전직 ID(jobGrowId)는 직업마다 겹쳐요(예: 웨펀마스터와 넨마스터가 같은 ID). 그래서 페이지 이름은 직업 ID + 전직 ID 앞부분으로 만들어요
+const jobPageId = (j) => `${String(j.jobId).slice(0, 8)}-${String(j.id).slice(0, 8)}`;
+
 function lastGrow(g) { let x = g; while (x && x.next) x = x.next; return x || g; }
 
 async function collectJobs() {
@@ -507,9 +510,24 @@ async function collectJobs() {
         sample++;
         const equip = eq.equipment || [];
         add('title', equip.find((e) => isSlot(e, 'TITLE', '칭호')));
+        // 세트 이름에는 이미지가 없어서, 그 세트의 대표 장비(상의 우선) 아이콘을 함께 기록해요
         const pieces = new Map();
-        equip.forEach((e) => { if (e.setItemName) pieces.set(e.setItemName, (pieces.get(e.setItemName) || 0) + 1); });
-        pieces.forEach((n, name) => { if (n >= 2) { const s = sets.get(name) || { itemName: name, count: 0 }; s.count++; sets.set(name, s); } });
+        const PREFER = ['JACKET', 'SHOULDER', 'PANTS', 'SHOES', 'WAIST', 'AMULET', 'WRIST', 'RING', 'SUPPORT', 'MAGIC_STON', 'EARRING', 'WEAPON'];
+        equip.forEach((e) => {
+          if (!e.setItemName) return;
+          const p = pieces.get(e.setItemName) || { n: 0, rep: null };
+          p.n++;
+          const rank = (x) => { const i = PREFER.indexOf(x?.slotId); return i < 0 ? 99 : i; };
+          if (e.itemId && (!p.rep || rank(e) < rank(p.rep))) p.rep = e;
+          pieces.set(e.setItemName, p);
+        });
+        pieces.forEach((p, name) => {
+          if (p.n < 2) return;
+          const s = sets.get(name) || { itemName: name, itemId: p.rep?.itemId || '', itemRarity: p.rep?.itemRarity || '', count: 0 };
+          if (!s.itemId && p.rep?.itemId) { s.itemId = p.rep.itemId; s.itemRarity = p.rep.itemRarity || ''; }
+          s.count++;
+          sets.set(name, s);
+        });
         const avatars = av.avatar || [];
         const aura = avatars.find((a) => isSlot(a, 'AURORA', '오라'));
         const weapon = avatars.find((a) => isSlot(a, 'WEAPON', '무기'));
@@ -564,7 +582,7 @@ async function writeJobPages() {
       <div class="job-group">
         <h3 class="job-group-title">${escHtml(group)}</h3>
         <div class="job-grid">
-          ${list.map((j) => `<a class="job-card" href="jobs/${j.id}.html">
+          ${list.map((j) => `<a class="job-card" href="jobs/${jobPageId(j)}.html">
             <strong>${escHtml(j.finalName)}</strong>
             <small>${escHtml(j.growName)} 계열 · 최고 명성 ${fameKo(j.topFame)}</small>
             ${j.sets[0] ? `<span class="job-card-set">인기 세트 · ${escHtml(j.sets[0].itemName)}</span>` : ''}
@@ -584,16 +602,21 @@ async function writeJobPages() {
   const itemRow = (it, total) => `<li><span class="item-cell"><span class="item-icon">${it.itemId ? `<img src="${IMG_ITEM(it.itemId)}" alt="" loading="lazy" width="28" height="28">` : ''}</span><span class="item-name">${escHtml(it.itemName)}</span></span><b>${total ? Math.round(it.count / total * 100) : 0}%</b></li>`;
   const block = (title, arr, total) => `<article class="brief-card"><h3>${title}</h3>${arr.length ? `<ul class="job-items">${arr.map((it) => itemRow(it, total)).join('')}</ul>` : '<p class="help">데이터가 없어요</p>'}</article>`;
   await mkdir(join(ROOT, 'jobs'), { recursive: true });
+  {
+    const { readdir, unlink } = await import('node:fs/promises');
+    const keep = new Set(jobs.map((j) => `${jobPageId(j)}.html`));
+    for (const f of await readdir(join(ROOT, 'jobs'))) if (f.endsWith('.html') && !keep.has(f)) await unlink(join(ROOT, 'jobs', f));
+  }
   for (const j of jobs) {
-    const siblings = jobs.filter((x) => x.jobName === j.jobName && x.id !== j.id);
-    const desc = `던전앤파이터 ${j.finalName} 랭커 세팅: 명성 상위 랭커들이 많이 쓰는 세트 장비${j.sets[0] ? `(${j.sets[0].itemName} 등)` : ''}, 칭호, 크리쳐, 오라, 무기 아바타를 매일 분석해요.`;
+    const siblings = jobs.filter((x) => x.jobName === j.jobName && jobPageId(x) !== jobPageId(j));
+    const desc = `던전앤파이터 ${j.finalName}(${j.jobName}) 랭커 세팅: 명성 상위 랭커들이 많이 쓰는 세트 장비${j.sets[0] ? `(${j.sets[0].itemName} 등)` : ''}, 칭호, 크리쳐, 오라, 무기 아바타를 매일 분석해요.`;
     const page = `<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
-<title>${escHtml(j.finalName)} 랭커 세팅 · 직업 연구 · 던랩</title>
+<title>${escHtml(j.finalName)} 랭커 세팅 (${escHtml(j.jobName)}) · 직업 연구 · 던랩</title>
 <meta name="description" content="${escHtml(desc)}">
 <meta name="theme-color" content="#070C11">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -602,7 +625,7 @@ async function writeJobPages() {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="assets/css/theme.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="canonical" href="${BASE}jobs/${j.id}.html">
+<link rel="canonical" href="${BASE}jobs/${jobPageId(j)}.html">
 </head>
 <body>
 
@@ -641,7 +664,7 @@ ${header}
     </section>
     <section class="section">
       <div class="section-head"><h2>다른 직업 보기</h2><span class="rule" aria-hidden="true"></span></div>
-      <p class="job-links">${siblings.map((x) => `<a class="chip" href="jobs/${x.id}.html">${escHtml(x.finalName)}</a>`).join('')}<a class="chip" href="jobs.html">전체 직업 목록 ›</a></p>
+      <p class="job-links">${siblings.map((x) => `<a class="chip" href="jobs/${jobPageId(x)}.html">${escHtml(x.finalName)}</a>`).join('')}<a class="chip" href="jobs.html">전체 직업 목록 ›</a></p>
     </section>
   </main>
 </div>
@@ -653,7 +676,7 @@ ${footer}
 </body>
 </html>
 `;
-    await writeFile(join(ROOT, 'jobs', `${j.id}.html`), page);
+    await writeFile(join(ROOT, 'jobs', `${jobPageId(j)}.html`), page);
   }
 
   // 사이트맵에 직업 페이지 목록 갱신
@@ -662,7 +685,7 @@ ${footer}
     let sm = await readFile(smFile, 'utf8');
     const snl = sm.includes('\r\n') ? '\r\n' : '\n';
     const today = kstDate(now);
-    const urls = [`${BASE}jobs.html`, ...jobs.map((j) => `${BASE}jobs/${j.id}.html`)]
+    const urls = [`${BASE}jobs.html`, ...jobs.map((j) => `${BASE}jobs/${jobPageId(j)}.html`)]
       .map((u) => `  <url>${snl}    <loc>${u}</loc>${snl}    <lastmod>${today}</lastmod>${snl}    <changefreq>daily</changefreq>${snl}    <priority>0.7</priority>${snl}  </url>`).join(snl);
     const block = `  <!-- AUTO-JOBS:START -->${snl}${urls}${snl}  <!-- AUTO-JOBS:END -->`;
     sm = /  <!-- AUTO-JOBS:START -->[\s\S]*?<!-- AUTO-JOBS:END -->/.test(sm)
@@ -755,7 +778,7 @@ async function writeWeeklyReport() {
         <article class="brief-card"><h3><span class="brief-code">GEAR</span>랭커 장착품 변화</h3><p class="brief-note">이번 주 사용 인원이 가장 많이 늘어난 장착품</p>${gearUp.length ? `<dl class="brief-dl">${gearUp.map((x) => `<div><dt>${label[x.k]}</dt><dd>${escHtml(x.name)}<b>▲${x.d}명</b></dd></div>`).join('')}</dl>` : '<p class="help">관측이 이틀 이상 쌓이면 변화가 나와요.</p>'}
           ${trends?.sample ? `<p class="brief-note">현재 1위 · ${Object.keys(label).filter((k) => (trends[k] || [])[0]).map((k) => `${label[k]} ${escHtml(trends[k][0].itemName)}`).join(' · ')}</p>` : ''}</article>
         <article class="brief-card"><h3><span class="brief-code">FAME</span>명성 랭킹</h3>${all.length ? `<ol class="brief-rank">${all.slice(0, 3).map((c, i) => `<li><span class="brief-medal r${i + 1}">${i + 1}</span><span class="brief-who"><strong>${escHtml(c.characterName)}</strong><small>${escHtml(SERVER_KO[c.serverId] || c.serverId)} · ${escHtml(c.jobGrowName || c.jobName)}</small></span><span class="num">명성 ${Number(c.fame).toLocaleString('ko-KR')}</span></li>`).join('')}</ol>` : ''}
-          ${topJobs.length ? `<p class="brief-note">최고 명성이 높은 직업</p><p class="brief-chips">${topJobs.map((j) => `<a href="jobs/${j.id}.html"><span>${escHtml(j.finalName)} <b>${Number(j.topFame).toLocaleString('ko-KR')}</b></span></a>`).join('')}</p>` : ''}</article>
+          ${topJobs.length ? `<p class="brief-note">최고 명성이 높은 직업</p><p class="brief-chips">${topJobs.map((j) => `<a href="jobs/${jobPageId(j)}.html"><span>${escHtml(j.finalName)} <b>${Number(j.topFame).toLocaleString('ko-KR')}</b></span></a>`).join('')}</p>` : ''}</article>
       </div>
       <p class="job-links"><a class="chip" href="reports.html">지난 리포트 목록 ›</a><a class="chip" href="index.html">오늘의 시세 보기 ›</a><a class="chip" href="jobs.html">직업 연구 ›</a></p>
     </section>`;
