@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T16:21:37.324Z",
+ "updatedAt": "2026-11-19T18:05:25.796Z",
  "all": [
   {
    "serverId": "cain",
@@ -561,6 +561,15 @@
   },
   {
    "serverId": "cain",
+   "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
+   "characterName": "영양어썰",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
+   "fame": 136222
+  },
+  {
+   "serverId": "cain",
    "characterId": "92464b7439ef38011ae0122096e44b6a",
    "characterName": "푸알",
    "level": 115,
@@ -722,6 +731,15 @@
    "fame": 136112
   },
   {
+   "serverId": "diregie",
+   "characterId": "a15baef72c382b1322eea0b3de53a2df",
+   "characterName": "메카닉(남)",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 메카닉",
+   "fame": 136112
+  },
+  {
    "serverId": "hilder",
    "characterId": "77a3e1cfd6593aea167c064a79143782",
    "characterName": "파알랑이",
@@ -747,15 +765,6 @@
    "jobName": "마법사(여)",
    "jobGrowName": "眞 배틀메이지",
    "fame": 136090
-  },
-  {
-   "serverId": "diregie",
-   "characterId": "a15baef72c382b1322eea0b3de53a2df",
-   "characterName": "메카닉(남)",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 메카닉",
-   "fame": 136068
   },
   {
    "serverId": "prey",
@@ -1419,6 +1428,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "e20beecb84fad1a6a2204541d5d3a4c5",
+    "characterName": "영양어썰",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 어썰트",
+    "fame": 136222
+   },
+   {
+    "serverId": "cain",
     "characterId": "92464b7439ef38011ae0122096e44b6a",
     "characterName": "푸알",
     "level": 115,
@@ -1632,15 +1650,6 @@
     "jobName": "총검사",
     "jobGrowName": "眞 요원",
     "fame": 135902
-   },
-   {
-    "serverId": "cain",
-    "characterId": "ac5d4a8f673e3e0ad3608f85f0e6a113",
-    "characterName": "소나타아티카",
-    "level": 115,
-    "jobName": "귀검사(여)",
-    "jobGrowName": "眞 소드마스터",
-    "fame": 135864
    }
   ],
   "diregie": [
@@ -1723,7 +1732,7 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 메카닉",
-    "fame": 136068
+    "fame": 136112
    },
    {
     "serverId": "diregie",
