@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T13:41:01.275Z",
+ "updatedAt": "2026-11-19T15:14:16.470Z",
  "sale": [
   {
    "goodsNo": 4806927,
@@ -234,7 +234,7 @@
   {
    "goodsNo": 4802826,
    "title": "남거너 레어1부위 상급5부위",
-   "price": 25500000,
+   "price": 24500000,
    "jobs": [
     "거너(남)"
    ],
@@ -3066,175 +3066,6 @@
    ]
   },
   {
-   "goodsNo": 4786613,
-   "title": "아처 레어1부위 상급7부위/피부",
-   "price": 32000000,
-   "jobs": [
-    "아처"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [
-    "온라인게임",
-    "귀여움"
-   ],
-   "parts": [
-    {
-     "itemId": "26cc695cb45e1472c95ac64ddb49960c",
-     "itemName": "유가영의 모자 투명 아바타",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "574c383c1289e0a3af50a14d75f5a11d",
-     "itemName": "다크 셀레스티얼 만두 머리",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "a81fca7ed096df3bcaf0e1cbb335b7a4",
-     "itemName": "바니바니 아라드 렌즈와 아이치크[A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "4e10b949e32fc51233362c4ff176b88d",
-     "itemName": "런닝걸 트레이닝 상의[B타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "5e8cbe08723be8f8113abaa8fc26bfde",
-     "itemName": "런닝걸 고양이 발 치마레깅스[B타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "390f79331dc78b2d7072cc23a11a6d1b",
-     "itemName": "진 트래블러의 하이탑 기어 슈즈[C타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "c618e33bf1568f55424d39dce485bb68",
-     "itemName": "왕실 기사의 크라바트[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "656a05c9cd69135f4ad495adb5a4d84d",
-     "itemName": "숲속의 유랑악단 가방[C타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "c0fa4c60466a316dddb480f809bff0e3",
-     "itemName": "트렌드세터의 순백의 피부[A타입]",
-     "slotName": "스킨 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4786611,
-   "title": "아처 레어1부위 상급7부위/피부",
-   "price": 32000000,
-   "jobs": [
-    "아처"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [
-    "온라인게임",
-    "깔끔한"
-   ],
-   "parts": [
-    {
-     "itemId": "2e012cdcd582810d5571a5f00e500ba0",
-     "itemName": "시카고 불스 스타일 머리띠[A타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "1f07f1250300f3f0526232d949fbc90f",
-     "itemName": "골드 셀레스티얼 만두 머리",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "f9f199cf30ae13d402b42fc6cb7d8cf1",
-     "itemName": "2026 서부의 보안관 렌즈와 귀걸이[B타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "2660e398272aa396ce5e4dd453a04d4b",
-     "itemName": "숲속의 유랑악단 블라우스[D타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "371787d80544c2cafe1b8c1c443b5da5",
-     "itemName": "2026 서부의 보안관 팬츠[B타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "51a21d7fcd5b91832eeb297be65392aa",
-     "itemName": "유가영의 신발[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]",
-      "빛나는 푸른빛 엠블렘[마법방어]"
-     ]
-    },
-    {
-     "itemId": "7122a5bb825e23d29139e633dac57e51",
-     "itemName": "숲속의 유랑악단 두 갈래 장식[D타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "ebe9590960966ba62cb9456e67145450",
-     "itemName": "숲속의 유랑악단 가방[D타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "c0fa4c60466a316dddb480f809bff0e3",
-     "itemName": "트렌드세터의 순백의 피부[A타입]",
-     "slotName": "스킨 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
    "goodsNo": 4783124,
    "title": "제국기사 레어1부위 상급7부위",
    "price": 18000000,
@@ -3303,6 +3134,78 @@
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4782838,
+   "title": "여귀검사 레어1부위 상급6부위",
+   "price": 24989799,
+   "jobs": [
+    "귀검사(여)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "617fec94f585be71bbbdbd4d56b990ac",
+     "itemName": "왕립 아라드 고양이 귀[B타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "5dbfa8f9c5cbc8d1a919b6cac2d61bb4",
+     "itemName": "블루 인페르노 실버 롱헤어",
+     "slotName": "머리 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "9aee437c88d59ae2410821567a17b9f9",
+     "itemName": "아시아 여행 일본 전통의상 상의[A타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "f7b1a31a5b010a0994866b65b926e043",
+     "itemName": "아시아 여행 일본 전통 하카마[A타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 녹색빛 엠블렘[물리크리티컬]",
+      "화려한 녹색빛 엠블렘[물리크리티컬]"
+     ]
+    },
+    {
+     "itemId": "7ecebbe27d8a8b067e9138326e5ee1a5",
+     "itemName": "해상구조대 페디큐어[C타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "67347790ebcaf041c960d881ef8669dc",
+     "itemName": "해상 열차 바캉스 원석 목걸이[A타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 노란빛 엠블렘[공격속도]",
+      "빛나는 노란빛 엠블렘[공격속도]"
+     ]
+    },
+    {
+     "itemId": "b7116b8b2fd44f6f70df7a3c80075ff8",
+     "itemName": "아시아 여행 일본 리본장식 벨트[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 푸른빛 엠블렘[이동속도]",
+      "화려한 푸른빛 엠블렘[이동속도]"
+     ]
     }
    ]
   },
@@ -3581,6 +3484,87 @@
      "itemName": "레드 인페르노 데빌 팬츠",
      "slotName": "하의 아바타",
      "itemRarity": "레어",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4774684,
+   "title": "남귀검사 레어1부위 상급7부위",
+   "price": 23987999,
+   "jobs": [
+    "귀검사(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "ec741dc242b7200ef7e8977ffd1ee436",
+     "itemName": "용의 전사 크림슨블랙 윙[A타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 듀얼 엠블렘[힘 + 물리크리티컬]",
+      "화려한 듀얼 엠블렘[힘 + 물리크리티컬]"
+     ]
+    },
+    {
+     "itemId": "57dfa0c14a098f69b6c2029c45f1cb57",
+     "itemName": "진 버서커의 거친 롱 헤어[A타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "b9f7e5b4312fb499cef2ec59ed4edb2f",
+     "itemName": "액시온의 생체 마스크[A타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "faeb5345cc3265cb79561f65d4b5de17",
+     "itemName": "운명의 아르카나 죽음의 기사 코트[A타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "0a8e22bfae4a59f76732cdecc803325f",
+     "itemName": "진 버서커의 경갑 하의[A타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 녹색빛 엠블렘[물리크리티컬]",
+      "빛나는 녹색빛 엠블렘[물리크리티컬]"
+     ]
+    },
+    {
+     "itemId": "59706d0fb532ee150a879ff67c7e1cb2",
+     "itemName": "무사장화[B타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "b1ce445fdbb3a5dbcdbf406a76ca42e3",
+     "itemName": "혼돈의 루시퍼 검은 날개",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "화려한 노란빛 엠블렘[공격속도]",
+      "화려한 노란빛 엠블렘[공격속도]"
+     ]
+    },
+    {
+     "itemId": "a25ad2666540acb258234458456ad877",
+     "itemName": "운명의 아르카나 죽음의 기사 벨트[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
      "emblems": []
     }
    ]
