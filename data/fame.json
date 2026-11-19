@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T07:38:08.866Z",
+ "updatedAt": "2026-11-19T09:23:11.881Z",
  "all": [
   {
    "serverId": "cain",
@@ -1888,15 +1888,6 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 메카닉",
     "fame": 134602
-   },
-   {
-    "serverId": "siroco",
-    "characterId": "97633139e21e323138be9a4e3bb7d9da",
-    "characterName": "시나모롤",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 엘레멘탈마스터",
-    "fame": 134564
    }
   ],
   "prey": [
@@ -2308,6 +2299,15 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 메카닉",
     "fame": 134704
+   },
+   {
+    "serverId": "hilder",
+    "characterId": "9059f9c9c52601e7a2461789e468f523",
+    "characterName": "오혜민",
+    "level": 115,
+    "jobName": "거너(여)",
+    "jobGrowName": "眞 메카닉",
+    "fame": 134666
    },
    {
     "serverId": "hilder",
