@@ -192,8 +192,7 @@
           <span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:${Math.min(100, restN / max * 100).toFixed(1)}%"></span></span>
           <span class="bar-count">${pct(restN)}</span>
         </li>` : ''}
-    </ol>
-    <p class="help">명성 상위 ${D.num(total)}명 전체 대비 비율 · 막대는 1위 직업 대비 길이</p>`;
+    </ol>`;
   }
 
   /* ---------- 랭커 트렌드: 장착품 순위 (data/trends.json) ---------- */
@@ -283,7 +282,7 @@
           <span class="use-count">${changeBadge(it)} <strong>${D.num(it.count)}명</strong>${sample ? `<br>${(it.count / sample * 100).toFixed(0)}%` : ''}</span>
         </li>`).join('')}
     </ol>
-    ${sample ? `<p class="help">조사한 랭커 ${D.num(sample)}명 기준${hasWearers ? ' · 항목을 누르면 아래 랭커 룩 갤러리에 착용 랭커가 나와요' : ''}</p>` : ''}`;
+    ${hasWearers ? '<p class="help">항목을 누르면 아래 랭커 룩 갤러리에 착용 랭커가 나와요</p>' : ''}`;
     renderLook(id, 0);
   }
 

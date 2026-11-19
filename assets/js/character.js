@@ -163,12 +163,12 @@
       : '';
     if (my >= lowest) {
       const rank = all.filter((r) => r.fame > my).length + 1;
-      return { verdict: `전체 서버 약 ${rank}위`, grade: rank <= 10 ? 'best' : 'good', sub: [srvText, `상위 ${all.length}명 랭킹 안`].filter(Boolean).join(' · ') };
+      return { verdict: `전체 서버 약 ${rank}위`, grade: rank <= 10 ? 'best' : 'good', sub: srvText || '명성 랭킹 안' };
     }
     const pct = Math.floor(my / lowest * 100);
     return {
       verdict: `랭커 기준선의 ${pct}%`, grade: pct >= 90 ? 'good' : pct >= 70 ? 'mid' : 'low',
-      sub: [srvText, `기준선 = 전체 상위 ${all.length}위 명성 ${D.num(lowest)}`].filter(Boolean).join(' · ')
+      sub: [srvText, `기준선 = 랭킹 커트라인 명성 ${D.num(lowest)}`].filter(Boolean).join(' · ')
     };
   }
 
@@ -179,9 +179,9 @@
     const counts = new Map();
     all.forEach((r) => { const j = r.jobGrowName || r.jobName; if (j) counts.set(j, (counts.get(j) || 0) + 1); });
     const n = counts.get(job) || 0;
-    if (!n) return { verdict: '랭커 중 없음', grade: 'mid', sub: `상위 ${all.length}명 중 같은 직업이 없는 희귀 직업이에요` };
+    if (!n) return { verdict: '랭커 중 없음', grade: 'mid', sub: '랭커 중에 같은 직업이 없는 희귀 직업이에요' };
     const rank = [...counts.values()].filter((v) => v > n).length + 1;
-    return { verdict: `직업 점유 ${rank}위`, grade: rank <= 3 ? 'best' : 'good', sub: `상위 ${all.length}명 중 같은 직업 ${n}명` };
+    return { verdict: `직업 점유 ${rank}위`, grade: rank <= 3 ? 'best' : 'good', sub: `랭커 중 같은 직업 ${n}명` };
   }
 
   function syncComment(p) {

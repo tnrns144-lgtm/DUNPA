@@ -120,6 +120,19 @@
   }
 
   /* ----- 광고 ----- */
+  // 화면 양쪽 빈 공간의 세로 배너 (넓은 화면에서만 보여요). 모든 페이지에 자동으로 붙여요
+  function addRailAds() {
+    if (document.querySelector('.ad-rail')) return;
+    ['left', 'right'].forEach((side) => {
+      const el = document.createElement('div');
+      el.className = `ad-slot ad-rail ad-rail--${side}`;
+      el.dataset.ad = side === 'left' ? 'railLeft' : 'railRight';
+      el.dataset.label = '광고 영역 · 세로 배너';
+      el.setAttribute('aria-label', '광고');
+      document.body.appendChild(el);
+    });
+  }
+
   function initAds() {
     const slots = document.querySelectorAll('[data-ad]');
     const client = CFG.adsenseClient;
@@ -176,6 +189,7 @@
   }, true);
 
   document.addEventListener('DOMContentLoaded', () => {
+    addRailAds();
     initAds();
     document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
   });
