@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMax slice">
-<!-- 던랩 오리지널 배경 3층: 목조 집들(왼쪽)과 마법진이 빛나는 강화 연구소(오른쪽) (직접 그린 그림, 특정 게임 장소를 베끼지 않음) -->
+<!-- 던파랩 오리지널 배경 3층: 목조 집들(왼쪽)과 마법진이 빛나는 강화 연구소(오른쪽) (직접 그린 그림, 특정 게임 장소를 베끼지 않음) -->
 <defs>
 <radialGradient id="magic" cx="0.5" cy="0.5" r="0.5">
 <stop offset="0" stop-color="#7FEAF6" stop-opacity="0.75"/>

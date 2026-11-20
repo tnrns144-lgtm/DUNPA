@@ -1,4 +1,4 @@
-// 던랩 데이터 수집 스크립트
+// 던파랩 데이터 수집 스크립트
 // GitHub Actions가 1시간마다 실행해요. 직접 실행하려면:
 //   NEOPLE_API_KEY=발급받은키 node scripts/collect.mjs
 // Node.js 18 이상 필요 (fetch 내장)
@@ -412,7 +412,7 @@ async function writeBrief() {
   const html = `
     <section class="section brief" id="brief" aria-labelledby="brief-title">
       <div class="section-head"><h2 id="brief-title">오늘의 연구 브리핑</h2><span class="lab-code">BRIEF</span><span class="rule" aria-hidden="true"></span><span class="meta">${when} 기준</span></div>
-      <p class="brief-intro">${when} 기준으로 던랩이 네오플 오픈 API에서 모은 던전앤파이터 경매장 시세, 명성 랭킹, 랭커 장착품, 아바타 마켓 요약이에요.</p>
+      <p class="brief-intro">${when} 기준으로 던파랩이 네오플 오픈 API에서 모은 던전앤파이터 경매장 시세, 명성 랭킹, 랭커 장착품, 아바타 마켓 요약이에요.</p>
       <div class="brief-grid">
         ${cards.join('\n        ')}
       </div>
@@ -633,7 +633,7 @@ async function writeJobPages() {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
-<title>${escHtml(j.finalName)} 랭커 세팅 (${escHtml(j.jobName)}) · 직업 연구 · 던랩</title>
+<title>${escHtml(j.finalName)} 랭커 세팅 (${escHtml(j.jobName)}) · 직업 연구 · 던파랩</title>
 <meta name="description" content="${escHtml(desc)}">
 <meta name="theme-color" content="#070C11">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -643,6 +643,7 @@ async function writeJobPages() {
 <link rel="stylesheet" href="assets/css/theme.css${assetQ}">
 <link rel="stylesheet" href="assets/css/style.css${assetQ}">
 <link rel="canonical" href="${BASE}jobs/${jobPageId(j)}.html">
+<meta property="og:site_name" content="던파랩">
 </head>
 <body>
 
@@ -814,7 +815,7 @@ async function writeWeeklyReport() {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
-<title>${title} · 던랩</title>
+<title>${title} · 던파랩</title>
 <meta name="description" content="${escHtml(`${range} 던전앤파이터 주간 리포트: 경매장 시세 상승·하락 TOP 5, 랭커 장착품 변화, 명성 랭킹 요약.`)}">
 <meta name="theme-color" content="#070C11">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -824,6 +825,7 @@ async function writeWeeklyReport() {
 <link rel="stylesheet" href="assets/css/theme.css${assetQ}">
 <link rel="stylesheet" href="assets/css/style.css${assetQ}">
 <link rel="canonical" href="${BASE}reports/${wk.id}.html">
+<meta property="og:site_name" content="던파랩">
 </head>
 <body>
 

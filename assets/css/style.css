@@ -1,4 +1,4 @@
-/* 던랩 공통 스타일 — 색·글꼴 값은 theme.css에서 바꿔요 */
+/* 던파랩 공통 스타일 — 색·글꼴 값은 theme.css에서 바꿔요 */
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }

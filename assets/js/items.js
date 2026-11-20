@@ -17,7 +17,7 @@
   });
 
   async function search(name) {
-    document.title = `${name} · 아이템 사전 · 던랩`;
+    document.title = `${name} · 아이템 사전 · 던파랩`;
     $('result-title').textContent = `"${name}" 검색 결과`;
     $('result-count').textContent = '';
     const box = $('item-results');

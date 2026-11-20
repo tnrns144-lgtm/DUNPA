@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice">
-<!-- 던랩 오리지널 배경: 밤의 마도 연구실. 공중에 뜬 마법진, 홀로그램 계기판, 실험대 위 플라스크. 다른 이미지로 바꾸려면 style.css의 .hero 배경 경로만 바꾸면 돼요. -->
+<!-- 던파랩 오리지널 배경: 밤의 마도 연구실. 공중에 뜬 마법진, 홀로그램 계기판, 실험대 위 플라스크. 다른 이미지로 바꾸려면 style.css의 .hero 배경 경로만 바꾸면 돼요. -->
 <defs>
 <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0" stop-color="#030E15"/>

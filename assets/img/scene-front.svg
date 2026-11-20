@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMax slice">
-<!-- 던랩 오리지널 배경 4층: 앞쪽 가로등, 난간, 상자, 떠다니는 불씨 (직접 그린 그림) -->
+<!-- 던파랩 오리지널 배경 4층: 앞쪽 가로등, 난간, 상자, 떠다니는 불씨 (직접 그린 그림) -->
 <defs>
 <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
 <stop offset="0" stop-color="#FFD48A" stop-opacity="0.9"/>
