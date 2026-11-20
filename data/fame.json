@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T03:00:10.023Z",
+ "updatedAt": "2026-11-20T04:10:35.599Z",
  "all": [
   {
    "serverId": "cain",
@@ -632,6 +632,15 @@
    "fame": 136184
   },
   {
+   "serverId": "prey",
+   "characterId": "2cd3312207a3f1cb6755fb042187fea3",
+   "characterName": "리에키메라",
+   "level": 115,
+   "jobName": "아처",
+   "jobGrowName": "眞 키메라",
+   "fame": 136184
+  },
+  {
    "serverId": "cain",
    "characterId": "7ee0dafaab05afed9bf830f29d952ba2",
    "characterName": "운라이오닐",
@@ -684,15 +693,6 @@
    "jobName": "거너(남)",
    "jobGrowName": "眞 레인저",
    "fame": 136163
-  },
-  {
-   "serverId": "prey",
-   "characterId": "2cd3312207a3f1cb6755fb042187fea3",
-   "characterName": "리에키메라",
-   "level": 115,
-   "jobName": "아처",
-   "jobGrowName": "眞 키메라",
-   "fame": 136155
   },
   {
    "serverId": "prey",
@@ -1983,21 +1983,21 @@
    },
    {
     "serverId": "prey",
+    "characterId": "2cd3312207a3f1cb6755fb042187fea3",
+    "characterName": "리에키메라",
+    "level": 115,
+    "jobName": "아처",
+    "jobGrowName": "眞 키메라",
+    "fame": 136184
+   },
+   {
+    "serverId": "prey",
     "characterId": "65160f998cf8ced6681b53d9c12fdec5",
     "characterName": "무자비",
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
     "fame": 136163
-   },
-   {
-    "serverId": "prey",
-    "characterId": "2cd3312207a3f1cb6755fb042187fea3",
-    "characterName": "리에키메라",
-    "level": 115,
-    "jobName": "아처",
-    "jobGrowName": "眞 키메라",
-    "fame": 136155
    },
    {
     "serverId": "prey",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T03:00:10.023Z",
+ "updatedAt": "2026-11-20T04:10:35.599Z",
  "sale": [
   {
    "goodsNo": 4807183,
@@ -6651,6 +6651,38 @@
      "itemId": "703bd811925f41ca43a8121263ecf3e6",
      "itemName": "바니바니 아라드 토끼 꼬리[A타입]",
      "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4572010,
+   "title": "총검사 상급2부위",
+   "price": 2200000,
+   "jobs": [
+    "총검사"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "02d1b7532db94cbb1c3a24dfaa71b4a7",
+     "itemName": "발할라 리턴즈 굳건한 바이킹의 롱 헤어[A타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "99f70b352afe2310d9d640bca804601b",
+     "itemName": "왕립 아라드 고교 리턴즈 교복 슈즈[A타입]",
+     "slotName": "신발 아바타",
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[인벤토리]"
