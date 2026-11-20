@@ -1,6 +1,74 @@
 {
- "updatedAt": "2026-11-20T05:17:49.002Z",
+ "updatedAt": "2026-11-20T07:35:37.026Z",
  "sale": [
+  {
+   "goodsNo": 4807555,
+   "title": "나이트 레어1부위 상급6부위",
+   "price": 25000000,
+   "jobs": [
+    "나이트"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [
+    "사랑스러운"
+   ],
+   "parts": [
+    {
+     "itemId": "2a6966d1567cef63b16da9f08ba4fe1f",
+     "itemName": "역발의 유라의 모자[A타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "388ca45572553fdbc8d8d4ecea9af263",
+     "itemName": "겨울기사의 볼륨 단발[A타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "f4f4639e296f25110071cb5234e6750c",
+     "itemName": "레드 인페르노 이어링",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "c9a3227dc61de1be0f23d402dcb3d485",
+     "itemName": "타고르의 프릴 블라우스[A타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "dd16e5af0e4c0732d4c71827fd7d2bce",
+     "itemName": "로맨틱 아라드 롱 스커트[D타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "빛나는 녹색빛 엠블렘[물리크리티컬]"
+     ]
+    },
+    {
+     "itemId": "5bd154c55a1a18e89f8e512e7ed28c15",
+     "itemName": "묵현군자의 장식과 문양[C타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "a16dad39eba1bace196d6b43966cb0ef",
+     "itemName": "진 카오스의 악신 타투[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
   {
    "goodsNo": 4807211,
    "title": "남프리스트 상급2부위",
@@ -66,11 +134,11 @@
    ]
   },
   {
-   "goodsNo": 4807180,
-   "title": "남격투가 상급2부위",
-   "price": 1950000,
+   "goodsNo": 4807209,
+   "title": "남프리스트 상급2부위",
+   "price": 2222222,
    "jobs": [
-    "격투가(남)"
+    "프리스트(남)"
    ],
    "avatarRarity": "상급",
    "avatarSet": false,
@@ -78,22 +146,21 @@
    "hashtags": [],
    "parts": [
     {
-     "itemId": "89b7797411b6478e662ba220f07c294f",
-     "itemName": "발할라 리턴즈 강인한 바이킹의 부러진뿔 투구[C타입]",
-     "slotName": "모자 아바타",
+     "itemId": "2385f5fb268404839244c0de8e7e3c32",
+     "itemName": "수인족 영웅 불스 망토[B타입]",
+     "slotName": "목가슴 아바타",
      "itemRarity": "커먼",
      "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]",
-      "빛나는 붉은빛 엠블렘[모든스탯]"
+      "빛나는 다색 엠블렘[모든속성저항]"
      ]
     },
     {
-     "itemId": "93fe7e92e48f7266bc89bc355eaa16ca",
-     "itemName": "운명의 아르카나 왕관의 기사 신발[C타입]",
-     "slotName": "신발 아바타",
+     "itemId": "b07f4d0d1b43cb5c3b4b3a07e41ae09e",
+     "itemName": "트로피컬 바캉스 바디 피어싱[B타입]",
+     "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
+      "빛나는 다색 엠블렘[모든속성저항]"
      ]
     }
    ]
@@ -205,73 +272,11 @@
    ]
   },
   {
-   "goodsNo": 4806061,
-   "title": "나이트 레어1부위 상급5부위",
-   "price": 29999999,
+   "goodsNo": 4806288,
+   "title": "나이트 상급2부위",
+   "price": 2222222,
    "jobs": [
     "나이트"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [
-    "만화",
-    "사랑스러운"
-   ],
-   "parts": [
-    {
-     "itemId": "388ca45572553fdbc8d8d4ecea9af263",
-     "itemName": "겨울기사의 볼륨 단발[A타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "f4f4639e296f25110071cb5234e6750c",
-     "itemName": "레드 인페르노 이어링",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "c9a3227dc61de1be0f23d402dcb3d485",
-     "itemName": "타고르의 프릴 블라우스[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "dd16e5af0e4c0732d4c71827fd7d2bce",
-     "itemName": "로맨틱 아라드 롱 스커트[D타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]",
-      "빛나는 녹색빛 엠블렘[물리크리티컬]"
-     ]
-    },
-    {
-     "itemId": "5bd154c55a1a18e89f8e512e7ed28c15",
-     "itemName": "묵현군자의 장식과 문양[C타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "a16dad39eba1bace196d6b43966cb0ef",
-     "itemName": "진 카오스의 악신 타투[A타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4805566,
-   "title": "여마법사 상급2부위",
-   "price": 2000000,
-   "jobs": [
-    "마법사(여)"
    ],
    "avatarRarity": "상급",
    "avatarSet": false,
@@ -279,20 +284,22 @@
    "hashtags": [],
    "parts": [
     {
-     "itemId": "793aa06883c5c8044c43f0a3b8f004fc",
-     "itemName": "딸기 귀걸이[C타입]",
-     "slotName": "얼굴 아바타",
+     "itemId": "650569d04e6604cbd4dd84cb89483df1",
+     "itemName": "진 드래곤나이트의 타이즈 아머 팬츠[A타입]",
+     "slotName": "하의 아바타",
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든상태이상내성]"
      ]
     },
     {
-     "itemId": "c3c141e188d6ab0f5f69684568e201dd",
-     "itemName": "캠퍼스 새내기 로리타 슈즈[D타입]",
+     "itemId": "eae2462ca1a9f7194d6a179b68671d03",
+     "itemName": "캠퍼스 새내기 스니커즈[C타입]",
      "slotName": "신발 아바타",
      "itemRarity": "커먼",
-     "emblems": []
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
     }
    ]
   },
@@ -431,6 +438,99 @@
      "itemName": "마제스티 피닉스 벨트[A타입]",
      "slotName": "허리 아바타",
      "itemRarity": "레어",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4802525,
+   "title": "여격투가 레어1부위 상급7부위/피부",
+   "price": 25000000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [
+    "만화",
+    "깔끔한"
+   ],
+   "parts": [
+    {
+     "itemId": "dde18de172645b0d8a36e44dfe30c374",
+     "itemName": "2026 아라드 패스 차원의 별자리 별빛 브로치",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "fea1a45449e623bb117a58d165a845d4",
+     "itemName": "아라드 협객단의 반묶음 머리[C타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "0c0328500a8e97865aaad000617dac98",
+     "itemName": "플레이아데스 아이메이크업",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "화려한 노란빛 엠블렘[캐스트속도]",
+      "화려한 노란빛 엠블렘[캐스트속도]"
+     ]
+    },
+    {
+     "itemId": "d48a1417d6bf3ccc851c6aeb6cdae71b",
+     "itemName": "서핑 아라드 래쉬가드 상의[D타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 녹색빛 엠블렘[마법크리티컬]",
+      "빛나는 녹색빛 엠블렘[마법크리티컬]"
+     ]
+    },
+    {
+     "itemId": "022573e0010780c7bd137991f6b4776e",
+     "itemName": "서핑 아라드 래쉬가드 하의[D타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든속성저항]",
+      "빛나는 녹색빛 엠블렘[마법크리티컬]"
+     ]
+    },
+    {
+     "itemId": "3d7910629d9437c386f08e1f8338c34a",
+     "itemName": "트로피컬 바캉스 알록달록 페디큐어[B타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "175ed9ca8d8ffe2d3eac0cf36faf3353",
+     "itemName": "운명의 아르카나 왕관의 사제 목걸이[C타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "937855299a0365f43ffce5fd1ef8d5ca",
+     "itemName": "2026 아라드 패스 차원의 별자리 별빛 무늬",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "524c21f29e69e441a2afa3f8ef1770a7",
+     "itemName": "숲속의 유랑악단 진줏빛 피부[A타입]",
+     "slotName": "스킨 아바타",
+     "itemRarity": "커먼",
      "emblems": []
     }
    ]
@@ -973,38 +1073,6 @@
    ]
   },
   {
-   "goodsNo": 4798036,
-   "title": "남격투가 상급2부위",
-   "price": 2111111,
-   "jobs": [
-    "격투가(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "b99d9d6c1ff4e644c9406594b02ff224",
-     "itemName": "쿠사나기 쿄의 눈썹[A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "d61f231a2dc7fa87094837a31226d026",
-     "itemName": "쿠사나기 쿄의 허리띠 투명아바타",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    }
-   ]
-  },
-  {
    "goodsNo": 4798035,
    "title": "남격투가 상급2부위",
    "price": 2111111,
@@ -1060,70 +1128,6 @@
     {
      "itemId": "8655639a7ad7f8b7408e56786721f162",
      "itemName": "바니바니 아라드 바니테일[D타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4798032,
-   "title": "남거너 상급2부위",
-   "price": 2111111,
-   "jobs": [
-    "거너(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "e0af3812ebd4eac6a067dcb06386ac14",
-     "itemName": "초원의 영혼 페이스 페인팅[D타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "5c8b82d4d3477a8c64393ae85d163527",
-     "itemName": "에미야 키리츠구의 허리 투명 아바타",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4798031,
-   "title": "여거너 상급2부위",
-   "price": 2111111,
-   "jobs": [
-    "거너(여)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "02a7167e0d0259e6b8515f5901ace4f5",
-     "itemName": "발할라 리턴즈 냉혈한 발키리의 윙 헤드기어[A타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "264c982b0ff68db70a01cda6c4e1df75",
-     "itemName": "휴스턴 로케츠 스타일 팜팜[A타입]",
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": [
@@ -2317,6 +2321,38 @@
    ]
   },
   {
+   "goodsNo": 4790269,
+   "title": "남격투가 상급2부위",
+   "price": 2111111,
+   "jobs": [
+    "격투가(남)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "fd46c99e40f35710b8f32c64783c29dc",
+     "itemName": "그랜드 마스터의 머리띠[A타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "cd7846a277f05dd59385779a27ce6970",
+     "itemName": "무극의 나막신[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    }
+   ]
+  },
+  {
    "goodsNo": 4790078,
    "title": "남격투가 상급2부위",
    "price": 2200000,
@@ -2408,38 +2444,6 @@
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4790075,
-   "title": "나이트 상급2부위",
-   "price": 2100000,
-   "jobs": [
-    "나이트"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "2a6966d1567cef63b16da9f08ba4fe1f",
-     "itemName": "역발의 유라의 모자[A타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
-     ]
-    },
-    {
-     "itemId": "3ebfa1d06077409d37810684cb374b8a",
-     "itemName": "바니바니 아라드 토끼 광택 꼬리[B타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[인벤토리]"
      ]
     }
    ]
@@ -4271,6 +4275,62 @@
    ]
   },
   {
+   "goodsNo": 4762897,
+   "title": "여격투가 상급2부위",
+   "price": 2200000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "4581966e9eeff71ccad78704a5b51092",
+     "itemName": "머메이드 끈 리본 샌들[B타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "ccb41c90d39125866fb8a41793fa17f6",
+     "itemName": "순백의 서약 웨딩 목걸이[E타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4762896,
+   "title": "여격투가 상급2부위",
+   "price": 2200000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "41a31af7b7f4bc2d837884f4af727311",
+     "itemName": "머메이드 보석 목걸이[B타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "db04beb1c5c899df33a015d2370c43ab",
+     "itemName": "머메이드 파도 벨트[B타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
    "goodsNo": 4754857,
    "title": "나이트 레어2부위",
    "price": 4600000,
@@ -4607,56 +4667,6 @@
    ]
   },
   {
-   "goodsNo": 4752705,
-   "title": "남격투가 레어3부위 상급1부위",
-   "price": 31000000,
-   "jobs": [
-    "격투가(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "97ba3fb9b34b029318320288e640c653",
-     "itemName": "광호제의 포니테일머리[D타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 붉은빛 엠블렘[지능]",
-      "빛나는 붉은빛 엠블렘[지능]"
-     ]
-    },
-    {
-     "itemId": "bb648b7095c005b51ea5a5102872553d",
-     "itemName": "앱솔루트 다크 코트",
-     "slotName": "상의 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "플래티넘 엠블렘[강권](남)",
-      "빛나는 녹색빛 엠블렘[HP MAX]"
-     ]
-    },
-    {
-     "itemId": "096bd214f931caae06fdc369011b15b7",
-     "itemName": "남격투가의 흑요석 갑옷 하의",
-     "slotName": "하의 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "플래티넘 엠블렘[뒷골목 싸움법]"
-     ]
-    },
-    {
-     "itemId": "aa53f118dbd755a79d80367d2918da46",
-     "itemName": "혼돈의 루시퍼 검은 날개",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    }
-   ]
-  },
-  {
    "goodsNo": 4741774,
    "title": "여마법사 레어1부위 상급7부위/피부",
    "price": 25000000,
@@ -4871,6 +4881,38 @@
    ]
   },
   {
+   "goodsNo": 4737684,
+   "title": "남프리스트 상급2부위",
+   "price": 2222222,
+   "jobs": [
+    "프리스트(남)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "da847655d785cdc5b4d4c7565dd0d24e",
+     "itemName": "트로피컬 바캉스 딸기 스티커[C타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "e916fe59ecb126936afe7ac81bd3a956",
+     "itemName": "트로피컬 바캉스 바디 피어싱[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    }
+   ]
+  },
+  {
    "goodsNo": 4737683,
    "title": "남프리스트 상급2부위",
    "price": 2222222,
@@ -4927,6 +4969,38 @@
      "itemId": "d1d7b3971472b1eedf89fb1e893eb7d9",
      "itemName": "바칼의 비늘 갑주 신발[A타입]",
      "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4733326,
+   "title": "여격투가 상급2부위",
+   "price": 2222222,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "e9949e26d4c5c4869709b947cc4ef3f5",
+     "itemName": "코스믹 어드벤처 통신 유닛[B타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "f3299f988ab29fd981c6ea66620423d4",
+     "itemName": "트로피컬 바캉스 목가슴 투명 아바타[B타입]",
+     "slotName": "목가슴 아바타",
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든상태이상내성]"
@@ -6021,6 +6095,105 @@
    ]
   },
   {
+   "goodsNo": 4631730,
+   "title": "여마법사 레어1부위 상급7부위/피부",
+   "price": 30000000,
+   "jobs": [
+    "마법사(여)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [
+    "만화",
+    "발랄한"
+   ],
+   "parts": [
+    {
+     "itemId": "07c6ecab7185dc9e02e529607e17252c",
+     "itemName": "칸나의 모자[C타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "b7261c2cf8aa0026cec1b99e75d9895f",
+     "itemName": "노블레스 방울묶음 긴 머리",
+     "slotName": "머리 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "빛나는 붉은빛 엠블렘[체력]"
+     ]
+    },
+    {
+     "itemId": "6271f83aced8099f2efcb7b9a6714513",
+     "itemName": "바니바니 아라드 폼폼 이어링과 컬러렌즈[B타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "08d953adffddd36c233a4a156c0030a7",
+     "itemName": "썸머페스티벌 세일러 크롭탑[C타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "4cc691de2d63ce78aac11775990e556a",
+     "itemName": "썸머페스티벌 세일러 팬츠[C타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "화려한 녹색빛 엠블렘[마법크리티컬]"
+     ]
+    },
+    {
+     "itemId": "de335781d1efc11cfa5cfe477f6f8e19",
+     "itemName": "비치 샌들[B타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "0fbe5c25e451f5aa3f43b2bc367a97b2",
+     "itemName": "미드썸머 아라드 초크와 하트문신[A타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "빛나는 노란빛 엠블렘[캐스트속도]"
+     ]
+    },
+    {
+     "itemId": "94b9a64ca383d330e7131e55757bcc54",
+     "itemName": "동돌의 별자리 바디 스티커[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "6fbae015a05e43290e3925aec61f5aba",
+     "itemName": "운명의 아르카나 별의 사제 순백의 피부[D타입]",
+     "slotName": "스킨 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
    "goodsNo": 4630602,
    "title": "여거너 레어1부위 상급6부위",
    "price": 19400000,
@@ -6191,6 +6364,34 @@
      "emblems": [
       "빛나는 다색 엠블렘[인벤토리]"
      ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4603281,
+   "title": "남프리스트 상급2부위",
+   "price": 2200000,
+   "jobs": [
+    "프리스트(남)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "e11bc6c056a6c21a0d9749865b1f29c7",
+     "itemName": "블랙 팬텀 소 가면",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "12751ee14fe2c7a00b32f0260216d1a4",
+     "itemName": "블랙 팬텀 벨트",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
     }
    ]
   },

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T05:17:49.002Z",
+ "updatedAt": "2026-11-20T07:35:37.026Z",
  "all": [
   {
    "serverId": "cain",
@@ -1065,6 +1065,15 @@
   },
   {
    "serverId": "prey",
+   "characterId": "2243a53cd1f0d54fc430867765355a82",
+   "characterName": "Maga",
+   "level": 115,
+   "jobName": "프리스트(여)",
+   "jobGrowName": "眞 인파이터",
+   "fame": 135864
+  },
+  {
+   "serverId": "prey",
    "characterId": "08751d5bc043bb74235128d9ea1fc0a9",
    "characterName": "강춘식",
    "level": 115,
@@ -2046,6 +2055,15 @@
    },
    {
     "serverId": "prey",
+    "characterId": "2243a53cd1f0d54fc430867765355a82",
+    "characterName": "Maga",
+    "level": 115,
+    "jobName": "프리스트(여)",
+    "jobGrowName": "眞 인파이터",
+    "fame": 135864
+   },
+   {
+    "serverId": "prey",
     "characterId": "08751d5bc043bb74235128d9ea1fc0a9",
     "characterName": "강춘식",
     "level": 115,
@@ -2564,15 +2582,6 @@
     "jobName": "도적",
     "jobGrowName": "眞 쿠노이치",
     "fame": 134840
-   },
-   {
-    "serverId": "bakal",
-    "characterId": "cd12a5f0e9fc2f73e119f44d5481da1d",
-    "characterName": "오후햇살",
-    "level": 115,
-    "jobName": "귀검사(남)",
-    "jobGrowName": "眞 웨펀마스터",
-    "fame": 134774
    }
   ]
  }
