@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T13:35:47.125Z",
+ "updatedAt": "2026-11-20T15:12:03.261Z",
  "all": [
   {
    "serverId": "cain",
@@ -368,6 +368,15 @@
    "level": 115,
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 베가본드",
+   "fame": 136330
+  },
+  {
+   "serverId": "cain",
+   "characterId": "b0e1ac3699f2630535b5033b4b565440",
+   "characterName": "카무이",
+   "level": 115,
+   "jobName": "아처",
+   "jobGrowName": "眞 키메라",
    "fame": 136330
   },
   {
@@ -1163,6 +1172,15 @@
    "fame": 135065
   },
   {
+   "serverId": "anton",
+   "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
+   "characterName": "스팅거타이거",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 런처",
+   "fame": 135027
+  },
+  {
    "serverId": "hilder",
    "characterId": "2ef4826e17784daa46a89f9e8a0cc724",
    "characterName": "운도리아빠",
@@ -1224,15 +1242,6 @@
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 다크템플러",
    "fame": 134934
-  },
-  {
-   "serverId": "anton",
-   "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
-   "characterName": "스팅거타이거",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 런처",
-   "fame": 134927
   }
  ],
  "byServer": {
@@ -1406,6 +1415,15 @@
     "level": 115,
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 베가본드",
+    "fame": 136330
+   },
+   {
+    "serverId": "cain",
+    "characterId": "b0e1ac3699f2630535b5033b4b565440",
+    "characterName": "카무이",
+    "level": 115,
+    "jobName": "아처",
+    "jobGrowName": "眞 키메라",
     "fame": 136330
    },
    {
@@ -1677,15 +1695,6 @@
     "jobName": "총검사",
     "jobGrowName": "眞 요원",
     "fame": 135908
-   },
-   {
-    "serverId": "cain",
-    "characterId": "b5ebc37fc6249335ff634d921caca716",
-    "characterName": "네골",
-    "level": 115,
-    "jobName": "격투가(여)",
-    "jobGrowName": "眞 넨마스터",
-    "fame": 135902
    }
   ],
   "diregie": [
@@ -2347,6 +2356,15 @@
    },
    {
     "serverId": "hilder",
+    "characterId": "f15eaa019d68cb7108bf06082dcff237",
+    "characterName": "희망의꽃",
+    "level": 115,
+    "jobName": "거너(여)",
+    "jobGrowName": "眞 패러메딕",
+    "fame": 134638
+   },
+   {
+    "serverId": "hilder",
     "characterId": "40c0ec33989329e585aa49eea1a039e3",
     "characterName": "Pablo",
     "level": 115,
@@ -2399,7 +2417,7 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 런처",
-    "fame": 134927
+    "fame": 135027
    },
    {
     "serverId": "anton",
