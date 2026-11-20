@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T11:15:51.992Z",
+ "updatedAt": "2026-11-20T12:14:57.435Z",
  "sale": [
   {
    "goodsNo": 4807555,
@@ -166,39 +166,6 @@
    ]
   },
   {
-   "goodsNo": 4806927,
-   "title": "남프리스트 레어1부위 상급1부위",
-   "price": 11000000,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "06478118058b0764f77f3eefa02a13a6",
-     "itemName": "아라드 코스프레 닐바스 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 녹색빛 엠블렘[HP MAX]",
-      "빛나는 녹색빛 엠블렘[HP MAX]"
-     ]
-    },
-    {
-     "itemId": "48f7096cf13d822cb1aeaf64ffdcc14a",
-     "itemName": "레드 인페르노 팬츠",
-     "slotName": "하의 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "플래티넘 엠블렘[영광의 축복]"
-     ]
-    }
-   ]
-  },
-  {
    "goodsNo": 4806339,
    "title": "아처 레어1부위 상급7부위",
    "price": 13500000,
@@ -268,38 +235,6 @@
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4806288,
-   "title": "나이트 상급2부위",
-   "price": 2222222,
-   "jobs": [
-    "나이트"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "650569d04e6604cbd4dd84cb89483df1",
-     "itemName": "진 드래곤나이트의 타이즈 아머 팬츠[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    },
-    {
-     "itemId": "eae2462ca1a9f7194d6a179b68671d03",
-     "itemName": "캠퍼스 새내기 스니커즈[C타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
     }
    ]
   },
@@ -609,6 +544,34 @@
      "itemId": "3651878f3dee6523329ab7c1f269acd6",
      "itemName": "발할라 리턴즈 발키리의 건강한 피부 [A타입]",
      "slotName": "스킨 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4802429,
+   "title": "남프리스트 상급2부위",
+   "price": 2000000,
+   "jobs": [
+    "프리스트(남)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "ef6750414d146225a9392b32df80ada1",
+     "itemName": "가죽 보안관 부츠[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "0ecc5eb6187498d4863d9488da8a1b7a",
+     "itemName": "가죽 홀스터[A타입]",
+     "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
     }
@@ -4995,38 +4958,6 @@
    ]
   },
   {
-   "goodsNo": 4737681,
-   "title": "남프리스트 상급2부위",
-   "price": 2222222,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "7a3c4e19a1f565c8bb07debe98da2227",
-     "itemName": "트로피컬 바캉스 투블럭 헤어[C타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    },
-    {
-     "itemId": "d1d7b3971472b1eedf89fb1e893eb7d9",
-     "itemName": "바칼의 비늘 갑주 신발[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    }
-   ]
-  },
-  {
    "goodsNo": 4733326,
    "title": "여격투가 상급2부위",
    "price": 2222222,
@@ -6963,6 +6894,69 @@
      "itemId": "a197f1ae264613ee3fd3648c681c27d2",
      "itemName": "트릭스터의 큐티 리본장식[A타입]",
      "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4240554,
+   "title": "남귀검사 레어5부위 상급1부위/피부",
+   "price": 25555555,
+   "jobs": [
+    "귀검사(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "20d6374d6ab02076f7c32153568431c9",
+     "itemName": "레어 모자 클론 아바타",
+     "slotName": "모자 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "b65519c8d9dddfef1322cec04da4ad6e",
+     "itemName": "블루 인페르노 실버 울프 컷",
+     "slotName": "머리 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "7cec51ec9c74f27502ad0e9ef152e10d",
+     "itemName": "블루 인페르노 데빌 마스크",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "b49cc499b4aa4a536e75b743cc7761dd",
+     "itemName": "블루 인페르노 데빌 팬츠",
+     "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "91de8bb6e4a6c8339f0a6723db94ee90",
+     "itemName": "블루 인페르노 데빌 슈즈",
+     "slotName": "신발 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    },
+    {
+     "itemId": "21f74c8e3b16ee9c92408589da68cdee",
+     "itemName": "찢어진 털장식 요대[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "3ad96138a07c03a500e22851aba4fef3",
+     "itemName": "이누야샤의 피부",
+     "slotName": "스킨 아바타",
      "itemRarity": "커먼",
      "emblems": []
     }

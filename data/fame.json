@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T11:15:51.992Z",
+ "updatedAt": "2026-11-20T12:14:57.435Z",
  "all": [
   {
    "serverId": "cain",
@@ -335,6 +335,15 @@
    "fame": 136368
   },
   {
+   "serverId": "bakal",
+   "characterId": "b8b6e0658a5a61a1c81733ad1085621e",
+   "characterName": "팽귄스핏",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 스핏파이어",
+   "fame": 136368
+  },
+  {
    "serverId": "prey",
    "characterId": "d7bf9a3385a533179dc7970a38de4380",
    "characterName": "돈",
@@ -347,15 +356,6 @@
    "serverId": "cain",
    "characterId": "5cf9c8a6a588d2584ba6e533ed41f6ea",
    "characterName": "냉동탄",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 스핏파이어",
-   "fame": 136345
-  },
-  {
-   "serverId": "bakal",
-   "characterId": "b8b6e0658a5a61a1c81733ad1085621e",
-   "characterName": "팽귄스핏",
    "level": 115,
    "jobName": "거너(남)",
    "jobGrowName": "眞 스핏파이어",
@@ -2509,7 +2509,7 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 스핏파이어",
-    "fame": 136345
+    "fame": 136368
    },
    {
     "serverId": "bakal",
