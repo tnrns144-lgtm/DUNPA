@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T07:35:37.026Z",
+ "updatedAt": "2026-11-20T09:18:10.083Z",
  "all": [
   {
    "serverId": "cain",
@@ -9,15 +9,6 @@
    "jobName": "프리스트(남)",
    "jobGrowName": "眞 크루세이더",
    "fame": 136927
-  },
-  {
-   "serverId": "cain",
-   "characterId": "8cf955048bec36f40b12b095a8908b15",
-   "characterName": "치료",
-   "level": 115,
-   "jobName": "프리스트(남)",
-   "jobGrowName": "眞 크루세이더",
-   "fame": 136773
   },
   {
    "serverId": "cain",
@@ -317,6 +308,15 @@
    "fame": 136369
   },
   {
+   "serverId": "anton",
+   "characterId": "108123cca29d4a934c0d6777d003df80",
+   "characterName": "^모^",
+   "level": 115,
+   "jobName": "격투가(여)",
+   "jobGrowName": "眞 넨마스터",
+   "fame": 136368
+  },
+  {
    "serverId": "cain",
    "characterId": "ca70d5e2d05650519fec38523fbe2907",
    "characterName": "에리스짱",
@@ -611,15 +611,6 @@
    "level": 115,
    "jobName": "도적",
    "jobGrowName": "眞 사령술사",
-   "fame": 136207
-  },
-  {
-   "serverId": "cain",
-   "characterId": "80d5795bf263d0e142271bbe8e78b524",
-   "characterName": "Rovyn",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 어썰트",
    "fame": 136207
   },
   {
@@ -1136,6 +1127,15 @@
    "fame": 135197
   },
   {
+   "serverId": "cain",
+   "characterId": "8cf955048bec36f40b12b095a8908b15",
+   "characterName": "치료",
+   "level": 115,
+   "jobName": "프리스트(남)",
+   "jobGrowName": "眞 크루세이더",
+   "fame": 135153
+  },
+  {
    "serverId": "prey",
    "characterId": "4d3a8f365dc0a1ee4099ad57bb70b4a0",
    "characterName": "다크꼴랑이",
@@ -1245,15 +1245,6 @@
     "jobName": "프리스트(남)",
     "jobGrowName": "眞 크루세이더",
     "fame": 136927
-   },
-   {
-    "serverId": "cain",
-    "characterId": "8cf955048bec36f40b12b095a8908b15",
-    "characterName": "치료",
-    "level": 115,
-    "jobName": "프리스트(남)",
-    "jobGrowName": "眞 크루세이더",
-    "fame": 136773
    },
    {
     "serverId": "cain",
@@ -1509,15 +1500,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "80d5795bf263d0e142271bbe8e78b524",
-    "characterName": "Rovyn",
-    "level": 115,
-    "jobName": "거너(남)",
-    "jobGrowName": "眞 어썰트",
-    "fame": 136207
-   },
-   {
-    "serverId": "cain",
     "characterId": "2debff56c76abb75dfd1aa6a165d9da0",
     "characterName": "VluGod",
     "level": 115,
@@ -1686,6 +1668,24 @@
     "jobName": "격투가(여)",
     "jobGrowName": "眞 넨마스터",
     "fame": 135902
+   },
+   {
+    "serverId": "cain",
+    "characterId": "d7a9880acf4e5c2129ef26e6a18641b1",
+    "characterName": "센치한요원",
+    "level": 115,
+    "jobName": "총검사",
+    "jobGrowName": "眞 요원",
+    "fame": 135902
+   },
+   {
+    "serverId": "cain",
+    "characterId": "ac5d4a8f673e3e0ad3608f85f0e6a113",
+    "characterName": "소나타아티카",
+    "level": 115,
+    "jobName": "귀검사(여)",
+    "jobGrowName": "眞 소드마스터",
+    "fame": 135864
    }
   ],
   "diregie": [
@@ -2376,6 +2376,15 @@
    },
    {
     "serverId": "anton",
+    "characterId": "108123cca29d4a934c0d6777d003df80",
+    "characterName": "^모^",
+    "level": 115,
+    "jobName": "격투가(여)",
+    "jobGrowName": "眞 넨마스터",
+    "fame": 136368
+   },
+   {
+    "serverId": "anton",
     "characterId": "902036a14e7c56eb4660284004b54d2d",
     "characterName": "엄나박",
     "level": 115,
@@ -2409,6 +2418,15 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 스핏파이어",
     "fame": 134748
+   },
+   {
+    "serverId": "anton",
+    "characterId": "d7b55a21dd1fe9fd71355b6b0d91237d",
+    "characterName": "셀루",
+    "level": 115,
+    "jobName": "마법사(여)",
+    "jobGrowName": "眞 인챈트리스",
+    "fame": 134668
    },
    {
     "serverId": "anton",
