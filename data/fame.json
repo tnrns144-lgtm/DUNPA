@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T12:14:57.435Z",
+ "updatedAt": "2026-11-20T13:35:47.125Z",
  "all": [
   {
    "serverId": "cain",
@@ -1055,15 +1055,6 @@
    "fame": 135902
   },
   {
-   "serverId": "siroco",
-   "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
-   "characterName": "[환일]",
-   "level": 115,
-   "jobName": "귀검사(남)",
-   "jobGrowName": "眞 검귀",
-   "fame": 135886
-  },
-  {
    "serverId": "bakal",
    "characterId": "149440a852ced4df822a6cb5a4ae9548",
    "characterName": "=아스나=",
@@ -1882,15 +1873,6 @@
    },
    {
     "serverId": "siroco",
-    "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
-    "characterName": "[환일]",
-    "level": 115,
-    "jobName": "귀검사(남)",
-    "jobGrowName": "眞 검귀",
-    "fame": 135886
-   },
-   {
-    "serverId": "siroco",
     "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
     "characterName": "전뮤",
     "level": 115,
@@ -2362,15 +2344,6 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 메카닉",
     "fame": 134704
-   },
-   {
-    "serverId": "hilder",
-    "characterId": "f15eaa019d68cb7108bf06082dcff237",
-    "characterName": "희망의꽃",
-    "level": 115,
-    "jobName": "거너(여)",
-    "jobGrowName": "眞 패러메딕",
-    "fame": 134638
    },
    {
     "serverId": "hilder",
