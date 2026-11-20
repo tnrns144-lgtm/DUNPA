@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T09:18:10.083Z",
+ "updatedAt": "2026-11-20T11:15:51.992Z",
  "all": [
   {
    "serverId": "cain",
@@ -98,6 +98,15 @@
    "level": 115,
    "jobName": "귀검사(남)",
    "jobGrowName": "眞 웨펀마스터",
+   "fame": 136647
+  },
+  {
+   "serverId": "cain",
+   "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
+   "characterName": "분노",
+   "level": 115,
+   "jobName": "귀검사(남)",
+   "jobGrowName": "眞 소울브링어",
    "fame": 136647
   },
   {
@@ -611,6 +620,15 @@
    "level": 115,
    "jobName": "도적",
    "jobGrowName": "眞 사령술사",
+   "fame": 136207
+  },
+  {
+   "serverId": "cain",
+   "characterId": "80d5795bf263d0e142271bbe8e78b524",
+   "characterName": "Rovyn",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 어썰트",
    "fame": 136207
   },
   {
@@ -1154,15 +1172,6 @@
    "fame": 135065
   },
   {
-   "serverId": "cain",
-   "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
-   "characterName": "분노",
-   "level": 115,
-   "jobName": "귀검사(남)",
-   "jobGrowName": "眞 소울브링어",
-   "fame": 135027
-  },
-  {
    "serverId": "hilder",
    "characterId": "2ef4826e17784daa46a89f9e8a0cc724",
    "characterName": "운도리아빠",
@@ -1290,6 +1299,15 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
     "fame": 136685
+   },
+   {
+    "serverId": "cain",
+    "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
+    "characterName": "분노",
+    "level": 115,
+    "jobName": "귀검사(남)",
+    "jobGrowName": "眞 소울브링어",
+    "fame": 136647
    },
    {
     "serverId": "cain",
@@ -1500,6 +1518,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "80d5795bf263d0e142271bbe8e78b524",
+    "characterName": "Rovyn",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 어썰트",
+    "fame": 136207
+   },
+   {
+    "serverId": "cain",
     "characterId": "2debff56c76abb75dfd1aa6a165d9da0",
     "characterName": "VluGod",
     "level": 115,
@@ -1668,24 +1695,6 @@
     "jobName": "격투가(여)",
     "jobGrowName": "眞 넨마스터",
     "fame": 135902
-   },
-   {
-    "serverId": "cain",
-    "characterId": "d7a9880acf4e5c2129ef26e6a18641b1",
-    "characterName": "센치한요원",
-    "level": 115,
-    "jobName": "총검사",
-    "jobGrowName": "眞 요원",
-    "fame": 135902
-   },
-   {
-    "serverId": "cain",
-    "characterId": "ac5d4a8f673e3e0ad3608f85f0e6a113",
-    "characterName": "소나타아티카",
-    "level": 115,
-    "jobName": "귀검사(여)",
-    "jobGrowName": "眞 소드마스터",
-    "fame": 135864
    }
   ],
   "diregie": [
@@ -1888,6 +1897,15 @@
     "jobName": "아처",
     "jobGrowName": "眞 뮤즈",
     "fame": 134978
+   },
+   {
+    "serverId": "siroco",
+    "characterId": "0038584f2be8e20ba798cbcc9a99effc",
+    "characterName": "황경쇠",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 어썰트",
+    "fame": 134703
    },
    {
     "serverId": "siroco",

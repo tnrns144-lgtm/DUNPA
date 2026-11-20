@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T09:18:10.083Z",
+ "updatedAt": "2026-11-20T11:15:51.992Z",
  "sale": [
   {
    "goodsNo": 4807555,
@@ -4667,6 +4667,56 @@
    ]
   },
   {
+   "goodsNo": 4752705,
+   "title": "남격투가 레어3부위 상급1부위",
+   "price": 31000000,
+   "jobs": [
+    "격투가(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "97ba3fb9b34b029318320288e640c653",
+     "itemName": "광호제의 포니테일머리[D타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 붉은빛 엠블렘[지능]",
+      "빛나는 붉은빛 엠블렘[지능]"
+     ]
+    },
+    {
+     "itemId": "bb648b7095c005b51ea5a5102872553d",
+     "itemName": "앱솔루트 다크 코트",
+     "slotName": "상의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[강권](남)",
+      "빛나는 녹색빛 엠블렘[HP MAX]"
+     ]
+    },
+    {
+     "itemId": "096bd214f931caae06fdc369011b15b7",
+     "itemName": "남격투가의 흑요석 갑옷 하의",
+     "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[뒷골목 싸움법]"
+     ]
+    },
+    {
+     "itemId": "aa53f118dbd755a79d80367d2918da46",
+     "itemName": "혼돈의 루시퍼 검은 날개",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    }
+   ]
+  },
+  {
    "goodsNo": 4741774,
    "title": "여마법사 레어1부위 상급7부위/피부",
    "price": 25000000,
@@ -5355,94 +5405,6 @@
      "slotName": "얼굴 아바타",
      "itemRarity": "커먼",
      "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4704772,
-   "title": "남귀검사 레어1부위 상급7부위",
-   "price": 28978999,
-   "jobs": [
-    "귀검사(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "54ecb0f00c53700c0b4a3ada968ce22f",
-     "itemName": "용맹한 골든임페리얼 투구",
-     "slotName": "모자 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]",
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "de5bf1fefa9454bc5ef2b1d663fa75fc",
-     "itemName": "번개 샤기컷[B타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "c8c0cdf813d2e5766724c7decc276b76",
-     "itemName": "액시온의 생체 마스크[D타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "624ce3c2ec02bd1062f87ef920719f2b",
-     "itemName": "액시온의 생체갑각 코트[D타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "118e1e250117f4e1eb3d8190b589ce11",
-     "itemName": "헬벤터의 찢어진 바지[C타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 녹색빛 엠블렘[마법크리티컬]",
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "70305dfe928c1dcabff443c6465f1887",
-     "itemName": "운명의 아르카나 죽음의 기사 부츠[D타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "d6f557fd20680d68a554ee8e4f33063b",
-     "itemName": "액시온의 어두운 연기[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "d56a972a99845fae1ff9f297cce6558c",
-     "itemName": "운명의 아르카나 죽음의 기사 벨트[B타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
     }
    ]
   },
@@ -7001,69 +6963,6 @@
      "itemId": "a197f1ae264613ee3fd3648c681c27d2",
      "itemName": "트릭스터의 큐티 리본장식[A타입]",
      "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4240554,
-   "title": "남귀검사 레어5부위 상급1부위/피부",
-   "price": 25555555,
-   "jobs": [
-    "귀검사(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "20d6374d6ab02076f7c32153568431c9",
-     "itemName": "레어 모자 클론 아바타",
-     "slotName": "모자 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "b65519c8d9dddfef1322cec04da4ad6e",
-     "itemName": "블루 인페르노 실버 울프 컷",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "7cec51ec9c74f27502ad0e9ef152e10d",
-     "itemName": "블루 인페르노 데빌 마스크",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "b49cc499b4aa4a536e75b743cc7761dd",
-     "itemName": "블루 인페르노 데빌 팬츠",
-     "slotName": "하의 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "91de8bb6e4a6c8339f0a6723db94ee90",
-     "itemName": "블루 인페르노 데빌 슈즈",
-     "slotName": "신발 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "21f74c8e3b16ee9c92408589da68cdee",
-     "itemName": "찢어진 털장식 요대[A타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "3ad96138a07c03a500e22851aba4fef3",
-     "itemName": "이누야샤의 피부",
-     "slotName": "스킨 아바타",
      "itemRarity": "커먼",
      "emblems": []
     }
