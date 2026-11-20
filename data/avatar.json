@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T15:12:03.261Z",
+ "updatedAt": "2026-11-20T16:12:36.192Z",
  "sale": [
   {
    "goodsNo": 4807803,
@@ -1951,34 +1951,6 @@
   },
   {
    "goodsNo": 4795249,
-   "title": "나이트 레어2부위",
-   "price": 4600000,
-   "jobs": [
-    "나이트"
-   ],
-   "avatarRarity": "레어",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "022f5e8ba524208c1624c5b5b8f8bd5d",
-     "itemName": "레드 인페르노 데빌 아머",
-     "slotName": "상의 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "48031f945a85ff1e3c285ce642500d40",
-     "itemName": "블루 인페르노 데빌 팬츠",
-     "slotName": "하의 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4795248,
    "title": "나이트 레어2부위",
    "price": 4600000,
    "jobs": [
