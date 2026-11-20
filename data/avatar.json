@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T23:56:46.234Z",
+ "updatedAt": "2026-11-20T01:26:17.812Z",
  "sale": [
   {
    "goodsNo": 4806927,
@@ -647,6 +647,88 @@
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4799236,
+   "title": "남프리스트 레어1부위 상급6부위",
+   "price": 26000000,
+   "jobs": [
+    "프리스트(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "28412d934aa0e381d0e5c93ff706775f",
+     "itemName": "축복의 반짝임",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "빛나는 붉은빛 엠블렘[힘]"
+     ]
+    },
+    {
+     "itemId": "2e99c77b57da0d9ad48ce45be839e10c",
+     "itemName": "마제스티 와일드 롱 헤어[A타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "찬란한 붉은빛 엠블렘[체력]",
+      "찬란한 붉은빛 엠블렘[체력]"
+     ]
+    },
+    {
+     "itemId": "f45c0c3e1c922c05c97fa35a98b96e87",
+     "itemName": "바칼의 눈동자와 타투[A타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "7c1eb1e0ceecc4661acf334c3b79b6f7",
+     "itemName": "올림푸스 포세이돈의 목장식 상의[A타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 녹색빛 엠블렘[MP MAX]",
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "af204fef47dcb821c72515e9c87ee827",
+     "itemName": "올림푸스 포세이돈의 하의[A타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "빛나는 녹색빛 엠블렘[HP MAX]"
+     ]
+    },
+    {
+     "itemId": "a78b6cf76e5da4bc508b28437f548aea",
+     "itemName": "진 퇴마사의 염주와 날개 옷[B타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "빛나는 다색 엠블렘[모든속성저항]"
+     ]
+    },
+    {
+     "itemId": "203dfe64661c22801b6c4cf9a0966665",
+     "itemName": "할로윈 악마의 도끼 [박쥐 타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
     }
    ]
   },
@@ -1397,75 +1479,6 @@
      "itemName": "블루 인페르노 데빌 팬츠",
      "slotName": "하의 아바타",
      "itemRarity": "레어",
-     "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4797419,
-   "title": "남귀검사 레어1부위 상급6부위",
-   "price": 17000000,
-   "jobs": [
-    "귀검사(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "b50d2e496efc8e61f405ad07438b5e52",
-     "itemName": "용맹한 다크임페리얼 투구",
-     "slotName": "모자 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "찬란한 붉은빛 엠블렘[힘]",
-      "찬란한 붉은빛 엠블렘[힘]"
-     ]
-    },
-    {
-     "itemId": "b9f7e5b4312fb499cef2ec59ed4edb2f",
-     "itemName": "액시온의 생체 마스크[A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "ecd28a2dd16fbe42a1541bb987bb83cc",
-     "itemName": "액시온의 생체갑각 코트[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "a9676a481dfe1291d19aabcc0772559e",
-     "itemName": "헬벤터의 찢어진 바지[C타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "화려한 듀얼 엠블렘[힘 + 물리크리티컬]",
-      "화려한 듀얼 엠블렘[힘 + 물리크리티컬]"
-     ]
-    },
-    {
-     "itemId": "fb19282bddd18f16ac633e06b48a6fa2",
-     "itemName": "운명의 아르카나 죽음의 기사 부츠[C타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "d6f557fd20680d68a554ee8e4f33063b",
-     "itemName": "액시온의 어두운 연기[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "a25ad2666540acb258234458456ad877",
-     "itemName": "운명의 아르카나 죽음의 기사 벨트[A타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
      "emblems": []
     }
    ]
@@ -5089,7 +5102,7 @@
    ]
   },
   {
-   "goodsNo": 4730532,
+   "goodsNo": 4730531,
    "title": "남마법사 상급2부위",
    "price": 2400000,
    "jobs": [

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T23:56:46.234Z",
+ "updatedAt": "2026-11-20T01:26:17.812Z",
  "all": [
   {
    "serverId": "cain",
@@ -1190,6 +1190,15 @@
    "fame": 134950
   },
   {
+   "serverId": "hilder",
+   "characterId": "d5425b2fc531bfced7e73d7fd540cd24",
+   "characterName": "담배핌",
+   "level": 115,
+   "jobName": "프리스트(여)",
+   "jobGrowName": "眞 크루세이더",
+   "fame": 134940
+  },
+  {
    "serverId": "bakal",
    "characterId": "d25051f7116373da1cead1b5da566079",
    "characterName": "순수",
@@ -2275,6 +2284,15 @@
    },
    {
     "serverId": "hilder",
+    "characterId": "d5425b2fc531bfced7e73d7fd540cd24",
+    "characterName": "담배핌",
+    "level": 115,
+    "jobName": "프리스트(여)",
+    "jobGrowName": "眞 크루세이더",
+    "fame": 134940
+   },
+   {
+    "serverId": "hilder",
     "characterId": "026c586858dfdad89f06396c332157f2",
     "characterName": "천월",
     "level": 115,
@@ -2308,6 +2326,15 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 패러메딕",
     "fame": 134638
+   },
+   {
+    "serverId": "hilder",
+    "characterId": "40c0ec33989329e585aa49eea1a039e3",
+    "characterName": "Pablo",
+    "level": 115,
+    "jobName": "격투가(여)",
+    "jobGrowName": "眞 넨마스터",
+    "fame": 134602
    }
   ],
   "anton": [
