@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T01:26:17.812Z",
+ "updatedAt": "2026-11-20T03:00:10.023Z",
  "all": [
   {
    "serverId": "cain",
@@ -603,6 +603,15 @@
    "jobName": "마법사(여)",
    "jobGrowName": "眞 배틀메이지",
    "fame": 136213
+  },
+  {
+   "serverId": "cain",
+   "characterId": "ff542f3e0df15862eb58c392a8111692",
+   "characterName": "Micca",
+   "level": 115,
+   "jobName": "도적",
+   "jobGrowName": "眞 사령술사",
+   "fame": 136207
   },
   {
    "serverId": "cain",
@@ -1482,6 +1491,15 @@
    },
    {
     "serverId": "cain",
+    "characterId": "ff542f3e0df15862eb58c392a8111692",
+    "characterName": "Micca",
+    "level": 115,
+    "jobName": "도적",
+    "jobGrowName": "眞 사령술사",
+    "fame": 136207
+   },
+   {
+    "serverId": "cain",
     "characterId": "80d5795bf263d0e142271bbe8e78b524",
     "characterName": "Rovyn",
     "level": 115,
@@ -1658,15 +1676,6 @@
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 넨마스터",
-    "fame": 135902
-   },
-   {
-    "serverId": "cain",
-    "characterId": "d7a9880acf4e5c2129ef26e6a18641b1",
-    "characterName": "센치한요원",
-    "level": 115,
-    "jobName": "총검사",
-    "jobGrowName": "眞 요원",
     "fame": 135902
    }
   ],
