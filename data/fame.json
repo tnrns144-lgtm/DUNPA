@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T16:12:36.192Z",
+ "updatedAt": "2026-11-20T17:14:00.691Z",
  "all": [
   {
    "serverId": "cain",
@@ -404,15 +404,6 @@
    "level": 115,
    "jobName": "귀검사(남)",
    "jobGrowName": "眞 검귀",
-   "fame": 136307
-  },
-  {
-   "serverId": "cain",
-   "characterId": "e435a0604a0ed09656e39bbb871c5a27",
-   "characterName": "스탑로스",
-   "level": 115,
-   "jobName": "프리스트(여)",
-   "jobGrowName": "眞 인파이터",
    "fame": 136307
   },
   {
@@ -1118,15 +1109,6 @@
    "fame": 135864
   },
   {
-   "serverId": "bakal",
-   "characterId": "747fc1fe2754ef3f248c7487624ffd65",
-   "characterName": "Spell",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 엘레멘탈마스터",
-   "fame": 135853
-  },
-  {
    "serverId": "cain",
    "characterId": "7979bcc2a3455f213036808a876da546",
    "characterName": "간판",
@@ -1428,15 +1410,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "e435a0604a0ed09656e39bbb871c5a27",
-    "characterName": "스탑로스",
-    "level": 115,
-    "jobName": "프리스트(여)",
-    "jobGrowName": "眞 인파이터",
-    "fame": 136307
-   },
-   {
-    "serverId": "cain",
     "characterId": "5d313f02f36d2c23c5b9bbbe45b1547d",
     "characterName": "커맨드의본좌",
     "level": 115,
@@ -1695,6 +1668,15 @@
     "jobName": "총검사",
     "jobGrowName": "眞 요원",
     "fame": 135908
+   },
+   {
+    "serverId": "cain",
+    "characterId": "b5ebc37fc6249335ff634d921caca716",
+    "characterName": "네골",
+    "level": 115,
+    "jobName": "격투가(여)",
+    "jobGrowName": "眞 넨마스터",
+    "fame": 135902
    }
   ],
   "diregie": [
@@ -2564,15 +2546,6 @@
     "jobName": "귀검사(여)",
     "jobGrowName": "眞 소드마스터",
     "fame": 135864
-   },
-   {
-    "serverId": "bakal",
-    "characterId": "747fc1fe2754ef3f248c7487624ffd65",
-    "characterName": "Spell",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 엘레멘탈마스터",
-    "fame": 135853
    },
    {
     "serverId": "bakal",
