@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T15:07:11.144Z",
+ "updatedAt": "2026-11-21T15:58:48.410Z",
  "all": [
   {
    "serverId": "cain",
@@ -2421,6 +2421,15 @@
    },
    {
     "serverId": "anton",
+    "characterId": "f5504077c532927e9ac4e4df85301c57",
+    "characterName": "니힐",
+    "level": 115,
+    "jobName": "나이트",
+    "jobGrowName": "眞 엘븐나이트",
+    "fame": 134681
+   },
+   {
+    "serverId": "anton",
     "characterId": "d7b55a21dd1fe9fd71355b6b0d91237d",
     "characterName": "셀루",
     "level": 115,
@@ -2435,15 +2444,6 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
-    "fame": 134643
-   },
-   {
-    "serverId": "anton",
-    "characterId": "f5504077c532927e9ac4e4df85301c57",
-    "characterName": "니힐",
-    "level": 115,
-    "jobName": "나이트",
-    "jobGrowName": "眞 엘븐나이트",
     "fame": 134643
    },
    {

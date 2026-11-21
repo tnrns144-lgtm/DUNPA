@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T15:07:11.144Z",
+ "updatedAt": "2026-11-21T15:58:48.410Z",
  "sale": [
   {
    "goodsNo": 4808238,
@@ -6762,6 +6762,38 @@
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4572017,
+   "title": "여프리스트 상급2부위",
+   "price": 2200000,
+   "jobs": [
+    "프리스트(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "e4eb1030ee2aada3dcdfc5ae8bd547cf",
+     "itemName": "블라섬의 보태니컬 슈즈[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "24ac29030121fb416db57aa6ec39ce3c",
+     "itemName": "바니바니 아라드 리본 초커[A타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
      ]
     }
    ]
