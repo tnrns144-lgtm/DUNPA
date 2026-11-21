@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T09:00:45.948Z",
+ "updatedAt": "2026-11-21T10:02:02.650Z",
  "all": [
   {
    "serverId": "cain",
@@ -1046,6 +1046,15 @@
    "fame": 135902
   },
   {
+   "serverId": "siroco",
+   "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
+   "characterName": "[환일]",
+   "level": 115,
+   "jobName": "귀검사(남)",
+   "jobGrowName": "眞 검귀",
+   "fame": 135886
+  },
+  {
    "serverId": "bakal",
    "characterId": "149440a852ced4df822a6cb5a4ae9548",
    "characterName": "=아스나=",
@@ -1843,6 +1852,15 @@
     "jobName": "거너(여)",
     "jobGrowName": "眞 레인저",
     "fame": 136038
+   },
+   {
+    "serverId": "siroco",
+    "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
+    "characterName": "[환일]",
+    "level": 115,
+    "jobName": "귀검사(남)",
+    "jobGrowName": "眞 검귀",
+    "fame": 135886
    },
    {
     "serverId": "siroco",
