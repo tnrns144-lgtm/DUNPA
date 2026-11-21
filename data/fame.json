@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T23:59:36.351Z",
+ "updatedAt": "2026-11-21T01:29:34.556Z",
  "all": [
   {
    "serverId": "cain",
@@ -488,15 +488,6 @@
    "fame": 136258
   },
   {
-   "serverId": "diregie",
-   "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
-   "characterName": "룡이찡~♥",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 마도학자",
-   "fame": 136243
-  },
-  {
    "serverId": "siroco",
    "characterId": "a50eb976ac6d12d7e44d8f9a5e4d01f3",
    "characterName": "SeventhFlow",
@@ -530,15 +521,6 @@
    "level": 115,
    "jobName": "거너(남)",
    "jobGrowName": "眞 레인저",
-   "fame": 136222
-  },
-  {
-   "serverId": "siroco",
-   "characterId": "702f227b57a6ff5f11a30947b9243e77",
-   "characterName": "속옷마녀",
-   "level": 115,
-   "jobName": "마법사(여)",
-   "jobGrowName": "眞 마도학자",
    "fame": 136222
   },
   {
@@ -1745,15 +1727,6 @@
    },
    {
     "serverId": "diregie",
-    "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
-    "characterName": "룡이찡~♥",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 마도학자",
-    "fame": 136243
-   },
-   {
-    "serverId": "diregie",
     "characterId": "a15baef72c382b1322eea0b3de53a2df",
     "characterName": "메카닉(남)",
     "level": 115,
@@ -1824,15 +1797,6 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 레인저",
-    "fame": 136222
-   },
-   {
-    "serverId": "siroco",
-    "characterId": "702f227b57a6ff5f11a30947b9243e77",
-    "characterName": "속옷마녀",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 마도학자",
     "fame": 136222
    },
    {
