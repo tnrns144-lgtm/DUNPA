@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T07:28:13.267Z",
+ "updatedAt": "2026-11-21T09:00:45.948Z",
  "categories": [
   {
    "id": "material",
@@ -10,66 +10,66 @@
      "itemName": "무색 큐브 조각",
      "itemRarity": "언커먼",
      "itemType": "재료",
-     "avgPrice": 34,
-     "minPrice": 32,
-     "volume": 8844375,
+     "avgPrice": 33,
+     "minPrice": 31,
+     "volume": 7950190,
      "prevAvg": 33,
-     "changePct": 4.044782786525413
-    },
-    {
-     "itemId": "27a5877768a40a3a0eccc493d0a53b9b",
-     "itemName": "광휘의 소울 결정",
-     "itemRarity": "레전더리",
-     "itemType": "부스터",
-     "avgPrice": 24208,
-     "minPrice": 10777,
-     "volume": 3709,
-     "prevAvg": 17978,
-     "changePct": 34.65446414075308
+     "changePct": 1.4355822332738695
     },
     {
      "itemId": "c7d845c65ab9dbcff6e55dc910fbea87",
      "itemName": "에픽 소울 결정",
      "itemRarity": "에픽",
      "itemType": "부스터",
-     "avgPrice": 1244259,
-     "minPrice": 1100000,
-     "volume": 129,
+     "avgPrice": 1168765,
+     "minPrice": 900000,
+     "volume": 206,
      "prevAvg": 1229052,
-     "changePct": 1.2372976088686096
+     "changePct": -4.90519822539681
+    },
+    {
+     "itemId": "c6947ff630cc59aebdcbabfb449258d1",
+     "itemName": "레전더리 소울 결정",
+     "itemRarity": "레전더리",
+     "itemType": "부스터",
+     "avgPrice": 54703,
+     "minPrice": 48000,
+     "volume": 292,
+     "prevAvg": 54051,
+     "changePct": 1.205431805527148
+    },
+    {
+     "itemId": "f1afc13118b2b07ec1e3b8c2f1958b03",
+     "itemName": "모순의 결정체",
+     "itemRarity": "레어",
+     "itemType": "재료",
+     "avgPrice": 35123,
+     "minPrice": 35000,
+     "volume": 516,
+     "prevAvg": 34360,
+     "changePct": 2.2216600788730454
+    },
+    {
+     "itemId": "27a5877768a40a3a0eccc493d0a53b9b",
+     "itemName": "광휘의 소울 결정",
+     "itemRarity": "레전더리",
+     "itemType": "부스터",
+     "avgPrice": 18225,
+     "minPrice": 15000,
+     "volume": 644,
+     "prevAvg": 17978,
+     "changePct": 1.3718112337439348
     },
     {
      "itemId": "fbdf88559ec0414339d1b4d089b6bd62",
      "itemName": "황금 큐브 조각",
      "itemRarity": "레어",
      "itemType": "재료",
-     "avgPrice": 756,
-     "minPrice": 700,
-     "volume": 16437,
+     "avgPrice": 758,
+     "minPrice": 722,
+     "volume": 2060,
      "prevAvg": 761,
-     "changePct": -0.6544240075014183
-    },
-    {
-     "itemId": "0620c107b1aae1f3a6cf9eee3aaf43d7",
-     "itemName": "유니크 소울 결정",
-     "itemRarity": "유니크",
-     "itemType": "부스터",
-     "avgPrice": 2262,
-     "minPrice": 1900,
-     "volume": 542,
-     "prevAvg": 2276,
-     "changePct": -0.6021439827754947
-    },
-    {
-     "itemId": "d9bc96637286b4f5449d21d36e44675d",
-     "itemName": "흑색 큐브 조각",
-     "itemRarity": "언커먼",
-     "itemType": "재료",
-     "avgPrice": 19,
-     "minPrice": 17,
-     "volume": 9340,
-     "prevAvg": 18,
-     "changePct": 3.1739233880561497
+     "changePct": -0.45826263347919616
     }
    ]
   },
@@ -82,11 +82,11 @@
      "itemName": "순수한 증폭서",
      "itemRarity": "레어",
      "itemType": "기타",
-     "avgPrice": 11533404,
+     "avgPrice": 11519999,
      "minPrice": 11449999,
-     "volume": 47,
+     "volume": 41,
      "prevAvg": 11652999,
-     "changePct": -1.0263048840246214
+     "changePct": -1.141333325229062
     },
     {
      "itemId": "cc319038d2f601b56aa20b2a4754e0ad",
@@ -143,64 +143,64 @@
      "itemName": "적아 울라드 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 606143,
-     "minPrice": 579999,
-     "volume": 71,
+     "avgPrice": 644235,
+     "minPrice": 615000,
+     "volume": 111,
      "prevAvg": 689904,
-     "changePct": -12.140935958756776
+     "changePct": -6.619594443117719
     },
     {
      "itemId": "b91b4a562579211afc372fc93ad2097f",
      "itemName": "땅지기 카메린 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 633563,
-     "minPrice": 577077,
-     "volume": 37,
+     "avgPrice": 647117,
+     "minPrice": 640000,
+     "volume": 66,
      "prevAvg": 689804,
-     "changePct": -8.15313068953234
+     "changePct": -6.188224656876622
     },
     {
-     "itemId": "b62cd7a12de35f28cc1332b1ef609eb8",
-     "itemName": "실반 멜로디 카드",
-     "itemRarity": "레어",
-     "itemType": "재료",
-     "avgPrice": 4818000,
-     "minPrice": 4818000,
-     "volume": 7,
-     "prevAvg": null,
-     "changePct": null
-    },
-    {
-     "itemId": "3e35d98c4bcbba4ba074a969c333e213",
-     "itemName": "비명을 머금은 분노 카드",
+     "itemId": "9f765670c9fdefeec6a7b31571748d04",
+     "itemName": "폭음 크래시머 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 6722962,
-     "minPrice": 5444443,
-     "volume": 3,
-     "prevAvg": null,
-     "changePct": null
+     "avgPrice": 3774250,
+     "minPrice": 2698000,
+     "volume": 4,
+     "prevAvg": 1941253,
+     "changePct": 94.42338273269894
     },
     {
-     "itemId": "8a4cb5d8c2aadcaa84bc433f5aa7933b",
-     "itemName": "정직한 픽툼 카드",
+     "itemId": "7483aac25864738f6fe621612cedda2a",
+     "itemName": "마법 같은 행운 엘리브 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 7233333,
-     "minPrice": 4800000,
-     "volume": 3,
-     "prevAvg": 4600000,
-     "changePct": 57.24637681159419
+     "avgPrice": 30135000,
+     "minPrice": 28650000,
+     "volume": 4,
+     "prevAvg": 27863889,
+     "changePct": 8.150731400056898
     },
     {
-     "itemId": "2e2f841e760d7d14feb08f0cc5791b65",
-     "itemName": "연구소장 엘디르 카드",
+     "itemId": "d764ad320566b4ecff5931574a148bb7",
+     "itemName": "거짓의 베리디쿠스 카드",
      "itemRarity": "레전더리",
      "itemType": "전문직업 재료",
-     "avgPrice": 6612592,
-     "minPrice": 4000000,
-     "volume": 3,
+     "avgPrice": 10349998,
+     "minPrice": 8500000,
+     "volume": 4,
+     "prevAvg": 7572500,
+     "changePct": 36.678738857708815
+    },
+    {
+     "itemId": "70152fcd021fcc1d1a304a1fadd0bf56",
+     "itemName": "파고드는 스펀저 카드",
+     "itemRarity": "레전더리",
+     "itemType": "전문직업 재료",
+     "avgPrice": 824997,
+     "minPrice": 650000,
+     "volume": 4,
      "prevAvg": null,
      "changePct": null
     }
@@ -213,44 +213,44 @@
    "itemName": "무색 큐브 조각",
    "itemRarity": "언커먼",
    "itemType": "재료",
-   "avgPrice": 34,
-   "minPrice": 32,
-   "volume": 8844375,
+   "avgPrice": 33,
+   "minPrice": 31,
+   "volume": 7950190,
    "prevAvg": 33,
-   "changePct": 4.044782786525413
+   "changePct": 1.4355822332738695
   },
   {
    "itemId": "f1afc13118b2b07ec1e3b8c2f1958b03",
    "itemName": "모순의 결정체",
    "itemRarity": "레어",
    "itemType": "재료",
-   "avgPrice": 35440,
-   "minPrice": 33000,
-   "volume": 5212,
+   "avgPrice": 35158,
+   "minPrice": 34000,
+   "volume": 3644,
    "prevAvg": 34360,
-   "changePct": 3.1425682605825096
+   "changePct": 2.322549450577536
   },
   {
    "itemId": "8bc063c2b80179bc002f7dfb8203c4ab",
    "itemName": "장비 보호권",
    "itemRarity": "언커먼",
    "itemType": "재료",
-   "avgPrice": 4453033,
-   "minPrice": 4388888,
+   "avgPrice": 4446644,
+   "minPrice": 4350000,
    "volume": 100,
    "prevAvg": 4541290,
-   "changePct": -1.9434356757661329
+   "changePct": -2.0841170680577505
   },
   {
    "itemId": "55be75a1c024aac3ef84ed3bed5b8db9",
    "itemName": "증폭 보호권",
    "itemRarity": "언커먼",
    "itemType": "재료",
-   "avgPrice": 13508276,
-   "minPrice": 13000000,
-   "volume": 147,
+   "avgPrice": 13432149,
+   "minPrice": 12979999,
+   "volume": 152,
    "prevAvg": 13512070,
-   "changePct": -0.028076182771307395
+   "changePct": -0.5914799937350397
   }
  ],
  "missing": []

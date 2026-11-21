@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T07:28:13.267Z",
+ "updatedAt": "2026-11-21T09:00:45.948Z",
  "sale": [
   {
    "goodsNo": 4808024,
@@ -3763,89 +3763,6 @@
    ]
   },
   {
-   "goodsNo": 4780035,
-   "title": "여귀검사 레어1부위 상급7부위/피부",
-   "price": 29879999,
-   "jobs": [
-    "귀검사(여)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "1da153bac34fa572a71e09e6022d9a3b",
-     "itemName": "왕립 아라드 고교 리턴즈 고양이 귀[B타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "db1e8052b016869a89270de720ad571c",
-     "itemName": "블랙네뷸라 헤어",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "화려한 붉은빛 엠블렘[힘]",
-      "화려한 붉은빛 엠블렘[힘]"
-     ]
-    },
-    {
-     "itemId": "044bcbe19b284f26b18c0b27e5ab18de",
-     "itemName": "리벨리온의 빛나는 이어링[A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "9aee437c88d59ae2410821567a17b9f9",
-     "itemName": "아시아 여행 일본 전통의상 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "f7b1a31a5b010a0994866b65b926e043",
-     "itemName": "아시아 여행 일본 전통 하카마[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "579d629b0177c7e5373697c8f28ef6bb",
-     "itemName": "워터밤 페스타 플라워 발찌 & 패디큐어[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "0677e39bbeffa96818d1ea1dbb868263",
-     "itemName": "수영 마니아 하트 문신",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 노란빛 엠블렘[공격속도]",
-      "빛나는 노란빛 엠블렘[공격속도]"
-     ]
-    },
-    {
-     "itemId": "b7116b8b2fd44f6f70df7a3c80075ff8",
-     "itemName": "아시아 여행 일본 리본장식 벨트[A타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "3caa5b92f79bc82bc3fc3874120a8387",
-     "itemName": "바니바니 아라드 순백의 피부[A타입]",
-     "slotName": "스킨 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
    "goodsNo": 4778635,
    "title": "여마법사 레어1부위 상급7부위/피부",
    "price": 28000000,
@@ -4916,6 +4833,56 @@
      "itemId": "0b2c20c39ca8155c72d5af5b65be3644",
      "itemName": "레드 인페르노 데빌 팬츠",
      "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4752705,
+   "title": "남격투가 레어3부위 상급1부위",
+   "price": 31000000,
+   "jobs": [
+    "격투가(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "97ba3fb9b34b029318320288e640c653",
+     "itemName": "광호제의 포니테일머리[D타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 붉은빛 엠블렘[지능]",
+      "빛나는 붉은빛 엠블렘[지능]"
+     ]
+    },
+    {
+     "itemId": "bb648b7095c005b51ea5a5102872553d",
+     "itemName": "앱솔루트 다크 코트",
+     "slotName": "상의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[강권](남)",
+      "빛나는 녹색빛 엠블렘[HP MAX]"
+     ]
+    },
+    {
+     "itemId": "096bd214f931caae06fdc369011b15b7",
+     "itemName": "남격투가의 흑요석 갑옷 하의",
+     "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[뒷골목 싸움법]"
+     ]
+    },
+    {
+     "itemId": "aa53f118dbd755a79d80367d2918da46",
+     "itemName": "혼돈의 루시퍼 검은 날개",
+     "slotName": "목가슴 아바타",
      "itemRarity": "레어",
      "emblems": []
     }
