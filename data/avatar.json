@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T14:15:25.960Z",
+ "updatedAt": "2026-11-21T15:07:11.144Z",
  "sale": [
   {
    "goodsNo": 4808238,
@@ -588,118 +588,6 @@
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4806927,
-   "title": "남프리스트 레어1부위 상급1부위",
-   "price": 9000000,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "06478118058b0764f77f3eefa02a13a6",
-     "itemName": "아라드 코스프레 닐바스 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 녹색빛 엠블렘[HP MAX]",
-      "빛나는 녹색빛 엠블렘[HP MAX]"
-     ]
-    },
-    {
-     "itemId": "48f7096cf13d822cb1aeaf64ffdcc14a",
-     "itemName": "레드 인페르노 팬츠",
-     "slotName": "하의 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "플래티넘 엠블렘[영광의 축복]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4803681,
-   "title": "남거너 레어2부위 상급6부위",
-   "price": 15000000,
-   "jobs": [
-    "거너(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "c97f79143ff94e5f8599b7d9870200d6",
-     "itemName": "서핑 아라드 투명 아바타 모자",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "eab4fee4c42c96176d3163283469a164",
-     "itemName": "부스스한 단발머리[D타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "19563525ddce7c0343967b2aca146e4a",
-     "itemName": "트윈 피어싱[A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "화려한 노란빛 엠블렘[캐스트속도]",
-      "화려한 노란빛 엠블렘[캐스트속도]"
-     ]
-    },
-    {
-     "itemId": "8e8340c357b75324c13cfc1d0c8dc9f3",
-     "itemName": "턱시도[D타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "d1f5ca9fe37dbf6f8f8791bc2e32cd7a",
-     "itemName": "턱시도팬츠[D타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "e20a5fafebd730cc01e135e85d9eda76",
-     "itemName": "스플릿구두[D타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "ce694451ded5ccc272e47fe44da681a1",
-     "itemName": "청동 체인장식",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "화려한 노란빛 엠블렘[공격속도]",
-      "화려한 노란빛 엠블렘[공격속도]"
-     ]
-    },
-    {
-     "itemId": "2b54759bf7a328bccd56c20bddc6bf0c",
-     "itemName": "갈색 가죽홀스터",
-     "slotName": "허리 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "화려한 푸른빛 엠블렘[이동속도]",
-      "화려한 푸른빛 엠블렘[이동속도]"
-     ]
     }
    ]
   },
