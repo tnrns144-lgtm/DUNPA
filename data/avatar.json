@@ -1,78 +1,6 @@
 {
- "updatedAt": "2026-11-21T10:02:02.650Z",
+ "updatedAt": "2026-11-21T11:00:18.252Z",
  "sale": [
-  {
-   "goodsNo": 4808024,
-   "title": "여프리스트 레어1부위 상급6부위",
-   "price": 30000000,
-   "jobs": [
-    "프리스트(여)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [
-    "만화",
-    "공허한"
-   ],
-   "parts": [
-    {
-     "itemId": "06cd6e7bc489698f7e9b6c1a8d9b6a0d",
-     "itemName": "스포티걸의 반묶음머리[C타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "ba01d77fd5205cbe549d037c88760b38",
-     "itemName": "묵호군자의 렌즈 [A타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 노란빛 엠블렘[공격속도]",
-      "빛나는 노란빛 엠블렘[공격속도]"
-     ]
-    },
-    {
-     "itemId": "baaf5f97e09bd6b5d5923e84b9540d74",
-     "itemName": "루실의 대심문관 상의",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "a54d8698aec5f789c91c47c2f1a83f6f",
-     "itemName": "세라핌의 라인 팬츠[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "79f34025c2e1f4ba8446ecd3bd1e7243",
-     "itemName": "헬카이트의 금속 부츠[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "0dc1dcdecccb83c9b4e90376841a2497",
-     "itemName": "여프리스트의 흑요석 갑옷 어깨",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "화려한 노란빛 엠블렘[공격속도]",
-      "화려한 노란빛 엠블렘[공격속도]"
-     ]
-    },
-    {
-     "itemId": "31835d166bfd256275fbfc87e53559b2",
-     "itemName": "묵호군자의 화려한 허리 장식[B타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
   {
    "goodsNo": 4808022,
    "title": "여프리스트 레어2부위 상급3부위",
@@ -4357,6 +4285,96 @@
      "emblems": [
       "빛나는 다색 엠블렘[인벤토리]",
       "듀얼 드림 파이터 엠블렘[캐스트속도 + 적중률]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4768143,
+   "title": "남거너 레어1부위 상급7부위",
+   "price": 29999999,
+   "jobs": [
+    "거너(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "41c7087e4d9381085eee7412e24aee27",
+     "itemName": "아라드 코스프레 엔조시포 헤어핀[A타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 붉은빛 엠블렘[지능]",
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "8d627f52dbfa0ec0b5e8c1685ae428d7",
+     "itemName": "아라드 코스프레 엔조시포 헤어[B타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 붉은빛 엠블렘[힘]",
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "16c024adab7e485bbec37772cc996dad",
+     "itemName": "간지나는 수염[B타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "d1139d6dabd9b7f7f1088bbd55d9c2a8",
+     "itemName": "래피드 수트",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "7f739084a51e77c6d4d2a6d6445f59eb",
+     "itemName": "노블레스 제복 하의 [B타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 녹색빛 엠블렘[마법크리티컬]",
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "282d00fead1f7f27bda736b5b6e8594e",
+     "itemName": "진 스핏파이어의 제복 부츠[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "27b6e7077f009a0eb39f3f8a4847b997",
+     "itemName": "노블레스 루비 망토",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "찬란한 노란빛 엠블렘[공격속도]",
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "38eed92725b948eb794a3f88d83b02f0",
+     "itemName": "휴스턴 로케츠 스타일 밴드[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
      ]
     }
    ]

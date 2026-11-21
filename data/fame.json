@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T10:02:02.650Z",
+ "updatedAt": "2026-11-21T11:00:18.252Z",
  "all": [
   {
    "serverId": "cain",
@@ -170,15 +170,6 @@
    "level": 115,
    "jobName": "격투가(여)",
    "jobGrowName": "眞 스트리트파이터",
-   "fame": 136501
-  },
-  {
-   "serverId": "cain",
-   "characterId": "82a61ac21fa1a12caf639644bf50c524",
-   "characterName": "별빛하울링",
-   "level": 115,
-   "jobName": "아처",
-   "jobGrowName": "眞 트래블러",
    "fame": 136501
   },
   {
@@ -1320,15 +1311,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "82a61ac21fa1a12caf639644bf50c524",
-    "characterName": "별빛하울링",
-    "level": 115,
-    "jobName": "아처",
-    "jobGrowName": "眞 트래블러",
-    "fame": 136501
-   },
-   {
-    "serverId": "cain",
     "characterId": "50bad18269253200689d8136adefe53a",
     "characterName": "금강신권",
     "level": 115,
@@ -1676,6 +1658,15 @@
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 넨마스터",
+    "fame": 135902
+   },
+   {
+    "serverId": "cain",
+    "characterId": "d7a9880acf4e5c2129ef26e6a18641b1",
+    "characterName": "센치한요원",
+    "level": 115,
+    "jobName": "총검사",
+    "jobGrowName": "眞 요원",
     "fame": 135902
    }
   ],
