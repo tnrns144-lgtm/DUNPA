@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T11:57:42.818Z",
+ "updatedAt": "2026-11-21T13:15:35.665Z",
  "all": [
   {
    "serverId": "cain",
@@ -1002,15 +1002,6 @@
   },
   {
    "serverId": "cain",
-   "characterId": "490f897136f1087bc1c6264c1b110ef3",
-   "characterName": "르베리오",
-   "level": 115,
-   "jobName": "총검사",
-   "jobGrowName": "眞 요원",
-   "fame": 135908
-  },
-  {
-   "serverId": "cain",
    "characterId": "b5ebc37fc6249335ff634d921caca716",
    "characterName": "네골",
    "level": 115,
@@ -1662,15 +1653,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "490f897136f1087bc1c6264c1b110ef3",
-    "characterName": "르베리오",
-    "level": 115,
-    "jobName": "총검사",
-    "jobGrowName": "眞 요원",
-    "fame": 135908
-   },
-   {
-    "serverId": "cain",
     "characterId": "b5ebc37fc6249335ff634d921caca716",
     "characterName": "네골",
     "level": 115,
@@ -1686,6 +1668,15 @@
     "jobName": "총검사",
     "jobGrowName": "眞 요원",
     "fame": 135902
+   },
+   {
+    "serverId": "cain",
+    "characterId": "ac5d4a8f673e3e0ad3608f85f0e6a113",
+    "characterName": "소나타아티카",
+    "level": 115,
+    "jobName": "귀검사(여)",
+    "jobGrowName": "眞 소드마스터",
+    "fame": 135864
    }
   ],
   "diregie": [
@@ -2427,15 +2418,6 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 스핏파이어",
     "fame": 134748
-   },
-   {
-    "serverId": "anton",
-    "characterId": "d7b55a21dd1fe9fd71355b6b0d91237d",
-    "characterName": "셀루",
-    "level": 115,
-    "jobName": "마법사(여)",
-    "jobGrowName": "眞 인챈트리스",
-    "fame": 134668
    },
    {
     "serverId": "anton",
