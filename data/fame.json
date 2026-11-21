@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T11:00:18.252Z",
+ "updatedAt": "2026-11-21T11:57:42.818Z",
  "all": [
   {
    "serverId": "cain",
@@ -74,15 +74,6 @@
    "fame": 136685
   },
   {
-   "serverId": "bakal",
-   "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
-   "characterName": "라독커",
-   "level": 115,
-   "jobName": "귀검사(남)",
-   "jobGrowName": "眞 웨펀마스터",
-   "fame": 136685
-  },
-  {
    "serverId": "cain",
    "characterId": "25fc2f732d43848eb6283abe0f706d06",
    "characterName": "삼각형",
@@ -144,6 +135,15 @@
    "jobName": "도적",
    "jobGrowName": "眞 로그",
    "fame": 136592
+  },
+  {
+   "serverId": "bakal",
+   "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
+   "characterName": "라독커",
+   "level": 115,
+   "jobName": "귀검사(남)",
+   "jobGrowName": "眞 웨펀마스터",
+   "fame": 136585
   },
   {
    "serverId": "hilder",
@@ -521,6 +521,15 @@
    "level": 115,
    "jobName": "거너(남)",
    "jobGrowName": "眞 레인저",
+   "fame": 136222
+  },
+  {
+   "serverId": "siroco",
+   "characterId": "702f227b57a6ff5f11a30947b9243e77",
+   "characterName": "속옷마녀",
+   "level": 115,
+   "jobName": "마법사(여)",
+   "jobGrowName": "眞 마도학자",
    "fame": 136222
   },
   {
@@ -1181,6 +1190,15 @@
    "fame": 134978
   },
   {
+   "serverId": "siroco",
+   "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
+   "characterName": "전뮤",
+   "level": 115,
+   "jobName": "아처",
+   "jobGrowName": "眞 뮤즈",
+   "fame": 134978
+  },
+  {
    "serverId": "hilder",
    "characterId": "9f33782351514503704109e6b258e2ec",
    "characterName": "로망캔슬",
@@ -1819,6 +1837,15 @@
    },
    {
     "serverId": "siroco",
+    "characterId": "702f227b57a6ff5f11a30947b9243e77",
+    "characterName": "속옷마녀",
+    "level": 115,
+    "jobName": "마법사(여)",
+    "jobGrowName": "眞 마도학자",
+    "fame": 136222
+   },
+   {
+    "serverId": "siroco",
     "characterId": "92a86f9a1c1bf016ee8910c57b7e2f5c",
     "characterName": "인연",
     "level": 115,
@@ -1852,6 +1879,15 @@
     "jobName": "귀검사(남)",
     "jobGrowName": "眞 검귀",
     "fame": 135886
+   },
+   {
+    "serverId": "siroco",
+    "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
+    "characterName": "전뮤",
+    "level": 115,
+    "jobName": "아처",
+    "jobGrowName": "眞 뮤즈",
+    "fame": 134978
    },
    {
     "serverId": "siroco",
@@ -2446,7 +2482,7 @@
     "level": 115,
     "jobName": "귀검사(남)",
     "jobGrowName": "眞 웨펀마스터",
-    "fame": 136685
+    "fame": 136585
    },
    {
     "serverId": "bakal",
