@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T09:18:10.083Z",
+ "updatedAt": "2026-11-21T06:08:50.879Z",
  "jobs": [
   {
    "id": "df3870efe8e8754011cd12fa03cd275f",
@@ -8,8 +8,8 @@
    "growName": "웨펀마스터",
    "finalName": "眞 웨펀마스터",
    "sample": 10,
-   "topFame": 136647,
-   "avgFame": 135183,
+   "topFame": 136685,
+   "avgFame": 135187,
    "rankers": [
     {
      "serverId": "bakal",
@@ -18,7 +18,7 @@
      "level": 115,
      "jobName": "귀검사(남)",
      "jobGrowName": "眞 웨펀마스터",
-     "fame": 136647
+     "fame": 136685
     },
     {
      "serverId": "cain",
@@ -302,9 +302,18 @@
    "growName": "소울브링어",
    "finalName": "眞 소울브링어",
    "sample": 10,
-   "topFame": 136222,
-   "avgFame": 134897,
+   "topFame": 136647,
+   "avgFame": 135065,
    "rankers": [
+    {
+     "serverId": "cain",
+     "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
+     "characterName": "분노",
+     "level": 115,
+     "jobName": "귀검사(남)",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 136647
+    },
     {
      "serverId": "bakal",
      "characterId": "b9537b13c96d4b6fa0c2181777614f6e",
@@ -331,15 +340,6 @@
      "jobName": "귀검사(남)",
      "jobGrowName": "眞 소울브링어",
      "fame": 135968
-    },
-    {
-     "serverId": "cain",
-     "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
-     "characterName": "분노",
-     "level": 115,
-     "jobName": "귀검사(남)",
-     "jobGrowName": "眞 소울브링어",
-     "fame": 135027
     },
     {
      "serverId": "cain",
@@ -393,7 +393,7 @@
      "level": 115,
      "jobName": "귀검사(남)",
      "jobGrowName": "眞 소울브링어",
-     "fame": 132944
+     "fame": 133009
     }
    ],
    "sets": [
@@ -505,7 +505,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     }
    ],
    "title": [
@@ -570,21 +570,21 @@
    ],
    "weapon": [
     {
-     "itemId": "a37cd02050eb438ba35d3ca6baeba558",
-     "itemName": "카론의 검",
+     "itemId": "7b2c1733cd628a57abdd14d4c23ffbf6",
+     "itemName": "셋쇼마루의 무기",
      "itemRarity": "",
      "count": 2
     },
     {
-     "itemId": "5f2382e4f2b072a36bd1928c9353042a",
-     "itemName": "영검 구귀문",
+     "itemId": "bbc1f68238beb55987c254d12526b2ab",
+     "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
      "itemRarity": "",
-     "count": 1
+     "count": 2
     },
     {
-     "itemId": "746b750937df93501779a2872bfddaad",
-     "itemName": "레어 무기 클론 아바타[45Lv]",
-     "itemRarity": "레어",
+     "itemId": "a37cd02050eb438ba35d3ca6baeba558",
+     "itemName": "카론의 검",
+     "itemRarity": "",
      "count": 1
     }
    ]
@@ -799,7 +799,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     }
    ],
    "title": [
@@ -867,7 +867,7 @@
      "itemId": "bbc1f68238beb55987c254d12526b2ab",
      "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
      "itemRarity": "",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "161658e37a9442bab871b18bb703805a",
@@ -891,7 +891,7 @@
    "finalName": "眞 아수라",
    "sample": 10,
    "topFame": 136432,
-   "avgFame": 134587,
+   "avgFame": 134588,
    "rankers": [
     {
      "serverId": "hilder",
@@ -954,7 +954,7 @@
      "level": 115,
      "jobName": "귀검사(남)",
      "jobGrowName": "眞 아수라",
-     "fame": 134295
+     "fame": 134307
     },
     {
      "serverId": "bakal",
@@ -989,13 +989,13 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 8
+     "count": 7
     },
     {
      "itemName": "한계를 넘어선 에너지 세트",
      "itemId": "416b382789bc0b50fe07087a63b2a0e9",
      "itemRarity": "에픽",
-     "count": 2
+     "count": 3
     }
    ],
    "gear": [
@@ -1013,7 +1013,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "SHOULDER",
@@ -1021,7 +1021,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "PANTS",
@@ -1029,7 +1029,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "SHOES",
@@ -1037,7 +1037,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "WAIST",
@@ -1045,7 +1045,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "AMULET",
@@ -1053,7 +1053,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "WRIST",
@@ -1061,7 +1061,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 8
+     "count": 7
     },
     {
      "slotId": "RING",
@@ -1093,7 +1093,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     }
    ],
    "title": [
@@ -1185,7 +1185,7 @@
    "finalName": "眞 검귀",
    "sample": 10,
    "topFame": 136307,
-   "avgFame": 134286,
+   "avgFame": 133983,
    "rankers": [
     {
      "serverId": "prey",
@@ -1195,15 +1195,6 @@
      "jobName": "귀검사(남)",
      "jobGrowName": "眞 검귀",
      "fame": 136307
-    },
-    {
-     "serverId": "siroco",
-     "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
-     "characterName": "[환일]",
-     "level": 115,
-     "jobName": "귀검사(남)",
-     "jobGrowName": "眞 검귀",
-     "fame": 135886
     },
     {
      "serverId": "hilder",
@@ -1276,6 +1267,15 @@
      "jobName": "귀검사(남)",
      "jobGrowName": "眞 검귀",
      "fame": 132878
+    },
+    {
+     "serverId": "bakal",
+     "characterId": "db5d74552c35a01f7b1cf0e638bc0be5",
+     "characterName": "배굽바",
+     "level": 115,
+     "jobName": "귀검사(남)",
+     "jobGrowName": "眞 검귀",
+     "fame": 132856
     }
    ],
    "sets": [
@@ -1299,7 +1299,7 @@
      "itemId": "cd49b55e74254b96f8f6ee8dcc5e60e7",
      "itemName": "요도 : 날뛰는 흑혈",
      "itemRarity": "태초",
-     "count": 8
+     "count": 9
     },
     {
      "slotId": "JACKET",
@@ -1379,7 +1379,7 @@
      "itemId": "df77236c51ea1274a3deb79c3e470695",
      "itemName": "우아한 기품의 향수",
      "itemRarity": "태초",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "EARRING",
@@ -1387,7 +1387,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 8
     }
    ],
    "title": [
@@ -1395,7 +1395,7 @@
      "itemId": "7ab3ca045ffc15aa75bf43f183c72eb6",
      "itemName": "순백의 눈꽃 결정[35Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 4
     },
     {
      "itemId": "6f008c0c92c0346b114d2ffdafb92292",
@@ -1415,7 +1415,7 @@
      "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
      "itemName": "운명을 담는 여신[35Lv]",
      "itemRarity": "레어",
-     "count": 7
+     "count": 6
     },
     {
      "itemId": "f3d5ea283fdac01378ac70c7b2863d51",
@@ -1435,13 +1435,19 @@
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 7
+     "count": 6
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
      "count": 3
+    },
+    {
+     "itemId": "b115f9551fd7e226df474a14607b05ae",
+     "itemName": "루미너스 게이트",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "weapon": [
@@ -1452,16 +1458,16 @@
      "count": 2
     },
     {
-     "itemId": "7b2c1733cd628a57abdd14d4c23ffbf6",
-     "itemName": "셋쇼마루의 무기",
-     "itemRarity": "",
-     "count": 2
-    },
-    {
      "itemId": "912140b7be7db860b74dc7e17a5de704",
      "itemName": "레어 무기 클론 아바타[80Lv]",
      "itemRarity": "레어",
      "count": 2
+    },
+    {
+     "itemId": "b9a17efbd899889c8b96ff39f7e5be8c",
+     "itemName": "악몽을 이겨낸 구속된 공작의 아귀",
+     "itemRarity": "",
+     "count": 1
     }
    ]
   },
@@ -1473,7 +1479,7 @@
    "finalName": "眞 넨마스터",
    "sample": 10,
    "topFame": 136394,
-   "avgFame": 135120,
+   "avgFame": 135125,
    "rankers": [
     {
      "serverId": "casillas",
@@ -1548,6 +1554,15 @@
      "fame": 134344
     },
     {
+     "serverId": "bakal",
+     "characterId": "901e13e5fed93acfb8624f6f173bcb85",
+     "characterName": "시계",
+     "level": 115,
+     "jobName": "격투가(여)",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 134322
+    },
+    {
      "serverId": "diregie",
      "characterId": "c2b0de16d8d3d33389fae180bf9fdff0",
      "characterName": "고기왕박민규",
@@ -1555,15 +1570,6 @@
      "jobName": "격투가(여)",
      "jobGrowName": "眞 넨마스터",
      "fame": 134288
-    },
-    {
-     "serverId": "siroco",
-     "characterId": "8dfa7f59353fe01f933ade631292876a",
-     "characterName": "란센조",
-     "level": 115,
-     "jobName": "격투가(여)",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 134266
     }
    ],
    "sets": [
@@ -1587,7 +1593,7 @@
      "itemId": "df0c0f3e9e5c83502128c6f6b0fc00d8",
      "itemName": "천지를 뒤흔드는 공포",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "JACKET",
@@ -1683,17 +1689,17 @@
      "itemId": "c5e3fb41884557bfde1672cf6e60898c",
      "itemName": "순백의 눈꽃 결정[30Lv]",
      "itemRarity": "레어",
-     "count": 4
+     "count": 3
+    },
+    {
+     "itemId": "c5913d694137a8bc1f0bc6e1b093d624",
+     "itemName": "순백의 눈꽃 결정[80Lv]",
+     "itemRarity": "레어",
+     "count": 2
     },
     {
      "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
      "itemName": "프로스트의 전설 플래티넘[75Lv]",
-     "itemRarity": "레어",
-     "count": 1
-    },
-    {
-     "itemId": "2226e811d8d6d916d89d16e31f67cf6c",
-     "itemName": "운명이 담긴 책[80Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -1743,7 +1749,7 @@
      "itemId": "c1d638bdea7609ed4fe3e95081fb7b51",
      "itemName": "악몽을 이겨낸 흉터각인",
      "itemRarity": "",
-     "count": 3
+     "count": 4
     },
     {
      "itemId": "172791524edbaec32da030539ca7fcd2",
@@ -2028,14 +2034,14 @@
    ],
    "weapon": [
     {
-     "itemId": "c1d638bdea7609ed4fe3e95081fb7b51",
-     "itemName": "악몽을 이겨낸 흉터각인",
-     "itemRarity": "",
-     "count": 2
-    },
-    {
      "itemId": "00b2c5192f1b6465c198fb8bf1a2d93c",
      "itemName": "샤이닝 로어 글러브[카오스]",
+     "itemRarity": "",
+     "count": 1
+    },
+    {
+     "itemId": "c1d638bdea7609ed4fe3e95081fb7b51",
+     "itemName": "악몽을 이겨낸 흉터각인",
      "itemRarity": "",
      "count": 1
     },
@@ -2055,7 +2061,7 @@
    "finalName": "眞 스트리트파이터",
    "sample": 10,
    "topFame": 136501,
-   "avgFame": 133805,
+   "avgFame": 133965,
    "rankers": [
     {
      "serverId": "cain",
@@ -2088,6 +2094,15 @@
      "serverId": "cain",
      "characterId": "75ae481bef5e3cc149afd5b030bcdf24",
      "characterName": "FunnyLady",
+     "level": 115,
+     "jobName": "격투가(여)",
+     "jobGrowName": "眞 스트리트파이터",
+     "fame": 134322
+    },
+    {
+     "serverId": "diregie",
+     "characterId": "452b32202463e04487727badab3db8e4",
+     "characterName": "화인소녀",
      "level": 115,
      "jobName": "격투가(여)",
      "jobGrowName": "眞 스트리트파이터",
@@ -2137,29 +2152,20 @@
      "jobName": "격투가(여)",
      "jobGrowName": "眞 스트리트파이터",
      "fame": 132728
-    },
-    {
-     "serverId": "cain",
-     "characterId": "3b1179155497307508867d9f8e7bc71d",
-     "characterName": "쿠든",
-     "level": 115,
-     "jobName": "격투가(여)",
-     "jobGrowName": "眞 스트리트파이터",
-     "fame": 132724
     }
    ],
    "sets": [
     {
-     "itemName": "한계를 넘어선 에너지 세트",
-     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
-     "itemRarity": "에픽",
-     "count": 6
-    },
-    {
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 4
+     "count": 5
+    },
+    {
+     "itemName": "한계를 넘어선 에너지 세트",
+     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
+     "itemRarity": "에픽",
+     "count": 5
     }
    ],
    "gear": [
@@ -2174,58 +2180,58 @@
     {
      "slotId": "JACKET",
      "slotName": "상의",
-     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
+     "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "SHOULDER",
      "slotName": "머리어깨",
-     "itemId": "20443520b128350859b9062b376c9f19",
+     "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "PANTS",
      "slotName": "하의",
-     "itemId": "583002211f7907d63e1de59cf9d37928",
+     "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "SHOES",
      "slotName": "신발",
-     "itemId": "2af35244017d9d2daf702ef7aba3139d",
+     "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "WAIST",
      "slotName": "벨트",
-     "itemId": "30a4dbdbc267aa97f6dc984f42041cd5",
+     "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "AMULET",
      "slotName": "목걸이",
-     "itemId": "686f8f5749bec61429abaad3c528ca25",
-     "itemName": "흑아 : 과충전 - 한계를 여는 열쇠 목걸이",
+     "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
+     "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "WRIST",
      "slotName": "팔찌",
-     "itemId": "a536234ab759db2e8bf65f252f28b8e0",
-     "itemName": "흑아 : 과충전 - 한계를 가리키는 지침 팔찌",
+     "itemId": "733d2c61423065cb0780674cc806ca3c",
+     "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "RING",
@@ -2249,15 +2255,15 @@
      "itemId": "df77236c51ea1274a3deb79c3e470695",
      "itemName": "우아한 기품의 향수",
      "itemRarity": "태초",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "EARRING",
      "slotName": "귀걸이",
-     "itemId": "935accc27486f420cb570fb11fdce870",
+     "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 4
     }
    ],
    "title": [
@@ -2265,19 +2271,19 @@
      "itemId": "b89d2344496f87896fafd505dc70c092",
      "itemName": "프로스트의 전설 플래티넘[85Lv]",
      "itemRarity": "레어",
-     "count": 4
-    },
-    {
-     "itemId": "b370b9cce9f02e7417a46bc261cc4719",
-     "itemName": "순백의 눈꽃 결정[85Lv]",
-     "itemRarity": "레어",
-     "count": 3
+     "count": 5
     },
     {
      "itemId": "a77ac3d7c8ac9101494d10e46aa90409",
      "itemName": "이터널 크로노스[30Lv]",
      "itemRarity": "레어",
      "count": 2
+    },
+    {
+     "itemId": "7cdecc590ff1920d9cbffc684070d72a",
+     "itemName": "프로스트의 전설 플래티넘[30Lv]",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "creature": [
@@ -2285,7 +2291,7 @@
      "itemId": "f8b9bb5cc6eec44263483febbf42d539",
      "itemName": "운명을 담는 여신[85Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 3
     },
     {
      "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
@@ -2349,7 +2355,7 @@
    "finalName": "眞 그래플러",
    "sample": 10,
    "topFame": 134353,
-   "avgFame": 133196,
+   "avgFame": 133198,
    "rankers": [
     {
      "serverId": "casillas",
@@ -2385,7 +2391,7 @@
      "level": 115,
      "jobName": "격투가(여)",
      "jobGrowName": "眞 그래플러",
-     "fame": 132873
+     "fame": 132893
     },
     {
      "serverId": "cain",
@@ -2745,7 +2751,7 @@
      "itemId": "874ba46dadbc0bdd3a346ce27bd46585",
      "itemName": "오염된 피의 쾌",
      "itemRarity": "태초",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "JACKET",
@@ -2838,14 +2844,14 @@
    ],
    "title": [
     {
-     "itemId": "bc6170dcd3dd57209653e48c8aa6d7be",
-     "itemName": "천공의 지배자 플래티넘[30Lv]",
+     "itemId": "38f399506cbb7cbb80bae7030a970b70",
+     "itemName": "이터널 크로노스[45Lv]",
      "itemRarity": "레어",
      "count": 2
     },
     {
-     "itemId": "38f399506cbb7cbb80bae7030a970b70",
-     "itemName": "이터널 크로노스[45Lv]",
+     "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
+     "itemName": "프로스트의 전설 플래티넘[45Lv]",
      "itemRarity": "레어",
      "count": 2
     },
@@ -3198,9 +3204,9 @@
      "count": 2
     },
     {
-     "itemId": "48b520a16b5beb027c2046125def03f7",
-     "itemName": "레어 무기 클론 아바타[40Lv]",
-     "itemRarity": "레어",
+     "itemId": "45dc5290431198190d544c8791558848",
+     "itemName": "악몽을 이겨낸 베놈 앱서버",
+     "itemRarity": "",
      "count": 1
     }
    ]
@@ -3213,7 +3219,7 @@
    "finalName": "眞 메카닉",
    "sample": 10,
    "topFame": 136112,
-   "avgFame": 133540,
+   "avgFame": 133386,
    "rankers": [
     {
      "serverId": "diregie",
@@ -3232,15 +3238,6 @@
      "jobName": "거너(남)",
      "jobGrowName": "眞 메카닉",
      "fame": 135978
-    },
-    {
-     "serverId": "cain",
-     "characterId": "eef77d5022a4b49a1d6a20c62e633492",
-     "characterName": "추천못받는다",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 메카닉",
-     "fame": 134244
     },
     {
      "serverId": "hilder",
@@ -3282,6 +3279,15 @@
      "serverId": "siroco",
      "characterId": "bf4cdb9d2ff3b23f072062df19cf82ac",
      "characterName": "김진원",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 메카닉",
+     "fame": 132702
+    },
+    {
+     "serverId": "cain",
+     "characterId": "07af433575cd1b94ea5eb1e2e9506f15",
+     "characterName": "벙벙",
      "level": 115,
      "jobName": "거너(남)",
      "jobGrowName": "眞 메카닉",
@@ -3401,7 +3407,7 @@
      "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 8
     },
     {
      "slotId": "EARRING",
@@ -3414,22 +3420,22 @@
    ],
    "title": [
     {
-     "itemId": "38f399506cbb7cbb80bae7030a970b70",
-     "itemName": "이터널 크로노스[45Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "c53a3614e319871108865b0b4a7069fb",
      "itemName": "순백의 눈꽃 결정[45Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     },
     {
      "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
      "itemName": "프로스트의 전설 플래티넘[45Lv]",
      "itemRarity": "레어",
      "count": 2
+    },
+    {
+     "itemId": "38f399506cbb7cbb80bae7030a970b70",
+     "itemName": "이터널 크로노스[45Lv]",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "creature": [
@@ -3440,8 +3446,8 @@
      "count": 3
     },
     {
-     "itemId": "09f17354c69526dc820439581118209a",
-     "itemName": "순백의 옵타티오[45Lv]",
+     "itemId": "9f0296852b314a1eab704fa89f48d2f6",
+     "itemName": "운명을 담는 여신[45Lv]",
      "itemRarity": "레어",
      "count": 2
     },
@@ -3463,21 +3469,27 @@
      "itemId": "b115f9551fd7e226df474a14607b05ae",
      "itemName": "루미너스 게이트",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
+    },
+    {
+     "itemId": "1c914aadf7b1828de3813b388ffec5e4",
+     "itemName": "신선한 햇살의 조각",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "weapon": [
+    {
+     "itemId": "16c2d091bc771dd68d6d75e3fa8c5791",
+     "itemName": "마피아의 클래식 리볼버",
+     "itemRarity": "",
+     "count": 2
+    },
     {
      "itemId": "41a617375e7d2772c8c7f13d1baea67b",
      "itemName": "레어 무기 클론 아바타[45Lv]",
      "itemRarity": "레어",
      "count": 2
-    },
-    {
-     "itemId": "16c2d091bc771dd68d6d75e3fa8c5791",
-     "itemName": "마피아의 클래식 리볼버",
-     "itemRarity": "",
-     "count": 1
     },
     {
      "itemId": "dfa51be3083d150e1e8cd88480d044d7",
@@ -3494,22 +3506,22 @@
    "growName": "스핏파이어",
    "finalName": "眞 스핏파이어",
    "sample": 10,
-   "topFame": 136345,
-   "avgFame": 133842,
+   "topFame": 136368,
+   "avgFame": 133889,
    "rankers": [
-    {
-     "serverId": "cain",
-     "characterId": "5cf9c8a6a588d2584ba6e533ed41f6ea",
-     "characterName": "냉동탄",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 스핏파이어",
-     "fame": 136345
-    },
     {
      "serverId": "bakal",
      "characterId": "b8b6e0658a5a61a1c81733ad1085621e",
      "characterName": "팽귄스핏",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 스핏파이어",
+     "fame": 136368
+    },
+    {
+     "serverId": "cain",
+     "characterId": "5cf9c8a6a588d2584ba6e533ed41f6ea",
+     "characterName": "냉동탄",
      "level": 115,
      "jobName": "거너(남)",
      "jobGrowName": "眞 스핏파이어",
@@ -3534,6 +3546,15 @@
      "fame": 134360
     },
     {
+     "serverId": "cain",
+     "characterId": "a84cc6c06d05c2982683ba4cb38294e8",
+     "characterName": "스핏이에요?",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 스핏파이어",
+     "fame": 133121
+    },
+    {
      "serverId": "hilder",
      "characterId": "f2cc02349628b47a50504c534fc51436",
      "characterName": "레바",
@@ -3543,13 +3564,13 @@
      "fame": 133083
     },
     {
-     "serverId": "cain",
-     "characterId": "a84cc6c06d05c2982683ba4cb38294e8",
-     "characterName": "스핏이에요?",
+     "serverId": "casillas",
+     "characterId": "0579a719e3753f71b6f5e6680336a0a7",
+     "characterName": "쟤가시켯어요",
      "level": 115,
      "jobName": "거너(남)",
      "jobGrowName": "眞 스핏파이어",
-     "fame": 132726
+     "fame": 132762
     },
     {
      "serverId": "siroco",
@@ -3573,15 +3594,6 @@
      "serverId": "hilder",
      "characterId": "b511765bf80e4d904b1bafdbd4229aa4",
      "characterName": "안해",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 스핏파이어",
-     "fame": 132702
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "77039602b3853b79e26feb70f5348ed8",
-     "characterName": "커고맨더",
      "level": 115,
      "jobName": "거너(남)",
      "jobGrowName": "眞 스핏파이어",
@@ -3667,7 +3679,7 @@
      "itemId": "aa5273499f19ddba846919dbb6857d82",
      "itemName": "광휘를 머금은 눈동자",
      "itemRarity": "태초",
-     "count": 8
+     "count": 9
     },
     {
      "slotId": "SUPPORT",
@@ -3696,14 +3708,14 @@
    ],
    "title": [
     {
-     "itemId": "c53a3614e319871108865b0b4a7069fb",
-     "itemName": "순백의 눈꽃 결정[45Lv]",
-     "itemRarity": "레어",
-     "count": 4
-    },
-    {
      "itemId": "38f399506cbb7cbb80bae7030a970b70",
      "itemName": "이터널 크로노스[45Lv]",
+     "itemRarity": "레어",
+     "count": 3
+    },
+    {
+     "itemId": "c53a3614e319871108865b0b4a7069fb",
+     "itemName": "순백의 눈꽃 결정[45Lv]",
      "itemRarity": "레어",
      "count": 3
     },
@@ -3711,7 +3723,7 @@
      "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
      "itemName": "프로스트의 전설 플래티넘[45Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     }
    ],
    "creature": [
@@ -3736,8 +3748,8 @@
    ],
    "aura": [
     {
-     "itemId": "1c914aadf7b1828de3813b388ffec5e4",
-     "itemName": "신선한 햇살의 조각",
+     "itemId": "c6ca900e513cccb177890939de234227",
+     "itemName": "열대야의 추억",
      "itemRarity": "레어",
      "count": 4
     },
@@ -3748,8 +3760,8 @@
      "count": 3
     },
     {
-     "itemId": "c6ca900e513cccb177890939de234227",
-     "itemName": "열대야의 추억",
+     "itemId": "1c914aadf7b1828de3813b388ffec5e4",
+     "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
      "count": 3
     }
@@ -3759,7 +3771,7 @@
      "itemId": "16c2d091bc771dd68d6d75e3fa8c5791",
      "itemName": "마피아의 클래식 리볼버",
      "itemRarity": "",
-     "count": 3
+     "count": 4
     },
     {
      "itemId": "7ea27abbf1aa7ce8607ed3369d8645e6",
@@ -3783,7 +3795,7 @@
    "finalName": "眞 어썰트",
    "sample": 10,
    "topFame": 136222,
-   "avgFame": 132529,
+   "avgFame": 133557,
    "rankers": [
     {
      "serverId": "cain",
@@ -3796,6 +3808,24 @@
     },
     {
      "serverId": "cain",
+     "characterId": "80d5795bf263d0e142271bbe8e78b524",
+     "characterName": "Rovyn",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 어썰트",
+     "fame": 136207
+    },
+    {
+     "serverId": "siroco",
+     "characterId": "0038584f2be8e20ba798cbcc9a99effc",
+     "characterName": "황경쇠",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 어썰트",
+     "fame": 134703
+    },
+    {
+     "serverId": "cain",
      "characterId": "b4043f5eaed3a605eb8cd39d0dd961c2",
      "characterName": "윤태혁",
      "level": 115,
@@ -3804,9 +3834,27 @@
      "fame": 134643
     },
     {
+     "serverId": "cain",
+     "characterId": "b8f134c121d4d7501af8823659964962",
+     "characterName": "아크방전",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 어썰트",
+     "fame": 132834
+    },
+    {
      "serverId": "prey",
      "characterId": "1e73c6bfdc6163e4ee88de9031a865bc",
      "characterName": "어썰트문호프",
+     "level": 115,
+     "jobName": "거너(남)",
+     "jobGrowName": "眞 어썰트",
+     "fame": 132624
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "b5a7dbf63e56090ddf28914c1375e43a",
+     "characterName": "眞:ASSAULT",
      "level": 115,
      "jobName": "거너(남)",
      "jobGrowName": "眞 어썰트",
@@ -3819,7 +3867,7 @@
      "level": 115,
      "jobName": "거너(남)",
      "jobGrowName": "眞 어썰트",
-     "fame": 132103
+     "fame": 132108
     },
     {
      "serverId": "diregie",
@@ -3838,42 +3886,6 @@
      "jobName": "거너(남)",
      "jobGrowName": "眞 어썰트",
      "fame": 131684
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "b5a7dbf63e56090ddf28914c1375e43a",
-     "characterName": "眞:ASSAULT",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 어썰트",
-     "fame": 131660
-    },
-    {
-     "serverId": "prey",
-     "characterId": "a9276637b7556c63d3b98aad5aaa49cc",
-     "characterName": "어썰트아찌",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 어썰트",
-     "fame": 131620
-    },
-    {
-     "serverId": "cain",
-     "characterId": "6357ea2db7df7eb959c84b9f513607e6",
-     "characterName": "림파이어",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 어썰트",
-     "fame": 131473
-    },
-    {
-     "serverId": "cain",
-     "characterId": "fa6eda5147289986a63f9395a14ea583",
-     "characterName": "Expansion16",
-     "level": 115,
-     "jobName": "거너(남)",
-     "jobGrowName": "眞 어썰트",
-     "fame": 131336
     }
    ],
    "sets": [
@@ -3881,35 +3893,17 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 7
-    },
-    {
-     "itemName": "압도적인 자연 세트",
-     "itemId": "47b783bd269732293208e991024893d9",
-     "itemRarity": "에픽",
-     "count": 1
-    },
-    {
-     "itemName": "에테리얼 오브 아츠 세트",
-     "itemId": "2d23a5dc389016bdc3a3e3fd142b38ce",
-     "itemRarity": "에픽",
-     "count": 1
-    },
-    {
-     "itemName": "고대 전장의 발키리 세트",
-     "itemId": "fad2de6377c523c366d8333a4cbf4114",
-     "itemRarity": "에픽",
-     "count": 1
+     "count": 10
     }
    ],
    "gear": [
     {
      "slotId": "WEAPON",
      "slotName": "무기",
-     "itemId": "04f662fdc3e2885c6c4d385bd6b8ba8f",
-     "itemName": "검은 질병의 리턴드 스나이퍼 오브 블랙 로즈",
+     "itemId": "874ba46dadbc0bdd3a346ce27bd46585",
+     "itemName": "오염된 피의 쾌",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "JACKET",
@@ -3917,7 +3911,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "SHOULDER",
@@ -3925,7 +3919,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "PANTS",
@@ -3933,7 +3927,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "SHOES",
@@ -3941,7 +3935,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "WAIST",
@@ -3949,7 +3943,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "AMULET",
@@ -3957,7 +3951,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "WRIST",
@@ -3965,7 +3959,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 7
+     "count": 10
     },
     {
      "slotId": "RING",
@@ -3989,7 +3983,7 @@
      "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
-     "count": 4
+     "count": 5
     },
     {
      "slotId": "EARRING",
@@ -3997,7 +3991,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 7
     }
    ],
    "title": [
@@ -4005,7 +3999,7 @@
      "itemId": "131aeea81c05b09dc803a2609c811876",
      "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
-     "count": 4
+     "count": 5
     },
     {
      "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
@@ -4025,17 +4019,17 @@
      "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
      "itemName": "운명을 담는 여신[75Lv]",
      "itemRarity": "레어",
-     "count": 4
-    },
-    {
-     "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
-     "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
-     "itemRarity": "레어",
-     "count": 4
+     "count": 6
     },
     {
      "itemId": "32bd37c4da4101c1e0156998ac3103c8",
      "itemName": "운명을 담는 재단사 플래티넘[100Lv]",
+     "itemRarity": "레어",
+     "count": 1
+    },
+    {
+     "itemId": "047efa804bf01a3f53f6d4cfd3eac0fa",
+     "itemName": "치어리더 티아[75Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -4068,14 +4062,14 @@
      "count": 3
     },
     {
-     "itemId": "f9237166b5dd48d9e0a89966176a7337",
-     "itemName": "레어 무기 클론 아바타[75Lv]",
-     "itemRarity": "레어",
+     "itemId": "281fcb0f30ea16c569b2542241918eda",
+     "itemName": "부스트 라이플",
+     "itemRarity": "",
      "count": 2
     },
     {
-     "itemId": "18fbffeb57e5e2e2c26315cb948e4ddb",
-     "itemName": "벚꽃 히만 스텔라의 축음기",
+     "itemId": "45dc5290431198190d544c8791558848",
+     "itemName": "악몽을 이겨낸 베놈 앱서버",
      "itemRarity": "",
      "count": 1
     }
@@ -4671,7 +4665,7 @@
    "finalName": "眞 배틀메이지",
    "sample": 10,
    "topFame": 136222,
-   "avgFame": 135083,
+   "avgFame": 135119,
    "rankers": [
     {
      "serverId": "hilder",
@@ -4710,13 +4704,22 @@
      "fame": 135942
     },
     {
+     "serverId": "cain",
+     "characterId": "1efd390821c7088aa690701ea309d4d2",
+     "characterName": "벨라",
+     "level": 115,
+     "jobName": "마법사(여)",
+     "jobGrowName": "眞 배틀메이지",
+     "fame": 134666
+    },
+    {
      "serverId": "hilder",
      "characterId": "224edd1a16386492e9fffcace550484d",
      "characterName": "카사와리",
      "level": 115,
      "jobName": "마법사(여)",
      "jobGrowName": "眞 배틀메이지",
-     "fame": 134498
+     "fame": 134542
     },
     {
      "serverId": "hilder",
@@ -4753,15 +4756,6 @@
      "jobName": "마법사(여)",
      "jobGrowName": "眞 배틀메이지",
      "fame": 134360
-    },
-    {
-     "serverId": "cain",
-     "characterId": "4c8b338f4103a8817c829c68e7764890",
-     "characterName": "정원†",
-     "level": 115,
-     "jobName": "마법사(여)",
-     "jobGrowName": "眞 배틀메이지",
-     "fame": 134344
     }
    ],
    "sets": [
@@ -4901,7 +4895,7 @@
      "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
      "itemName": "운명을 담는 여신[30Lv]",
      "itemRarity": "레어",
-     "count": 4
+     "count": 5
     },
     {
      "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
@@ -4944,14 +4938,14 @@
      "count": 2
     },
     {
-     "itemId": "6f664071d276072fdc25371252816989",
-     "itemName": "레어 무기 클론 아바타[75Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "1df5ae19ad054e4db19130b67f27dcf3",
      "itemName": "악몽을 이겨낸 흘러내리는 썩은 피",
+     "itemRarity": "",
+     "count": 1
+    },
+    {
+     "itemId": "2fe3b7fc7b81a28db831ae109359ecd9",
+     "itemName": "악몽을 이겨낸 종언을 비트는 흑미",
      "itemRarity": "",
      "count": 1
     }
@@ -4965,7 +4959,7 @@
    "finalName": "眞 마도학자",
    "sample": 10,
    "topFame": 136243,
-   "avgFame": 133789,
+   "avgFame": 133445,
    "rankers": [
     {
      "serverId": "diregie",
@@ -4975,15 +4969,6 @@
      "jobName": "마법사(여)",
      "jobGrowName": "眞 마도학자",
      "fame": 136243
-    },
-    {
-     "serverId": "siroco",
-     "characterId": "702f227b57a6ff5f11a30947b9243e77",
-     "characterName": "속옷마녀",
-     "level": 115,
-     "jobName": "마법사(여)",
-     "jobGrowName": "眞 마도학자",
-     "fame": 136222
     },
     {
      "serverId": "prey",
@@ -5031,6 +5016,15 @@
      "fame": 132781
     },
     {
+     "serverId": "cain",
+     "characterId": "54878b9f2154525a753602781b0aec98",
+     "characterName": "옹이마도",
+     "level": 115,
+     "jobName": "마법사(여)",
+     "jobGrowName": "眞 마도학자",
+     "fame": 132776
+    },
+    {
      "serverId": "hilder",
      "characterId": "bf38493693eac655ddd6e8c33872fde8",
      "characterName": "베이가",
@@ -5063,19 +5057,13 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     },
     {
      "itemName": "칠흑의 정화 세트",
      "itemId": "43803200c544fd434d9ab5c9880bebd3",
      "itemRarity": "에픽",
      "count": 4
-    },
-    {
-     "itemName": "소울 페어리 세트",
-     "itemId": "11f55a9437e514d46ee55c8a8ae82b7e",
-     "itemRarity": "에픽",
-     "count": 1
     }
    ],
    "gear": [
@@ -5085,7 +5073,7 @@
      "itemId": "7e461c6d10b51ba6f43c5d13aa2a82a4",
      "itemName": "검은 질병의 칠흑의 저주",
      "itemRarity": "태초",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "JACKET",
@@ -5093,7 +5081,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "SHOULDER",
@@ -5101,7 +5089,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "PANTS",
@@ -5109,7 +5097,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "SHOES",
@@ -5117,7 +5105,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "WAIST",
@@ -5125,7 +5113,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "AMULET",
@@ -5133,7 +5121,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "WRIST",
@@ -5141,7 +5129,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "RING",
@@ -5162,18 +5150,18 @@
     {
      "slotId": "MAGIC_STON",
      "slotName": "마법석",
-     "itemId": "df77236c51ea1274a3deb79c3e470695",
-     "itemName": "우아한 기품의 향수",
-     "itemRarity": "태초",
+     "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
+     "itemName": "무결한 순수의 마법석",
+     "itemRarity": "에픽",
      "count": 4
     },
     {
      "slotId": "EARRING",
      "slotName": "귀걸이",
-     "itemId": "96259aad86c6455f46f25ad6098d2ea1",
+     "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 4
+     "count": 5
     }
    ],
    "title": [
@@ -5190,8 +5178,8 @@
      "count": 1
     },
     {
-     "itemId": "a77ac3d7c8ac9101494d10e46aa90409",
-     "itemName": "이터널 크로노스[30Lv]",
+     "itemId": "7ff744342ad0586c9d62a73c4c684bde",
+     "itemName": "프로스트의 전설 플래티넘[40Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -5204,14 +5192,14 @@
      "count": 5
     },
     {
-     "itemId": "161ce34497f84534a40c7968e2e6a043",
-     "itemName": "트로피컬 가이드 운디네[30Lv]",
+     "itemId": "2bf62e4b2c827bbd6ae6e6f28282d6c5",
+     "itemName": "운명을 담는 여신[40Lv]",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     },
     {
-     "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
-     "itemName": "순백의 옵타티오[30Lv]",
+     "itemId": "161ce34497f84534a40c7968e2e6a043",
+     "itemName": "트로피컬 가이드 운디네[30Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -5227,13 +5215,7 @@
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "",
-     "count": 3
-    },
-    {
-     "itemId": "b115f9551fd7e226df474a14607b05ae",
-     "itemName": "루미너스 게이트",
-     "itemRarity": "레어",
-     "count": 1
+     "count": 4
     }
    ],
    "weapon": [
@@ -5244,14 +5226,14 @@
      "count": 1
     },
     {
-     "itemId": "a98823a23c788329223a01a0e8acda0a",
-     "itemName": "순백의 위성",
+     "itemId": "2fe3b7fc7b81a28db831ae109359ecd9",
+     "itemName": "악몽을 이겨낸 종언을 비트는 흑미",
      "itemRarity": "",
      "count": 1
     },
     {
-     "itemId": "2fe3b7fc7b81a28db831ae109359ecd9",
-     "itemName": "악몽을 이겨낸 종언을 비트는 흑미",
+     "itemId": "f742d25f8e25513de703149cbd432e65",
+     "itemName": "엘프 여왕의 정령",
      "itemRarity": "",
      "count": 1
     }
@@ -5265,7 +5247,7 @@
    "finalName": "眞 인챈트리스",
    "sample": 10,
    "topFame": 136560,
-   "avgFame": 133998,
+   "avgFame": 133992,
    "rankers": [
     {
      "serverId": "hilder",
@@ -5332,15 +5314,6 @@
     },
     {
      "serverId": "cain",
-     "characterId": "7b4133046e259569074d4be3fbadb2bf",
-     "characterName": "소쪼",
-     "level": 115,
-     "jobName": "마법사(여)",
-     "jobGrowName": "眞 인챈트리스",
-     "fame": 133034
-    },
-    {
-     "serverId": "cain",
      "characterId": "a984d85d520b7a0e778836970850fc57",
      "characterName": "여븜",
      "level": 115,
@@ -5356,6 +5329,15 @@
      "jobName": "마법사(여)",
      "jobGrowName": "眞 인챈트리스",
      "fame": 133018
+    },
+    {
+     "serverId": "cain",
+     "characterId": "baf7daf3dbd0a0f473b8c3abd3f466b3",
+     "characterName": "횻",
+     "level": 115,
+     "jobName": "마법사(여)",
+     "jobGrowName": "眞 인챈트리스",
+     "fame": 132980
     }
    ],
    "sets": [
@@ -5955,7 +5937,7 @@
      "itemId": "4594a10b84a066d7a78477f9ddd4f142",
      "itemName": "검은 질병의 소울 프레데터",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "JACKET",
@@ -6054,25 +6036,19 @@
      "count": 3
     },
     {
-     "itemId": "ac81e77e2898e2054ada4df76939052b",
-     "itemName": "소나무의 곧은 기개[75Lv]",
+     "itemId": "131aeea81c05b09dc803a2609c811876",
+     "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
      "count": 2
     },
     {
-     "itemId": "131aeea81c05b09dc803a2609c811876",
-     "itemName": "순백의 눈꽃 결정[75Lv]",
+     "itemId": "8dc8afcd35940bc4efcd373060f17cad",
+     "itemName": "이터널 크로노스[75Lv]",
      "itemRarity": "레어",
      "count": 2
     }
    ],
    "creature": [
-    {
-     "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
-     "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
-     "itemRarity": "레어",
-     "count": 4
-    },
     {
      "itemId": "263f5b534324602f5be40fb27b23aa80",
      "itemName": "순백의 옵타티오[75Lv]",
@@ -6080,8 +6056,14 @@
      "count": 3
     },
     {
-     "itemId": "c64bb148fe80d998a033392671725fdd",
-     "itemName": "운명을 담는 여신[80Lv]",
+     "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
+     "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
+     "itemRarity": "레어",
+     "count": 3
+    },
+    {
+     "itemId": "98595df9b8b99b135308bc80ddce0068",
+     "itemName": "골드 빛의 유니콘",
      "itemRarity": "레어",
      "count": 1
     }
@@ -6524,20 +6506,14 @@
      "count": 7
     },
     {
-     "itemName": "그림자에 숨은 죽음 세트",
-     "itemId": "ce653434e129a67945878c1c2e66ce73",
+     "itemName": "한계를 넘어선 에너지 세트",
+     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
      "itemRarity": "에픽",
-     "count": 1
+     "count": 2
     },
     {
      "itemName": "에테리얼 오브 아츠 세트",
      "itemId": "2d23a5dc389016bdc3a3e3fd142b38ce",
-     "itemRarity": "에픽",
-     "count": 1
-    },
-    {
-     "itemName": "한계를 넘어선 에너지 세트",
-     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
      "itemRarity": "에픽",
      "count": 1
     }
@@ -6549,7 +6525,7 @@
      "itemId": "65da5c13fb2ff7e870a85159c6f669f8",
      "itemName": "일루젼 베놈 로저리",
      "itemRarity": "태초",
-     "count": 5
+     "count": 4
     },
     {
      "slotId": "JACKET",
@@ -6645,7 +6621,7 @@
      "itemId": "7ff744342ad0586c9d62a73c4c684bde",
      "itemName": "프로스트의 전설 플래티넘[40Lv]",
      "itemRarity": "레어",
-     "count": 6
+     "count": 5
     },
     {
      "itemId": "64de2eafdecaeb052cfd9e30dc17341d",
@@ -6665,7 +6641,7 @@
      "itemId": "4e14f0338612a36916280b753f04cc0b",
      "itemName": "운명을 담는 재단사 플래티넘[40Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 4
     },
     {
      "itemId": "2bf62e4b2c827bbd6ae6e6f28282d6c5",
@@ -6729,7 +6705,7 @@
    "finalName": "眞 레인저",
    "sample": 10,
    "topFame": 136707,
-   "avgFame": 134715,
+   "avgFame": 134809,
    "rankers": [
     {
      "serverId": "cain",
@@ -6777,6 +6753,15 @@
      "fame": 134468
     },
     {
+     "serverId": "prey",
+     "characterId": "59f7a76db632fe8ca6fed84e195f9d59",
+     "characterName": "Thurd",
+     "level": 115,
+     "jobName": "거너(여)",
+     "jobGrowName": "眞 레인저",
+     "fame": 134382
+    },
+    {
      "serverId": "cain",
      "characterId": "1cb4af85bf142ca86b0cef64010cf483",
      "characterName": "로제언니",
@@ -6802,15 +6787,6 @@
      "jobName": "거너(여)",
      "jobGrowName": "眞 레인저",
      "fame": 134322
-    },
-    {
-     "serverId": "prey",
-     "characterId": "59f7a76db632fe8ca6fed84e195f9d59",
-     "characterName": "Thurd",
-     "level": 115,
-     "jobName": "거너(여)",
-     "jobGrowName": "眞 레인저",
-     "fame": 133442
     },
     {
      "serverId": "bakal",
@@ -7017,7 +6993,7 @@
    "finalName": "眞 런처",
    "sample": 10,
    "topFame": 134454,
-   "avgFame": 133537,
+   "avgFame": 133406,
    "rankers": [
     {
      "serverId": "casillas",
@@ -7056,13 +7032,13 @@
      "fame": 134314
     },
     {
-     "serverId": "cain",
-     "characterId": "06556ba68797b8a7dd17f43bf5939a66",
-     "characterName": "싹다불태워라",
+     "serverId": "hilder",
+     "characterId": "424ac62e4133d7a4f996c33110b4552e",
+     "characterName": "여런",
      "level": 115,
      "jobName": "거너(여)",
      "jobGrowName": "眞 런처",
-     "fame": 134244
+     "fame": 132934
     },
     {
      "serverId": "cain",
@@ -7208,9 +7184,9 @@
     {
      "slotId": "MAGIC_STON",
      "slotName": "마법석",
-     "itemId": "df77236c51ea1274a3deb79c3e470695",
-     "itemName": "우아한 기품의 향수",
-     "itemRarity": "태초",
+     "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
+     "itemName": "무결한 순수의 마법석",
+     "itemRarity": "에픽",
      "count": 5
     },
     {
@@ -7247,7 +7223,7 @@
      "itemId": "8f844f8fea638fcb3f74605d52cf3684",
      "itemName": "운명을 담는 재단사 플래티넘[70Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 6
     },
     {
      "itemId": "9d78c7be91864d13732e1b08a4700887",
@@ -7267,13 +7243,13 @@
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 8
+     "count": 7
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     },
     {
      "itemId": "b115f9551fd7e226df474a14607b05ae",
@@ -7284,12 +7260,6 @@
    ],
    "weapon": [
     {
-     "itemId": "b92b78a3f07641d1d0c30e9923d8669f",
-     "itemName": "레어 무기 클론 아바타[70Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "229da451ff2a0db0d8d2cbdac2d5109c",
      "itemName": "분홍 오카리나",
      "itemRarity": "",
@@ -7298,6 +7268,12 @@
     {
      "itemId": "41c4ecdfd834c8e52cced038de81262b",
      "itemName": "웨딩 팡파레",
+     "itemRarity": "",
+     "count": 1
+    },
+    {
+     "itemId": "f9c3105747376acbe6351e4728879be5",
+     "itemName": "디멘션 아라드 여거너의 무기",
      "itemRarity": "",
      "count": 1
     }
@@ -7311,7 +7287,7 @@
    "finalName": "眞 메카닉",
    "sample": 10,
    "topFame": 134704,
-   "avgFame": 133405,
+   "avgFame": 133605,
    "rankers": [
     {
      "serverId": "hilder",
@@ -7321,6 +7297,15 @@
      "jobName": "거너(여)",
      "jobGrowName": "眞 메카닉",
      "fame": 134704
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "9059f9c9c52601e7a2461789e468f523",
+     "characterName": "오혜민",
+     "level": 115,
+     "jobName": "거너(여)",
+     "jobGrowName": "眞 메카닉",
+     "fame": 134666
     },
     {
      "serverId": "siroco",
@@ -7393,15 +7378,6 @@
      "jobName": "거너(여)",
      "jobGrowName": "眞 메카닉",
      "fame": 132678
-    },
-    {
-     "serverId": "prey",
-     "characterId": "d6171dced5897c13dd01f1164ccb51fd",
-     "characterName": "안녕옵티띠",
-     "level": 115,
-     "jobName": "거너(여)",
-     "jobGrowName": "眞 메카닉",
-     "fame": 132662
     }
    ],
    "sets": [
@@ -7496,10 +7472,10 @@
     {
      "slotId": "MAGIC_STON",
      "slotName": "마법석",
-     "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
-     "itemName": "무결한 순수의 마법석",
-     "itemRarity": "에픽",
-     "count": 6
+     "itemId": "df77236c51ea1274a3deb79c3e470695",
+     "itemName": "우아한 기품의 향수",
+     "itemRarity": "태초",
+     "count": 5
     },
     {
      "slotId": "EARRING",
@@ -7512,14 +7488,14 @@
    ],
    "title": [
     {
-     "itemId": "131aeea81c05b09dc803a2609c811876",
-     "itemName": "순백의 눈꽃 결정[75Lv]",
-     "itemRarity": "레어",
-     "count": 4
-    },
-    {
      "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
      "itemName": "프로스트의 전설 플래티넘[75Lv]",
+     "itemRarity": "레어",
+     "count": 5
+    },
+    {
+     "itemId": "131aeea81c05b09dc803a2609c811876",
+     "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
      "count": 4
     },
@@ -7527,7 +7503,7 @@
      "itemId": "ac81e77e2898e2054ada4df76939052b",
      "itemName": "소나무의 곧은 기개[75Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 1
     }
    ],
    "creature": [
@@ -7881,7 +7857,7 @@
    "finalName": "眞 패러메딕",
    "sample": 10,
    "topFame": 134638,
-   "avgFame": 132671,
+   "avgFame": 132694,
    "rankers": [
     {
      "serverId": "hilder",
@@ -7947,6 +7923,15 @@
      "fame": 132193
     },
     {
+     "serverId": "casillas",
+     "characterId": "1ec130b1451650cc82c3d431a906f12b",
+     "characterName": "완장",
+     "level": 115,
+     "jobName": "거너(여)",
+     "jobGrowName": "眞 패러메딕",
+     "fame": 132120
+    },
+    {
      "serverId": "cain",
      "characterId": "abca659ee2f429ae5a90d4d7751a017d",
      "characterName": "여름",
@@ -7954,15 +7939,6 @@
      "jobName": "거너(여)",
      "jobGrowName": "眞 패러메딕",
      "fame": 131913
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "1ec130b1451650cc82c3d431a906f12b",
-     "characterName": "완장",
-     "level": 115,
-     "jobName": "거너(여)",
-     "jobGrowName": "眞 패러메딕",
-     "fame": 131895
     },
     {
      "serverId": "siroco",
@@ -8244,7 +8220,7 @@
      "level": 115,
      "jobName": "도적",
      "jobGrowName": "眞 로그",
-     "fame": 134042
+     "fame": 134047
     },
     {
      "serverId": "anton",
@@ -8445,7 +8421,7 @@
    "finalName": "眞 사령술사",
    "sample": 10,
    "topFame": 136207,
-   "avgFame": 134517,
+   "avgFame": 134185,
    "rankers": [
     {
      "serverId": "cain",
@@ -8455,15 +8431,6 @@
      "jobName": "도적",
      "jobGrowName": "眞 사령술사",
      "fame": 136207
-    },
-    {
-     "serverId": "cain",
-     "characterId": "610018ce3b1c8c9bd6d1d58d737c020f",
-     "characterName": "무라사이",
-     "level": 115,
-     "jobName": "도적",
-     "jobGrowName": "眞 사령술사",
-     "fame": 136024
     },
     {
      "serverId": "prey",
@@ -8536,6 +8503,15 @@
      "jobName": "도적",
      "jobGrowName": "眞 사령술사",
      "fame": 132738
+    },
+    {
+     "serverId": "cain",
+     "characterId": "7e288311b8a2707b66a0b6deb572afd2",
+     "characterName": "Black_Out",
+     "level": 115,
+     "jobName": "도적",
+     "jobGrowName": "眞 사령술사",
+     "fame": 132702
     }
    ],
    "sets": [
@@ -8645,7 +8621,7 @@
      "itemId": "df77236c51ea1274a3deb79c3e470695",
      "itemName": "우아한 기품의 향수",
      "itemRarity": "태초",
-     "count": 9
+     "count": 8
     },
     {
      "slotId": "EARRING",
@@ -8653,7 +8629,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 5
+     "count": 6
     }
    ],
    "title": [
@@ -8661,7 +8637,7 @@
      "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
      "itemName": "프로스트의 전설 플래티넘[45Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 4
     },
     {
      "itemId": "c53a3614e319871108865b0b4a7069fb",
@@ -8670,8 +8646,8 @@
      "count": 3
     },
     {
-     "itemId": "7f65dae9821ee37d7d582946101ef503",
-     "itemName": "소나무의 곧은 기개[45Lv]",
+     "itemId": "c0ab577944581cbfdc3b7d39bf6234a2",
+     "itemName": "철쇄아[D타입][45Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -8681,13 +8657,13 @@
      "itemId": "9f0296852b314a1eab704fa89f48d2f6",
      "itemName": "운명을 담는 여신[45Lv]",
      "itemRarity": "레어",
-     "count": 6
+     "count": 5
     },
     {
      "itemId": "e497fd13c28840c0e439c7d82013e657",
      "itemName": "운명을 담는 재단사 플래티넘[45Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 4
     },
     {
      "itemId": "09f17354c69526dc820439581118209a",
@@ -8724,10 +8700,10 @@
      "count": 3
     },
     {
-     "itemId": "659d70678466e23e8a91618c3d7ee8bc",
+     "itemId": "5da7f2eed2aa3b542a860ef0396d4f00",
      "itemName": "레어 무기 클론 아바타[45Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "19383447f8f628683a6e467af318ef81",
@@ -8745,7 +8721,7 @@
    "finalName": "眞 쿠노이치",
    "sample": 10,
    "topFame": 134840,
-   "avgFame": 133395,
+   "avgFame": 133398,
    "rankers": [
     {
      "serverId": "bakal",
@@ -8781,7 +8757,7 @@
      "level": 115,
      "jobName": "도적",
      "jobGrowName": "眞 쿠노이치",
-     "fame": 134128
+     "fame": 134153
     },
     {
      "serverId": "diregie",
@@ -9135,7 +9111,7 @@
      "itemId": "3fc04b9e515931d1b47b91884aa8a845",
      "itemName": "종언의 선고",
      "itemRarity": "태초",
-     "count": 8
+     "count": 9
     },
     {
      "slotId": "JACKET",
@@ -9240,10 +9216,10 @@
      "count": 3
     },
     {
-     "itemId": "821c509ad1f5d4d62a3326cc24f17aa5",
-     "itemName": "프로스트의 전설 플래티넘[100Lv]",
+     "itemId": "9fb6c2a2b2144ee5a6ce0d58f985ed8d",
+     "itemName": "이터널 크로노스[80Lv]",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     }
    ],
    "creature": [
@@ -9314,9 +9290,18 @@
    "growName": "넨마스터",
    "finalName": "眞 넨마스터",
    "sample": 10,
-   "topFame": 134288,
-   "avgFame": 133192,
+   "topFame": 134454,
+   "avgFame": 133367,
    "rankers": [
+    {
+     "serverId": "cain",
+     "characterId": "a3fd30eca05e924c5f8474feefc68ea3",
+     "characterName": "무진",
+     "level": 115,
+     "jobName": "격투가(남)",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 134454
+    },
     {
      "serverId": "cain",
      "characterId": "331237abb20fe232e61f6e873ac5a49f",
@@ -9397,15 +9382,6 @@
      "jobName": "격투가(남)",
      "jobGrowName": "眞 넨마스터",
      "fame": 132702
-    },
-    {
-     "serverId": "anton",
-     "characterId": "a67de018f8bf5621d19908e53e3f3c69",
-     "characterName": "넨맞좀봐라",
-     "level": 115,
-     "jobName": "격투가(남)",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 132702
     }
    ],
    "sets": [
@@ -9429,7 +9405,7 @@
      "itemId": "0136a822fbb7a662a86cd3c80a5d9de9",
      "itemName": "육신에 스민 재앙",
      "itemRarity": "태초",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "JACKET",
@@ -9509,7 +9485,7 @@
      "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "EARRING",
@@ -9525,19 +9501,19 @@
      "itemId": "131aeea81c05b09dc803a2609c811876",
      "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
-     "count": 4
-    },
-    {
-     "itemId": "6b729ef66560a40dd8f49ebac2eeec2a",
-     "itemName": "철쇄아[A타입][75Lv]",
-     "itemRarity": "레어",
-     "count": 2
+     "count": 5
     },
     {
      "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
      "itemName": "프로스트의 전설 플래티넘[75Lv]",
      "itemRarity": "레어",
      "count": 2
+    },
+    {
+     "itemId": "8dc8afcd35940bc4efcd373060f17cad",
+     "itemName": "이터널 크로노스[75Lv]",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "creature": [
@@ -9545,7 +9521,7 @@
      "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
      "itemName": "운명을 담는 여신[75Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 6
     },
     {
      "itemId": "9af51e9ea06ffe31d62139cf969a3e63",
@@ -9554,10 +9530,10 @@
      "count": 2
     },
     {
-     "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
-     "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
+     "itemId": "263f5b534324602f5be40fb27b23aa80",
+     "itemName": "순백의 옵타티오[75Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 1
     }
    ],
    "aura": [
@@ -9582,6 +9558,12 @@
    ],
    "weapon": [
     {
+     "itemId": "97d09d3f165b61e2f60bb6a575cdd55c",
+     "itemName": "금 1211식 팔치녀",
+     "itemRarity": "",
+     "count": 2
+    },
+    {
      "itemId": "61454eada5a4cdfc50ea7ce9210d6e61",
      "itemName": "운명의 사슬 : 왕관",
      "itemRarity": "",
@@ -9591,12 +9573,6 @@
      "itemId": "4fea63e80023702eec1bc649eebe9185",
      "itemName": "레어 무기 클론 아바타[75Lv]",
      "itemRarity": "레어",
-     "count": 1
-    },
-    {
-     "itemId": "13d87dc6706633ef3e6b36a3a1ac4c23",
-     "itemName": "샤이닝 로어 건틀렛[카오스]",
-     "itemRarity": "",
      "count": 1
     }
    ]
@@ -9896,9 +9872,18 @@
    "growName": "스트리트파이터",
    "finalName": "眞 스트리트파이터",
    "sample": 10,
-   "topFame": 134396,
-   "avgFame": 133501,
+   "topFame": 134426,
+   "avgFame": 133505,
    "rankers": [
+    {
+     "serverId": "diregie",
+     "characterId": "5e6c8fd34e2121ef937b10f325ca0bcc",
+     "characterName": "나는런처다ㆍ",
+     "level": 115,
+     "jobName": "격투가(남)",
+     "jobGrowName": "眞 스트리트파이터",
+     "fame": 134426
+    },
     {
      "serverId": "bakal",
      "characterId": "6d057371eaa6374e8442853612e27677",
@@ -9907,15 +9892,6 @@
      "jobName": "격투가(남)",
      "jobGrowName": "眞 스트리트파이터",
      "fame": 134396
-    },
-    {
-     "serverId": "diregie",
-     "characterId": "5e6c8fd34e2121ef937b10f325ca0bcc",
-     "characterName": "나는런처다ㆍ",
-     "level": 115,
-     "jobName": "격투가(남)",
-     "jobGrowName": "眞 스트리트파이터",
-     "fame": 134388
     },
     {
      "serverId": "anton",
@@ -9946,6 +9922,15 @@
     },
     {
      "serverId": "casillas",
+     "characterId": "a51677ed7324e636d1bd1ae74f13ffbf",
+     "characterName": "가둬버렷하응",
+     "level": 115,
+     "jobName": "격투가(남)",
+     "jobGrowName": "眞 스트리트파이터",
+     "fame": 132702
+    },
+    {
+     "serverId": "casillas",
      "characterId": "8d48aeb1b21e031b89deed15b4985f16",
      "characterName": "데빌독",
      "level": 115,
@@ -9963,15 +9948,6 @@
      "fame": 132702
     },
     {
-     "serverId": "diregie",
-     "characterId": "a2cc2ce57238bc237fa80b63994b97c5",
-     "characterName": "이상성욕",
-     "level": 115,
-     "jobName": "격투가(남)",
-     "jobGrowName": "眞 스트리트파이터",
-     "fame": 132702
-    },
-    {
      "serverId": "bakal",
      "characterId": "9900770742e49e80a6eb4c624a7a0521",
      "characterName": "뒷골목",
@@ -9981,9 +9957,9 @@
      "fame": 132646
     },
     {
-     "serverId": "casillas",
-     "characterId": "a51677ed7324e636d1bd1ae74f13ffbf",
-     "characterName": "가둬버렷하응",
+     "serverId": "bakal",
+     "characterId": "17fabab4643e4f15cac13b1c10e29ce2",
+     "characterName": "크발몰빵",
      "level": 115,
      "jobName": "격투가(남)",
      "jobGrowName": "眞 스트리트파이터",
@@ -10127,7 +10103,7 @@
      "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
      "itemName": "운명을 담는 여신[30Lv]",
      "itemRarity": "레어",
-     "count": 6
+     "count": 5
     },
     {
      "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
@@ -10139,21 +10115,21 @@
      "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
      "itemName": "순백의 옵타티오[30Lv]",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     }
    ],
    "aura": [
     {
-     "itemId": "c6ca900e513cccb177890939de234227",
+     "itemId": "d3acc86ccab5eb282d881adb2c851cef",
      "itemName": "열대야의 추억",
-     "itemRarity": "",
-     "count": 8
+     "itemRarity": "레어",
+     "count": 7
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     }
    ],
    "weapon": [
@@ -10458,10 +10434,10 @@
      "count": 2
     },
     {
-     "itemId": "a6b08b9ed7638284ec99f4c6f6dbc242",
-     "itemName": "여행하는 보노즈의 조개껍질과 돌멩이",
+     "itemId": "6e72092c8180c770ea2eef883999946b",
+     "itemName": "악몽을 이겨낸 흉터각인",
      "itemRarity": "",
-     "count": 1
+     "count": 2
     }
    ]
   },
@@ -10473,7 +10449,7 @@
    "finalName": "眞 엘레멘탈 바머",
    "sample": 10,
    "topFame": 136369,
-   "avgFame": 133220,
+   "avgFame": 133226,
    "rankers": [
     {
      "serverId": "anton",
@@ -10548,6 +10524,15 @@
      "fame": 132657
     },
     {
+     "serverId": "bakal",
+     "characterId": "9ba51e8302e8aca7d8cd928751955d1a",
+     "characterName": "전설의록맨†",
+     "level": 115,
+     "jobName": "마법사(남)",
+     "jobGrowName": "眞 엘레멘탈 바머",
+     "fame": 132641
+    },
+    {
      "serverId": "diregie",
      "characterId": "fb2532b2cc8bda9652e5f1a51e87cf6d",
      "characterName": "림보의정리",
@@ -10555,15 +10540,6 @@
      "jobName": "마법사(남)",
      "jobGrowName": "眞 엘레멘탈 바머",
      "fame": 132624
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "6b4da756c9b105f7fa0787baec012607",
-     "characterName": "댕스터",
-     "level": 115,
-     "jobName": "마법사(남)",
-     "jobGrowName": "眞 엘레멘탈 바머",
-     "fame": 132586
     }
    ],
    "sets": [
@@ -10587,7 +10563,7 @@
      "itemId": "e46ce765e856d53e73e042737eb0242d",
      "itemName": "흘러내리는 썩은 피",
      "itemRarity": "태초",
-     "count": 5
+     "count": 4
     },
     {
      "slotId": "JACKET",
@@ -10683,7 +10659,7 @@
      "itemId": "7cdecc590ff1920d9cbffc684070d72a",
      "itemName": "프로스트의 전설 플래티넘[30Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 4
     },
     {
      "itemId": "c5e3fb41884557bfde1672cf6e60898c",
@@ -10700,16 +10676,16 @@
    ],
    "creature": [
     {
-     "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
-     "itemName": "운명을 담는 재단사 플래티넘[30Lv]",
-     "itemRarity": "레어",
-     "count": 4
-    },
-    {
      "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
      "itemName": "운명을 담는 여신[30Lv]",
      "itemRarity": "레어",
-     "count": 4
+     "count": 5
+    },
+    {
+     "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
+     "itemName": "운명을 담는 재단사 플래티넘[30Lv]",
+     "itemRarity": "레어",
+     "count": 3
     },
     {
      "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
@@ -10723,17 +10699,17 @@
      "itemId": "d3acc86ccab5eb282d881adb2c851cef",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 8
-    },
-    {
-     "itemId": "b115f9551fd7e226df474a14607b05ae",
-     "itemName": "루미너스 게이트",
-     "itemRarity": "레어",
-     "count": 1
+     "count": 7
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
+     "itemRarity": "레어",
+     "count": 2
+    },
+    {
+     "itemId": "b115f9551fd7e226df474a14607b05ae",
+     "itemName": "루미너스 게이트",
      "itemRarity": "레어",
      "count": 1
     }
@@ -10767,7 +10743,7 @@
    "finalName": "眞 빙결사",
    "sample": 10,
    "topFame": 136150,
-   "avgFame": 133614,
+   "avgFame": 133621,
    "rankers": [
     {
      "serverId": "bakal",
@@ -10812,7 +10788,7 @@
      "level": 115,
      "jobName": "마법사(남)",
      "jobGrowName": "眞 빙결사",
-     "fame": 132980
+     "fame": 133018
     },
     {
      "serverId": "cain",
@@ -10822,6 +10798,15 @@
      "jobName": "마법사(남)",
      "jobGrowName": "眞 빙결사",
      "fame": 132724
+    },
+    {
+     "serverId": "cain",
+     "characterId": "caf0d9c91e69f9657f5a5acc2e756c20",
+     "characterName": "KTbdd",
+     "level": 115,
+     "jobName": "마법사(남)",
+     "jobGrowName": "眞 빙결사",
+     "fame": 132702
     },
     {
      "serverId": "hilder",
@@ -10849,15 +10834,6 @@
      "jobName": "마법사(남)",
      "jobGrowName": "眞 빙결사",
      "fame": 132696
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "51d1238c8a6bd8319374dd7852b3a09f",
-     "characterName": "뚜포니아",
-     "level": 115,
-     "jobName": "마법사(남)",
-     "jobGrowName": "眞 빙결사",
-     "fame": 132675
     }
    ],
    "sets": [
@@ -10878,10 +10854,10 @@
     {
      "slotId": "WEAPON",
      "slotName": "무기",
-     "itemId": "e46ce765e856d53e73e042737eb0242d",
-     "itemName": "흘러내리는 썩은 피",
+     "itemId": "074e07daccc7b30a4a23ed90a12a91ff",
+     "itemName": "끝없는 분노의 지팡이",
      "itemRarity": "태초",
-     "count": 3
+     "count": 4
     },
     {
      "slotId": "JACKET",
@@ -10977,13 +10953,13 @@
      "itemId": "131aeea81c05b09dc803a2609c811876",
      "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 4
     },
     {
      "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
      "itemName": "프로스트의 전설 플래티넘[75Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     },
     {
      "itemId": "a2de545de7e2212fb333bbb5534684f7",
@@ -10997,19 +10973,19 @@
      "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
      "itemName": "운명을 담는 여신[75Lv]",
      "itemRarity": "레어",
-     "count": 3
-    },
-    {
-     "itemId": "9af51e9ea06ffe31d62139cf969a3e63",
-     "itemName": "트로피컬 가이드 운디네[75Lv]",
-     "itemRarity": "레어",
-     "count": 2
+     "count": 4
     },
     {
      "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
      "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
      "itemRarity": "레어",
      "count": 2
+    },
+    {
+     "itemId": "9af51e9ea06ffe31d62139cf969a3e63",
+     "itemName": "트로피컬 가이드 운디네[75Lv]",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "aura": [
@@ -11017,13 +10993,13 @@
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 8
+     "count": 7
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     }
    ],
    "weapon": [
@@ -11054,8 +11030,8 @@
    "growName": "블러드 메이지",
    "finalName": "眞 블러드 메이지",
    "sample": 10,
-   "topFame": 134038,
-   "avgFame": 132811,
+   "topFame": 134043,
+   "avgFame": 132795,
    "rankers": [
     {
      "serverId": "cain",
@@ -11064,7 +11040,7 @@
      "level": 115,
      "jobName": "마법사(남)",
      "jobGrowName": "眞 블러드 메이지",
-     "fame": 134038
+     "fame": 134043
     },
     {
      "serverId": "cain",
@@ -11083,15 +11059,6 @@
      "jobName": "마법사(남)",
      "jobGrowName": "眞 블러드 메이지",
      "fame": 132702
-    },
-    {
-     "serverId": "cain",
-     "characterId": "b8b638cde0cad66cada7d3e1da502486",
-     "characterName": "윤나람",
-     "level": 115,
-     "jobName": "마법사(남)",
-     "jobGrowName": "眞 블러드 메이지",
-     "fame": 132668
     },
     {
      "serverId": "casillas",
@@ -11146,6 +11113,15 @@
      "jobName": "마법사(남)",
      "jobGrowName": "眞 블러드 메이지",
      "fame": 132574
+    },
+    {
+     "serverId": "cain",
+     "characterId": "d9e08be3dce7f275ecab1f024f972615",
+     "characterName": "쫀득한뱀파",
+     "level": 115,
+     "jobName": "마법사(남)",
+     "jobGrowName": "眞 블러드 메이지",
+     "fame": 132507
     }
    ],
    "sets": [
@@ -11172,8 +11148,8 @@
     {
      "slotId": "WEAPON",
      "slotName": "무기",
-     "itemId": "e46ce765e856d53e73e042737eb0242d",
-     "itemName": "흘러내리는 썩은 피",
+     "itemId": "074e07daccc7b30a4a23ed90a12a91ff",
+     "itemName": "끝없는 분노의 지팡이",
      "itemRarity": "태초",
      "count": 4
     },
@@ -11291,17 +11267,17 @@
      "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
      "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
      "itemRarity": "레어",
-     "count": 4
-    },
-    {
-     "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
-     "itemName": "운명을 담는 여신[30Lv]",
-     "itemRarity": "레어",
-     "count": 2
+     "count": 3
     },
     {
      "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
      "itemName": "운명을 담는 여신[75Lv]",
+     "itemRarity": "레어",
+     "count": 3
+    },
+    {
+     "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
+     "itemName": "운명을 담는 여신[30Lv]",
      "itemRarity": "레어",
      "count": 2
     }
@@ -11328,14 +11304,14 @@
      "count": 4
     },
     {
-     "itemId": "67beb20ad89bcb9b31b7db3755bfff99",
-     "itemName": "루미나리에 로드",
+     "itemId": "216e82c6f590c07aa93ca434daf6df92",
+     "itemName": "블러드비스",
      "itemRarity": "",
-     "count": 1
+     "count": 2
     },
     {
-     "itemId": "38c3a30c2695eb9f2129b80470d38062",
-     "itemName": "트위스터 드라이브",
+     "itemId": "67beb20ad89bcb9b31b7db3755bfff99",
+     "itemName": "루미나리에 로드",
      "itemRarity": "",
      "count": 1
     }
@@ -11349,7 +11325,7 @@
    "finalName": "眞 스위프트 마스터",
    "sample": 10,
    "topFame": 136307,
-   "avgFame": 132907,
+   "avgFame": 132911,
    "rankers": [
     {
      "serverId": "prey",
@@ -11433,13 +11409,13 @@
      "fame": 132180
     },
     {
-     "serverId": "cain",
-     "characterId": "cbdda61df217d0afb7de58013a3f4c19",
-     "characterName": "선우아올맨",
+     "serverId": "diregie",
+     "characterId": "d8317e7b3d01c0cfd735c6ab4ed1c067",
+     "characterName": "양정동바라미",
      "level": 115,
      "jobName": "마법사(남)",
      "jobGrowName": "眞 스위프트 마스터",
-     "fame": 132108
+     "fame": 132151
     }
    ],
    "sets": [
@@ -11447,7 +11423,13 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 10
+     "count": 9
+    },
+    {
+     "itemName": "압도적인 자연 세트",
+     "itemId": "47b783bd269732293208e991024893d9",
+     "itemRarity": "에픽",
+     "count": 1
     }
    ],
    "gear": [
@@ -11465,7 +11447,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "SHOULDER",
@@ -11473,7 +11455,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "PANTS",
@@ -11481,7 +11463,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "SHOES",
@@ -11489,7 +11471,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "WAIST",
@@ -11497,7 +11479,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "AMULET",
@@ -11505,7 +11487,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "WRIST",
@@ -11513,7 +11495,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "RING",
@@ -11537,7 +11519,7 @@
      "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 8
     },
     {
      "slotId": "EARRING",
@@ -11545,7 +11527,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 8
     }
    ],
    "title": [
@@ -11576,16 +11558,16 @@
      "count": 4
     },
     {
-     "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
-     "itemName": "운명을 담는 여신[35Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "53ace2da0517e136790361719db7edf9",
      "itemName": "운명을 담는 재단사 플래티넘[80Lv]",
      "itemRarity": "레어",
      "count": 2
+    },
+    {
+     "itemId": "6a775cf60603b66698441b72aca2bbac",
+     "itemName": "순백의 옵타티오[80Lv]",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "aura": [
@@ -11607,7 +11589,7 @@
      "itemId": "33b0a9acc74e5d921db90a55e1963402",
      "itemName": "레어 무기 클론 아바타[80Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "46503718fa5bf7a45069d7f06993eb92",
@@ -11904,8 +11886,8 @@
      "count": 2
     },
     {
-     "itemId": "5bb9517c46e726cbe388c2504a947e77",
-     "itemName": "장난꾸러기 도깨비의 깨비 방망이",
+     "itemId": "975e0e971c0bf9ec1533eff1dc95ca1e",
+     "itemName": "악몽을 이겨낸 비정이 깃든 고목",
      "itemRarity": "",
      "count": 1
     }
@@ -12207,7 +12189,7 @@
    "finalName": "眞 크리에이터",
    "sample": 10,
    "topFame": 136104,
-   "avgFame": 133525,
+   "avgFame": 133532,
    "rankers": [
     {
      "serverId": "cain",
@@ -12273,6 +12255,15 @@
      "fame": 132738
     },
     {
+     "serverId": "cain",
+     "characterId": "9171e40021ba06044a8b91f4e53fdc1d",
+     "characterName": "민스킨",
+     "level": 115,
+     "jobName": "크리에이터",
+     "jobGrowName": "眞 크리에이터",
+     "fame": 132651
+    },
+    {
      "serverId": "hilder",
      "characterId": "a3bed625b00a6ea94da8d9969b82e002",
      "characterName": "짭븜",
@@ -12282,36 +12273,27 @@
      "fame": 132651
     },
     {
-     "serverId": "prey",
-     "characterId": "88b8bd3e62b5b21b0dc23bf8242c3448",
-     "characterName": "피스네이아",
-     "level": 115,
-     "jobName": "크리에이터",
-     "jobGrowName": "眞 크리에이터",
-     "fame": 132624
-    },
-    {
      "serverId": "cain",
-     "characterId": "1af8ad1b2046347196631b42593214ed",
-     "characterName": "알왈얼월",
+     "characterId": "cc01be54ed92b83271b77537f85c31cd",
+     "characterName": "캘도님",
      "level": 115,
      "jobName": "크리에이터",
      "jobGrowName": "眞 크리에이터",
-     "fame": 132613
+     "fame": 132651
     }
    ],
    "sets": [
     {
-     "itemName": "칠흑의 정화 세트",
-     "itemId": "43803200c544fd434d9ab5c9880bebd3",
-     "itemRarity": "에픽",
-     "count": 6
-    },
-    {
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 4
+     "count": 5
+    },
+    {
+     "itemName": "칠흑의 정화 세트",
+     "itemId": "43803200c544fd434d9ab5c9880bebd3",
+     "itemRarity": "에픽",
+     "count": 5
     }
    ],
    "gear": [
@@ -12321,63 +12303,63 @@
      "itemId": "e46ce765e856d53e73e042737eb0242d",
      "itemName": "흘러내리는 썩은 피",
      "itemRarity": "태초",
-     "count": 4
+     "count": 5
     },
     {
      "slotId": "JACKET",
      "slotName": "상의",
-     "itemId": "43803200c544fd434d9ab5c9880bebd3",
+     "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "SHOULDER",
      "slotName": "머리어깨",
-     "itemId": "1fd5aa7227fb90d934620fd2b9bfbef6",
+     "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "PANTS",
      "slotName": "하의",
-     "itemId": "0bf45c3b01cddaf53ee81a5271b20ae4",
+     "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "SHOES",
      "slotName": "신발",
-     "itemId": "a771af545571ab8a78f45c463bab947a",
+     "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "WAIST",
      "slotName": "벨트",
-     "itemId": "951150903ca24cb8598e758ba4875995",
+     "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "AMULET",
      "slotName": "목걸이",
-     "itemId": "9cb8d68a75b3d97f42ee97411f043f42",
-     "itemName": "흑아 : 혼돈의 정화 목걸이",
+     "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
+     "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "WRIST",
      "slotName": "팔찌",
-     "itemId": "9f404dc67c47917d8e5b062b1a2bd149",
-     "itemName": "흑아 : 혼돈의 정화 팔찌",
+     "itemId": "733d2c61423065cb0780674cc806ca3c",
+     "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "RING",
@@ -12409,35 +12391,41 @@
      "itemId": "96259aad86c6455f46f25ad6098d2ea1",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     }
    ],
    "title": [
-    {
-     "itemId": "4ce1f5658bae7c2303ae81437f1a8fc8",
-     "itemName": "순백의 눈꽃 결정[60Lv]",
-     "itemRarity": "레어",
-     "count": 5
-    },
     {
      "itemId": "1b483a53811c5c3b38651416b9570efd",
      "itemName": "프로스트의 전설 플래티넘[60Lv]",
      "itemRarity": "레어",
      "count": 5
+    },
+    {
+     "itemId": "4ce1f5658bae7c2303ae81437f1a8fc8",
+     "itemName": "순백의 눈꽃 결정[60Lv]",
+     "itemRarity": "레어",
+     "count": 4
+    },
+    {
+     "itemId": "9fb6c2a2b2144ee5a6ce0d58f985ed8d",
+     "itemName": "이터널 크로노스[80Lv]",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "creature": [
     {
-     "itemId": "7e751bcc0a47dca721ad98242938cb79",
-     "itemName": "운명을 담는 여신[60Lv]",
-     "itemRarity": "레어",
-     "count": 6
-    },
-    {
      "itemId": "09e710ee1510e30427a0929c665c2552",
      "itemName": "운명을 담는 재단사 플래티넘[60Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 4
+    },
+    {
+     "itemId": "7e751bcc0a47dca721ad98242938cb79",
+     "itemName": "운명을 담는 여신[60Lv]",
+     "itemRarity": "레어",
+     "count": 4
     },
     {
      "itemId": "7cca549d55b649cbb0a6e9acfb97e74a",
@@ -12457,25 +12445,31 @@
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "",
-     "count": 2
+     "count": 1
+    },
+    {
+     "itemId": "b115f9551fd7e226df474a14607b05ae",
+     "itemName": "루미너스 게이트",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "weapon": [
     {
-     "itemId": "640d0e837ecc296cd7d4059e09def977",
-     "itemName": "고고한 별자리의 기억",
-     "itemRarity": "",
-     "count": 2
-    },
-    {
      "itemId": "ba6151b71264e2ed722ea3919aa5e272",
      "itemName": "레어 무기 클론 아바타[60Lv]",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     },
     {
      "itemId": "aad3962e0ca9d483139cc5062e706095",
      "itemName": "카발라 : 최후의 시간",
+     "itemRarity": "",
+     "count": 1
+    },
+    {
+     "itemId": "d2dcfc8e21b2c5e226810efb28e9afb2",
+     "itemName": "2025 아라드 패스 빨간 망토의 빵바구니",
      "itemRarity": "",
      "count": 1
     }
@@ -12489,7 +12483,7 @@
    "finalName": "眞 소드마스터",
    "sample": 10,
    "topFame": 135942,
-   "avgFame": 134860,
+   "avgFame": 134890,
    "rankers": [
     {
      "serverId": "bakal",
@@ -12526,6 +12520,15 @@
      "jobName": "귀검사(여)",
      "jobGrowName": "眞 소드마스터",
      "fame": 134797
+    },
+    {
+     "serverId": "diregie",
+     "characterId": "f6c3a79722c6607549ffc9ddde9284f8",
+     "characterName": "앨리스!",
+     "level": 115,
+     "jobName": "귀검사(여)",
+     "jobGrowName": "眞 소드마스터",
+     "fame": 134570
     },
     {
      "serverId": "prey",
@@ -12571,15 +12574,6 @@
      "jobName": "귀검사(여)",
      "jobGrowName": "眞 소드마스터",
      "fame": 134298
-    },
-    {
-     "serverId": "bakal",
-     "characterId": "bf6a326ab5b6c1c2c99639c51b843a29",
-     "characterName": "머승",
-     "level": 115,
-     "jobName": "귀검사(여)",
-     "jobGrowName": "眞 소드마스터",
-     "fame": 134266
     }
    ],
    "sets": [
@@ -12597,7 +12591,7 @@
      "itemId": "cd49b55e74254b96f8f6ee8dcc5e60e7",
      "itemName": "요도 : 날뛰는 흑혈",
      "itemRarity": "태초",
-     "count": 10
+     "count": 8
     },
     {
      "slotId": "JACKET",
@@ -12724,31 +12718,25 @@
    ],
    "aura": [
     {
+     "itemId": "1c914aadf7b1828de3813b388ffec5e4",
+     "itemName": "신선한 햇살의 조각",
+     "itemRarity": "레어",
+     "count": 4
+    },
+    {
      "itemId": "b115f9551fd7e226df474a14607b05ae",
      "itemName": "루미너스 게이트",
      "itemRarity": "레어",
      "count": 4
     },
     {
-     "itemId": "1c914aadf7b1828de3813b388ffec5e4",
-     "itemName": "신선한 햇살의 조각",
-     "itemRarity": "레어",
-     "count": 3
-    },
-    {
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     }
    ],
    "weapon": [
-    {
-     "itemId": "8aae2a4e5d4a996d02e83e5894ec0402",
-     "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
-     "itemRarity": "",
-     "count": 3
-    },
     {
      "itemId": "bc546ebd48fccab8c6108e954694f5cc",
      "itemName": "샤이닝 로어 도[코스모스]",
@@ -12756,10 +12744,16 @@
      "count": 3
     },
     {
-     "itemId": "9866989cd206542406a2693c951158e7",
-     "itemName": "궁극의 검 : 레바테인",
+     "itemId": "8aae2a4e5d4a996d02e83e5894ec0402",
+     "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
      "itemRarity": "",
-     "count": 1
+     "count": 2
+    },
+    {
+     "itemId": "cff2621d0943b5fb7b6f374f1e64b74f",
+     "itemName": "2025 램번트 라이트",
+     "itemRarity": "",
+     "count": 2
     }
    ]
   },
@@ -13038,6 +13032,12 @@
    ],
    "weapon": [
     {
+     "itemId": "8aae2a4e5d4a996d02e83e5894ec0402",
+     "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
+     "itemRarity": "",
+     "count": 2
+    },
+    {
      "itemId": "5095b16545d4223665ebcc93a4c7f41d",
      "itemName": "흑요",
      "itemRarity": "",
@@ -13048,12 +13048,6 @@
      "itemName": "샤이닝 로어 도[코스모스]",
      "itemRarity": "",
      "count": 2
-    },
-    {
-     "itemId": "a1a78e5c15c02e19a112dbf315664a0d",
-     "itemName": "발키리 : 천상의 검",
-     "itemRarity": "",
-     "count": 1
     }
    ]
   },
@@ -13065,7 +13059,7 @@
    "finalName": "眞 데몬슬레이어",
    "sample": 10,
    "topFame": 136307,
-   "avgFame": 134343,
+   "avgFame": 134351,
    "rankers": [
     {
      "serverId": "prey",
@@ -13128,7 +13122,7 @@
      "level": 115,
      "jobName": "귀검사(여)",
      "jobGrowName": "眞 데몬슬레이어",
-     "fame": 133638
+     "fame": 133716
     },
     {
      "serverId": "hilder",
@@ -13137,7 +13131,7 @@
      "level": 115,
      "jobName": "귀검사(여)",
      "jobGrowName": "眞 데몬슬레이어",
-     "fame": 133554
+     "fame": 133559
     },
     {
      "serverId": "casillas",
@@ -13304,10 +13298,10 @@
      "count": 2
     },
     {
-     "itemId": "c64bb148fe80d998a033392671725fdd",
-     "itemName": "운명을 담는 여신[80Lv]",
+     "itemId": "4e14f0338612a36916280b753f04cc0b",
+     "itemName": "운명을 담는 재단사 플래티넘[40Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 1
     }
    ],
    "aura": [
@@ -13335,13 +13329,13 @@
      "itemId": "39c5374eac888fc21b4c38be1ddbfbd9",
      "itemName": "레어 무기 클론 아바타[80Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "ce0fbd4e9d2ae7c7110232831f22f360",
      "itemName": "루미나리에 소드",
      "itemRarity": "",
-     "count": 2
+     "count": 1
     },
     {
      "itemId": "d3548fb96d9a90f2166888356e7abaa7",
@@ -13628,12 +13622,6 @@
    ],
    "weapon": [
     {
-     "itemId": "b0a8c4b3e3de818abc855dac4fef0e2e",
-     "itemName": "레어 무기 클론 아바타[40Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "5095b16545d4223665ebcc93a4c7f41d",
      "itemName": "흑요",
      "itemRarity": "",
@@ -13643,6 +13631,12 @@
      "itemId": "4943418f0df59ce981da45a8ae75bf06",
      "itemName": "저지먼트 : 심판의 검",
      "itemRarity": "",
+     "count": 1
+    },
+    {
+     "itemId": "0b04f820aa9e94e467b5c957ecab2b4d",
+     "itemName": "레어 무기 클론 아바타[80Lv]",
+     "itemRarity": "레어",
      "count": 1
     }
    ]
@@ -13916,14 +13910,14 @@
    ],
    "weapon": [
     {
-     "itemId": "8aae2a4e5d4a996d02e83e5894ec0402",
-     "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
-     "itemRarity": "",
-     "count": 2
-    },
-    {
      "itemId": "5095b16545d4223665ebcc93a4c7f41d",
      "itemName": "흑요",
+     "itemRarity": "",
+     "count": 3
+    },
+    {
+     "itemId": "8aae2a4e5d4a996d02e83e5894ec0402",
+     "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
      "itemRarity": "",
      "count": 2
     },
@@ -13943,7 +13937,7 @@
    "finalName": "眞 엘븐나이트",
    "sample": 10,
    "topFame": 136417,
-   "avgFame": 134944,
+   "avgFame": 134936,
    "rankers": [
     {
      "serverId": "cain",
@@ -14009,15 +14003,6 @@
      "fame": 134366
     },
     {
-     "serverId": "prey",
-     "characterId": "f44ad75a464fd7193e3e0fa2c00f185a",
-     "characterName": "하드포드",
-     "level": 115,
-     "jobName": "나이트",
-     "jobGrowName": "眞 엘븐나이트",
-     "fame": 134322
-    },
-    {
      "serverId": "anton",
      "characterId": "a20e18f751bc59c91a9a47076da1768f",
      "characterName": "뉴링뉴",
@@ -14034,6 +14019,15 @@
      "jobName": "나이트",
      "jobGrowName": "眞 엘븐나이트",
      "fame": 134244
+    },
+    {
+     "serverId": "cain",
+     "characterId": "518f8b09a9cc86131d3b0eddc3afdfdc",
+     "characterName": "요아정꿀자몽",
+     "level": 115,
+     "jobName": "나이트",
+     "jobGrowName": "眞 엘븐나이트",
+     "fame": 134244
     }
    ],
    "sets": [
@@ -14041,13 +14035,7 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 9
-    },
-    {
-     "itemName": "칠흑의 정화 세트",
-     "itemId": "43803200c544fd434d9ab5c9880bebd3",
-     "itemRarity": "에픽",
-     "count": 1
+     "count": 10
     }
    ],
    "gear": [
@@ -14057,7 +14045,7 @@
      "itemId": "cd49b55e74254b96f8f6ee8dcc5e60e7",
      "itemName": "요도 : 날뛰는 흑혈",
      "itemRarity": "태초",
-     "count": 8
+     "count": 9
     },
     {
      "slotId": "JACKET",
@@ -14065,7 +14053,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "SHOULDER",
@@ -14073,7 +14061,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "PANTS",
@@ -14081,7 +14069,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "SHOES",
@@ -14089,7 +14077,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "WAIST",
@@ -14097,7 +14085,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "AMULET",
@@ -14105,7 +14093,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "WRIST",
@@ -14113,7 +14101,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 9
+     "count": 10
     },
     {
      "slotId": "RING",
@@ -14145,7 +14133,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "SUPPORT_WEAPON",
@@ -14170,8 +14158,8 @@
      "count": 2
     },
     {
-     "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
-     "itemName": "프로스트의 전설 플래티넘[75Lv]",
+     "itemId": "7b5cbddb8f4740628aa1e47a01431eee",
+     "itemName": "운명이 담긴 책[30Lv]",
      "itemRarity": "레어",
      "count": 2
     }
@@ -14181,7 +14169,7 @@
      "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
      "itemName": "운명을 담는 여신[30Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 4
     },
     {
      "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
@@ -14190,10 +14178,10 @@
      "count": 2
     },
     {
-     "itemId": "852a041bc7fe78bf0fd1db835b669a4a",
-     "itemName": "운명을 담는 재단사 플래티넘[75Lv]",
+     "itemId": "263f5b534324602f5be40fb27b23aa80",
+     "itemName": "순백의 옵타티오[75Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 1
     }
    ],
    "aura": [
@@ -14796,21 +14784,21 @@
    ],
    "weapon": [
     {
-     "itemId": "3e476f0cf1f23e679869eff6a632e821",
-     "itemName": "발키리 : 수호의 검",
+     "itemId": "9934e1e0dcc46fb4df7d840f1fdb450a",
+     "itemName": "초필살인봉",
+     "itemRarity": "",
+     "count": 2
+    },
+    {
+     "itemId": "92f33f6c166ad10440b5cb9cbe8f5fd1",
+     "itemName": "스위트 롤리팝",
      "itemRarity": "",
      "count": 1
     },
     {
-     "itemId": "a4f2a978f1a036abd77d5276d916e240",
-     "itemName": "멍이와 함께",
-     "itemRarity": "",
-     "count": 1
-    },
-    {
-     "itemId": "f91559659d3c398cdeb864d85ca80d7e",
-     "itemName": "팬텀 : 혼돈의 둔기",
-     "itemRarity": "",
+     "itemId": "26833f1195cfdafe53ecceed4f1e4a4e",
+     "itemName": "레어 무기 클론 아바타[80Lv]",
+     "itemRarity": "레어",
      "count": 1
     }
    ]
@@ -14823,7 +14811,7 @@
    "finalName": "眞 드래곤나이트",
    "sample": 10,
    "topFame": 136263,
-   "avgFame": 133192,
+   "avgFame": 133215,
    "rankers": [
     {
      "serverId": "prey",
@@ -14842,6 +14830,24 @@
      "jobName": "나이트",
      "jobGrowName": "眞 드래곤나이트",
      "fame": 134322
+    },
+    {
+     "serverId": "cain",
+     "characterId": "b5fabaa8b92d083633da763d1cb8a2c5",
+     "characterName": "드나",
+     "level": 115,
+     "jobName": "나이트",
+     "jobGrowName": "眞 드래곤나이트",
+     "fame": 132782
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "a6769ef2c4b310a3e4b587ba8b29981e",
+     "characterName": "돈얼마나드나",
+     "level": 115,
+     "jobName": "나이트",
+     "jobGrowName": "眞 드래곤나이트",
+     "fame": 132724
     },
     {
      "serverId": "cain",
@@ -14896,24 +14902,6 @@
      "jobName": "나이트",
      "jobGrowName": "眞 드래곤나이트",
      "fame": 132651
-    },
-    {
-     "serverId": "bakal",
-     "characterId": "98dbc9fb6e2022b41190b1ee813292d5",
-     "characterName": "포츈",
-     "level": 115,
-     "jobName": "나이트",
-     "jobGrowName": "眞 드래곤나이트",
-     "fame": 132651
-    },
-    {
-     "serverId": "cain",
-     "characterId": "99ad74293b51f80bcc7b09c1ab132bfd",
-     "characterName": "꺄황",
-     "level": 115,
-     "jobName": "나이트",
-     "jobGrowName": "眞 드래곤나이트",
-     "fame": 132624
     }
    ],
    "sets": [
@@ -15033,13 +15021,13 @@
      "itemId": "c5913d694137a8bc1f0bc6e1b093d624",
      "itemName": "순백의 눈꽃 결정[80Lv]",
      "itemRarity": "레어",
-     "count": 8
+     "count": 7
     },
     {
      "itemId": "a33cbd6ee4519308cafb65cd3189b279",
      "itemName": "프로스트의 전설 플래티넘[80Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     }
    ],
    "creature": [
@@ -15047,19 +15035,19 @@
      "itemId": "c64bb148fe80d998a033392671725fdd",
      "itemName": "운명을 담는 여신[80Lv]",
      "itemRarity": "레어",
-     "count": 7
+     "count": 5
     },
     {
      "itemId": "53ace2da0517e136790361719db7edf9",
      "itemName": "운명을 담는 재단사 플래티넘[80Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     },
     {
      "itemId": "0f72424ddcd81a6bba68db9cb43d467e",
      "itemName": "트로피컬 가이드 운디네[80Lv]",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     }
    ],
    "aura": [
@@ -15399,7 +15387,7 @@
    "finalName": "眞 듀얼리스트",
    "sample": 10,
    "topFame": 134322,
-   "avgFame": 132984,
+   "avgFame": 133017,
    "rankers": [
     {
      "serverId": "prey",
@@ -15429,13 +15417,22 @@
      "fame": 132738
     },
     {
+     "serverId": "prey",
+     "characterId": "c26b5be9933e97c790e7b658a3e3ebf7",
+     "characterName": "듀란달",
+     "level": 115,
+     "jobName": "마창사",
+     "jobGrowName": "眞 듀얼리스트",
+     "fame": 132724
+    },
+    {
      "serverId": "cain",
      "characterId": "b69210bd8f5a7ac971a8e6f79bbad4c0",
      "characterName": "듀평",
      "level": 115,
      "jobName": "마창사",
      "jobGrowName": "眞 듀얼리스트",
-     "fame": 132711
+     "fame": 132716
     },
     {
      "serverId": "cain",
@@ -15481,15 +15478,6 @@
      "jobName": "마창사",
      "jobGrowName": "眞 듀얼리스트",
      "fame": 132608
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "603f935c21c8fa5a09d0addbddd1f745",
-     "characterName": "관사맨",
-     "level": 115,
-     "jobName": "마창사",
-     "jobGrowName": "眞 듀얼리스트",
-     "fame": 132396
     }
    ],
    "sets": [
@@ -15609,7 +15597,7 @@
      "itemId": "fd881f22fb227bf52def891e1c8ad5b1",
      "itemName": "프로스트의 전설 플래티넘[75Lv]",
      "itemRarity": "레어",
-     "count": 5
+     "count": 4
     },
     {
      "itemId": "131aeea81c05b09dc803a2609c811876",
@@ -15618,8 +15606,8 @@
      "count": 3
     },
     {
-     "itemId": "01589b07151621fe7d6b47d2f8a55226",
-     "itemName": "천둥 신의 무구[35Lv]",
+     "itemId": "6f008c0c92c0346b114d2ffdafb92292",
+     "itemName": "프로스트의 전설 플래티넘[35Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -15632,14 +15620,14 @@
      "count": 4
     },
     {
-     "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
-     "itemName": "운명을 담는 여신[75Lv]",
+     "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
+     "itemName": "운명을 담는 여신[35Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     },
     {
-     "itemId": "263f5b534324602f5be40fb27b23aa80",
-     "itemName": "순백의 옵타티오[75Lv]",
+     "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
+     "itemName": "운명을 담는 여신[75Lv]",
      "itemRarity": "레어",
      "count": 2
     }
@@ -15666,15 +15654,15 @@
    ],
    "weapon": [
     {
-     "itemId": "583b9eada7a8a0224871b553123665c1",
-     "itemName": "악몽을 이겨낸 종언을 비튼 창",
-     "itemRarity": "",
-     "count": 1
-    },
-    {
      "itemId": "cce98b870840bf08d7a1a02beecf31dd",
      "itemName": "레어 무기 클론 아바타[80Lv]",
      "itemRarity": "레어",
+     "count": 2
+    },
+    {
+     "itemId": "583b9eada7a8a0224871b553123665c1",
+     "itemName": "악몽을 이겨낸 종언을 비튼 창",
+     "itemRarity": "",
      "count": 1
     },
     {
@@ -15993,7 +15981,7 @@
    "finalName": "眞 다크 랜서",
    "sample": 10,
    "topFame": 134322,
-   "avgFame": 132719,
+   "avgFame": 132825,
    "rankers": [
     {
      "serverId": "casillas",
@@ -16030,6 +16018,15 @@
      "jobName": "마창사",
      "jobGrowName": "眞 다크 랜서",
      "fame": 132724
+    },
+    {
+     "serverId": "casillas",
+     "characterId": "3f1858c810aa85a67ea9687e1593c1e3",
+     "characterName": "다크랜서",
+     "level": 115,
+     "jobName": "마창사",
+     "jobGrowName": "眞 다크 랜서",
+     "fame": 132702
     },
     {
      "serverId": "diregie",
@@ -16075,15 +16072,6 @@
      "jobName": "마창사",
      "jobGrowName": "眞 다크 랜서",
      "fame": 131652
-    },
-    {
-     "serverId": "cain",
-     "characterId": "e5b0de133022ef8c6bc6e374df374283",
-     "characterName": "暗",
-     "level": 115,
-     "jobName": "마창사",
-     "jobGrowName": "眞 다크 랜서",
-     "fame": 131645
     }
    ],
    "sets": [
@@ -16110,10 +16098,10 @@
     {
      "slotId": "WEAPON",
      "slotName": "무기",
-     "itemId": "bb8561b32ea4ea1e6ba85328cb82523b",
-     "itemName": "위선자의 응징",
+     "itemId": "ab25fc52167049aaa9070f8cb09d6d0d",
+     "itemName": "독기로 점철된 절규",
      "itemRarity": "태초",
-     "count": 4
+     "count": 5
     },
     {
      "slotId": "JACKET",
@@ -16212,14 +16200,14 @@
      "count": 3
     },
     {
-     "itemId": "6f008c0c92c0346b114d2ffdafb92292",
-     "itemName": "프로스트의 전설 플래티넘[35Lv]",
+     "itemId": "131aeea81c05b09dc803a2609c811876",
+     "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
      "count": 3
     },
     {
-     "itemId": "131aeea81c05b09dc803a2609c811876",
-     "itemName": "순백의 눈꽃 결정[75Lv]",
+     "itemId": "6f008c0c92c0346b114d2ffdafb92292",
+     "itemName": "프로스트의 전설 플래티넘[35Lv]",
      "itemRarity": "레어",
      "count": 2
     }
@@ -16232,14 +16220,14 @@
      "count": 3
     },
     {
-     "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
-     "itemName": "운명을 담는 여신[35Lv]",
+     "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
+     "itemName": "운명을 담는 여신[75Lv]",
      "itemRarity": "레어",
      "count": 3
     },
     {
-     "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
-     "itemName": "운명을 담는 여신[75Lv]",
+     "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
+     "itemName": "운명을 담는 여신[35Lv]",
      "itemRarity": "레어",
      "count": 2
     }
@@ -16266,6 +16254,12 @@
    ],
    "weapon": [
     {
+     "itemId": "01f7c328a079e5c035ef50b98a70923b",
+     "itemName": "악몽을 이겨낸 구속의 대공 : 영원불멸의 추종자",
+     "itemRarity": "",
+     "count": 2
+    },
+    {
      "itemId": "4be8a49452eb77fcdffb2246c4bcc8b5",
      "itemName": "레어 무기 클론 아바타[75Lv]",
      "itemRarity": "레어",
@@ -16276,12 +16270,6 @@
      "itemName": "흑뢰",
      "itemRarity": "",
      "count": 2
-    },
-    {
-     "itemId": "01f7c328a079e5c035ef50b98a70923b",
-     "itemName": "악몽을 이겨낸 구속의 대공 : 영원불멸의 추종자",
-     "itemRarity": "",
-     "count": 1
     }
    ]
   },
@@ -16554,14 +16542,14 @@
      "count": 3
     },
     {
-     "itemId": "4ffb56e076d2a0e49f6deba35439ea78",
-     "itemName": "루미나리에 해머",
-     "itemRarity": "",
-     "count": 2
-    },
-    {
      "itemId": "96dc43676d5ba55809851c1ee20b7f34",
      "itemName": "히만 스텔라의 마이크",
+     "itemRarity": "",
+     "count": 1
+    },
+    {
+     "itemId": "4ffb56e076d2a0e49f6deba35439ea78",
+     "itemName": "루미나리에 해머",
      "itemRarity": "",
      "count": 1
     }
@@ -16575,7 +16563,7 @@
    "finalName": "眞 이단심판관",
    "sample": 10,
    "topFame": 134997,
-   "avgFame": 133279,
+   "avgFame": 133295,
    "rankers": [
     {
      "serverId": "cain",
@@ -16632,6 +16620,15 @@
      "fame": 132702
     },
     {
+     "serverId": "cain",
+     "characterId": "17783805fcecbbaf1d878dc42d223aa7",
+     "characterName": "사과",
+     "level": 115,
+     "jobName": "프리스트(여)",
+     "jobGrowName": "眞 이단심판관",
+     "fame": 132702
+    },
+    {
      "serverId": "casillas",
      "characterId": "fad35768a4227de0ee65ad256211344d",
      "characterName": "성염화",
@@ -16657,15 +16654,6 @@
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 이단심판관",
      "fame": 132646
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "a29e8b74f3ff4af5c44f655cfb2f39f7",
-     "characterName": "쾌걸이단",
-     "level": 115,
-     "jobName": "프리스트(여)",
-     "jobGrowName": "眞 이단심판관",
-     "fame": 132545
     }
    ],
    "sets": [
@@ -16673,7 +16661,7 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     },
     {
      "itemName": "칠흑의 정화 세트",
@@ -16684,6 +16672,12 @@
     {
      "itemName": "소울 페어리 세트",
      "itemId": "11f55a9437e514d46ee55c8a8ae82b7e",
+     "itemRarity": "에픽",
+     "count": 1
+    },
+    {
+     "itemName": "한계를 넘어선 에너지 세트",
+     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
      "itemRarity": "에픽",
      "count": 1
     }
@@ -16703,7 +16697,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "SHOULDER",
@@ -16711,7 +16705,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "PANTS",
@@ -16719,7 +16713,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "SHOES",
@@ -16727,7 +16721,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "WAIST",
@@ -16735,7 +16729,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "AMULET",
@@ -16743,7 +16737,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "WRIST",
@@ -16751,7 +16745,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "RING",
@@ -16775,7 +16769,7 @@
      "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 5
     },
     {
      "slotId": "EARRING",
@@ -16783,7 +16777,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 7
+     "count": 6
     }
    ],
    "title": [
@@ -16814,14 +16808,14 @@
      "count": 3
     },
     {
-     "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
-     "itemName": "운명을 담는 여신[30Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "9f0296852b314a1eab704fa89f48d2f6",
      "itemName": "운명을 담는 여신[45Lv]",
+     "itemRarity": "레어",
+     "count": 1
+    },
+    {
+     "itemId": "e497fd13c28840c0e439c7d82013e657",
+     "itemName": "운명을 담는 재단사 플래티넘[45Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -16875,7 +16869,7 @@
    "finalName": "眞 무녀",
    "sample": 10,
    "topFame": 135864,
-   "avgFame": 133176,
+   "avgFame": 133229,
    "rankers": [
     {
      "serverId": "cain",
@@ -16894,6 +16888,15 @@
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 무녀",
      "fame": 134244
+    },
+    {
+     "serverId": "bakal",
+     "characterId": "1173a387c72331cd98891c258922252d",
+     "characterName": "여신",
+     "level": 115,
+     "jobName": "프리스트(여)",
+     "jobGrowName": "眞 무녀",
+     "fame": 133154
     },
     {
      "serverId": "bakal",
@@ -16923,6 +16926,15 @@
      "fame": 132724
     },
     {
+     "serverId": "bakal",
+     "characterId": "0ac76cbf5fe091e0c92f8803c39aee4d",
+     "characterName": "정통무녀",
+     "level": 115,
+     "jobName": "프리스트(여)",
+     "jobGrowName": "眞 무녀",
+     "fame": 132702
+    },
+    {
      "serverId": "prey",
      "characterId": "dcead6492300ee1df5cd450581e12259",
      "characterName": "진이문여",
@@ -16948,24 +16960,6 @@
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 무녀",
      "fame": 132664
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "feb886a2545e3887b00f4fb1032c438a",
-     "characterName": "용박이",
-     "level": 115,
-     "jobName": "프리스트(여)",
-     "jobGrowName": "眞 무녀",
-     "fame": 132662
-    },
-    {
-     "serverId": "diregie",
-     "characterId": "de5ec84a6fa6f8027b846199ce0c762c",
-     "characterName": "용짱무녀",
-     "level": 115,
-     "jobName": "프리스트(여)",
-     "jobGrowName": "眞 무녀",
-     "fame": 132662
     }
    ],
    "sets": [
@@ -17066,7 +17060,7 @@
     {
      "slotId": "MAGIC_STON",
      "slotName": "마법석",
-     "itemId": "96f87549f21b13bbb93d703e7244d621",
+     "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
      "count": 4
@@ -17085,28 +17079,16 @@
      "itemId": "64de2eafdecaeb052cfd9e30dc17341d",
      "itemName": "순백의 눈꽃 결정[40Lv]",
      "itemRarity": "레어",
-     "count": 6
+     "count": 7
     },
     {
      "itemId": "7ff744342ad0586c9d62a73c4c684bde",
      "itemName": "프로스트의 전설 플래티넘[40Lv]",
      "itemRarity": "레어",
      "count": 3
-    },
-    {
-     "itemId": "64f18d3a6bfb6456779ab9b4638a837f",
-     "itemName": "해상구조대 플래티넘[40Lv]",
-     "itemRarity": "레어",
-     "count": 1
     }
    ],
    "creature": [
-    {
-     "itemId": "4e14f0338612a36916280b753f04cc0b",
-     "itemName": "운명을 담는 재단사 플래티넘[40Lv]",
-     "itemRarity": "레어",
-     "count": 5
-    },
     {
      "itemId": "2bf62e4b2c827bbd6ae6e6f28282d6c5",
      "itemName": "운명을 담는 여신[40Lv]",
@@ -17114,8 +17096,14 @@
      "count": 4
     },
     {
-     "itemId": "82bb9d10cdf0fc9b70df1660ca6c3cdc",
-     "itemName": "트로피컬 가이드 운디네[40Lv]",
+     "itemId": "4e14f0338612a36916280b753f04cc0b",
+     "itemName": "운명을 담는 재단사 플래티넘[40Lv]",
+     "itemRarity": "레어",
+     "count": 4
+    },
+    {
+     "itemId": "cd81763d92749659233cf85f437fb36f",
+     "itemName": "순백의 옵타티오[40Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -17125,25 +17113,31 @@
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 7
+     "count": 5
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
-     "count": 3
+     "count": 4
+    },
+    {
+     "itemId": "b115f9551fd7e226df474a14607b05ae",
+     "itemName": "루미너스 게이트",
+     "itemRarity": "레어",
+     "count": 1
     }
    ],
    "weapon": [
     {
-     "itemId": "fd757b8e19be8d9a7bae16056c0b8794",
-     "itemName": "바다 친구 범고래",
-     "itemRarity": "",
-     "count": 3
-    },
-    {
      "itemId": "a3de8bc17640953ac8f1a078c20f5e3d",
      "itemName": "차원의 별이 담긴 토템",
+     "itemRarity": "",
+     "count": 2
+    },
+    {
+     "itemId": "fd757b8e19be8d9a7bae16056c0b8794",
+     "itemName": "바다 친구 범고래",
      "itemRarity": "",
      "count": 2
     },
@@ -17163,7 +17157,7 @@
    "finalName": "眞 미스트리스",
    "sample": 10,
    "topFame": 134602,
-   "avgFame": 133217,
+   "avgFame": 133228,
    "rankers": [
     {
      "serverId": "siroco",
@@ -17191,6 +17185,15 @@
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 미스트리스",
      "fame": 134244
+    },
+    {
+     "serverId": "prey",
+     "characterId": "cec304b018ea283a7398d1b14ce17782",
+     "characterName": "리딤선컴",
+     "level": 115,
+     "jobName": "프리스트(여)",
+     "jobGrowName": "眞 미스트리스",
+     "fame": 132774
     },
     {
      "serverId": "bakal",
@@ -17229,15 +17232,6 @@
      "fame": 132702
     },
     {
-     "serverId": "cain",
-     "characterId": "044c6159d995b737778970c5554ada39",
-     "characterName": "신새희",
-     "level": 115,
-     "jobName": "프리스트(여)",
-     "jobGrowName": "眞 미스트리스",
-     "fame": 132702
-    },
-    {
      "serverId": "diregie",
      "characterId": "53ee7956d59eb342181d6d1395b555e2",
      "characterName": "츄미_미스",
@@ -17248,12 +17242,12 @@
     },
     {
      "serverId": "cain",
-     "characterId": "47d3474acfb260165b6625cf6effa246",
-     "characterName": "WhiteForest",
+     "characterId": "a310e05b1a74baae0e43c86d92298a2a",
+     "characterName": "바실리카",
      "level": 115,
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 미스트리스",
-     "fame": 132624
+     "fame": 132662
     }
    ],
    "sets": [
@@ -17277,7 +17271,7 @@
      "itemId": "4594a10b84a066d7a78477f9ddd4f142",
      "itemName": "검은 질병의 소울 프레데터",
      "itemRarity": "태초",
-     "count": 5
+     "count": 6
     },
     {
      "slotId": "JACKET",
@@ -17373,19 +17367,19 @@
      "itemId": "7ab3ca045ffc15aa75bf43f183c72eb6",
      "itemName": "순백의 눈꽃 결정[35Lv]",
      "itemRarity": "레어",
-     "count": 4
-    },
-    {
-     "itemId": "c46c68423fadb4184e9a11692136ba66",
-     "itemName": "이터널 크로노스[35Lv]",
-     "itemRarity": "레어",
-     "count": 3
+     "count": 5
     },
     {
      "itemId": "6f008c0c92c0346b114d2ffdafb92292",
      "itemName": "프로스트의 전설 플래티넘[35Lv]",
      "itemRarity": "레어",
      "count": 3
+    },
+    {
+     "itemId": "c46c68423fadb4184e9a11692136ba66",
+     "itemName": "이터널 크로노스[35Lv]",
+     "itemRarity": "레어",
+     "count": 2
     }
    ],
    "creature": [
@@ -17393,13 +17387,13 @@
      "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
      "itemName": "운명을 담는 여신[35Lv]",
      "itemRarity": "레어",
-     "count": 4
+     "count": 5
     },
     {
      "itemId": "c75fc16df20dc6aab207e9f9e2fd610a",
      "itemName": "순백의 옵타티오[35Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "f3d5ea283fdac01378ac70c7b2863d51",
@@ -17413,13 +17407,13 @@
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 7
+     "count": 8
     },
     {
      "itemId": "b115f9551fd7e226df474a14607b05ae",
      "itemName": "루미너스 게이트",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     }
    ],
    "weapon": [
@@ -17430,16 +17424,16 @@
      "count": 2
     },
     {
-     "itemId": "e7429ffc135687a0afb7e151aad4fc40",
-     "itemName": "악몽을 이겨낸 재앙의 송곳니",
+     "itemId": "5b1369fe6206563e66825a3917beee92",
+     "itemName": "칠죄종의 벌",
      "itemRarity": "",
      "count": 2
     },
     {
-     "itemId": "e57565c2a487faaac9e42fd7c15728fd",
-     "itemName": "레어 무기 클론 아바타[80Lv]",
-     "itemRarity": "레어",
-     "count": 2
+     "itemId": "a5e287f785cf4bbe28c0233be07abae8",
+     "itemName": "숲속의 유랑악단 사일런트 첼로",
+     "itemRarity": "",
+     "count": 1
     }
    ]
   },
@@ -17451,7 +17445,7 @@
    "finalName": "眞 인파이터",
    "sample": 10,
    "topFame": 136370,
-   "avgFame": 135079,
+   "avgFame": 134755,
    "rankers": [
     {
      "serverId": "cain",
@@ -17461,15 +17455,6 @@
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 인파이터",
      "fame": 136370
-    },
-    {
-     "serverId": "cain",
-     "characterId": "e435a0604a0ed09656e39bbb871c5a27",
-     "characterName": "스탑로스",
-     "level": 115,
-     "jobName": "프리스트(여)",
-     "jobGrowName": "眞 인파이터",
-     "fame": 136307
     },
     {
      "serverId": "prey",
@@ -17524,6 +17509,15 @@
      "jobName": "프리스트(여)",
      "jobGrowName": "眞 인파이터",
      "fame": 134244
+    },
+    {
+     "serverId": "cain",
+     "characterId": "e435a0604a0ed09656e39bbb871c5a27",
+     "characterName": "스탑로스",
+     "level": 115,
+     "jobName": "프리스트(여)",
+     "jobGrowName": "眞 인파이터",
+     "fame": 133067
     },
     {
      "serverId": "cain",
@@ -17639,7 +17633,7 @@
      "itemId": "df77236c51ea1274a3deb79c3e470695",
      "itemName": "우아한 기품의 향수",
      "itemRarity": "태초",
-     "count": 9
+     "count": 8
     },
     {
      "slotId": "EARRING",
@@ -17647,7 +17641,7 @@
      "itemId": "14449881bc371352c250502e7b201506",
      "itemName": "영롱한 날씨의 큐브",
      "itemRarity": "태초",
-     "count": 6
+     "count": 5
     }
    ],
    "title": [
@@ -18327,7 +18321,7 @@
    "finalName": "眞 트러블 슈터",
    "sample": 10,
    "topFame": 132702,
-   "avgFame": 131848,
+   "avgFame": 131930,
    "rankers": [
     {
      "serverId": "casillas",
@@ -18394,30 +18388,30 @@
     },
     {
      "serverId": "cain",
+     "characterId": "328e8f45d29a94cc01eb19bc34ae0c87",
+     "characterName": "ㄲㄷㅇㅁ",
+     "level": 115,
+     "jobName": "총검사",
+     "jobGrowName": "眞 트러블 슈터",
+     "fame": 131513
+    },
+    {
+     "serverId": "anton",
+     "characterId": "9e378b5308e7c3c40f14fa457e06490c",
+     "characterName": "이현석트슈",
+     "level": 115,
+     "jobName": "총검사",
+     "jobGrowName": "眞 트러블 슈터",
+     "fame": 131166
+    },
+    {
+     "serverId": "cain",
      "characterId": "08eb2f23702aa361330989c216d2a57b",
      "characterName": "피스코샤워",
      "level": 115,
      "jobName": "총검사",
      "jobGrowName": "眞 트러블 슈터",
      "fame": 131125
-    },
-    {
-     "serverId": "cain",
-     "characterId": "92faa05b1c0815d2778ef788491c43a8",
-     "characterName": "족제비와토끼",
-     "level": 115,
-     "jobName": "총검사",
-     "jobGrowName": "眞 트러블 슈터",
-     "fame": 131010
-    },
-    {
-     "serverId": "prey",
-     "characterId": "07be5f1d6bff7582fc7962d71a026511",
-     "characterName": "패시브_낭만",
-     "level": 115,
-     "jobName": "총검사",
-     "jobGrowName": "眞 트러블 슈터",
-     "fame": 130845
     }
    ],
    "sets": [
@@ -18434,14 +18428,14 @@
      "count": 1
     },
     {
-     "itemName": "그림자에 숨은 죽음 세트",
-     "itemId": "ce653434e129a67945878c1c2e66ce73",
+     "itemName": "칠흑의 정화 세트",
+     "itemId": "43803200c544fd434d9ab5c9880bebd3",
      "itemRarity": "에픽",
      "count": 1
     },
     {
-     "itemName": "마력의 영역 세트",
-     "itemId": "69299cc74cb75e3da2a802870c7a4c12",
+     "itemName": "그림자에 숨은 죽음 세트",
+     "itemId": "ce653434e129a67945878c1c2e66ce73",
      "itemRarity": "에픽",
      "count": 1
     }
@@ -18453,7 +18447,7 @@
      "itemId": "70358d52c642ab9405d34e2548a5a5d4",
      "itemName": "질병이 깃든 허기",
      "itemRarity": "태초",
-     "count": 7
+     "count": 6
     },
     {
      "slotId": "JACKET",
@@ -18461,7 +18455,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "SHOULDER",
@@ -18469,7 +18463,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "PANTS",
@@ -18477,7 +18471,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "SHOES",
@@ -18485,7 +18479,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "WAIST",
@@ -18493,7 +18487,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "AMULET",
@@ -18517,7 +18511,7 @@
      "itemId": "aa5273499f19ddba846919dbb6857d82",
      "itemName": "광휘를 머금은 눈동자",
      "itemRarity": "태초",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "SUPPORT",
@@ -18533,7 +18527,7 @@
      "itemId": "0cf2f211de3751d2e4ee971b7b29802b",
      "itemName": "무결한 순수의 마법석",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     },
     {
      "slotId": "EARRING",
@@ -18541,7 +18535,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 7
     }
    ],
    "title": [
@@ -18572,14 +18566,14 @@
      "count": 4
     },
     {
-     "itemId": "c64bb148fe80d998a033392671725fdd",
-     "itemName": "운명을 담는 여신[80Lv]",
+     "itemId": "6a775cf60603b66698441b72aca2bbac",
+     "itemName": "순백의 옵타티오[80Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
-     "itemId": "53ace2da0517e136790361719db7edf9",
-     "itemName": "운명을 담는 재단사 플래티넘[80Lv]",
+     "itemId": "c64bb148fe80d998a033392671725fdd",
+     "itemName": "운명을 담는 여신[80Lv]",
      "itemRarity": "레어",
      "count": 2
     }
@@ -18615,11 +18609,11 @@
      "itemId": "43699b3f7d3974a958d6c19c3cdb27d9",
      "itemName": "2025 아라드 패스 서부의 보안관 더블 배럴 샷건",
      "itemRarity": "",
-     "count": 3
+     "count": 2
     },
     {
-     "itemId": "bd96897f16a3a56b7e98ff0ac0484c8a",
-     "itemName": "디스오더",
+     "itemId": "cfa7d5b9b70754cad16864dd8a7db76a",
+     "itemName": "악몽을 이겨낸 질병이 깃든 허기",
      "itemRarity": "",
      "count": 1
     }
@@ -18633,7 +18627,7 @@
    "finalName": "眞 스페셜리스트",
    "sample": 10,
    "topFame": 132918,
-   "avgFame": 132232,
+   "avgFame": 132227,
    "rankers": [
     {
      "serverId": "cain",
@@ -18687,7 +18681,7 @@
      "level": 115,
      "jobName": "총검사",
      "jobGrowName": "眞 스페셜리스트",
-     "fame": 132372
+     "fame": 132302
     },
     {
      "serverId": "prey",
@@ -18718,12 +18712,12 @@
     },
     {
      "serverId": "cain",
-     "characterId": "a674ad2c49cc64c5eb45dde9ee3289e5",
-     "characterName": "헤라코스",
+     "characterId": "e835547607fb59a8316757d97c3ba9db",
+     "characterName": "메이플간첩",
      "level": 115,
      "jobName": "총검사",
      "jobGrowName": "眞 스페셜리스트",
-     "fame": 131364
+     "fame": 131383
     }
    ],
    "sets": [
@@ -18759,7 +18753,7 @@
      "itemId": "045cf5942214a2e1cd1be287d4730c6d",
      "itemName": "검은 질병의 코어 오리진",
      "itemRarity": "태초",
-     "count": 4
+     "count": 5
     },
     {
      "slotId": "JACKET",
@@ -18906,12 +18900,6 @@
    ],
    "weapon": [
     {
-     "itemId": "634a6bbadf774dfaaad7545ff2c1522d",
-     "itemName": "운명을 담는 자 : 심판의 천칭도",
-     "itemRarity": "",
-     "count": 2
-    },
-    {
      "itemId": "b1dd26d06dec207a4c2b9bd5d30ee995",
      "itemName": "아삭아삭 아이스 소다셔벗",
      "itemRarity": "",
@@ -18921,6 +18909,12 @@
      "itemId": "e0601f9d3175cc177d7647d4206c1890",
      "itemName": "레어 무기 클론 아바타[80Lv]",
      "itemRarity": "레어",
+     "count": 1
+    },
+    {
+     "itemId": "0c609ae69f78e73a78ca44d3ab014587",
+     "itemName": "먹검",
+     "itemRarity": "",
      "count": 1
     }
    ]
@@ -18933,7 +18927,7 @@
    "finalName": "眞 뮤즈",
    "sample": 10,
    "topFame": 135197,
-   "avgFame": 133776,
+   "avgFame": 133800,
    "rankers": [
     {
      "serverId": "cain",
@@ -18945,15 +18939,6 @@
      "fame": 135197
     },
     {
-     "serverId": "siroco",
-     "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
-     "characterName": "전뮤",
-     "level": 115,
-     "jobName": "아처",
-     "jobGrowName": "眞 뮤즈",
-     "fame": 134978
-    },
-    {
      "serverId": "hilder",
      "characterId": "4440974784382c5a8f4fe6a879916248",
      "characterName": "게장맛꽃게랑",
@@ -18961,6 +18946,15 @@
      "jobName": "아처",
      "jobGrowName": "眞 뮤즈",
      "fame": 134712
+    },
+    {
+     "serverId": "siroco",
+     "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
+     "characterName": "전뮤",
+     "level": 115,
+     "jobName": "아처",
+     "jobGrowName": "眞 뮤즈",
+     "fame": 134318
     },
     {
      "serverId": "cain",
@@ -18972,6 +18966,15 @@
      "fame": 134162
     },
     {
+     "serverId": "hilder",
+     "characterId": "940a89fff60ad2b522e1ad1dda0c08dc",
+     "characterName": "소라센",
+     "level": 115,
+     "jobName": "아처",
+     "jobGrowName": "眞 뮤즈",
+     "fame": 134156
+    },
+    {
      "serverId": "cain",
      "characterId": "28d2ef66984e09f19c3a3fcb883d3805",
      "characterName": "트슈퍼마켓",
@@ -18979,15 +18982,6 @@
      "jobName": "아처",
      "jobGrowName": "眞 뮤즈",
      "fame": 133358
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "940a89fff60ad2b522e1ad1dda0c08dc",
-     "characterName": "소라센",
-     "level": 115,
-     "jobName": "아처",
-     "jobGrowName": "眞 뮤즈",
-     "fame": 133256
     },
     {
      "serverId": "hilder",
@@ -19160,14 +19154,14 @@
      "count": 3
     },
     {
-     "itemId": "c64bb148fe80d998a033392671725fdd",
-     "itemName": "운명을 담는 여신[80Lv]",
-     "itemRarity": "레어",
-     "count": 2
-    },
-    {
      "itemId": "5b69fcebc14597b1a91590ac9b60d4da",
      "itemName": "실반 소네트 페어리[80Lv]",
+     "itemRarity": "레어",
+     "count": 1
+    },
+    {
+     "itemId": "44f7e1be80452da7edbe0c5705db5673",
+     "itemName": "유모차냥",
      "itemRarity": "레어",
      "count": 1
     }
@@ -19221,7 +19215,7 @@
    "finalName": "眞 트래블러",
    "sample": 10,
    "topFame": 136751,
-   "avgFame": 135276,
+   "avgFame": 135284,
    "rankers": [
     {
      "serverId": "cain",
@@ -19278,9 +19272,9 @@
      "fame": 134266
     },
     {
-     "serverId": "siroco",
-     "characterId": "1e024b9cacd899ddea8aa0c8f4a06727",
-     "characterName": "건전한트블",
+     "serverId": "cain",
+     "characterId": "d2e75e976b8fa8f96bc65b261d5b3cd7",
+     "characterName": "Gift",
      "level": 115,
      "jobName": "아처",
      "jobGrowName": "眞 트래블러",
@@ -19311,7 +19305,7 @@
      "level": 115,
      "jobName": "아처",
      "jobGrowName": "眞 트래블러",
-     "fame": 133804
+     "fame": 133879
     }
    ],
    "sets": [
@@ -19325,13 +19319,7 @@
      "itemName": "칠흑의 정화 세트",
      "itemId": "43803200c544fd434d9ab5c9880bebd3",
      "itemRarity": "에픽",
-     "count": 2
-    },
-    {
-     "itemName": "한계를 넘어선 에너지 세트",
-     "itemId": "416b382789bc0b50fe07087a63b2a0e9",
-     "itemRarity": "에픽",
-     "count": 1
+     "count": 3
     }
    ],
    "gear": [
@@ -19466,10 +19454,10 @@
      "count": 2
     },
     {
-     "itemId": "dcc54cdc3bbfb31fb48fe529a5eb026c",
-     "itemName": "트로피컬 가이드 운디네[35Lv]",
+     "itemId": "f3d5ea283fdac01378ac70c7b2863d51",
+     "itemName": "운명을 담는 재단사 플래티넘[35Lv]",
      "itemRarity": "레어",
-     "count": 1
+     "count": 2
     }
    ],
    "aura": [
@@ -19500,16 +19488,16 @@
      "count": 4
     },
     {
-     "itemId": "8b86a8d51c909edd15975e42f4eaceb7",
-     "itemName": "금강의 무기",
+     "itemId": "5465a9c7772ba3601d4fc8fe71b13ef2",
+     "itemName": "세레나데가 감싸는 우든 리라",
      "itemRarity": "",
      "count": 2
     },
     {
-     "itemId": "5465a9c7772ba3601d4fc8fe71b13ef2",
-     "itemName": "세레나데가 감싸는 우든 리라",
+     "itemId": "8b86a8d51c909edd15975e42f4eaceb7",
+     "itemName": "금강의 무기",
      "itemRarity": "",
-     "count": 1
+     "count": 2
     }
    ]
   },
@@ -19521,7 +19509,7 @@
    "finalName": "眞 헌터",
    "sample": 10,
    "topFame": 136144,
-   "avgFame": 133539,
+   "avgFame": 133560,
    "rankers": [
     {
      "serverId": "cain",
@@ -19560,6 +19548,24 @@
      "fame": 132938
     },
     {
+     "serverId": "hilder",
+     "characterId": "6d990cca25aa8ffb99a04b6cef9ca76d",
+     "characterName": "물론아냐헌붕",
+     "level": 115,
+     "jobName": "아처",
+     "jobGrowName": "眞 헌터",
+     "fame": 132740
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "56401e05770b1bf8a4d7ac900e7bfe40",
+     "characterName": "PERVERSENESS",
+     "level": 115,
+     "jobName": "아처",
+     "jobGrowName": "眞 헌터",
+     "fame": 132738
+    },
+    {
      "serverId": "cain",
      "characterId": "427f64a8cc9754c15eba7f022870d1de",
      "characterName": "캣걸",
@@ -19594,24 +19600,6 @@
      "jobName": "아처",
      "jobGrowName": "眞 헌터",
      "fame": 132646
-    },
-    {
-     "serverId": "cain",
-     "characterId": "445664d5d84a1d00e7627eb3ba145c55",
-     "characterName": "헌텈ㅋㅋㅋㅋ",
-     "level": 115,
-     "jobName": "아처",
-     "jobGrowName": "眞 헌터",
-     "fame": 132646
-    },
-    {
-     "serverId": "cain",
-     "characterId": "e8ecf43d737c3b1601100806decbbe7f",
-     "characterName": "건실한던청년",
-     "level": 115,
-     "jobName": "아처",
-     "jobGrowName": "眞 헌터",
-     "fame": 132624
     }
    ],
    "sets": [
@@ -19625,13 +19613,7 @@
      "itemName": "칠흑의 정화 세트",
      "itemId": "43803200c544fd434d9ab5c9880bebd3",
      "itemRarity": "에픽",
-     "count": 1
-    },
-    {
-     "itemName": "소울 페어리 세트",
-     "itemId": "11f55a9437e514d46ee55c8a8ae82b7e",
-     "itemRarity": "에픽",
-     "count": 1
+     "count": 2
     }
    ],
    "gear": [
@@ -19740,16 +19722,16 @@
      "count": 2
     },
     {
-     "itemId": "a77ac3d7c8ac9101494d10e46aa90409",
-     "itemName": "이터널 크로노스[30Lv]",
+     "itemId": "131aeea81c05b09dc803a2609c811876",
+     "itemName": "순백의 눈꽃 결정[75Lv]",
      "itemRarity": "레어",
      "count": 2
     },
     {
-     "itemId": "7cdecc590ff1920d9cbffc684070d72a",
-     "itemName": "프로스트의 전설 플래티넘[30Lv]",
+     "itemId": "a77ac3d7c8ac9101494d10e46aa90409",
+     "itemName": "이터널 크로노스[30Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 1
     }
    ],
    "creature": [
@@ -19757,17 +19739,17 @@
      "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
      "itemName": "운명을 담는 여신[30Lv]",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
-     "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
-     "itemName": "순백의 옵타티오[30Lv]",
+     "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
+     "itemName": "운명을 담는 재단사 플래티넘[30Lv]",
      "itemRarity": "레어",
      "count": 2
     },
     {
-     "itemId": "6a775cf60603b66698441b72aca2bbac",
-     "itemName": "순백의 옵타티오[80Lv]",
+     "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
+     "itemName": "순백의 옵타티오[30Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -19777,7 +19759,7 @@
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
-     "count": 4
+     "count": 5
     },
     {
      "itemId": "c6ca900e513cccb177890939de234227",
@@ -19789,7 +19771,7 @@
      "itemId": "b115f9551fd7e226df474a14607b05ae",
      "itemName": "루미너스 게이트",
      "itemRarity": "레어",
-     "count": 2
+     "count": 1
     }
    ],
    "weapon": [
@@ -20120,9 +20102,18 @@
    "growName": "키메라",
    "finalName": "眞 키메라",
    "sample": 10,
-   "topFame": 136184,
-   "avgFame": 134871,
+   "topFame": 136330,
+   "avgFame": 135077,
    "rankers": [
+    {
+     "serverId": "cain",
+     "characterId": "b0e1ac3699f2630535b5033b4b565440",
+     "characterName": "카무이",
+     "level": 115,
+     "jobName": "아처",
+     "jobGrowName": "眞 키메라",
+     "fame": 136330
+    },
     {
      "serverId": "prey",
      "characterId": "2cd3312207a3f1cb6755fb042187fea3",
@@ -20151,6 +20142,15 @@
      "fame": 136008
     },
     {
+     "serverId": "cain",
+     "characterId": "81b3992121c7fed9a104c120ffc485fb",
+     "characterName": "메구미",
+     "level": 115,
+     "jobName": "아처",
+     "jobGrowName": "眞 키메라",
+     "fame": 134418
+    },
+    {
      "serverId": "diregie",
      "characterId": "dee1b5ac8b90217520c11705018e27c5",
      "characterName": "뜨끔",
@@ -20158,15 +20158,6 @@
      "jobName": "아처",
      "jobGrowName": "眞 키메라",
      "fame": 134402
-    },
-    {
-     "serverId": "cain",
-     "characterId": "81b3992121c7fed9a104c120ffc485fb",
-     "characterName": "메구미",
-     "level": 115,
-     "jobName": "아처",
-     "jobGrowName": "眞 키메라",
-     "fame": 134380
     },
     {
      "serverId": "prey",
@@ -20199,15 +20190,6 @@
      "serverId": "prey",
      "characterId": "42aef436978ccb2f689c7dcd2636cad8",
      "characterName": "배니부배방구",
-     "level": 115,
-     "jobName": "아처",
-     "jobGrowName": "眞 키메라",
-     "fame": 134309
-    },
-    {
-     "serverId": "cain",
-     "characterId": "e205d21501802206b818f7ed7542c155",
-     "characterName": "븜끼경호원",
      "level": 115,
      "jobName": "아처",
      "jobGrowName": "眞 키메라",
@@ -20320,10 +20302,10 @@
     {
      "slotId": "EARRING",
      "slotName": "귀걸이",
-     "itemId": "039af53f45fb9d16c597db9b47461c76",
-     "itemName": "강인한 절제의 귀걸이",
-     "itemRarity": "에픽",
-     "count": 5
+     "itemId": "14449881bc371352c250502e7b201506",
+     "itemName": "영롱한 날씨의 큐브",
+     "itemRarity": "태초",
+     "count": 4
     }
    ],
    "title": [
@@ -20334,14 +20316,14 @@
      "count": 5
     },
     {
-     "itemId": "17ca42b2ed2c552d48579749c307b9dc",
-     "itemName": "성운 초월자[80Lv]",
+     "itemId": "918ae27f4398d2cda3222d364a0334fc",
+     "itemName": "해상구조대 플래티넘[80Lv]",
      "itemRarity": "레어",
      "count": 1
     },
     {
-     "itemId": "9fb6c2a2b2144ee5a6ce0d58f985ed8d",
-     "itemName": "이터널 크로노스[80Lv]",
+     "itemId": "17ca42b2ed2c552d48579749c307b9dc",
+     "itemName": "성운 초월자[80Lv]",
      "itemRarity": "레어",
      "count": 1
     }
@@ -20351,7 +20333,7 @@
      "itemId": "53ace2da0517e136790361719db7edf9",
      "itemName": "운명을 담는 재단사 플래티넘[80Lv]",
      "itemRarity": "레어",
-     "count": 2
+     "count": 3
     },
     {
      "itemId": "c64bb148fe80d998a033392671725fdd",
@@ -20368,25 +20350,31 @@
    ],
    "aura": [
     {
+     "itemId": "c6ca900e513cccb177890939de234227",
+     "itemName": "열대야의 추억",
+     "itemRarity": "레어",
+     "count": 4
+    },
+    {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
      "count": 4
     },
     {
-     "itemId": "c6ca900e513cccb177890939de234227",
-     "itemName": "열대야의 추억",
-     "itemRarity": "레어",
-     "count": 3
-    },
-    {
      "itemId": "b115f9551fd7e226df474a14607b05ae",
      "itemName": "루미너스 게이트",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     }
    ],
    "weapon": [
+    {
+     "itemId": "5465a9c7772ba3601d4fc8fe71b13ef2",
+     "itemName": "세레나데가 감싸는 우든 리라",
+     "itemRarity": "",
+     "count": 2
+    },
     {
      "itemId": "2650069a87d6eaaac188383346669205",
      "itemName": "레어 무기 클론 아바타[80Lv]",
@@ -20396,12 +20384,6 @@
     {
      "itemId": "d584b5f0922ad9e59d2561620a6705ea",
      "itemName": "할로윈 베트 보우 [박쥐 타입]",
-     "itemRarity": "",
-     "count": 1
-    },
-    {
-     "itemId": "93cf01eebb304514c15a0b1affe3615f",
-     "itemName": "천 년의 약속을 새긴 자의 미스트 보우",
      "itemRarity": "",
      "count": 1
     }
@@ -20415,7 +20397,7 @@
    "finalName": "眞 브레이커",
    "sample": 10,
    "topFame": 136685,
-   "avgFame": 134877,
+   "avgFame": 134829,
    "rankers": [
     {
      "serverId": "cain",
@@ -20464,15 +20446,6 @@
     },
     {
      "serverId": "cain",
-     "characterId": "d95c339db721bcc256b022991f2981ae",
-     "characterName": "라니마",
-     "level": 115,
-     "jobName": "제국기사",
-     "jobGrowName": "眞 브레이커",
-     "fame": 134310
-    },
-    {
-     "serverId": "cain",
      "characterId": "9b97744dd5b74252e28820b5adf4a578",
      "characterName": "W2",
      "level": 115,
@@ -20506,6 +20479,15 @@
      "jobName": "제국기사",
      "jobGrowName": "眞 브레이커",
      "fame": 133824
+    },
+    {
+     "serverId": "bakal",
+     "characterId": "d4aeda576c0fc2a16e0efd00e7cafc5f",
+     "characterName": "조차",
+     "level": 115,
+     "jobName": "제국기사",
+     "jobGrowName": "眞 브레이커",
+     "fame": 133824
     }
    ],
    "sets": [
@@ -20513,11 +20495,17 @@
      "itemName": "영원히 이어지는 황금향 세트",
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 8
     },
     {
      "itemName": "칠흑의 정화 세트",
      "itemId": "43803200c544fd434d9ab5c9880bebd3",
+     "itemRarity": "에픽",
+     "count": 2
+    },
+    {
+     "itemName": "소울 페어리 세트",
+     "itemId": "11f55a9437e514d46ee55c8a8ae82b7e",
      "itemRarity": "에픽",
      "count": 1
     }
@@ -20529,7 +20517,7 @@
      "itemId": "39a645ef3b151c26b0bd6f4df61f59a4",
      "itemName": "검은 질병의 오케아누스 프라이모디어",
      "itemRarity": "태초",
-     "count": 10
+     "count": 9
     },
     {
      "slotId": "JACKET",
@@ -20537,7 +20525,7 @@
      "itemId": "847ec8e923e46351dc2c747cd121b7f0",
      "itemName": "긍휼 속 자비의 상의",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 7
     },
     {
      "slotId": "SHOULDER",
@@ -20545,7 +20533,7 @@
      "itemId": "c4de6c27c8c1cce1474341a170f06351",
      "itemName": "숭고한 심판의 어깨",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 7
     },
     {
      "slotId": "PANTS",
@@ -20553,7 +20541,7 @@
      "itemId": "2eee49706bce42e0bd022b9a86e7e3c9",
      "itemName": "명예로운 공경의 하의",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 7
     },
     {
      "slotId": "SHOES",
@@ -20561,7 +20549,7 @@
      "itemId": "3dc40d93e54a55bb1e13a4a2633c6efb",
      "itemName": "고요한 안식의 신발",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 7
     },
     {
      "slotId": "WAIST",
@@ -20569,7 +20557,7 @@
      "itemId": "ed24b65d57244bbbde424696bb46e59a",
      "itemName": "완전한 침묵의 벨트",
      "itemRarity": "에픽",
-     "count": 9
+     "count": 7
     },
     {
      "slotId": "AMULET",
@@ -20577,7 +20565,7 @@
      "itemId": "d844d52f4ddec5d044d17daf5ed3e803",
      "itemName": "흑아 : 영롱한 황금향의 축복 - 목걸이",
      "itemRarity": "태초",
-     "count": 9
+     "count": 8
     },
     {
      "slotId": "WRIST",
@@ -20585,7 +20573,7 @@
      "itemId": "733d2c61423065cb0780674cc806ca3c",
      "itemName": "흑아 : 영롱한 황금향의 영광 - 팔찌",
      "itemRarity": "태초",
-     "count": 9
+     "count": 8
     },
     {
      "slotId": "RING",
@@ -20617,7 +20605,7 @@
      "itemId": "039af53f45fb9d16c597db9b47461c76",
      "itemName": "강인한 절제의 귀걸이",
      "itemRarity": "에픽",
-     "count": 6
+     "count": 4
     }
    ],
    "title": [
@@ -20645,7 +20633,7 @@
      "itemId": "f3d5ea283fdac01378ac70c7b2863d51",
      "itemName": "운명을 담는 재단사 플래티넘[35Lv]",
      "itemRarity": "레어",
-     "count": 4
+     "count": 5
     },
     {
      "itemId": "dcc54cdc3bbfb31fb48fe529a5eb026c",
@@ -20665,13 +20653,13 @@
      "itemId": "c6ca900e513cccb177890939de234227",
      "itemName": "열대야의 추억",
      "itemRarity": "레어",
-     "count": 6
+     "count": 7
     },
     {
      "itemId": "1c914aadf7b1828de3813b388ffec5e4",
      "itemName": "신선한 햇살의 조각",
      "itemRarity": "레어",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "b115f9551fd7e226df474a14607b05ae",
@@ -20682,22 +20670,22 @@
    ],
    "weapon": [
     {
+     "itemId": "4665373bc924ea12cdb0610f159da1d1",
+     "itemName": "아이언 메탈 앵커",
+     "itemRarity": "",
+     "count": 2
+    },
+    {
      "itemId": "ba0a235743f5339056df09d61accf136",
      "itemName": "오바드가 울리는 플래티넘 트럼펫",
      "itemRarity": "",
-     "count": 3
+     "count": 2
     },
     {
      "itemId": "1783b62bade386b26a348ff98bde3ca2",
      "itemName": "2026 아라드 패스 웨딩 부케",
      "itemRarity": "",
      "count": 2
-    },
-    {
-     "itemId": "f94e26dc4ed36ed5ce8cdbc14f7a84b3",
-     "itemName": "샤이닝 로어 앵커[카오스]",
-     "itemRarity": "",
-     "count": 1
     }
    ]
   }

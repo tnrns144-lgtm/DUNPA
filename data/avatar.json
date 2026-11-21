@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T05:10:09.867Z",
+ "updatedAt": "2026-11-21T06:08:50.879Z",
  "sale": [
   {
    "goodsNo": 4807974,
@@ -4796,6 +4796,56 @@
    ]
   },
   {
+   "goodsNo": 4752705,
+   "title": "남격투가 레어3부위 상급1부위",
+   "price": 31000000,
+   "jobs": [
+    "격투가(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "97ba3fb9b34b029318320288e640c653",
+     "itemName": "광호제의 포니테일머리[D타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 붉은빛 엠블렘[지능]",
+      "빛나는 붉은빛 엠블렘[지능]"
+     ]
+    },
+    {
+     "itemId": "bb648b7095c005b51ea5a5102872553d",
+     "itemName": "앱솔루트 다크 코트",
+     "slotName": "상의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[강권](남)",
+      "빛나는 녹색빛 엠블렘[HP MAX]"
+     ]
+    },
+    {
+     "itemId": "096bd214f931caae06fdc369011b15b7",
+     "itemName": "남격투가의 흑요석 갑옷 하의",
+     "slotName": "하의 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "플래티넘 엠블렘[뒷골목 싸움법]"
+     ]
+    },
+    {
+     "itemId": "aa53f118dbd755a79d80367d2918da46",
+     "itemName": "혼돈의 루시퍼 검은 날개",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "레어",
+     "emblems": []
+    }
+   ]
+  },
+  {
    "goodsNo": 4741774,
    "title": "여마법사 레어1부위 상급7부위/피부",
    "price": 25000000,
@@ -6333,80 +6383,6 @@
      "itemId": "3f4d59800d1fcaa338d1fb479cd0af89",
      "itemName": "운명의 아르카나 죽음의 사제 초커[A타입]",
      "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4580930,
-   "title": "남격투가 레어1부위 상급6부위",
-   "price": 18999999,
-   "jobs": [
-    "격투가(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "8773098e85a05fa7ca4d046d1342e202",
-     "itemName": "코우가의 모자 투명 아바타",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "8d4f427803eeba4bd0f0840beedaf50a",
-     "itemName": "미스틱 슈퍼 롱 헤어[B타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "화려한 붉은빛 엠블렘[힘]",
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "eee352b78b1928be2524f39b8c605ad0",
-     "itemName": "진 그래플러의 낡은 도복 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "713922196719045ec179d6b5bc420b05",
-     "itemName": "자이언트의 도복 하의[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "7e4780b7b4a2c81df5dd0dcd7ae4c398",
-     "itemName": "차원의 별자리 마법사의 발찌[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "ecb0e0cd0f5162f27942ea4a5607ada5",
-     "itemName": "진 그래플러의 가슴 흉터[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "b1bfe3e9560c522a4739758d2a28eda5",
-     "itemName": "워터밤 페스타 벨트[A타입]",
-     "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든속성저항]"

@@ -1,28 +1,28 @@
 {
- "updatedAt": "2026-11-20T09:18:10.083Z",
- "sample": 137,
- "prevDate": "2026-11-19",
+ "updatedAt": "2026-11-21T06:08:50.879Z",
+ "sample": 134,
+ "prevDate": "2026-11-20",
  "title": [
   {
    "itemId": "a77ac3d7c8ac9101494d10e46aa90409",
    "itemName": "이터널 크로노스[30Lv]",
    "itemRarity": "레어",
-   "count": 15,
-   "delta": 0
+   "count": 14,
+   "delta": -1
   },
   {
    "itemId": "7cdecc590ff1920d9cbffc684070d72a",
    "itemName": "프로스트의 전설 플래티넘[30Lv]",
    "itemRarity": "레어",
-   "count": 13,
-   "delta": 0
+   "count": 12,
+   "delta": -1
   },
   {
    "itemId": "c5e3fb41884557bfde1672cf6e60898c",
    "itemName": "순백의 눈꽃 결정[30Lv]",
    "itemRarity": "레어",
    "count": 11,
-   "delta": 1
+   "delta": 0
   },
   {
    "itemId": "c46c68423fadb4184e9a11692136ba66",
@@ -32,11 +32,18 @@
    "delta": 0
   },
   {
+   "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
+   "itemName": "프로스트의 전설 플래티넘[45Lv]",
+   "itemRarity": "레어",
+   "count": 6,
+   "delta": 1
+  },
+  {
    "itemId": "7ab3ca045ffc15aa75bf43f183c72eb6",
    "itemName": "순백의 눈꽃 결정[35Lv]",
    "itemRarity": "레어",
-   "count": 7,
-   "delta": 0
+   "count": 6,
+   "delta": -1
   },
   {
    "itemId": "a33cbd6ee4519308cafb65cd3189b279",
@@ -60,18 +67,11 @@
    "delta": 0
   },
   {
-   "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
-   "itemName": "프로스트의 전설 플래티넘[45Lv]",
+   "itemId": "f88604c768bb3937e915fddfe93d7423",
+   "itemName": "운명이 담긴 책[30Lv]",
    "itemRarity": "레어",
    "count": 5,
-   "delta": 0
-  },
-  {
-   "itemId": "38f399506cbb7cbb80bae7030a970b70",
-   "itemName": "이터널 크로노스[45Lv]",
-   "itemRarity": "레어",
-   "count": 5,
-   "delta": 0
+   "delta": 1
   }
  ],
  "creature": [
@@ -79,36 +79,36 @@
    "itemId": "a84f38fe2e4debcbe677a3693bdd545b",
    "itemName": "순백의 옵타티오[30Lv]",
    "itemRarity": "레어",
-   "count": 19,
-   "delta": 0
+   "count": 18,
+   "delta": -1
   },
   {
    "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
    "itemName": "운명을 담는 여신[30Lv]",
    "itemRarity": "레어",
-   "count": 17,
-   "delta": 0
+   "count": 18,
+   "delta": 1
   },
   {
    "itemId": "b0c0512c23d593574269e0cb2ef22ccd",
    "itemName": "운명을 담는 재단사 플래티넘[30Lv]",
    "itemRarity": "레어",
    "count": 11,
-   "delta": 1
+   "delta": 0
   },
   {
    "itemId": "4fca0d6f9b3fc81d433312142ef27bc8",
    "itemName": "운명을 담는 여신[35Lv]",
    "itemRarity": "레어",
-   "count": 9,
-   "delta": 0
+   "count": 8,
+   "delta": -1
   },
   {
    "itemId": "9f0296852b314a1eab704fa89f48d2f6",
    "itemName": "운명을 담는 여신[45Lv]",
    "itemRarity": "레어",
-   "count": 8,
-   "delta": 1
+   "count": 7,
+   "delta": -1
   },
   {
    "itemId": "c75fc16df20dc6aab207e9f9e2fd610a",
@@ -118,17 +118,10 @@
    "delta": 0
   },
   {
-   "itemId": "161ce34497f84534a40c7968e2e6a043",
-   "itemName": "트로피컬 가이드 운디네[30Lv]",
+   "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
+   "itemName": "운명을 담는 여신[75Lv]",
    "itemRarity": "레어",
-   "count": 6,
-   "delta": 0
-  },
-  {
-   "itemId": "c64bb148fe80d998a033392671725fdd",
-   "itemName": "운명을 담는 여신[80Lv]",
-   "itemRarity": "레어",
-   "count": 6,
+   "count": 5,
    "delta": 1
   },
   {
@@ -139,8 +132,15 @@
    "delta": 0
   },
   {
-   "itemId": "85db79c91f18d6f7b64f41dbb72fb020",
-   "itemName": "운명을 담는 여신[75Lv]",
+   "itemId": "161ce34497f84534a40c7968e2e6a043",
+   "itemName": "트로피컬 가이드 운디네[30Lv]",
+   "itemRarity": "레어",
+   "count": 5,
+   "delta": -1
+  },
+  {
+   "itemId": "cd81763d92749659233cf85f437fb36f",
+   "itemName": "순백의 옵타티오[40Lv]",
    "itemRarity": "레어",
    "count": 4,
    "delta": 0
@@ -151,22 +151,22 @@
    "itemId": "c6ca900e513cccb177890939de234227",
    "itemName": "열대야의 추억",
    "itemRarity": "레어",
-   "count": 62,
-   "delta": 2
+   "count": 61,
+   "delta": -1
   },
   {
    "itemId": "b115f9551fd7e226df474a14607b05ae",
    "itemName": "루미너스 게이트",
    "itemRarity": "레어",
-   "count": 42,
-   "delta": 0
+   "count": 41,
+   "delta": -1
   },
   {
    "itemId": "1c914aadf7b1828de3813b388ffec5e4",
    "itemName": "신선한 햇살의 조각",
    "itemRarity": "레어",
-   "count": 33,
-   "delta": 1
+   "count": 32,
+   "delta": -1
   }
  ],
  "weapon": [
@@ -174,36 +174,43 @@
    "itemId": "bbc1f68238beb55987c254d12526b2ab",
    "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
    "itemRarity": "",
-   "count": 7,
-   "delta": 3
+   "count": 9,
+   "delta": 2
   },
   {
    "itemId": "d88454180cc78939d5473291e5a0b256",
    "itemName": "레어 무기 클론 아바타[75Lv]",
    "itemRarity": "레어",
    "count": 6,
-   "delta": -2
+   "delta": 0
   },
   {
    "itemId": "b33ee796622d2a657426d8669c6baa02",
    "itemName": "악몽을 이겨낸 오염된 피의 쾌",
    "itemRarity": "",
    "count": 5,
-   "delta": 1
+   "delta": 0
+  },
+  {
+   "itemId": "26833f1195cfdafe53ecceed4f1e4a4e",
+   "itemName": "레어 무기 클론 아바타[80Lv]",
+   "itemRarity": "레어",
+   "count": 5,
+   "delta": 0
+  },
+  {
+   "itemId": "ca0a15b040343bf751e777b05289bca0",
+   "itemName": "악몽을 이겨낸 베놈 앱서버",
+   "itemRarity": "",
+   "count": 4,
+   "delta": 3
   },
   {
    "itemId": "41a617375e7d2772c8c7f13d1baea67b",
    "itemName": "레어 무기 클론 아바타[45Lv]",
    "itemRarity": "레어",
-   "count": 5,
-   "delta": 0
-  },
-  {
-   "itemId": "2650069a87d6eaaac188383346669205",
-   "itemName": "레어 무기 클론 아바타[80Lv]",
-   "itemRarity": "레어",
-   "count": 5,
-   "delta": 0
+   "count": 4,
+   "delta": -1
   },
   {
    "itemId": "cbd892b2b446be023d4a74347f154fee",
@@ -213,11 +220,18 @@
    "delta": 0
   },
   {
-   "itemId": "a475ee2b337d69cd894d51ec39f537ba",
-   "itemName": "레어 무기 클론 아바타[40Lv]",
-   "itemRarity": "레어",
+   "itemId": "5465a9c7772ba3601d4fc8fe71b13ef2",
+   "itemName": "세레나데가 감싸는 우든 리라",
+   "itemRarity": "",
    "count": 3,
-   "delta": 0
+   "delta": 1
+  },
+  {
+   "itemId": "c1d638bdea7609ed4fe3e95081fb7b51",
+   "itemName": "악몽을 이겨낸 흉터각인",
+   "itemRarity": "",
+   "count": 3,
+   "delta": 1
   },
   {
    "itemId": "7ea27abbf1aa7ce8607ed3369d8645e6",
@@ -225,65 +239,51 @@
    "itemRarity": "",
    "count": 3,
    "delta": 0
-  },
-  {
-   "itemId": "d10215a9bff4371191ac8e4fe785e2a3",
-   "itemName": "레어 무기 클론 아바타[70Lv]",
-   "itemRarity": "레어",
-   "count": 3,
-   "delta": 0
-  },
-  {
-   "itemId": "7b7861e88013f9cea71a50a1f2f03ebb",
-   "itemName": "사지타리우스",
-   "itemRarity": "",
-   "count": 2,
-   "delta": 0
   }
  ],
  "risers": [
   {
    "category": "weapon",
-   "itemId": "bbc1f68238beb55987c254d12526b2ab",
-   "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
+   "itemId": "ca0a15b040343bf751e777b05289bca0",
+   "itemName": "악몽을 이겨낸 베놈 앱서버",
    "itemRarity": "",
-   "count": 7,
+   "count": 4,
    "delta": 3,
    "gain": 3
   },
   {
-   "category": "aura",
-   "itemId": "c6ca900e513cccb177890939de234227",
-   "itemName": "열대야의 추억",
-   "itemRarity": "레어",
-   "count": 62,
+   "category": "weapon",
+   "itemId": "bbc1f68238beb55987c254d12526b2ab",
+   "itemName": "악몽을 이겨낸 구속하는 공작의 차원도",
+   "itemRarity": "",
+   "count": 9,
    "delta": 2,
    "gain": 2
+  },
+  {
+   "category": "creature",
+   "itemId": "e1d528b7500341dc3d3b278dc3ece4d2",
+   "itemName": "운명을 담는 여신[30Lv]",
+   "itemRarity": "레어",
+   "count": 18,
+   "delta": 1,
+   "gain": 1
   },
   {
    "category": "title",
-   "itemId": "821c509ad1f5d4d62a3326cc24f17aa5",
-   "itemName": "프로스트의 전설 플래티넘[100Lv]",
+   "itemId": "53ebb215d0249e099ed0cd456e7ff2e4",
+   "itemName": "프로스트의 전설 플래티넘[45Lv]",
    "itemRarity": "레어",
-   "count": 3,
-   "delta": 2,
-   "gain": 2
+   "count": 6,
+   "delta": 1,
+   "gain": 1
   },
   {
-   "category": "weapon",
-   "itemId": "c1d638bdea7609ed4fe3e95081fb7b51",
-   "itemName": "악몽을 이겨낸 흉터각인",
-   "itemRarity": "",
-   "count": 2,
-   "isNew": true,
-   "gain": 2
-  },
-  {
-   "category": "aura",
-   "itemId": "1c914aadf7b1828de3813b388ffec5e4",
-   "itemName": "신선한 햇살의 조각",
+   "category": "title",
+   "itemId": "f88604c768bb3937e915fddfe93d7423",
+   "itemName": "운명이 담긴 책[30Lv]",
    "itemRarity": "레어",
-   "count": 33,
+   "count": 5,
    "delta": 1,
    "gain": 1
   }
@@ -348,13 +348,6 @@
      "fame": 136222
     },
     {
-     "serverId": "siroco",
-     "characterId": "702f227b57a6ff5f11a30947b9243e77",
-     "characterName": "속옷마녀",
-     "jobGrowName": "眞 마도학자",
-     "fame": 136222
-    },
-    {
      "serverId": "hilder",
      "characterId": "44695e7a1b3ea353ea696ff7e2924a0a",
      "characterName": "엔시디아",
@@ -374,9 +367,23 @@
      "characterName": "엄나박",
      "jobGrowName": "眞 헌터",
      "fame": 136062
+    },
+    {
+     "serverId": "cain",
+     "characterId": "787192ad75d3fab31363e4a8e8b6a9e7",
+     "characterName": "상탈33",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 135968
     }
    ],
    "프로스트의 전설 플래티넘[30Lv]": [
+    {
+     "serverId": "cain",
+     "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
+     "characterName": "분노",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 136647
+    },
     {
      "serverId": "hilder",
      "characterId": "0daa8c49cae531262f966dd637008e30",
@@ -404,13 +411,6 @@
      "characterName": "Galboughton",
      "jobGrowName": "眞 엘레멘탈 바머",
      "fame": 136369
-    },
-    {
-     "serverId": "cain",
-     "characterId": "e435a0604a0ed09656e39bbb871c5a27",
-     "characterName": "스탑로스",
-     "jobGrowName": "眞 인파이터",
-     "fame": 136307
     },
     {
      "serverId": "diregie",
@@ -475,7 +475,7 @@
      "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
      "characterName": "라독커",
      "jobGrowName": "眞 웨펀마스터",
-     "fame": 136647
+     "fame": 136685
     },
     {
      "serverId": "diregie",
@@ -592,6 +592,50 @@
      "fame": 135902
     }
    ],
+   "프로스트의 전설 플래티넘[45Lv]": [
+    {
+     "serverId": "cain",
+     "characterId": "c98990e0b5417c31da1c3cdd40079197",
+     "characterName": "테오타르",
+     "jobGrowName": "眞 레인저",
+     "fame": 136707
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "57f8f24821e53d612e7e182539f319ca",
+     "characterName": "샤투킬",
+     "jobGrowName": "眞 레인저",
+     "fame": 136222
+    },
+    {
+     "serverId": "cain",
+     "characterId": "ff542f3e0df15862eb58c392a8111692",
+     "characterName": "Micca",
+     "jobGrowName": "眞 사령술사",
+     "fame": 136207
+    },
+    {
+     "serverId": "cain",
+     "characterId": "7ee0dafaab05afed9bf830f29d952ba2",
+     "characterName": "운라이오닐",
+     "jobGrowName": "眞 레인저",
+     "fame": 136184
+    },
+    {
+     "serverId": "diregie",
+     "characterId": "97166ceee6609f7c072dd375eadaca4f",
+     "characterName": "외발",
+     "jobGrowName": "眞 레인저",
+     "fame": 135952
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "9f33782351514503704109e6b258e2ec",
+     "characterName": "로망캔슬",
+     "jobGrowName": "眞 레인저",
+     "fame": 134950
+    }
+   ],
    "순백의 눈꽃 결정[35Lv]": [
     {
      "serverId": "cain",
@@ -627,13 +671,6 @@
      "characterName": "르베리오",
      "jobGrowName": "眞 요원",
      "fame": 135908
-    },
-    {
-     "serverId": "siroco",
-     "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
-     "characterName": "[환일]",
-     "jobGrowName": "眞 검귀",
-     "fame": 135886
     },
     {
      "serverId": "bakal",
@@ -768,78 +805,41 @@
      "fame": 136222
     }
    ],
-   "프로스트의 전설 플래티넘[45Lv]": [
+   "운명이 담긴 책[30Lv]": [
     {
-     "serverId": "cain",
-     "characterId": "c98990e0b5417c31da1c3cdd40079197",
-     "characterName": "테오타르",
-     "jobGrowName": "眞 레인저",
-     "fame": 136707
-    },
-    {
-     "serverId": "cain",
-     "characterId": "ff542f3e0df15862eb58c392a8111692",
-     "characterName": "Micca",
-     "jobGrowName": "眞 사령술사",
-     "fame": 136207
-    },
-    {
-     "serverId": "cain",
-     "characterId": "7ee0dafaab05afed9bf830f29d952ba2",
-     "characterName": "운라이오닐",
-     "jobGrowName": "眞 레인저",
-     "fame": 136184
-    },
-    {
-     "serverId": "diregie",
-     "characterId": "97166ceee6609f7c072dd375eadaca4f",
-     "characterName": "외발",
-     "jobGrowName": "眞 레인저",
-     "fame": 135952
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "9f33782351514503704109e6b258e2ec",
-     "characterName": "로망캔슬",
-     "jobGrowName": "眞 레인저",
-     "fame": 134950
-    }
-   ],
-   "이터널 크로노스[45Lv]": [
-    {
-     "serverId": "cain",
-     "characterId": "5cf9c8a6a588d2584ba6e533ed41f6ea",
-     "characterName": "냉동탄",
-     "jobGrowName": "眞 스핏파이어",
-     "fame": 136345
-    },
-    {
-     "serverId": "bakal",
-     "characterId": "b8b6e0658a5a61a1c81733ad1085621e",
-     "characterName": "팽귄스핏",
-     "jobGrowName": "眞 스핏파이어",
-     "fame": 136345
-    },
-    {
-     "serverId": "cain",
-     "characterId": "5d313f02f36d2c23c5b9bbbe45b1547d",
-     "characterName": "커맨드의본좌",
-     "jobGrowName": "眞 레인저",
-     "fame": 136307
+     "serverId": "casillas",
+     "characterId": "957f6c17f50e25e201121f3bb42f317e",
+     "characterName": "연동",
+     "jobGrowName": "眞 버서커",
+     "fame": 136685
     },
     {
      "serverId": "prey",
-     "characterId": "5e3aa505cf8b7f70353db84dc5ca5b95",
-     "characterName": "토플러",
+     "characterId": "d7bf9a3385a533179dc7970a38de4380",
+     "characterName": "돈",
      "jobGrowName": "眞 레인저",
-     "fame": 136301
+     "fame": 136354
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "f24d11ee29e11bd0de3401a56c814435",
+     "characterName": "염청",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 136286
     },
     {
      "serverId": "diregie",
-     "characterId": "a15baef72c382b1322eea0b3de53a2df",
-     "characterName": "메카닉(남)",
-     "jobGrowName": "眞 메카닉",
-     "fame": 136112
+     "characterId": "b2507a68383dc59f8b37cc737f13d001",
+     "characterName": "타타",
+     "jobGrowName": "眞 팔라딘",
+     "fame": 136263
+    },
+    {
+     "serverId": "siroco",
+     "characterId": "e7d94b356777cd1b58d7b35e25b46fdb",
+     "characterName": "체인러쉬",
+     "jobGrowName": "眞 엘븐나이트",
+     "fame": 136184
     }
    ]
   },
@@ -864,7 +864,7 @@
      "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
      "characterName": "라독커",
      "jobGrowName": "眞 웨펀마스터",
-     "fame": 136647
+     "fame": 136685
     },
     {
      "serverId": "cain",
@@ -923,10 +923,10 @@
      "fame": 136222
     },
     {
-     "serverId": "siroco",
-     "characterId": "702f227b57a6ff5f11a30947b9243e77",
-     "characterName": "속옷마녀",
-     "jobGrowName": "眞 마도학자",
+     "serverId": "hilder",
+     "characterId": "44695e7a1b3ea353ea696ff7e2924a0a",
+     "characterName": "엔시디아",
+     "jobGrowName": "眞 배틀메이지",
      "fame": 136222
     }
    ],
@@ -937,6 +937,13 @@
      "characterName": "연동",
      "jobGrowName": "眞 버서커",
      "fame": 136685
+    },
+    {
+     "serverId": "cain",
+     "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
+     "characterName": "분노",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 136647
     },
     {
      "serverId": "diregie",
@@ -965,6 +972,13 @@
      "characterName": "돈",
      "jobGrowName": "眞 레인저",
      "fame": 136354
+    },
+    {
+     "serverId": "hilder",
+     "characterId": "f24d11ee29e11bd0de3401a56c814435",
+     "characterName": "염청",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 136286
     },
     {
      "serverId": "diregie",
@@ -1000,20 +1014,6 @@
      "characterName": "호시노선배",
      "jobGrowName": "眞 팔라딘",
      "fame": 136184
-    },
-    {
-     "serverId": "cain",
-     "characterId": "38110ef8b0b8ba173754cd77303bfd42",
-     "characterName": "tenday_01",
-     "jobGrowName": "眞 헌터",
-     "fame": 136144
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "77a3e1cfd6593aea167c064a79143782",
-     "characterName": "파알랑이",
-     "jobGrowName": "眞 트래블러",
-     "fame": 136112
     }
    ],
    "운명을 담는 재단사 플래티넘[30Lv]": [
@@ -1139,13 +1139,6 @@
      "fame": 135902
     },
     {
-     "serverId": "siroco",
-     "characterId": "bc92f597590084b2de0ec074c0d1f6fa",
-     "characterName": "[환일]",
-     "jobGrowName": "眞 검귀",
-     "fame": 135886
-    },
-    {
      "serverId": "bakal",
      "characterId": "149440a852ced4df822a6cb5a4ae9548",
      "characterName": "=아스나=",
@@ -1188,13 +1181,6 @@
      "characterName": "선화양",
      "jobGrowName": "眞 레인저",
      "fame": 136038
-    },
-    {
-     "serverId": "cain",
-     "characterId": "610018ce3b1c8c9bd6d1d58d737c020f",
-     "characterName": "무라사이",
-     "jobGrowName": "眞 사령술사",
-     "fame": 136024
     },
     {
      "serverId": "diregie",
@@ -1269,92 +1255,41 @@
      "fame": 134978
     }
    ],
-   "트로피컬 가이드 운디네[30Lv]": [
-    {
-     "serverId": "bakal",
-     "characterId": "dc00d8e6574fd546f61f80519c144918",
-     "characterName": "이묘량",
-     "jobGrowName": "眞 레인저",
-     "fame": 136432
-    },
+   "운명을 담는 여신[75Lv]": [
     {
      "serverId": "cain",
-     "characterId": "e435a0604a0ed09656e39bbb871c5a27",
-     "characterName": "스탑로스",
-     "jobGrowName": "眞 인파이터",
-     "fame": 136307
-    },
-    {
-     "serverId": "prey",
-     "characterId": "56bbafbcb282da508c18db47fcec6812",
-     "characterName": "전문",
-     "jobGrowName": "眞 다크템플러",
-     "fame": 136301
-    },
-    {
-     "serverId": "diregie",
-     "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
-     "characterName": "룡이찡~♥",
-     "jobGrowName": "眞 마도학자",
-     "fame": 136243
-    },
-    {
-     "serverId": "cain",
-     "characterId": "c321d483350212700fb5fe1921936d24",
-     "characterName": "피싴",
-     "jobGrowName": "眞 비질란테",
-     "fame": 136222
+     "characterId": "91051fdfe2371f6a60afee9bec8c26bd",
+     "characterName": "성자",
+     "jobGrowName": "眞 크루세이더",
+     "fame": 136927
     },
     {
      "serverId": "casillas",
-     "characterId": "979c0124ff6b6cf2597e4a6ab51623b6",
-     "characterName": "우오미",
-     "jobGrowName": "眞 배틀메이지",
-     "fame": 135942
-    }
-   ],
-   "운명을 담는 여신[80Lv]": [
+     "characterId": "ea8f7a1ffa20eb522b215959d66a5c83",
+     "characterName": "수I",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 136394
+    },
     {
      "serverId": "cain",
-     "characterId": "ca70d5e2d05650519fec38523fbe2907",
-     "characterName": "에리스짱",
-     "jobGrowName": "眞 베가본드",
-     "fame": 136368
+     "characterId": "80d5795bf263d0e142271bbe8e78b524",
+     "characterName": "Rovyn",
+     "jobGrowName": "眞 어썰트",
+     "fame": 136207
+    },
+    {
+     "serverId": "prey",
+     "characterId": "65160f998cf8ced6681b53d9c12fdec5",
+     "characterName": "무자비",
+     "jobGrowName": "眞 레인저",
+     "fame": 136163
     },
     {
      "serverId": "hilder",
-     "characterId": "f24d11ee29e11bd0de3401a56c814435",
-     "characterName": "염청",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 136286
-    },
-    {
-     "serverId": "prey",
-     "characterId": "a82db52721b8f088b226a8f4e27a5ec1",
-     "characterName": "3각",
-     "jobGrowName": "眞 드래곤나이트",
-     "fame": 136263
-    },
-    {
-     "serverId": "prey",
-     "characterId": "c7aa5c4b85589ec3eefc00cc3f221e27",
-     "characterName": "무치",
-     "jobGrowName": "眞 키메라",
-     "fame": 136068
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "609decd70233908cf4d2948297798555",
-     "characterName": "The_연우",
-     "jobGrowName": "眞 베가본드",
-     "fame": 136065
-    },
-    {
-     "serverId": "siroco",
-     "characterId": "7b76f4d95b9c55fc6047b1aaf129227c",
-     "characterName": "전뮤",
-     "jobGrowName": "眞 뮤즈",
-     "fame": 134978
+     "characterId": "d5425b2fc531bfced7e73d7fd540cd24",
+     "characterName": "담배핌",
+     "jobGrowName": "眞 크루세이더",
+     "fame": 134940
     }
    ],
    "운명을 담는 재단사 플래티넘[35Lv]": [
@@ -1394,34 +1329,71 @@
      "fame": 134927
     }
    ],
-   "운명을 담는 여신[75Lv]": [
+   "트로피컬 가이드 운디네[30Lv]": [
     {
-     "serverId": "cain",
-     "characterId": "91051fdfe2371f6a60afee9bec8c26bd",
-     "characterName": "성자",
-     "jobGrowName": "眞 크루세이더",
-     "fame": 136927
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "ea8f7a1ffa20eb522b215959d66a5c83",
-     "characterName": "수I",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 136394
+     "serverId": "bakal",
+     "characterId": "dc00d8e6574fd546f61f80519c144918",
+     "characterName": "이묘량",
+     "jobGrowName": "眞 레인저",
+     "fame": 136432
     },
     {
      "serverId": "prey",
-     "characterId": "65160f998cf8ced6681b53d9c12fdec5",
-     "characterName": "무자비",
-     "jobGrowName": "眞 레인저",
-     "fame": 136163
+     "characterId": "56bbafbcb282da508c18db47fcec6812",
+     "characterName": "전문",
+     "jobGrowName": "眞 다크템플러",
+     "fame": 136301
+    },
+    {
+     "serverId": "diregie",
+     "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
+     "characterName": "룡이찡~♥",
+     "jobGrowName": "眞 마도학자",
+     "fame": 136243
+    },
+    {
+     "serverId": "cain",
+     "characterId": "c321d483350212700fb5fe1921936d24",
+     "characterName": "피싴",
+     "jobGrowName": "眞 비질란테",
+     "fame": 136222
+    },
+    {
+     "serverId": "casillas",
+     "characterId": "979c0124ff6b6cf2597e4a6ab51623b6",
+     "characterName": "우오미",
+     "jobGrowName": "眞 배틀메이지",
+     "fame": 135942
+    }
+   ],
+   "순백의 옵타티오[40Lv]": [
+    {
+     "serverId": "prey",
+     "characterId": "93431a232000fc7c8d9d2073de300d7c",
+     "characterName": "노른",
+     "jobGrowName": "眞 엘레멘탈마스터",
+     "fame": 136707
     },
     {
      "serverId": "hilder",
-     "characterId": "d5425b2fc531bfced7e73d7fd540cd24",
-     "characterName": "담배핌",
-     "jobGrowName": "眞 크루세이더",
-     "fame": 134940
+     "characterId": "d2dd0bd71fe94265116c75ef4950b782",
+     "characterName": "deep-dark",
+     "jobGrowName": "眞 어벤저",
+     "fame": 136455
+    },
+    {
+     "serverId": "siroco",
+     "characterId": "188e8cb4927b2651395da8f373cc51a7",
+     "characterName": "테토",
+     "jobGrowName": "眞 엘레멘탈마스터",
+     "fame": 136417
+    },
+    {
+     "serverId": "cain",
+     "characterId": "1b241bda272577a7adfa03c1cc1ca8e1",
+     "characterName": "누님",
+     "jobGrowName": "眞 베가본드",
+     "fame": 136330
     }
    ]
   },
@@ -1440,6 +1412,13 @@
      "characterName": "연동",
      "jobGrowName": "眞 버서커",
      "fame": 136685
+    },
+    {
+     "serverId": "cain",
+     "characterId": "73d5994d30f0bec22d88c76df5ea38a2",
+     "characterName": "분노",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 136647
     },
     {
      "serverId": "diregie",
@@ -1503,13 +1482,6 @@
      "characterName": "돈",
      "jobGrowName": "眞 레인저",
      "fame": 136354
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "f24d11ee29e11bd0de3401a56c814435",
-     "characterName": "염청",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 136286
     }
    ],
    "루미너스 게이트": [
@@ -1553,7 +1525,7 @@
      "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
      "characterName": "라독커",
      "jobGrowName": "眞 웨펀마스터",
-     "fame": 136647
+     "fame": 136685
     },
     {
      "serverId": "cain",
@@ -1688,6 +1660,13 @@
   "weapon": {
    "악몽을 이겨낸 구속하는 공작의 차원도": [
     {
+     "serverId": "bakal",
+     "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
+     "characterName": "라독커",
+     "jobGrowName": "眞 웨펀마스터",
+     "fame": 136685
+    },
+    {
      "serverId": "casillas",
      "characterId": "957f6c17f50e25e201121f3bb42f317e",
      "characterName": "연동",
@@ -1695,10 +1674,10 @@
      "fame": 136685
     },
     {
-     "serverId": "bakal",
-     "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
-     "characterName": "라독커",
-     "jobGrowName": "眞 웨펀마스터",
+     "serverId": "cain",
+     "characterId": "dded368066c6ac5fb53d1c6306d2eb2f",
+     "characterName": "팅민",
+     "jobGrowName": "眞 다크템플러",
      "fame": 136647
     },
     {
@@ -1721,6 +1700,13 @@
      "characterName": "전문",
      "jobGrowName": "眞 다크템플러",
      "fame": 136301
+    },
+    {
+     "serverId": "bakal",
+     "characterId": "b9537b13c96d4b6fa0c2181777614f6e",
+     "characterName": "순백",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 136222
     },
     {
      "serverId": "cain",
@@ -1818,44 +1804,14 @@
      "fame": 135952
     }
    ],
-   "레어 무기 클론 아바타[45Lv]": [
-    {
-     "serverId": "cain",
-     "characterId": "5d313f02f36d2c23c5b9bbbe45b1547d",
-     "characterName": "커맨드의본좌",
-     "jobGrowName": "眞 레인저",
-     "fame": 136307
-    },
-    {
-     "serverId": "cain",
-     "characterId": "610018ce3b1c8c9bd6d1d58d737c020f",
-     "characterName": "무라사이",
-     "jobGrowName": "眞 사령술사",
-     "fame": 136024
-    },
-    {
-     "serverId": "cain",
-     "characterId": "787192ad75d3fab31363e4a8e8b6a9e7",
-     "characterName": "상탈33",
-     "jobGrowName": "眞 소울브링어",
-     "fame": 135968
-    },
-    {
-     "serverId": "prey",
-     "characterId": "4d3a8f365dc0a1ee4099ad57bb70b4a0",
-     "characterName": "다크꼴랑이",
-     "jobGrowName": "眞 사령술사",
-     "fame": 135066
-    },
-    {
-     "serverId": "cain",
-     "characterId": "bfee72143b7cdf0b415db0ab1f6c66dd",
-     "characterName": "메릿사벨",
-     "jobGrowName": "眞 이단심판관",
-     "fame": 134997
-    }
-   ],
    "레어 무기 클론 아바타[80Lv]": [
+    {
+     "serverId": "diregie",
+     "characterId": "b2507a68383dc59f8b37cc737f13d001",
+     "characterName": "타타",
+     "jobGrowName": "眞 팔라딘",
+     "fame": 136263
+    },
     {
      "serverId": "prey",
      "characterId": "2cd3312207a3f1cb6755fb042187fea3",
@@ -1883,13 +1839,66 @@
      "characterName": "잔홍",
      "jobGrowName": "眞 다크나이트",
      "fame": 136008
+    }
+   ],
+   "악몽을 이겨낸 베놈 앱서버": [
+    {
+     "serverId": "diregie",
+     "characterId": "bf3ab3cfefe7ce32111a8a142ac7a3a4",
+     "characterName": "반이당근당근",
+     "jobGrowName": "眞 스핏파이어",
+     "fame": 136455
     },
     {
      "serverId": "cain",
-     "characterId": "b5ebc37fc6249335ff634d921caca716",
-     "characterName": "네골",
-     "jobGrowName": "眞 넨마스터",
-     "fame": 135902
+     "characterId": "80d5795bf263d0e142271bbe8e78b524",
+     "characterName": "Rovyn",
+     "jobGrowName": "眞 어썰트",
+     "fame": 136207
+    },
+    {
+     "serverId": "cain",
+     "characterId": "7ee0dafaab05afed9bf830f29d952ba2",
+     "characterName": "운라이오닐",
+     "jobGrowName": "眞 레인저",
+     "fame": 136184
+    },
+    {
+     "serverId": "anton",
+     "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
+     "characterName": "스팅거타이거",
+     "jobGrowName": "眞 런처",
+     "fame": 134927
+    }
+   ],
+   "레어 무기 클론 아바타[45Lv]": [
+    {
+     "serverId": "cain",
+     "characterId": "5d313f02f36d2c23c5b9bbbe45b1547d",
+     "characterName": "커맨드의본좌",
+     "jobGrowName": "眞 레인저",
+     "fame": 136307
+    },
+    {
+     "serverId": "cain",
+     "characterId": "787192ad75d3fab31363e4a8e8b6a9e7",
+     "characterName": "상탈33",
+     "jobGrowName": "眞 소울브링어",
+     "fame": 135968
+    },
+    {
+     "serverId": "prey",
+     "characterId": "4d3a8f365dc0a1ee4099ad57bb70b4a0",
+     "characterName": "다크꼴랑이",
+     "jobGrowName": "眞 사령술사",
+     "fame": 135066
+    },
+    {
+     "serverId": "cain",
+     "characterId": "bfee72143b7cdf0b415db0ab1f6c66dd",
+     "characterName": "메릿사벨",
+     "jobGrowName": "眞 이단심판관",
+     "fame": 134997
     }
    ],
    "검은 나비의 순백의 리볼버": [
@@ -1915,27 +1924,50 @@
      "fame": 136354
     }
    ],
-   "레어 무기 클론 아바타[40Lv]": [
+   "세레나데가 감싸는 우든 리라": [
     {
-     "serverId": "siroco",
-     "characterId": "188e8cb4927b2651395da8f373cc51a7",
-     "characterName": "테토",
-     "jobGrowName": "眞 엘레멘탈마스터",
-     "fame": 136417
+     "serverId": "cain",
+     "characterId": "82a61ac21fa1a12caf639644bf50c524",
+     "characterName": "별빛하울링",
+     "jobGrowName": "眞 트래블러",
+     "fame": 136501
     },
     {
-     "serverId": "anton",
-     "characterId": "2c0f771cc08797a8543b0fd2975845da",
-     "characterName": "프린세스찡니",
+     "serverId": "cain",
+     "characterId": "b0e1ac3699f2630535b5033b4b565440",
+     "characterName": "카무이",
+     "jobGrowName": "眞 키메라",
+     "fame": 136330
+    },
+    {
+     "serverId": "cain",
+     "characterId": "92464b7439ef38011ae0122096e44b6a",
+     "characterName": "푸알",
+     "jobGrowName": "眞 비질란테",
+     "fame": 136222
+    }
+   ],
+   "악몽을 이겨낸 흉터각인": [
+    {
+     "serverId": "cain",
+     "characterId": "50bad18269253200689d8136adefe53a",
+     "characterName": "금강신권",
      "jobGrowName": "眞 스트라이커",
-     "fame": 135902
+     "fame": 136463
     },
     {
-     "serverId": "anton",
-     "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
-     "characterName": "스팅거타이거",
-     "jobGrowName": "眞 런처",
-     "fame": 134927
+     "serverId": "hilder",
+     "characterId": "f24d11ee29e11bd0de3401a56c814435",
+     "characterName": "염청",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 136286
+    },
+    {
+     "serverId": "cain",
+     "characterId": "b5ebc37fc6249335ff634d921caca716",
+     "characterName": "네골",
+     "jobGrowName": "眞 넨마스터",
+     "fame": 135902
     }
    ],
    "샤이닝 로어 리볼버[코스모스]": [
@@ -1960,45 +1992,6 @@
      "jobGrowName": "眞 스핏파이어",
      "fame": 136258
     }
-   ],
-   "레어 무기 클론 아바타[70Lv]": [
-    {
-     "serverId": "cain",
-     "characterId": "c321d483350212700fb5fe1921936d24",
-     "characterName": "피싴",
-     "jobGrowName": "眞 비질란테",
-     "fame": 136222
-    },
-    {
-     "serverId": "bakal",
-     "characterId": "b38afde7043347f9ca98a14042616010",
-     "characterName": "E.H.S",
-     "jobGrowName": "眞 레인저",
-     "fame": 135964
-    },
-    {
-     "serverId": "casillas",
-     "characterId": "521cdd7ece638ff8a538a8e2ec5769ee",
-     "characterName": "Shine",
-     "jobGrowName": "眞 런처",
-     "fame": 135942
-    }
-   ],
-   "사지타리우스": [
-    {
-     "serverId": "cain",
-     "characterId": "7536c640c3ff646ffb97943f83ed3b7a",
-     "characterName": "비여은",
-     "jobGrowName": "眞 트래블러",
-     "fame": 136751
-    },
-    {
-     "serverId": "hilder",
-     "characterId": "77a3e1cfd6593aea167c064a79143782",
-     "characterName": "파알랑이",
-     "jobGrowName": "眞 트래블러",
-     "fame": 136112
-    }
    ]
   }
  },
@@ -2008,32 +2001,31 @@
    "이터널 크로노스[35Lv]": 7,
    "순백의 눈꽃 결정[30Lv]": 11,
    "이터널 크로노스[40Lv]": 5,
-   "이터널 크로노스[30Lv]": 15,
-   "프로스트의 전설 플래티넘[45Lv]": 5,
+   "이터널 크로노스[30Lv]": 14,
+   "프로스트의 전설 플래티넘[45Lv]": 6,
    "순백의 눈꽃 결정[45Lv]": 4,
-   "운명이 담긴 책[30Lv]": 4,
-   "천공의 지배자 플래티넘[30Lv]": 4,
-   "순백의 눈꽃 결정[35Lv]": 7,
+   "운명이 담긴 책[30Lv]": 5,
+   "프로스트의 전설 플래티넘[30Lv]": 12,
+   "천공의 지배자 플래티넘[30Lv]": 3,
+   "순백의 눈꽃 결정[35Lv]": 6,
    "운명이 담긴 책[60Lv]": 1,
-   "프로스트의 전설 플래티넘[30Lv]": 13,
    "군자의 사계 플래티넘[35Lv]": 2,
    "천둥 신의 무구[30Lv]": 3,
    "순백의 눈꽃 결정[80Lv]": 3,
-   "프로스트의 전설 플래티넘[75Lv]": 3,
+   "프로스트의 전설 플래티넘[75Lv]": 4,
    "프로스트의 전설 플래티넘[80Lv]": 6,
    "이터널 크로노스[45Lv]": 5,
-   "이터널 크로노스[80Lv]": 1,
+   "해상구조대 플래티넘[80Lv]": 1,
+   "이터널 크로노스[80Lv]": 2,
    "프로스트의 전설 플래티넘[35Lv]": 6,
-   "운명이 담긴 책[80Lv]": 2,
    "철쇄아[A타입][40Lv]": 1,
    "소나무의 곧은 기개[75Lv]": 1,
    "이터널 크로노스[75Lv]": 1,
-   "프로스트의 전설 플래티넘[100Lv]": 3,
+   "프로스트의 전설 플래티넘[100Lv]": 2,
    "이터널 크로노스[70Lv]": 1,
    "군자의 사계 플래티넘[30Lv]": 2,
    "순백의 눈꽃 결정[60Lv]": 1,
    "천공의 지배자 플래티넘[35Lv]": 1,
-   "소나무의 곧은 기개[45Lv]": 2,
    "성운 초월자[80Lv]": 1,
    "소나무의 곧은 기개[30Lv]": 1,
    "순백의 눈꽃 결정[70Lv]": 1,
@@ -2042,35 +2034,36 @@
    "철쇄아[A타입][30Lv]": 1,
    "종이달 오르골[35Lv]": 1,
    "순백의 눈꽃 결정[40Lv]": 2,
+   "운명이 담긴 책[80Lv]": 1,
    "프로스트의 전설 플래티넘[40Lv]": 1,
+   "소나무의 곧은 기개[45Lv]": 1,
    "이터널 크로노스[60Lv]": 1,
-   "천둥 신의 무구[80Lv]": 1,
    "군자의 사계 플래티넘[75Lv]": 1
   },
   "creature": {
-   "운명을 담는 여신[75Lv]": 4,
+   "운명을 담는 여신[75Lv]": 5,
    "트로피컬 가이드 운디네[35Lv]": 2,
-   "순백의 옵타티오[30Lv]": 19,
+   "순백의 옵타티오[30Lv]": 18,
    "순백의 옵타티오[40Lv]": 4,
-   "운명을 담는 여신[45Lv]": 8,
+   "운명을 담는 여신[45Lv]": 7,
    "순백의 옵타티오[35Lv]": 7,
    "운명을 담는 재단사 플래티넘[45Lv]": 3,
-   "운명을 담는 여신[30Lv]": 17,
+   "운명을 담는 여신[30Lv]": 18,
    "운명을 담는 재단사 플래티넘[30Lv]": 11,
    "실반 소네트 페어리[35Lv]": 2,
    "트로피컬 가이드 운디네[60Lv]": 1,
    "운명을 담는 재단사 플래티넘[35Lv]": 5,
-   "운명을 담는 재단사 플래티넘[80Lv]": 2,
-   "트로피컬 가이드 운디네[30Lv]": 6,
-   "운명을 담는 여신[35Lv]": 9,
-   "운명을 담는 여신[80Lv]": 6,
+   "운명을 담는 재단사 플래티넘[80Lv]": 3,
+   "트로피컬 가이드 운디네[30Lv]": 5,
+   "운명을 담는 여신[35Lv]": 8,
+   "운명을 담는 여신[80Lv]": 4,
    "순백의 옵타티오[45Lv]": 4,
    "순백의 옵타티오[80Lv]": 4,
    "트로피컬 가이드 운디네[45Lv]": 1,
    "운명을 담는 여신[40Lv]": 3,
    "순백의 옵타티오[75Lv]": 2,
    "순백의 옵타티오[100Lv]": 1,
-   "플로럴 스태그 플래티넘[30Lv]": 1,
+   "플로럴 스태그 플래티넘[45Lv]": 1,
    "운명을 담는 재단사 플래티넘[100Lv]": 2,
    "실반 소네트 페어리[30Lv]": 1,
    "운명을 담는 재단사 플래티넘[70Lv]": 1,
@@ -2085,33 +2078,32 @@
    "운명을 담는 재단사 플래티넘[40Lv]": 1
   },
   "aura": {
-   "신선한 햇살의 조각": 33,
-   "루미너스 게이트": 42,
-   "열대야의 추억": 62
+   "신선한 햇살의 조각": 32,
+   "루미너스 게이트": 41,
+   "열대야의 추억": 61
   },
   "weapon": {
    "최초 성자의 십자가": 1,
    "사지타리우스": 2,
    "샤이닝 로어 리볼버[카오스]": 2,
    "고양이 킹덤의 냥냥 바구니": 1,
-   "발키리 : 수호의 검": 2,
+   "초필살인봉": 1,
    "팬텀 리퍼 드래곤 테일": 1,
    "샤이닝 로어 글러브[카오스]": 2,
    "샤이닝 로어 앵커[카오스]": 1,
+   "악몽을 이겨낸 구속하는 공작의 차원도": 9,
    "악몽을 이겨낸 오염된 피의 쾌": 5,
-   "악몽을 이겨낸 구속하는 공작의 차원도": 7,
-   "발키리 : 천상의 검": 1,
    "셋쇼마루의 무기": 2,
    "검은 나비의 순백의 리볼버": 3,
    "악몽을 이겨낸 부패한 심장검": 1,
    "엘프 여왕의 정령": 2,
-   "세레나데가 감싸는 우든 리라": 2,
-   "악몽을 이겨낸 흉터각인": 2,
+   "세레나데가 감싸는 우든 리라": 3,
+   "악몽을 이겨낸 흉터각인": 3,
    "마법소년의 블랙 변신봉": 1,
-   "멍이와 함께": 1,
-   "2026 아라드 패스 사막의 수호자 바스테트의 청은 보우건": 1,
+   "스위트 롤리팝": 1,
+   "악몽을 이겨낸 베놈 앱서버": 4,
    "다크 리펄서": 1,
-   "레어 무기 클론 아바타[40Lv]": 3,
+   "레어 무기 클론 아바타[40Lv]": 2,
    "그레이트 오브 네이쳐": 1,
    "샤이닝 로어 장궁[코스모스]": 1,
    "루미나리에 글러브": 1,
@@ -2125,24 +2117,20 @@
    "저지먼트 : 심판의 검": 1,
    "엘프 대마법사의 오브": 1,
    "루미나리에 소드": 1,
-   "트로피컬 바캉스 딸기 토템": 1,
-   "레어 무기 클론 아바타[45Lv]": 5,
+   "레어 무기 클론 아바타[45Lv]": 4,
    "최종결전오의 무식": 1,
    "악몽을 이겨낸 요도 : 날뛰는 흑혈": 1,
-   "팬텀 : 혼돈의 둔기": 1,
+   "레어 무기 클론 아바타[80Lv]": 5,
    "알쏭달쏭 만능 빗자루": 1,
    "금강의 무기": 1,
    "2025 아라드 패스 요들소녀 플로라의 꽃다발": 2,
-   "순백의 위성": 1,
-   "영검 구귀문": 1,
+   "발키리 : 수호의 검": 1,
    "악몽을 이겨낸 흘러내리는 썩은 피": 1,
    "펄스건": 1,
    "레어 무기 클론 아바타[70Lv]": 3,
    "악몽을 이겨낸 종언을 비트는 흑미": 1,
    "태초의 공포가 깃든 쌍검": 1,
    "황룡의 선택": 1,
-   "레어 무기 클론 아바타[80Lv]": 5,
-   "악몽을 이겨낸 베놈 앱서버": 1,
    "유클리드의 빛의 검": 1,
    "2025 아라드 패스 서부의 보안관 라이플": 1,
    "운궁": 1,
@@ -2153,7 +2141,7 @@
    "레어 무기 클론 아바타[60Lv]": 1,
    "레이 프리미티브": 1,
    "할로윈 베트 보우 [박쥐 타입]": 1,
-   "카론의 검": 2,
+   "카론의 검": 1,
    "숲속의 유랑악단 오보에": 1,
    "하츠네 미쿠의 대파": 1,
    "바다 친구 범고래": 1,
@@ -2180,7 +2168,6 @@
    "마법소년의 변신봉": 1,
    "2025 아라드 패스 고양이 킹덤의 냥냥 토템": 1,
    "샤이닝 로어 로드[카오스]": 1,
-   "2026 아라드 패스 차원의 별이 깃든 선현궁": 1,
    "루미나리에 리볼버": 1,
    "루미나리에 해머": 1,
    "샤이닝 로어 도[코스모스]": 1
