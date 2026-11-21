@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T16:59:59.322Z",
+ "updatedAt": "2026-11-21T17:56:01.221Z",
  "sale": [
   {
    "goodsNo": 4808238,
@@ -6561,34 +6561,6 @@
    ]
   },
   {
-   "goodsNo": 4603281,
-   "title": "남프리스트 상급2부위",
-   "price": 2200000,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "e11bc6c056a6c21a0d9749865b1f29c7",
-     "itemName": "블랙 팬텀 소 가면",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "12751ee14fe2c7a00b32f0260216d1a4",
-     "itemName": "블랙 팬텀 벨트",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    }
-   ]
-  },
-  {
    "goodsNo": 4592893,
    "title": "여귀검사 상급2부위",
    "price": 2200000,
@@ -6787,6 +6759,38 @@
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4572019,
+   "title": "여프리스트 상급2부위",
+   "price": 2200000,
+   "jobs": [
+    "프리스트(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "cbfcaa3fc2ca3d9705c0620cbc30f504",
+     "itemName": "산고의 신발[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "2b97c89999989ae0686edc64d8261858",
+     "itemName": "산고의 허리[A타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
      ]
     }
    ]
