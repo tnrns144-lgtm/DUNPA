@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T13:15:35.665Z",
+ "updatedAt": "2026-11-21T14:15:25.960Z",
  "all": [
   {
    "serverId": "cain",
@@ -866,6 +866,15 @@
    "fame": 136024
   },
   {
+   "serverId": "prey",
+   "characterId": "0910e9e3f94e9cb973ae675b89a2fa43",
+   "characterName": "호씨",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 레인저",
+   "fame": 136021
+  },
+  {
    "serverId": "cain",
    "characterId": "d2042fe0d901753983ded5515bfdba43",
    "characterName": "맹주",
@@ -1061,15 +1070,6 @@
    "level": 115,
    "jobName": "프리스트(여)",
    "jobGrowName": "眞 인파이터",
-   "fame": 135864
-  },
-  {
-   "serverId": "prey",
-   "characterId": "08751d5bc043bb74235128d9ea1fc0a9",
-   "characterName": "강춘식",
-   "level": 115,
-   "jobName": "귀검사(여)",
-   "jobGrowName": "眞 다크템플러",
    "fame": 135864
   },
   {
@@ -2037,6 +2037,15 @@
    },
    {
     "serverId": "prey",
+    "characterId": "0910e9e3f94e9cb973ae675b89a2fa43",
+    "characterName": "호씨",
+    "level": 115,
+    "jobName": "거너(남)",
+    "jobGrowName": "眞 레인저",
+    "fame": 136021
+   },
+   {
+    "serverId": "prey",
     "characterId": "ae1e75e488c8a357a5008406e0a35da4",
     "characterName": "북부소공녀",
     "level": 115,
@@ -2060,15 +2069,6 @@
     "level": 115,
     "jobName": "프리스트(여)",
     "jobGrowName": "眞 인파이터",
-    "fame": 135864
-   },
-   {
-    "serverId": "prey",
-    "characterId": "08751d5bc043bb74235128d9ea1fc0a9",
-    "characterName": "강춘식",
-    "level": 115,
-    "jobName": "귀검사(여)",
-    "jobGrowName": "眞 다크템플러",
     "fame": 135864
    },
    {
@@ -2418,6 +2418,15 @@
     "jobName": "거너(남)",
     "jobGrowName": "眞 스핏파이어",
     "fame": 134748
+   },
+   {
+    "serverId": "anton",
+    "characterId": "d7b55a21dd1fe9fd71355b6b0d91237d",
+    "characterName": "셀루",
+    "level": 115,
+    "jobName": "마법사(여)",
+    "jobGrowName": "眞 인챈트리스",
+    "fame": 134668
    },
    {
     "serverId": "anton",

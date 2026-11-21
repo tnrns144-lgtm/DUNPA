@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T13:15:35.665Z",
+ "updatedAt": "2026-11-21T14:15:25.960Z",
  "sale": [
   {
    "goodsNo": 4808238,
@@ -485,94 +485,6 @@
      "emblems": [
       "빛나는 노란빛 엠블렘[공격속도]",
       "빛나는 노란빛 엠블렘[공격속도]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4807803,
-   "title": "남귀검사 레어1부위 상급7부위",
-   "price": 20000000,
-   "jobs": [
-    "귀검사(남)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "54ecb0f00c53700c0b4a3ada968ce22f",
-     "itemName": "용맹한 골든임페리얼 투구",
-     "slotName": "모자 아바타",
-     "itemRarity": "레어",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]",
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "de5bf1fefa9454bc5ef2b1d663fa75fc",
-     "itemName": "번개 샤기컷[B타입]",
-     "slotName": "머리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "c8c0cdf813d2e5766724c7decc276b76",
-     "itemName": "액시온의 생체 마스크[D타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "624ce3c2ec02bd1062f87ef920719f2b",
-     "itemName": "액시온의 생체갑각 코트[D타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "118e1e250117f4e1eb3d8190b589ce11",
-     "itemName": "헬벤터의 찢어진 바지[C타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 녹색빛 엠블렘[마법크리티컬]",
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "70305dfe928c1dcabff443c6465f1887",
-     "itemName": "운명의 아르카나 죽음의 기사 부츠[D타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "d6f557fd20680d68a554ee8e4f33063b",
-     "itemName": "액시온의 어두운 연기[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "d56a972a99845fae1ff9f297cce6558c",
-     "itemName": "운명의 아르카나 죽음의 기사 벨트[B타입]",
-     "slotName": "허리 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
      ]
     }
    ]
@@ -5814,6 +5726,75 @@
    ]
   },
   {
+   "goodsNo": 4677596,
+   "title": "도적 레어1부위 상급5부위",
+   "price": 30000000,
+   "jobs": [
+    "도적"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "23da56b4de14c2827d6fcdfe2e2f3b11",
+     "itemName": "괴도의 러블리 리본[B타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "118b42caba013fded55398db5e894289",
+     "itemName": "배틀슈트 실버 헤어[A타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "56d8f6152c3d705cd31b4cdd6c613a27",
+     "itemName": "노블레스 날렵한 흰 마스크와 귀걸이",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]",
+      "찬란한 다색 엠블렘[모든상태이상내성]"
+     ]
+    },
+    {
+     "itemId": "319c3af7fb4ef84a38f28f6a0b7ceee3",
+     "itemName": "진 쿠노이치의 긴 소매 닌자복[A타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "448dd375930c52c28dec8353ff92071d",
+     "itemName": "바캉스 스트라이프 비키니 하의[C타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 녹색빛 엠블렘[물리크리티컬]",
+      "화려한 녹색빛 엠블렘[물리크리티컬]"
+     ]
+    },
+    {
+     "itemId": "76464dce0de121ec974b707ffa89830f",
+     "itemName": "해상 열차 바캉스 발찌와 페디큐어[C타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 푸른빛 엠블렘[물리방어]",
+      "빛나는 푸른빛 엠블렘[이동속도]"
+     ]
+    }
+   ]
+  },
+  {
    "goodsNo": 4663081,
    "title": "여격투가 상급2부위",
    "price": 2200000,
@@ -7358,6 +7339,94 @@
      "itemId": "dd3382d77ea22accdb5253aaf0ad1888",
      "itemName": "바니바니 아라드 넥 칼라[A타입]",
      "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 3923461,
+   "title": "남귀검사 레어1부위 상급7부위/피부",
+   "price": 30000000,
+   "jobs": [
+    "귀검사(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "1d2b56bfed37f32ae22265577b63d04a",
+     "itemName": "용사의 브이라인 서클릿[A타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "78dec6d5090614e1de59d3b11674cc44",
+     "itemName": "헬벤터의 와일드 울프 머리[B타입]",
+     "slotName": "머리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "b9f7e5b4312fb499cef2ec59ed4edb2f",
+     "itemName": "액시온의 생체 마스크[A타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 다색 엠블렘[인벤토리]"
+     ]
+    },
+    {
+     "itemId": "f5b0744b12e66f681b704d0c03f3e631",
+     "itemName": "헬벤터의 깊은 상처[C타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "eb08aedc4a863595cf5ba49f140e740c",
+     "itemName": "탈환의 전사의 팬츠[D타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "화려한 녹색빛 엠블렘[마법크리티컬]",
+      "화려한 녹색빛 엠블렘[마법크리티컬]"
+     ]
+    },
+    {
+     "itemId": "79957711cc6662af127f8a01d8b8f398",
+     "itemName": "야차의 양발 붕대[A타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 푸른빛 엠블렘[이동속도]",
+      "빛나는 푸른빛 엠블렘[이동속도]"
+     ]
+    },
+    {
+     "itemId": "b0b2392389cc0ae7573b8f72b8e7f05c",
+     "itemName": "오르카의 늑대 모피[A타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "cbfd06f3d07464180fe991037e272261",
+     "itemName": "은색 귀면요대",
+     "slotName": "허리 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "화려한 푸른빛 엠블렘[이동속도]",
+      "화려한 푸른빛 엠블렘[이동속도]"
+     ]
+    },
+    {
+     "itemId": "807e9b10d510e28f46a2f1527fd18606",
+     "itemName": "액시온의 구릿빛 피부[A타입]",
+     "slotName": "스킨 아바타",
      "itemRarity": "커먼",
      "emblems": []
     }
