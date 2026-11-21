@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T15:58:48.410Z",
+ "updatedAt": "2026-11-21T16:59:59.322Z",
  "sale": [
   {
    "goodsNo": 4808238,
@@ -224,60 +224,6 @@
       "빛나는 다색 엠블렘[모든상태이상내성]",
       "빛나는 푸른빛 엠블렘[이동속도]"
      ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4808022,
-   "title": "여프리스트 레어2부위 상급3부위",
-   "price": 20000000,
-   "jobs": [
-    "프리스트(여)"
-   ],
-   "avatarRarity": "혼합",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [
-    "온라인게임"
-   ],
-   "parts": [
-    {
-     "itemId": "d93c528370dbb6ce7a06b773d261836e",
-     "itemName": "순백의 미카엘 화이트 깃털머리끈",
-     "slotName": "모자 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "719954fcaa207284f09b516f13b1d9d3",
-     "itemName": "혼돈의 루시퍼 핑크 트윈테일",
-     "slotName": "머리 아바타",
-     "itemRarity": "레어",
-     "emblems": []
-    },
-    {
-     "itemId": "70813d10f1b77f7b02fcfd63d59f0b07",
-     "itemName": "숭고한 발키리의 갑옷 상의[A타입]",
-     "slotName": "상의 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]",
-      "빛나는 녹색빛 엠블렘[마법크리티컬]"
-     ]
-    },
-    {
-     "itemId": "ffb5cc3e94a8b01dc17544628c47af8e",
-     "itemName": "캐주얼룩 핫팬츠[A타입]",
-     "slotName": "하의 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
-    },
-    {
-     "itemId": "a0e18d03bcad501155c150688a49040f",
-     "itemName": "킹덤 고양이의 고양이 발 슈즈[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": []
     }
    ]
   },
@@ -910,6 +856,85 @@
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 푸른빛 엠블렘[마법방어]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4802103,
+   "title": "남귀검사 레어3부위 상급5부위",
+   "price": 30000000,
+   "jobs": [
+    "귀검사(남)"
+   ],
+   "avatarRarity": "혼합",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "ffa38f3c7028c61c9100ce1978748fea",
+     "itemName": "붉은색 악마뿔",
+     "slotName": "모자 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "찬란한 붉은빛 엠블렘[힘]",
+      "찬란한 붉은빛 엠블렘[힘]"
+     ]
+    },
+    {
+     "itemId": "ec7aa85edabbc51a23948686a3146ff4",
+     "itemName": "붉은색 생머리",
+     "slotName": "머리 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "찬란한 붉은빛 엠블렘[힘]",
+      "찬란한 붉은빛 엠블렘[힘]"
+     ]
+    },
+    {
+     "itemId": "4812648a565540aea06a192a8fcccb2e",
+     "itemName": "눈화장[D타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "500fed5a02fcb73e7338855f8e419395",
+     "itemName": "화룡의 검은 용의 뿔 상의[B타입]",
+     "slotName": "상의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "4081538de32780a9297f96d508724ed0",
+     "itemName": "G.S.D 팬츠[B타입]",
+     "slotName": "하의 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "accd793bc9ea26884cdd1e72d117b4ba",
+     "itemName": "갑주화[B타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "b23737d66d184f4b8df4ed90f0d29269",
+     "itemName": "죽도[B타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "1d7e60a830c8fbcb6e98168f09d19f18",
+     "itemName": "적색 귀면요대",
+     "slotName": "허리 아바타",
+     "itemRarity": "레어",
+     "emblems": [
+      "찬란한 듀얼 엠블렘[공격속도 + 이동속도]",
+      "찬란한 듀얼 엠블렘[공격속도 + 이동속도]"
      ]
     }
    ]
