@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T01:29:34.556Z",
+ "updatedAt": "2026-11-21T03:00:08.974Z",
  "all": [
   {
    "serverId": "cain",
@@ -486,6 +486,15 @@
    "jobName": "거너(여)",
    "jobGrowName": "眞 스핏파이어",
    "fame": 136258
+  },
+  {
+   "serverId": "diregie",
+   "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
+   "characterName": "룡이찡~♥",
+   "level": 115,
+   "jobName": "마법사(여)",
+   "jobGrowName": "眞 마도학자",
+   "fame": 136243
   },
   {
    "serverId": "siroco",
@@ -1724,6 +1733,15 @@
     "jobName": "나이트",
     "jobGrowName": "眞 팔라딘",
     "fame": 136263
+   },
+   {
+    "serverId": "diregie",
+    "characterId": "4ffcf1c0ce39814e1c323b7e1699c44d",
+    "characterName": "룡이찡~♥",
+    "level": 115,
+    "jobName": "마법사(여)",
+    "jobGrowName": "眞 마도학자",
+    "fame": 136243
    },
    {
     "serverId": "diregie",
