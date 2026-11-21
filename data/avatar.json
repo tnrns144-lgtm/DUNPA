@@ -1,6 +1,214 @@
 {
- "updatedAt": "2026-11-21T03:00:08.974Z",
+ "updatedAt": "2026-11-21T04:07:29.327Z",
  "sale": [
+  {
+   "goodsNo": 4807974,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "bf731d2c50edf72ab98c5e75222f6c15",
+     "itemName": "바니바니 아라드 러블리 블러셔[D타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "28bc4ba7ed870e93994e108554b67ed7",
+     "itemName": "바니바니 아라드 하이힐[D타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4807973,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "5ec55061ce34878abcb8ea54cc7fc803",
+     "itemName": "바니바니 아라드 리본 초커[B타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "6b22de81dd60b68617f54c95844632f0",
+     "itemName": "바니바니 아라드 바니테일[B타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4807972,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "f2abe6526a86ab0d39faa3dd41a4f564",
+     "itemName": "바니바니 아라드 헤어밴드[D타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "8655639a7ad7f8b7408e56786721f162",
+     "itemName": "바니바니 아라드 바니테일[D타입]",
+     "slotName": "허리 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4807971,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "d73bf47ffe661787b55a290716d1cfb3",
+     "itemName": "바니바니 아라드 하이힐[B타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "2b79514e97b29318e9d48c2068d30589",
+     "itemName": "바니바니 아라드 리본 초커[D타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4807970,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "9567e126f1d9432d60bdcf31271afac0",
+     "itemName": "바니바니 아라드 헤어밴드[B타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    },
+    {
+     "itemId": "c87ef657bb36d20473a9d7b974951f80",
+     "itemName": "바니바니 아라드 러블리 블러셔[B타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": []
+    }
+   ]
+  },
+  {
+   "goodsNo": 4807969,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "eb3ea7d33a9a81df2c4dbdf5bfd8cec1",
+     "itemName": "바니바니 아라드 헤어밴드[C타입]",
+     "slotName": "모자 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 붉은빛 엠블렘[지능]",
+      "빛나는 붉은빛 엠블렘[지능]"
+     ]
+    },
+    {
+     "itemId": "a66a58d505c8819bddeb04114a025953",
+     "itemName": "바니바니 아라드 러블리 블러셔[C타입]",
+     "slotName": "얼굴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 노란빛 엠블렘[공격속도]",
+      "빛나는 노란빛 엠블렘[공격속도]"
+     ]
+    }
+   ]
+  },
+  {
+   "goodsNo": 4807967,
+   "title": "여격투가 상급2부위",
+   "price": 2100000,
+   "jobs": [
+    "격투가(여)"
+   ],
+   "avatarRarity": "상급",
+   "avatarSet": false,
+   "date": "",
+   "hashtags": [],
+   "parts": [
+    {
+     "itemId": "af866c63c4a2f33a8a149c795221e0f7",
+     "itemName": "바니바니 아라드 하이힐[C타입]",
+     "slotName": "신발 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 푸른빛 엠블렘[이동속도]",
+      "빛나는 푸른빛 엠블렘[이동속도]"
+     ]
+    },
+    {
+     "itemId": "f176214dd8c2c8797445aa2bd5dd466a",
+     "itemName": "바니바니 아라드 리본 초커[C타입]",
+     "slotName": "목가슴 아바타",
+     "itemRarity": "커먼",
+     "emblems": [
+      "빛나는 노란빛 엠블렘[공격속도]",
+      "빛나는 노란빛 엠블렘[공격속도]"
+     ]
+    }
+   ]
+  },
   {
    "goodsNo": 4807803,
    "title": "남귀검사 레어1부위 상급7부위",
@@ -188,70 +396,6 @@
      "slotName": "허리 아바타",
      "itemRarity": "커먼",
      "emblems": []
-    }
-   ]
-  },
-  {
-   "goodsNo": 4807211,
-   "title": "남프리스트 상급2부위",
-   "price": 2222222,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "26ced20ecfbb82bbd16d354d742c183c",
-     "itemName": "트로피컬 바캉스 컬러 렌즈[B타입]",
-     "slotName": "얼굴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "ebbdda831a8016aab07704a2696526d6",
-     "itemName": "발할라 리턴즈 용맹한 바이킹의 거친 털 신[A타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4807210,
-   "title": "남프리스트 상급2부위",
-   "price": 2222222,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "f8947ba1b4c8567be88bfc339e192fd0",
-     "itemName": "트로피컬 바캉스 딸기 스티커[B타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    },
-    {
-     "itemId": "9db924ecf345e131650a878573286125",
-     "itemName": "운명의 아르카나 빛의 기사 망토[A타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든속성저항]"
-     ]
     }
    ]
   },
@@ -4861,70 +5005,6 @@
      "itemRarity": "커먼",
      "emblems": [
       "빛나는 다색 엠블렘[모든속성저항]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4737683,
-   "title": "남프리스트 상급2부위",
-   "price": 2222222,
-   "jobs": [
-    "프리스트(남)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "2b846641d15ea186d710fa3891b32f23",
-     "itemName": "왕립 아라드 고교 리턴즈 운동화[B타입]",
-     "slotName": "신발 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    },
-    {
-     "itemId": "14fc6ef5f60bac37fb5de545207de7f9",
-     "itemName": "트로피컬 바캉스 목가슴 투명 아바타[B타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    }
-   ]
-  },
-  {
-   "goodsNo": 4733326,
-   "title": "여격투가 상급2부위",
-   "price": 2222222,
-   "jobs": [
-    "격투가(여)"
-   ],
-   "avatarRarity": "상급",
-   "avatarSet": false,
-   "date": "",
-   "hashtags": [],
-   "parts": [
-    {
-     "itemId": "e9949e26d4c5c4869709b947cc4ef3f5",
-     "itemName": "코스믹 어드벤처 통신 유닛[B타입]",
-     "slotName": "모자 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
-     ]
-    },
-    {
-     "itemId": "f3299f988ab29fd981c6ea66620423d4",
-     "itemName": "트로피컬 바캉스 목가슴 투명 아바타[B타입]",
-     "slotName": "목가슴 아바타",
-     "itemRarity": "커먼",
-     "emblems": [
-      "빛나는 다색 엠블렘[모든상태이상내성]"
      ]
     }
    ]

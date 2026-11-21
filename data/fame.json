@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T03:00:08.974Z",
+ "updatedAt": "2026-11-21T04:07:29.327Z",
  "all": [
   {
    "serverId": "cain",
@@ -74,6 +74,15 @@
    "fame": 136685
   },
   {
+   "serverId": "bakal",
+   "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
+   "characterName": "라독커",
+   "level": 115,
+   "jobName": "귀검사(남)",
+   "jobGrowName": "眞 웨펀마스터",
+   "fame": 136685
+  },
+  {
    "serverId": "cain",
    "characterId": "25fc2f732d43848eb6283abe0f706d06",
    "characterName": "삼각형",
@@ -90,15 +99,6 @@
    "jobName": "귀검사(남)",
    "jobGrowName": "眞 버서커",
    "fame": 136685
-  },
-  {
-   "serverId": "bakal",
-   "characterId": "2b931e64d5bfe6ab63118a4a16c5ccd7",
-   "characterName": "라독커",
-   "level": 115,
-   "jobName": "귀검사(남)",
-   "jobGrowName": "眞 웨펀마스터",
-   "fame": 136647
   },
   {
    "serverId": "cain",
@@ -858,15 +858,6 @@
   },
   {
    "serverId": "cain",
-   "characterId": "610018ce3b1c8c9bd6d1d58d737c020f",
-   "characterName": "무라사이",
-   "level": 115,
-   "jobName": "도적",
-   "jobGrowName": "眞 사령술사",
-   "fame": 136024
-  },
-  {
-   "serverId": "cain",
    "characterId": "d2042fe0d901753983ded5515bfdba43",
    "characterName": "맹주",
    "level": 115,
@@ -1145,15 +1136,6 @@
    "fame": 135065
   },
   {
-   "serverId": "anton",
-   "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
-   "characterName": "스팅거타이거",
-   "level": 115,
-   "jobName": "거너(남)",
-   "jobGrowName": "眞 런처",
-   "fame": 135027
-  },
-  {
    "serverId": "hilder",
    "characterId": "2ef4826e17784daa46a89f9e8a0cc724",
    "characterName": "운도리아빠",
@@ -1215,6 +1197,15 @@
    "jobName": "귀검사(여)",
    "jobGrowName": "眞 다크템플러",
    "fame": 134934
+  },
+  {
+   "serverId": "anton",
+   "characterId": "103e5c925e8a698e89abd4d68cce1d0e",
+   "characterName": "스팅거타이거",
+   "level": 115,
+   "jobName": "거너(남)",
+   "jobGrowName": "眞 런처",
+   "fame": 134927
   }
  ],
  "byServer": {
@@ -1590,15 +1581,6 @@
    },
    {
     "serverId": "cain",
-    "characterId": "610018ce3b1c8c9bd6d1d58d737c020f",
-    "characterName": "무라사이",
-    "level": 115,
-    "jobName": "도적",
-    "jobGrowName": "眞 사령술사",
-    "fame": 136024
-   },
-   {
-    "serverId": "cain",
     "characterId": "d2042fe0d901753983ded5515bfdba43",
     "characterName": "맹주",
     "level": 115,
@@ -1667,6 +1649,15 @@
     "level": 115,
     "jobName": "격투가(여)",
     "jobGrowName": "眞 넨마스터",
+    "fame": 135902
+   },
+   {
+    "serverId": "cain",
+    "characterId": "d7a9880acf4e5c2129ef26e6a18641b1",
+    "characterName": "센치한요원",
+    "level": 115,
+    "jobName": "총검사",
+    "jobGrowName": "眞 요원",
     "fame": 135902
    }
   ],
@@ -2381,7 +2372,7 @@
     "level": 115,
     "jobName": "거너(남)",
     "jobGrowName": "眞 런처",
-    "fame": 135027
+    "fame": 134927
    },
    {
     "serverId": "anton",
@@ -2446,7 +2437,7 @@
     "level": 115,
     "jobName": "귀검사(남)",
     "jobGrowName": "眞 웨펀마스터",
-    "fame": 136647
+    "fame": 136685
    },
    {
     "serverId": "bakal",
